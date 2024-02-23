@@ -52,17 +52,17 @@
     <Compile Include="degree and course addition.Designer.cs">
       <DependentUpon>degree and course addition.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="gpacalculator.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="gpacalculator.Designer.cs">
       <DependentUpon>gpacalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="course_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="course_dashboard.Designer.cs">
+      <DependentUpon>course_dashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Modules_Addition.cs">
       <SubType>Form</SubType>
@@ -78,11 +78,11 @@
     <EmbeddedResource Include="degree and course addition.resx">
       <DependentUpon>degree and course addition.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="gpacalculator.resx">
       <DependentUpon>gpacalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="course_dashboard.resx">
+      <DependentUpon>course_dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules_Addition.resx">
       <DependentUpon>Modules_Addition.cs</DependentUpon>

@@ -2,15 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml.Linq;
 
-namespace practice_project
+namespace WindowsAppProject
 {
     public partial class gpacalculator : Form
     {
@@ -18,50 +16,16 @@ namespace practice_project
         {
             InitializeComponent();
         }
-        private static int sum = 0;
         private static int x = 0;
-        
-        private void gpacalculator_Load(object sender, EventArgs e)
-        {
+        private static string[] credits_array = new string[100];
+        private static string[] grades_array = new string[100];
+        private static int n, m = 0;
+        private static int sum = 0;
+        private static string grade;
+        private static float final_gpa_credits;
+        private static float final_gpa;
 
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Mgrade_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void addMod_Click(object sender, EventArgs e)
-        {
-           
-            AddModuleControl();
-            CalculateAndDisplayGPA();
-
-        }
-
-        private void removeMod_Click(object sender, EventArgs e)
-        {
-
-            RemoveModuleControl();
-            CalculateAndDisplayGPA();
-        }
-
-        private void AddModuleControl()
+        private void rjButton1_Click(object sender, EventArgs e)
         {
             sum = 0;
             x = x + 46;
@@ -107,8 +71,10 @@ namespace practice_project
             Mgrade.Controls.Add(newtextbx3);
             Mcredits.Controls.Add(newtextbx2);
         }
-        private void RemoveModuleControl()
+
+        private void rjButton2_Click(object sender, EventArgs e)
         {
+
             if (MName.Controls.Count < 1)
             {
                 return;
@@ -121,80 +87,94 @@ namespace practice_project
             Mcredits.Controls.RemoveAt(Mcredits.Controls.Count - 1);
         }
 
-        private void MName_Paint(object sender, PaintEventArgs e)
+        private void rjButton3_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private float CalculateGPA()
-        {
-            float totalGradePoints = 0;
-            int totalCredits = 0;
-
-            for (int i = 0; i < MName.Controls.Count; i++)
+            foreach (Control control in Mcredits.Controls)
             {
-                string moduleName = ((TextBox)MName.Controls[i]).Text;
-                string grade = ((TextBox)Mgrade.Controls[i]).Text;
-                string creditsText = ((TextBox)Mcredits.Controls[i]).Text;
-
-                if (!int.TryParse(creditsText, out int credits))
-                    continue; 
-
-                float gradePoint = GetGradePoint(grade);
-                if (gradePoint < 0) 
-                    continue;
-
-                totalGradePoints += gradePoint * credits;
-
-                totalCredits += credits;
+                credits_array[n] = control.Text;
+                n = n + 1;
             }
-
-            if (totalCredits == 0)
-                return 0; 
-
-            float gpa = totalGradePoints / totalCredits;
-            return gpa;
-        }
-
-        private float GetGradePoint(string grade)
-        {
-            switch (grade.ToUpper())
+            if (credits_array is null)
             {
-                case "A":
-                case "A+":
-                    return 4.0f;
-                case "A-":
-                    return 3.7f;
-                case "B+":
-                    return 3.3f;
-                case "B":
-                    return 3.0f;
-                case "B-":
-                    return 2.7f;
-                case "C+":
-                    return 2.3f;
-                case "C":
-                    return 2.0f;
-                case "C-":
-                    return 1.7f;
-                case "D+":
-                    return 1.3f;
-                case "D":
-                    return 1.0f;
-                case "D-":
-                    return 0.7f;
-                case "F":
-                    return 0.0f;
-                default:
-                    return -1; 
+                foreach (Control control in Mcredits.Controls)
+                {
+                    credits_array[n] = control.Text;
+                    n = n + 1;
+                }
             }
-        }
-        private void CalculateAndDisplayGPA()
-        {
-            textBox1.Text = CalculateGPA().ToString(); 
+            foreach (Control control in Mgrade.Controls)
+            {
+                grades_array[m] = control.Text;
+                m = m + 1;
+            }
+            for (int i = 0; i < m; i++)
+            {
+                if (grades_array[i] == "A" || grades_array[i] == "A+")
+                {
+                    grade = "4.00";
+                }
+                else if (grades_array[i] == "A-")
+                {
+                    grade = "3.7";
+                }
+                else if (grades_array[i] == "B+")
+                {
+                    grade = "3.3";
+                }
+                else if (grades_array[i] == "B")
+                {
+                    grade = "3.00";
+                }
+                else if (grades_array[i] == "B-")
+                {
+                    grade = "2.7";
+                }
+                else if (grades_array[i] == "C+")
+                {
+                    grade = "2.3";
+                }
+                else if (grades_array[i] == "C")
+                {
+                    grade = "2.00";
+                }
+                else if (grades_array[i] == "C-")
+                {
+                    grade = "1.7";
+                }
+                else if (grades_array[i] == "D+")
+                {
+                    grade = "1.3";
+                }
+                else if (grades_array[i] == "D")
+                {
+                    grade = "1.00";
+                }
+                else if (grades_array[i] == "D-")
+                {
+                    grade = "0.7";
+                }
+                else if (grades_array[i] == "F")
+                {
+                    grade = "0.00";
+                }
+                final_gpa_credits = final_gpa_credits + (float.Parse(grade) * float.Parse(credits_array[i]));
+            }
+            for (int i = 0; i < n; i++)
+            {
+                sum = sum + Convert.ToInt32(credits_array[i]);
+                credits_array[i] = null;
+                grades_array[i] = null;
+            }
+            final_gpa = final_gpa_credits / sum;
+            textBox1.Text = Convert.ToString(final_gpa);
+            sum = 0;
+            n = 0;
+            m = 0;
+            final_gpa_credits = 0;
+            final_gpa = 0;
         }
 
-        private void textbxpanel_Paint(object sender, PaintEventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
