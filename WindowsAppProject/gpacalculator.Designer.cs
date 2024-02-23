@@ -1,6 +1,6 @@
 ﻿namespace WindowsAppProject
 {
-    partial class Form1
+    partial class gpacalculator
     {
         /// <summary>
         /// Required designer variable.

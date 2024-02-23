@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsAppProject
 {
-    public partial class Form1 : Form
+    public partial class gpacalculator : Form
     {
-        public Form1()
+        public gpacalculator()
         {
             InitializeComponent();
         }
