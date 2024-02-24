@@ -36,6 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.rjButton3 = new CustomControls.RJControls.RJButton();
             this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
@@ -60,6 +61,7 @@
             this.textbxpanel.Name = "textbxpanel";
             this.textbxpanel.Size = new System.Drawing.Size(1032, 413);
             this.textbxpanel.TabIndex = 19;
+            this.textbxpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.textbxpanel_Paint);
             // 
             // Mcredits
             // 
@@ -95,7 +97,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Linen;
-            this.label2.Location = new System.Drawing.Point(615, 122);
+            this.label2.Location = new System.Drawing.Point(634, 122);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 38);
             this.label2.TabIndex = 17;
@@ -107,7 +109,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Linen;
-            this.label1.Location = new System.Drawing.Point(212, 122);
+            this.label1.Location = new System.Drawing.Point(219, 122);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(205, 38);
             this.label1.TabIndex = 16;
@@ -124,6 +126,14 @@
             this.textBox1.Size = new System.Drawing.Size(1029, 50);
             this.textBox1.TabIndex = 23;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(136, 582);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1032, 81);
+            this.flowLayoutPanel1.TabIndex = 25;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // rjButton3
             // 
@@ -185,7 +195,7 @@
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
             // 
-            // Form1
+            // gpacalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -199,10 +209,11 @@
             this.Controls.Add(this.rjButton3);
             this.Controls.Add(this.rjButton2);
             this.Controls.Add(this.rjButton1);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1326, 750);
             this.MinimumSize = new System.Drawing.Size(1326, 750);
-            this.Name = "Form1";
+            this.Name = "gpacalculator";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.textbxpanel.ResumeLayout(false);
@@ -224,6 +235,7 @@
         private CustomControls.RJControls.RJButton rjButton3;
         private CustomControls.RJControls.RJButton rjButton2;
         private CustomControls.RJControls.RJButton rjButton1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
 

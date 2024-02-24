@@ -16,7 +16,7 @@ namespace WindowsAppProject
         {
             InitializeComponent();
         }
-        private static int x = 0;
+        private static int x = 8;
         private static string[] credits_array = new string[100];
         private static string[] grades_array = new string[100];
         private static int n, m = 0;
@@ -28,12 +28,12 @@ namespace WindowsAppProject
         private void rjButton1_Click(object sender, EventArgs e)
         {
             sum = 0;
-            x = x + 46;
+            
             TextBox newtextbx = new TextBox();
             TextBox newtextbx2 = new TextBox();
             TextBox newtextbx3 = new TextBox();
 
-            newtextbx.Width = 530;
+            newtextbx.Width = 365;
             newtextbx.TextAlign = HorizontalAlignment.Center;
             newtextbx.Height = 48;
             newtextbx.Font = new Font("Microsoft Sans Serif", 18);
@@ -45,7 +45,7 @@ namespace WindowsAppProject
             newtextbx.Margin = new Padding(3, 3, 3, 3);
             newtextbx.Name = "Module Name";
 
-            newtextbx3.Width = 143;
+            newtextbx3.Width = 237;
             newtextbx3.Height = 48;
             newtextbx3.TextAlign = HorizontalAlignment.Center;
             newtextbx3.Font = new Font("Microsoft Sans Serif", 18);
@@ -56,7 +56,7 @@ namespace WindowsAppProject
             newtextbx3.Margin = new Padding(3, 3, 3, 3);
             newtextbx3.Name = "Grade";
 
-            newtextbx2.Width = 173;
+            newtextbx2.Width = 299;
             newtextbx2.TextAlign = HorizontalAlignment.Center;
             newtextbx2.Height = 48;
             newtextbx2.Font = new Font("Microsoft Sans Serif", 18);
@@ -70,6 +70,7 @@ namespace WindowsAppProject
             MName.Controls.Add(newtextbx);
             Mgrade.Controls.Add(newtextbx3);
             Mcredits.Controls.Add(newtextbx2);
+            x = x + 46;
         }
 
         private void rjButton2_Click(object sender, EventArgs e)
@@ -91,8 +92,16 @@ namespace WindowsAppProject
         {
             foreach (Control control in Mcredits.Controls)
             {
-                credits_array[n] = control.Text;
-                n = n + 1;
+                if (control != null)
+                {
+                    credits_array[n] = control.Text;
+                    n = n + 1;
+                }
+                else
+                {
+                    return;
+                }
+                
             }
             if (credits_array is null)
             {
@@ -104,8 +113,15 @@ namespace WindowsAppProject
             }
             foreach (Control control in Mgrade.Controls)
             {
-                grades_array[m] = control.Text;
-                m = m + 1;
+                if (control != null)
+                {
+                    grades_array[m] = control.Text;
+                    m = m + 1;
+                }
+                else
+                {
+                    return;
+                }
             }
             for (int i = 0; i < m; i++)
             {
@@ -173,10 +189,27 @@ namespace WindowsAppProject
             final_gpa_credits = 0;
             final_gpa = 0;
         }
+        private void task_enter(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                rjButton1_Click(sender, e);
+            }
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textbxpanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
     }
 }
