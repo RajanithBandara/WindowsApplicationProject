@@ -182,7 +182,9 @@ namespace WindowsAppProject
                 grades_array[i] = null;
             }
             final_gpa = final_gpa_credits / sum;
-            textBox1.Text = Convert.ToString(final_gpa);
+            //textBox1.Text = Convert.ToString(final_gpa);
+            rjTextBox1.Texts = Convert.ToString(final_gpa);
+            
             sum = 0;
             n = 0;
             m = 0;
@@ -204,6 +206,11 @@ namespace WindowsAppProject
         }
 
         private void textbxpanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void rjTextBox1__TextChanged(object sender, EventArgs e)
         {
 
         }
