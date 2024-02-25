@@ -36,10 +36,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.rjTextBox1 = new CustomControls.RJControls.RJTextBox();
             this.rjButton3 = new CustomControls.RJControls.RJButton();
             this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.rjButton4 = new CustomControls.RJControls.RJButton();
             this.textbxpanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -123,30 +124,6 @@
             this.flowLayoutPanel1.TabIndex = 25;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
-            // rjTextBox1
-            // 
-            this.rjTextBox1.AutoSize = true;
-            this.rjTextBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.rjTextBox1.BorderColor = System.Drawing.Color.Lavender;
-            this.rjTextBox1.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.rjTextBox1.BorderRadius = 12;
-            this.rjTextBox1.BorderSize = 1;
-            this.rjTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjTextBox1.Location = new System.Drawing.Point(136, 55);
-            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.rjTextBox1.Multiline = false;
-            this.rjTextBox1.Name = "rjTextBox1";
-            this.rjTextBox1.Padding = new System.Windows.Forms.Padding(500, 7, 10, 7);
-            this.rjTextBox1.PasswordChar = false;
-            this.rjTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.rjTextBox1.PlaceholderText = "";
-            this.rjTextBox1.Size = new System.Drawing.Size(1032, 61);
-            this.rjTextBox1.TabIndex = 26;
-            this.rjTextBox1.Texts = "";
-            this.rjTextBox1.UnderlinedStyle = false;
-            this.rjTextBox1._TextChanged += new System.EventHandler(this.rjTextBox1__TextChanged);
-            // 
             // rjButton3
             // 
             this.rjButton3.BackColor = System.Drawing.Color.Teal;
@@ -207,13 +184,44 @@
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(136, 69);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(1029, 50);
+            this.textBox1.TabIndex = 26;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // rjButton4
+            // 
+            this.rjButton4.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton4.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton4.BorderRadius = 0;
+            this.rjButton4.BorderSize = 0;
+            this.rjButton4.FlatAppearance.BorderSize = 0;
+            this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton4.ForeColor = System.Drawing.Color.White;
+            this.rjButton4.Location = new System.Drawing.Point(1008, 69);
+            this.rjButton4.Name = "rjButton4";
+            this.rjButton4.Size = new System.Drawing.Size(157, 50);
+            this.rjButton4.TabIndex = 27;
+            this.rjButton4.Text = "Send All";
+            this.rjButton4.TextColor = System.Drawing.Color.White;
+            this.rjButton4.UseVisualStyleBackColor = false;
+            // 
             // gpacalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSlateGray;
             this.ClientSize = new System.Drawing.Size(1304, 694);
-            this.Controls.Add(this.rjTextBox1);
+            this.Controls.Add(this.rjButton4);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.textbxpanel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -247,7 +255,9 @@
         private CustomControls.RJControls.RJButton rjButton2;
         private CustomControls.RJControls.RJButton rjButton1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private CustomControls.RJControls.RJTextBox rjTextBox1;
+        
+        private System.Windows.Forms.TextBox textBox1;
+        private CustomControls.RJControls.RJButton rjButton4;
     }
 }
 

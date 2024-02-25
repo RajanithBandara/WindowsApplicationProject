@@ -75,12 +75,6 @@
     <Compile Include="RJButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="RJTextBox.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="RJTextBox.Designer.cs">
-      <DependentUpon>RJTextBox.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="degree and course addition.resx">
       <DependentUpon>degree and course addition.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,9 +96,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RJTextBox.resx">
-      <DependentUpon>RJTextBox.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

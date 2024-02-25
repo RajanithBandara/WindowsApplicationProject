@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CustomControls.RJControls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace WindowsAppProject
 {
     public partial class gpacalculator : Form
     {
+        
         public gpacalculator()
         {
             InitializeComponent();
@@ -35,18 +37,19 @@ namespace WindowsAppProject
 
             newtextbx.Width = 365;
             newtextbx.TextAlign = HorizontalAlignment.Center;
-            newtextbx.Height = 48;
+            newtextbx.Height = 40;
+            newtextbx.BorderStyle = BorderStyle.None;
             newtextbx.Font = new Font("Microsoft Sans Serif", 18);
             newtextbx.ScrollBars = ScrollBars.Both;
             newtextbx.Location = new Point(0, 0 + x);
             newtextbx.BorderStyle = BorderStyle.None;
             newtextbx.BackColor = SystemColors.ControlDarkDark;
             newtextbx.ForeColor = SystemColors.ControlLightLight;
-            newtextbx.Margin = new Padding(3, 3, 3, 3);
             newtextbx.Name = "Module Name";
 
             newtextbx3.Width = 237;
-            newtextbx3.Height = 48;
+            newtextbx3.Height = 40;
+            newtextbx3.BorderStyle = BorderStyle.None;
             newtextbx3.TextAlign = HorizontalAlignment.Center;
             newtextbx3.Font = new Font("Microsoft Sans Serif", 18);
             newtextbx3.Location = new Point(0, 0 + x);
@@ -54,17 +57,20 @@ namespace WindowsAppProject
             newtextbx3.BackColor = SystemColors.ControlDarkDark;
             newtextbx3.ForeColor = SystemColors.ControlLightLight;
             newtextbx3.Margin = new Padding(3, 3, 3, 3);
+            newtextbx3.MaxLength = 3;
             newtextbx3.Name = "Grade";
 
             newtextbx2.Width = 299;
             newtextbx2.TextAlign = HorizontalAlignment.Center;
-            newtextbx2.Height = 48;
+            newtextbx2.Height = 40;
+            newtextbx2.BorderStyle = BorderStyle.None;
             newtextbx2.Font = new Font("Microsoft Sans Serif", 18);
             newtextbx2.Location = new Point(0, 0 + x);
             newtextbx2.BorderStyle = BorderStyle.None;
             newtextbx2.BackColor = SystemColors.ControlDarkDark;
             newtextbx2.ForeColor = SystemColors.ControlLightLight;
             newtextbx2.Margin = new Padding(3, 3, 3, 3);
+            newtextbx2.MaxLength = 3;
             newtextbx2.Name = "Credits";
 
             MName.Controls.Add(newtextbx);
@@ -182,8 +188,7 @@ namespace WindowsAppProject
                 grades_array[i] = null;
             }
             final_gpa = final_gpa_credits / sum;
-            //textBox1.Text = Convert.ToString(final_gpa);
-            rjTextBox1.Texts = Convert.ToString(final_gpa);
+            textBox1.Text = Convert.ToString(final_gpa);
             
             sum = 0;
             n = 0;
@@ -210,10 +215,6 @@ namespace WindowsAppProject
 
         }
 
-        private void rjTextBox1__TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
