@@ -27,6 +27,7 @@ namespace WindowsAppProject
         private static float final_gpa_credits;
         private static float final_gpa;
 
+
         private void rjButton1_Click(object sender, EventArgs e)
         {
             sum = 0;
@@ -45,6 +46,7 @@ namespace WindowsAppProject
             newtextbx.BorderStyle = BorderStyle.None;
             newtextbx.BackColor = SystemColors.ControlDarkDark;
             newtextbx.ForeColor = SystemColors.ControlLightLight;
+            newtextbx.Text = null;
             newtextbx.Name = "Module Name";
 
             newtextbx3.Width = 237;
@@ -58,6 +60,7 @@ namespace WindowsAppProject
             newtextbx3.ForeColor = SystemColors.ControlLightLight;
             newtextbx3.Margin = new Padding(3, 3, 3, 3);
             newtextbx3.MaxLength = 3;
+            newtextbx3.Text = null;
             newtextbx3.Name = "Grade";
 
             newtextbx2.Width = 299;
@@ -70,13 +73,19 @@ namespace WindowsAppProject
             newtextbx2.BackColor = SystemColors.ControlDarkDark;
             newtextbx2.ForeColor = SystemColors.ControlLightLight;
             newtextbx2.Margin = new Padding(3, 3, 3, 3);
+            newtextbx2.Text = null;
             newtextbx2.MaxLength = 3;
             newtextbx2.Name = "Credits";
 
+            //addaftertextbx();
+            //Addtextbx();
             MName.Controls.Add(newtextbx);
             Mgrade.Controls.Add(newtextbx3);
             Mcredits.Controls.Add(newtextbx2);
             x = x + 46;
+
+
+
         }
 
         private void rjButton2_Click(object sender, EventArgs e)
@@ -100,8 +109,12 @@ namespace WindowsAppProject
             {
                 if (control != null)
                 {
-                    credits_array[n] = control.Text;
-                    n = n + 1;
+                    if (control.Text != "")
+                    {
+                        credits_array[n] = control.Text;
+                        n = n + 1;
+                    }
+                    
                 }
                 else
                 {
@@ -113,16 +126,24 @@ namespace WindowsAppProject
             {
                 foreach (Control control in Mcredits.Controls)
                 {
-                    credits_array[n] = control.Text;
-                    n = n + 1;
+                    if(control.Text != "")
+                    {
+                        credits_array[n] = control.Text;
+                        n = n + 1;
+                    }
+
                 }
             }
             foreach (Control control in Mgrade.Controls)
             {
                 if (control != null)
                 {
-                    grades_array[m] = control.Text;
-                    m = m + 1;
+                    if (control.Text != "")
+                    {
+                        grades_array[m] = control.Text;
+                        m = m + 1;
+                    }
+
                 }
                 else
                 {
