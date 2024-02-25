@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CustomControls.RJControls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +13,12 @@ namespace WindowsAppProject
 {
     public partial class gpacalculator : Form
     {
+        
         public gpacalculator()
         {
             InitializeComponent();
         }
-        private static int x = 0;
+        private static int x = 8;
         private static string[] credits_array = new string[100];
         private static string[] grades_array = new string[100];
         private static int n, m = 0;
@@ -25,28 +27,31 @@ namespace WindowsAppProject
         private static float final_gpa_credits;
         private static float final_gpa;
 
+
         private void rjButton1_Click(object sender, EventArgs e)
         {
             sum = 0;
-            x = x + 46;
+            
             TextBox newtextbx = new TextBox();
             TextBox newtextbx2 = new TextBox();
             TextBox newtextbx3 = new TextBox();
 
-            newtextbx.Width = 530;
+            newtextbx.Width = 365;
             newtextbx.TextAlign = HorizontalAlignment.Center;
-            newtextbx.Height = 48;
+            newtextbx.Height = 40;
+            newtextbx.BorderStyle = BorderStyle.None;
             newtextbx.Font = new Font("Microsoft Sans Serif", 18);
             newtextbx.ScrollBars = ScrollBars.Both;
             newtextbx.Location = new Point(0, 0 + x);
             newtextbx.BorderStyle = BorderStyle.None;
             newtextbx.BackColor = SystemColors.ControlDarkDark;
             newtextbx.ForeColor = SystemColors.ControlLightLight;
-            newtextbx.Margin = new Padding(3, 3, 3, 3);
+            newtextbx.Text = null;
             newtextbx.Name = "Module Name";
 
-            newtextbx3.Width = 143;
-            newtextbx3.Height = 48;
+            newtextbx3.Width = 237;
+            newtextbx3.Height = 40;
+            newtextbx3.BorderStyle = BorderStyle.None;
             newtextbx3.TextAlign = HorizontalAlignment.Center;
             newtextbx3.Font = new Font("Microsoft Sans Serif", 18);
             newtextbx3.Location = new Point(0, 0 + x);
@@ -54,22 +59,33 @@ namespace WindowsAppProject
             newtextbx3.BackColor = SystemColors.ControlDarkDark;
             newtextbx3.ForeColor = SystemColors.ControlLightLight;
             newtextbx3.Margin = new Padding(3, 3, 3, 3);
+            newtextbx3.MaxLength = 3;
+            newtextbx3.Text = null;
             newtextbx3.Name = "Grade";
 
-            newtextbx2.Width = 173;
+            newtextbx2.Width = 299;
             newtextbx2.TextAlign = HorizontalAlignment.Center;
-            newtextbx2.Height = 48;
+            newtextbx2.Height = 40;
+            newtextbx2.BorderStyle = BorderStyle.None;
             newtextbx2.Font = new Font("Microsoft Sans Serif", 18);
             newtextbx2.Location = new Point(0, 0 + x);
             newtextbx2.BorderStyle = BorderStyle.None;
             newtextbx2.BackColor = SystemColors.ControlDarkDark;
             newtextbx2.ForeColor = SystemColors.ControlLightLight;
             newtextbx2.Margin = new Padding(3, 3, 3, 3);
+            newtextbx2.Text = null;
+            newtextbx2.MaxLength = 3;
             newtextbx2.Name = "Credits";
 
+            //addaftertextbx();
+            //Addtextbx();
             MName.Controls.Add(newtextbx);
             Mgrade.Controls.Add(newtextbx3);
             Mcredits.Controls.Add(newtextbx2);
+            x = x + 46;
+
+
+
         }
 
         private void rjButton2_Click(object sender, EventArgs e)
@@ -91,21 +107,48 @@ namespace WindowsAppProject
         {
             foreach (Control control in Mcredits.Controls)
             {
-                credits_array[n] = control.Text;
-                n = n + 1;
+                if (control != null)
+                {
+                    if (control.Text != "")
+                    {
+                        credits_array[n] = control.Text;
+                        n = n + 1;
+                    }
+                    
+                }
+                else
+                {
+                    return;
+                }
+                
             }
             if (credits_array is null)
             {
                 foreach (Control control in Mcredits.Controls)
                 {
-                    credits_array[n] = control.Text;
-                    n = n + 1;
+                    if(control.Text != "")
+                    {
+                        credits_array[n] = control.Text;
+                        n = n + 1;
+                    }
+
                 }
             }
             foreach (Control control in Mgrade.Controls)
             {
-                grades_array[m] = control.Text;
-                m = m + 1;
+                if (control != null)
+                {
+                    if (control.Text != "")
+                    {
+                        grades_array[m] = control.Text;
+                        m = m + 1;
+                    }
+
+                }
+                else
+                {
+                    return;
+                }
             }
             for (int i = 0; i < m; i++)
             {
@@ -167,16 +210,35 @@ namespace WindowsAppProject
             }
             final_gpa = final_gpa_credits / sum;
             textBox1.Text = Convert.ToString(final_gpa);
+            
             sum = 0;
             n = 0;
             m = 0;
             final_gpa_credits = 0;
             final_gpa = 0;
         }
+        private void task_enter(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                rjButton1_Click(sender, e);
+            }
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textbxpanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
     }
 }
