@@ -21,7 +21,7 @@ namespace WindowsAppProject
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new gpacalculator());
+            Application.Run(new main_menupage());
         }
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern bool SetProcessDPIAware();
