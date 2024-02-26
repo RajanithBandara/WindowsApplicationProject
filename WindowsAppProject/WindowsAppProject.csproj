@@ -81,6 +81,7 @@
     <Compile Include="RJButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="RJPanel.cs" />
     <EmbeddedResource Include="degree and course addition.resx">
       <DependentUpon>degree and course addition.cs</DependentUpon>
     </EmbeddedResource>
