@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace WindowsAppProject
 {
-    public partial class main_menupage : Form
+    public partial class profile_page : Form
     {
-        public main_menupage()
+        public profile_page()
         {
             InitializeComponent();
         }

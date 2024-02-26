@@ -1,4 +1,5 @@
-﻿using System;
+﻿using practice_project;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -43,12 +44,36 @@ namespace WindowsAppProject
 
         private void rjButton1_Click(object sender, EventArgs e)
         {
-
+            profile_page prof_window = new profile_page();
+            prof_window.Show();
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void rjButton2_Click(object sender, EventArgs e)
+        {
+            gpacalculator gpa_window = new gpacalculator();
+            gpa_window.Show();
+        }
+
+        private void rjButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjButton4_Click(object sender, EventArgs e)
+        {
+            degree_and_course_addition degree_And_Course_Addition = new degree_and_course_addition();
+            degree_And_Course_Addition.Show();
+        }
+
+        private void rjButton5_Click(object sender, EventArgs e)
+        {
+            course_dashboard course_Dashboard = new course_dashboard();
+            course_Dashboard.Show();
         }
     }
 }
