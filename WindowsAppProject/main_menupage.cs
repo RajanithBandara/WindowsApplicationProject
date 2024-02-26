@@ -40,5 +40,12 @@ namespace WindowsAppProject
             course_dashboard corse_dash = new course_dashboard();   
             corse_dash.Show();
         }
+
+        private void rjButton5_Click(object sender, EventArgs e)
+        {
+            maindashboard mainmenu = new maindashboard();   
+            mainmenu.Show();
+
+        }
     }
 }

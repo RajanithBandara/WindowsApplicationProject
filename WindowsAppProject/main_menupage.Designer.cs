@@ -63,6 +63,7 @@ namespace WindowsAppProject
             this.rjButton5.Text = "My Profile";
             this.rjButton5.TextColor = System.Drawing.Color.White;
             this.rjButton5.UseVisualStyleBackColor = false;
+            this.rjButton5.Click += new System.EventHandler(this.rjButton5_Click);
             // 
             // rjButton4
             // 
