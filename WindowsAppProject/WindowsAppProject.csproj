@@ -98,11 +98,11 @@
     <Compile Include="maindashboard.Designer.cs">
       <DependentUpon>maindashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="main_menupage.cs">
+    <Compile Include="profile_page.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="main_menupage.Designer.cs">
-      <DependentUpon>main_menupage.cs</DependentUpon>
+    <Compile Include="profile_page.Designer.cs">
+      <DependentUpon>profile_page.cs</DependentUpon>
     </Compile>
     <Compile Include="Modules_Addition.cs">
       <SubType>Form</SubType>
@@ -130,8 +130,8 @@
     <EmbeddedResource Include="maindashboard.resx">
       <DependentUpon>maindashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="main_menupage.resx">
-      <DependentUpon>main_menupage.cs</DependentUpon>
+    <EmbeddedResource Include="profile_page.resx">
+      <DependentUpon>profile_page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules_Addition.resx">
       <DependentUpon>Modules_Addition.cs</DependentUpon>

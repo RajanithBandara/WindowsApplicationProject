@@ -2,7 +2,7 @@
 
 namespace WindowsAppProject
 {
-    partial class main_menupage
+    partial class profile_page
     {
         /// <summary>
         /// Required designer variable.
