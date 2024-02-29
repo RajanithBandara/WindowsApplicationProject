@@ -209,8 +209,8 @@ namespace WindowsAppProject
                 grades_array[i] = null;
             }
             final_gpa = final_gpa_credits / sum;
-            textBox1.Text = Convert.ToString(final_gpa);
-            
+            //textBox1.Text = Convert.ToString(final_gpa);
+            label4.Text = Convert.ToString(final_gpa);
             sum = 0;
             n = 0;
             m = 0;
@@ -236,6 +236,10 @@ namespace WindowsAppProject
 
         }
 
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {

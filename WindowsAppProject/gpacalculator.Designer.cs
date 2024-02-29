@@ -32,16 +32,24 @@
             this.textbxpanel = new System.Windows.Forms.Panel();
             this.Mcredits = new System.Windows.Forms.Panel();
             this.MName = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.rjPanel1 = new RoundedPanelClass.RJPanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.rjButton4 = new CustomControls.RJControls.RJButton();
             this.rjButton3 = new CustomControls.RJControls.RJButton();
             this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.rjButton4 = new CustomControls.RJControls.RJButton();
+            this.rjPanel2 = new RoundedPanelClass.RJPanel();
+            this.rjPanel3 = new RoundedPanelClass.RJPanel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.rjPanel4 = new RoundedPanelClass.RJPanel();
+            this.label2 = new System.Windows.Forms.Label();
             this.textbxpanel.SuspendLayout();
+            this.rjPanel1.SuspendLayout();
+            this.rjPanel2.SuspendLayout();
+            this.rjPanel3.SuspendLayout();
+            this.rjPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // Mgrade
@@ -75,42 +83,18 @@
             // MName
             // 
             this.MName.AutoScroll = true;
-            this.MName.Location = new System.Drawing.Point(0, 0);
+            this.MName.Location = new System.Drawing.Point(0, 3);
             this.MName.Name = "MName";
-            this.MName.Size = new System.Drawing.Size(365, 410);
+            this.MName.Size = new System.Drawing.Size(365, 407);
             this.MName.TabIndex = 0;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Linen;
-            this.label3.Location = new System.Drawing.Point(952, 122);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 38);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "Credits";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Linen;
-            this.label2.Location = new System.Drawing.Point(634, 122);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 38);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Grade";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Linen;
-            this.label1.Location = new System.Drawing.Point(219, 122);
+            this.label1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(74, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(205, 38);
             this.label1.TabIndex = 16;
@@ -123,6 +107,52 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1032, 81);
             this.flowLayoutPanel1.TabIndex = 25;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
+            // 
+            // rjPanel1
+            // 
+            this.rjPanel1.BackColor = System.Drawing.Color.White;
+            this.rjPanel1.BorderRadius = 30;
+            this.rjPanel1.Controls.Add(this.label4);
+            this.rjPanel1.ForeColor = System.Drawing.Color.White;
+            this.rjPanel1.GradientAngle = 90F;
+            this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(220)))));
+            this.rjPanel1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(220)))));
+            this.rjPanel1.Location = new System.Drawing.Point(136, 47);
+            this.rjPanel1.Name = "rjPanel1";
+            this.rjPanel1.Size = new System.Drawing.Size(866, 50);
+            this.rjPanel1.TabIndex = 28;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(419, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(75, 46);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "0.0";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // rjButton4
+            // 
+            this.rjButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(206)))), ((int)(((byte)(248)))));
+            this.rjButton4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(206)))), ((int)(((byte)(248)))));
+            this.rjButton4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(206)))), ((int)(((byte)(248)))));
+            this.rjButton4.BorderRadius = 12;
+            this.rjButton4.BorderSize = 0;
+            this.rjButton4.FlatAppearance.BorderSize = 0;
+            this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton4.ForeColor = System.Drawing.Color.Black;
+            this.rjButton4.Location = new System.Drawing.Point(1008, 47);
+            this.rjButton4.Name = "rjButton4";
+            this.rjButton4.Size = new System.Drawing.Size(157, 50);
+            this.rjButton4.TabIndex = 27;
+            this.rjButton4.Text = "Send All";
+            this.rjButton4.TextColor = System.Drawing.Color.Black;
+            this.rjButton4.UseVisualStyleBackColor = false;
             // 
             // rjButton3
             // 
@@ -184,52 +214,88 @@
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
             // 
-            // textBox1
+            // rjPanel2
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(136, 69);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(1029, 50);
-            this.textBox1.TabIndex = 26;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rjPanel2.BackColor = System.Drawing.Color.White;
+            this.rjPanel2.BorderRadius = 30;
+            this.rjPanel2.Controls.Add(this.label1);
+            this.rjPanel2.ForeColor = System.Drawing.Color.White;
+            this.rjPanel2.GradientAngle = 90F;
+            this.rjPanel2.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(228)))), ((int)(((byte)(192)))));
+            this.rjPanel2.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(228)))), ((int)(((byte)(192)))));
+            this.rjPanel2.Location = new System.Drawing.Point(136, 103);
+            this.rjPanel2.Name = "rjPanel2";
+            this.rjPanel2.Size = new System.Drawing.Size(365, 57);
+            this.rjPanel2.TabIndex = 29;
             // 
-            // rjButton4
+            // rjPanel3
             // 
-            this.rjButton4.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton4.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton4.BorderRadius = 0;
-            this.rjButton4.BorderSize = 0;
-            this.rjButton4.FlatAppearance.BorderSize = 0;
-            this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton4.ForeColor = System.Drawing.Color.White;
-            this.rjButton4.Location = new System.Drawing.Point(1008, 69);
-            this.rjButton4.Name = "rjButton4";
-            this.rjButton4.Size = new System.Drawing.Size(157, 50);
-            this.rjButton4.TabIndex = 27;
-            this.rjButton4.Text = "Send All";
-            this.rjButton4.TextColor = System.Drawing.Color.White;
-            this.rjButton4.UseVisualStyleBackColor = false;
+            this.rjPanel3.BackColor = System.Drawing.Color.White;
+            this.rjPanel3.BorderRadius = 30;
+            this.rjPanel3.Controls.Add(this.label5);
+            this.rjPanel3.ForeColor = System.Drawing.Color.White;
+            this.rjPanel3.GradientAngle = 90F;
+            this.rjPanel3.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(228)))), ((int)(((byte)(192)))));
+            this.rjPanel3.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(228)))), ((int)(((byte)(192)))));
+            this.rjPanel3.Location = new System.Drawing.Point(563, 103);
+            this.rjPanel3.Name = "rjPanel3";
+            this.rjPanel3.Size = new System.Drawing.Size(237, 57);
+            this.rjPanel3.TabIndex = 30;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label5.Location = new System.Drawing.Point(74, 10);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 38);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Grade";
+            // 
+            // rjPanel4
+            // 
+            this.rjPanel4.BackColor = System.Drawing.Color.White;
+            this.rjPanel4.BorderRadius = 30;
+            this.rjPanel4.Controls.Add(this.label2);
+            this.rjPanel4.ForeColor = System.Drawing.Color.White;
+            this.rjPanel4.GradientAngle = 90F;
+            this.rjPanel4.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(228)))), ((int)(((byte)(192)))));
+            this.rjPanel4.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(228)))), ((int)(((byte)(192)))));
+            this.rjPanel4.Location = new System.Drawing.Point(866, 103);
+            this.rjPanel4.Name = "rjPanel4";
+            this.rjPanel4.Size = new System.Drawing.Size(302, 57);
+            this.rjPanel4.TabIndex = 31;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(104, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(110, 38);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Credits";
             // 
             // gpacalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSlateGray;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
             this.ClientSize = new System.Drawing.Size(1304, 694);
+            this.Controls.Add(this.rjPanel4);
+            this.Controls.Add(this.rjPanel3);
+            this.Controls.Add(this.rjPanel1);
             this.Controls.Add(this.rjButton4);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.textbxpanel);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.rjButton3);
             this.Controls.Add(this.rjButton2);
             this.Controls.Add(this.rjButton1);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.rjPanel2);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1326, 750);
             this.MinimumSize = new System.Drawing.Size(1326, 750);
@@ -237,8 +303,15 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.textbxpanel.ResumeLayout(false);
+            this.rjPanel1.ResumeLayout(false);
+            this.rjPanel1.PerformLayout();
+            this.rjPanel2.ResumeLayout(false);
+            this.rjPanel2.PerformLayout();
+            this.rjPanel3.ResumeLayout(false);
+            this.rjPanel3.PerformLayout();
+            this.rjPanel4.ResumeLayout(false);
+            this.rjPanel4.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -248,16 +321,19 @@
         private System.Windows.Forms.Panel textbxpanel;
         private System.Windows.Forms.Panel Mcredits;
         private System.Windows.Forms.Panel MName;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private CustomControls.RJControls.RJButton rjButton3;
         private CustomControls.RJControls.RJButton rjButton2;
         private CustomControls.RJControls.RJButton rjButton1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        
-        private System.Windows.Forms.TextBox textBox1;
         private CustomControls.RJControls.RJButton rjButton4;
+        private RoundedPanelClass.RJPanel rjPanel1;
+        private System.Windows.Forms.Label label4;
+        private RoundedPanelClass.RJPanel rjPanel2;
+        private RoundedPanelClass.RJPanel rjPanel3;
+        private System.Windows.Forms.Label label5;
+        private RoundedPanelClass.RJPanel rjPanel4;
+        private System.Windows.Forms.Label label2;
     }
 }
 
