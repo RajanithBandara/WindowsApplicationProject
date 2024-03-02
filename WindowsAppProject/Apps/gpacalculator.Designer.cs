@@ -28,10 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Mgrade = new System.Windows.Forms.Panel();
-            this.textbxpanel = new System.Windows.Forms.Panel();
-            this.Mcredits = new System.Windows.Forms.Panel();
-            this.MName = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.rjPanel1 = new RoundedPanelClass.RJPanel();
@@ -45,48 +41,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.rjPanel4 = new RoundedPanelClass.RJPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.textbxpanel.SuspendLayout();
+            this.MName = new System.Windows.Forms.Panel();
+            this.Mgrade = new System.Windows.Forms.Panel();
+            this.Mcredits = new System.Windows.Forms.Panel();
+            this.textbxpanel = new System.Windows.Forms.Panel();
             this.rjPanel1.SuspendLayout();
             this.rjPanel2.SuspendLayout();
             this.rjPanel3.SuspendLayout();
             this.rjPanel4.SuspendLayout();
+            this.textbxpanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // Mgrade
-            // 
-            this.Mgrade.AutoScroll = true;
-            this.Mgrade.Location = new System.Drawing.Point(427, 3);
-            this.Mgrade.Name = "Mgrade";
-            this.Mgrade.Size = new System.Drawing.Size(237, 410);
-            this.Mgrade.TabIndex = 0;
-            // 
-            // textbxpanel
-            // 
-            this.textbxpanel.BackColor = System.Drawing.Color.Transparent;
-            this.textbxpanel.Controls.Add(this.Mcredits);
-            this.textbxpanel.Controls.Add(this.Mgrade);
-            this.textbxpanel.Controls.Add(this.MName);
-            this.textbxpanel.Location = new System.Drawing.Point(136, 163);
-            this.textbxpanel.Name = "textbxpanel";
-            this.textbxpanel.Size = new System.Drawing.Size(1032, 413);
-            this.textbxpanel.TabIndex = 19;
-            this.textbxpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.textbxpanel_Paint);
-            // 
-            // Mcredits
-            // 
-            this.Mcredits.AutoScroll = true;
-            this.Mcredits.Location = new System.Drawing.Point(730, 3);
-            this.Mcredits.Name = "Mcredits";
-            this.Mcredits.Size = new System.Drawing.Size(299, 407);
-            this.Mcredits.TabIndex = 0;
-            // 
-            // MName
-            // 
-            this.MName.AutoScroll = true;
-            this.MName.Location = new System.Drawing.Point(0, 3);
-            this.MName.Name = "MName";
-            this.MName.Size = new System.Drawing.Size(365, 407);
-            this.MName.TabIndex = 0;
             // 
             // label1
             // 
@@ -280,6 +244,42 @@
             this.label2.TabIndex = 16;
             this.label2.Text = "Credits";
             // 
+            // MName
+            // 
+            this.MName.AutoScroll = true;
+            this.MName.Location = new System.Drawing.Point(0, 3);
+            this.MName.Name = "MName";
+            this.MName.Size = new System.Drawing.Size(365, 407);
+            this.MName.TabIndex = 0;
+            // 
+            // Mgrade
+            // 
+            this.Mgrade.AutoScroll = true;
+            this.Mgrade.Location = new System.Drawing.Point(427, 3);
+            this.Mgrade.Name = "Mgrade";
+            this.Mgrade.Size = new System.Drawing.Size(237, 410);
+            this.Mgrade.TabIndex = 0;
+            // 
+            // Mcredits
+            // 
+            this.Mcredits.AutoScroll = true;
+            this.Mcredits.Location = new System.Drawing.Point(730, 3);
+            this.Mcredits.Name = "Mcredits";
+            this.Mcredits.Size = new System.Drawing.Size(299, 407);
+            this.Mcredits.TabIndex = 0;
+            // 
+            // textbxpanel
+            // 
+            this.textbxpanel.BackColor = System.Drawing.Color.Transparent;
+            this.textbxpanel.Controls.Add(this.Mcredits);
+            this.textbxpanel.Controls.Add(this.Mgrade);
+            this.textbxpanel.Controls.Add(this.MName);
+            this.textbxpanel.Location = new System.Drawing.Point(136, 166);
+            this.textbxpanel.Name = "textbxpanel";
+            this.textbxpanel.Size = new System.Drawing.Size(1032, 410);
+            this.textbxpanel.TabIndex = 19;
+            this.textbxpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.textbxpanel_Paint);
+            // 
             // gpacalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -302,7 +302,6 @@
             this.Name = "gpacalculator";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.textbxpanel.ResumeLayout(false);
             this.rjPanel1.ResumeLayout(false);
             this.rjPanel1.PerformLayout();
             this.rjPanel2.ResumeLayout(false);
@@ -311,16 +310,12 @@
             this.rjPanel3.PerformLayout();
             this.rjPanel4.ResumeLayout(false);
             this.rjPanel4.PerformLayout();
+            this.textbxpanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel Mgrade;
-        private System.Windows.Forms.Panel textbxpanel;
-        private System.Windows.Forms.Panel Mcredits;
-        private System.Windows.Forms.Panel MName;
         private System.Windows.Forms.Label label1;
         private CustomControls.RJControls.RJButton rjButton3;
         private CustomControls.RJControls.RJButton rjButton2;
@@ -334,6 +329,10 @@
         private System.Windows.Forms.Label label5;
         private RoundedPanelClass.RJPanel rjPanel4;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel MName;
+        private System.Windows.Forms.Panel Mgrade;
+        private System.Windows.Forms.Panel Mcredits;
+        private System.Windows.Forms.Panel textbxpanel;
     }
 }
 
