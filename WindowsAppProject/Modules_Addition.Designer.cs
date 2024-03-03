@@ -44,6 +44,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(122)))), ((int)(((byte)(83)))));
             this.label4.Font = new System.Drawing.Font("Britannic Bold", 25.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(218, 27);
             this.label4.Name = "label4";
@@ -53,6 +54,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(63)))), ((int)(((byte)(48)))));
             this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.textBox1);
@@ -68,6 +70,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(122)))), ((int)(((byte)(83)))));
             this.textBox3.Location = new System.Drawing.Point(235, 125);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(172, 22);
@@ -76,6 +79,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(122)))), ((int)(((byte)(83)))));
             this.textBox2.Location = new System.Drawing.Point(235, 78);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(172, 22);
@@ -84,6 +88,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(122)))), ((int)(((byte)(83)))));
             this.textBox1.Location = new System.Drawing.Point(235, 31);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(172, 22);
@@ -93,6 +98,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(122)))), ((int)(((byte)(83)))));
             this.label3.Location = new System.Drawing.Point(33, 131);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(101, 16);
@@ -103,6 +109,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(122)))), ((int)(((byte)(83)))));
             this.label2.Location = new System.Drawing.Point(33, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(104, 16);
@@ -113,6 +120,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(122)))), ((int)(((byte)(83)))));
             this.label1.Location = new System.Drawing.Point(33, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 16);
@@ -122,8 +130,8 @@
             // 
             // rjButton2
             // 
-            this.rjButton2.BackColor = System.Drawing.Color.DeepPink;
-            this.rjButton2.BackgroundColor = System.Drawing.Color.DeepPink;
+            this.rjButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(122)))), ((int)(((byte)(83)))));
+            this.rjButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(122)))), ((int)(((byte)(83)))));
             this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rjButton2.BorderRadius = 0;
             this.rjButton2.BorderSize = 0;
@@ -141,8 +149,8 @@
             // 
             // rjButton1
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.DeepPink;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.DeepPink;
+            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(122)))), ((int)(((byte)(83)))));
+            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(122)))), ((int)(((byte)(83)))));
             this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rjButton1.BorderRadius = 0;
             this.rjButton1.BorderSize = 0;
@@ -162,7 +170,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightPink;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(136)))), ((int)(((byte)(115)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.rjButton2);
