@@ -44,7 +44,7 @@ namespace WindowsAppProject
 
         private void rjButton1_Click(object sender, EventArgs e)
         {
-            profile_page prof_window = new profile_page();
+            Admin_panel prof_window = new Admin_panel();
             prof_window.Show();
         }
 

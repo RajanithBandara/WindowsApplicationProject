@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace WindowsAppProject
 {
-    public partial class profile_page : Form
+    public partial class Admin_panel : Form
     {
-        public profile_page()
+        public Admin_panel()
         {
             InitializeComponent();
         }
