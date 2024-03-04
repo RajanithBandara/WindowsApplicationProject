@@ -38,37 +38,46 @@
             this.label1 = new System.Windows.Forms.Label();
             this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Britannic Bold", 25.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(218, 27);
+            this.label4.Font = new System.Drawing.Font("Castellar", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(118, 64);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(354, 47);
+            this.label4.Size = new System.Drawing.Size(597, 51);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Modules Addition ";
+            this.label4.Text = "Module Results Form";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(175, 112);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Location = new System.Drawing.Point(169, 145);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(440, 194);
+            this.panel1.Size = new System.Drawing.Size(449, 236);
             this.panel1.TabIndex = 11;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(235, 125);
+            this.textBox3.Location = new System.Drawing.Point(247, 84);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(172, 22);
             this.textBox3.TabIndex = 11;
@@ -76,7 +85,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(235, 78);
+            this.textBox2.Location = new System.Drawing.Point(247, 50);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(172, 22);
             this.textBox2.TabIndex = 10;
@@ -84,7 +93,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(235, 31);
+            this.textBox1.Location = new System.Drawing.Point(247, 118);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(172, 22);
             this.textBox1.TabIndex = 9;
@@ -93,9 +102,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 131);
+            this.label3.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(42, 117);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 16);
+            this.label3.Size = new System.Drawing.Size(129, 21);
             this.label3.TabIndex = 8;
             this.label3.Text = "Module credits :";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -103,9 +113,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 84);
+            this.label2.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(42, 150);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 16);
+            this.label2.Size = new System.Drawing.Size(129, 21);
             this.label2.TabIndex = 7;
             this.label2.Text = "Module grades :";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -113,17 +124,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 37);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(42, 83);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 16);
+            this.label1.Size = new System.Drawing.Size(120, 21);
             this.label1.TabIndex = 6;
             this.label1.Text = "Module name :";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // rjButton2
             // 
-            this.rjButton2.BackColor = System.Drawing.Color.DeepPink;
-            this.rjButton2.BackgroundColor = System.Drawing.Color.DeepPink;
+            this.rjButton2.BackColor = System.Drawing.Color.LightCoral;
+            this.rjButton2.BackgroundColor = System.Drawing.Color.LightCoral;
             this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rjButton2.BorderRadius = 0;
             this.rjButton2.BorderSize = 0;
@@ -131,7 +143,7 @@
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(514, 328);
+            this.rjButton2.Location = new System.Drawing.Point(500, 401);
             this.rjButton2.Name = "rjButton2";
             this.rjButton2.Size = new System.Drawing.Size(101, 29);
             this.rjButton2.TabIndex = 9;
@@ -141,29 +153,46 @@
             // 
             // rjButton1
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.DeepPink;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.DeepPink;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton1.BackColor = System.Drawing.Color.MistyRose;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.MistyRose;
+            this.rjButton1.BorderColor = System.Drawing.Color.LightCoral;
             this.rjButton1.BorderRadius = 0;
-            this.rjButton1.BorderSize = 0;
+            this.rjButton1.BorderSize = 2;
             this.rjButton1.FlatAppearance.BorderSize = 0;
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(399, 328);
+            this.rjButton1.ForeColor = System.Drawing.Color.LightCoral;
+            this.rjButton1.Location = new System.Drawing.Point(379, 401);
             this.rjButton1.Name = "rjButton1";
             this.rjButton1.Size = new System.Drawing.Size(101, 29);
             this.rjButton1.TabIndex = 8;
             this.rjButton1.Text = "Clear";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.TextColor = System.Drawing.Color.LightCoral;
             this.rjButton1.UseVisualStyleBackColor = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(42, 51);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 21);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Module code:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(247, 151);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(172, 22);
+            this.textBox4.TabIndex = 12;
             // 
             // Modules_Addition
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightPink;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.ClientSize = new System.Drawing.Size(764, 517);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.rjButton2);
             this.Controls.Add(this.rjButton1);
@@ -189,5 +218,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox4;
     }
 }
