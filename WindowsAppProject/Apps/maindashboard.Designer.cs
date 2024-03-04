@@ -36,13 +36,13 @@ namespace WindowsAppProject
             this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.rjPanel6 = new RoundedPanelClass.RJPanel();
             this.rjPanel3 = new RoundedPanelClass.RJPanel();
+            this.rjButton5 = new CustomControls.RJControls.RJButton();
             this.label3 = new System.Windows.Forms.Label();
             this.rjPanel5 = new RoundedPanelClass.RJPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.rjPanel4 = new RoundedPanelClass.RJPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.rjPanel1 = new RoundedPanelClass.RJPanel();
-            this.rjButton5 = new CustomControls.RJControls.RJButton();
             this.rjPanel6.SuspendLayout();
             this.rjPanel3.SuspendLayout();
             this.rjPanel5.SuspendLayout();
@@ -126,7 +126,7 @@ namespace WindowsAppProject
             this.rjButton1.Name = "rjButton1";
             this.rjButton1.Size = new System.Drawing.Size(269, 40);
             this.rjButton1.TabIndex = 0;
-            this.rjButton1.Text = "My Profile";
+            this.rjButton1.Text = "Student Profile";
             this.rjButton1.TextColor = System.Drawing.Color.Black;
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
@@ -165,6 +165,25 @@ namespace WindowsAppProject
             this.rjPanel3.Size = new System.Drawing.Size(429, 339);
             this.rjPanel3.TabIndex = 0;
             this.rjPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.rjPanel3_Paint);
+            // 
+            // rjButton5
+            // 
+            this.rjButton5.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton5.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton5.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton5.BorderRadius = 0;
+            this.rjButton5.BorderSize = 0;
+            this.rjButton5.FlatAppearance.BorderSize = 0;
+            this.rjButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton5.ForeColor = System.Drawing.Color.White;
+            this.rjButton5.Location = new System.Drawing.Point(126, 237);
+            this.rjButton5.Name = "rjButton5";
+            this.rjButton5.Size = new System.Drawing.Size(150, 40);
+            this.rjButton5.TabIndex = 1;
+            this.rjButton5.Text = "View Your Course";
+            this.rjButton5.TextColor = System.Drawing.Color.White;
+            this.rjButton5.UseVisualStyleBackColor = false;
+            this.rjButton5.Click += new System.EventHandler(this.rjButton5_Click);
             // 
             // label3
             // 
@@ -247,25 +266,6 @@ namespace WindowsAppProject
             this.rjPanel1.Name = "rjPanel1";
             this.rjPanel1.Size = new System.Drawing.Size(1488, 90);
             this.rjPanel1.TabIndex = 1;
-            // 
-            // rjButton5
-            // 
-            this.rjButton5.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton5.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton5.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton5.BorderRadius = 0;
-            this.rjButton5.BorderSize = 0;
-            this.rjButton5.FlatAppearance.BorderSize = 0;
-            this.rjButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton5.ForeColor = System.Drawing.Color.White;
-            this.rjButton5.Location = new System.Drawing.Point(126, 237);
-            this.rjButton5.Name = "rjButton5";
-            this.rjButton5.Size = new System.Drawing.Size(150, 40);
-            this.rjButton5.TabIndex = 1;
-            this.rjButton5.Text = "View Your Course";
-            this.rjButton5.TextColor = System.Drawing.Color.White;
-            this.rjButton5.UseVisualStyleBackColor = false;
-            this.rjButton5.Click += new System.EventHandler(this.rjButton5_Click);
             // 
             // maindashboard
             // 
