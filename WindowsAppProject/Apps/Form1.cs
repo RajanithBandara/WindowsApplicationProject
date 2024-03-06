@@ -34,8 +34,8 @@ namespace WindowsAppProject.Apps
         {
             String username = textBox1.Text;
             String password = textBox2.Text;
-            String retypepassword = textBox4.Text;
-            String email = textBox3.Text;
+            String retypepassword = textBox3.Text;
+            String email = textBox4.Text;
 
             NpgsqlConnection conn = new NpgsqlConnection(connectionstr);
             conn.Open();
