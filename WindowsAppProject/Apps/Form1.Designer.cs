@@ -43,6 +43,8 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.npgsqlCommandBuilder1 = new Npgsql.NpgsqlCommandBuilder();
+            this.Hint1 = new CustomControls.RJControls.RJButton();
             this.SuspendLayout();
             // 
             // label1
@@ -92,9 +94,10 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(434, 346);
+            this.textBox3.Location = new System.Drawing.Point(434, 292);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox3.Name = "textBox3";
+            this.textBox3.PasswordChar = '*';
             this.textBox3.Size = new System.Drawing.Size(200, 26);
             this.textBox3.TabIndex = 13;
             // 
@@ -103,6 +106,7 @@
             this.textBox2.Location = new System.Drawing.Point(434, 239);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(200, 26);
             this.textBox2.TabIndex = 12;
             // 
@@ -157,7 +161,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(434, 284);
+            this.textBox4.Location = new System.Drawing.Point(434, 350);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(200, 26);
@@ -185,11 +189,36 @@
             this.label9.Text = "Login here..";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
+            // npgsqlCommandBuilder1
+            // 
+            this.npgsqlCommandBuilder1.QuotePrefix = "\"";
+            this.npgsqlCommandBuilder1.QuoteSuffix = "\"";
+            // 
+            // Hint1
+            // 
+            this.Hint1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.Hint1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.Hint1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.Hint1.BorderRadius = 0;
+            this.Hint1.BorderSize = 0;
+            this.Hint1.FlatAppearance.BorderSize = 0;
+            this.Hint1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Hint1.ForeColor = System.Drawing.Color.White;
+            this.Hint1.Location = new System.Drawing.Point(659, 284);
+            this.Hint1.Name = "Hint1";
+            this.Hint1.Size = new System.Drawing.Size(141, 26);
+            this.Hint1.TabIndex = 20;
+            this.Hint1.Text = "Hint";
+            this.Hint1.TextColor = System.Drawing.Color.White;
+            this.Hint1.UseVisualStyleBackColor = false;
+            this.Hint1.Click += new System.EventHandler(this.Hint1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 562);
+            this.Controls.Add(this.Hint1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox4);
@@ -231,5 +260,7 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private Npgsql.NpgsqlCommandBuilder npgsqlCommandBuilder1;
+        private CustomControls.RJControls.RJButton Hint1;
     }
 }

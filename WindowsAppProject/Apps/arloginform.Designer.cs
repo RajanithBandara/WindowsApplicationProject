@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -46,6 +47,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(314, 214);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(327, 26);
             this.textBox2.TabIndex = 1;
             // 
@@ -86,11 +88,22 @@
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(673, 217);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(83, 33);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Hint";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // arloginform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.rjButton1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -110,5 +123,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private CustomControls.RJControls.RJButton rjButton1;
+        private System.Windows.Forms.Button button1;
     }
 }

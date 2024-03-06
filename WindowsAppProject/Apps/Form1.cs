@@ -17,6 +17,8 @@ namespace WindowsAppProject.Apps
         public Form1()
         {
             InitializeComponent();
+            Hint1.MouseHover += Hint1_MouseHover;
+            Hint1.MouseLeave += Hint1_MouseLeave;
         }
         private string connectionstr = "Host=165.232.167.179;Port=5432;Username=postgres;Password=rajanith2003;Database=usersdb";  
 
@@ -34,8 +36,8 @@ namespace WindowsAppProject.Apps
         {
             String username = textBox1.Text;
             String password = textBox2.Text;
-            String retypepassword = textBox4.Text;
-            String email = textBox3.Text;
+            String retypepassword = textBox3.Text;
+            String email = textBox4.Text;
 
             NpgsqlConnection conn = new NpgsqlConnection(connectionstr);
             conn.Open();
@@ -89,6 +91,21 @@ namespace WindowsAppProject.Apps
         {
             arloginform arlogform = new arloginform();
             arlogform.Show();
+        }
+
+        private void Hint1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Hint1_MouseHover(object sender, EventArgs e)
+        {
+            textBox3.PasswordChar = '\0';
+            textBox2.PasswordChar = '\0';
+        }
+        private void Hint1_MouseLeave(object sender, EventArgs e)
+        {
+            textBox3.PasswordChar = '*';
+            textBox2.PasswordChar = '*';
         }
     }
 }

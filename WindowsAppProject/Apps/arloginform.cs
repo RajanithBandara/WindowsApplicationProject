@@ -17,7 +17,10 @@ namespace WindowsAppProject.Apps
         public arloginform()
         {
             InitializeComponent();
+            button1.MouseHover += button1_MouseHover;
+            button1.MouseLeave += button1_MouseLeave;
         }
+
         private static string HashPassword(string password)
         {
             using (SHA256 sha256 = SHA256.Create())
@@ -74,5 +77,18 @@ namespace WindowsAppProject.Apps
             return hashedEnteredPassword == hashedPasswordFromDatabase;
         }
 
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            textBox2.PasswordChar = '\0';
+        }
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            textBox2.PasswordChar = '*';
+        }
     }
 }
