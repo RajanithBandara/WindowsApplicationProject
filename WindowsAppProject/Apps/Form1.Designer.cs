@@ -92,9 +92,10 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(434, 346);
+            this.textBox3.Location = new System.Drawing.Point(434, 292);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox3.Name = "textBox3";
+            this.textBox3.PasswordChar = '*';
             this.textBox3.Size = new System.Drawing.Size(200, 26);
             this.textBox3.TabIndex = 13;
             // 
@@ -103,6 +104,7 @@
             this.textBox2.Location = new System.Drawing.Point(434, 239);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(200, 26);
             this.textBox2.TabIndex = 12;
             // 
@@ -157,7 +159,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(434, 284);
+            this.textBox4.Location = new System.Drawing.Point(434, 350);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(200, 26);

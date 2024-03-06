@@ -34,14 +34,14 @@ namespace WindowsAppProject.Apps
         {
             String username = textBox1.Text;
             String password = textBox2.Text;
-            String retypepassword = textBox4.Text;
-            String email = textBox3.Text;
+            String retypepassword = textBox3.Text;
+            String email = textBox4.Text;
 
             NpgsqlConnection conn = new NpgsqlConnection(connectionstr);
             conn.Open();
             string hashedPassword = HashPassword(password);
 
-            if (password == retypepassword)
+            if (password == retypepassword && username != "")
             {
                 NpgsqlCommand cmd = new NpgsqlCommand("INSERT INTO public.aruserdata (username, password, email) VALUES (@username, @password, @email)", conn);
                 cmd.Parameters.AddWithValue("@username", username);
