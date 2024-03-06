@@ -84,5 +84,11 @@ namespace WindowsAppProject.Apps
         {
 
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            arloginform arlogform = new arloginform();
+            arlogform.Show();
+        }
     }
 }
