@@ -41,7 +41,7 @@ namespace WindowsAppProject.Apps
             conn.Open();
             string hashedPassword = HashPassword(password);
 
-            if (password == retypepassword)
+            if (password == retypepassword && username != "")
             {
                 NpgsqlCommand cmd = new NpgsqlCommand("INSERT INTO public.aruserdata (username, password, email) VALUES (@username, @password, @email)", conn);
                 cmd.Parameters.AddWithValue("@username", username);
