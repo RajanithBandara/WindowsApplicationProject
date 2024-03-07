@@ -26,30 +26,50 @@ namespace WindowsAppProject
             string modlecode = textBox2.Text;
             string modlename = textBox3.Text;
 
-            // Parse numeric values
-            int semesterValue = int.Parse(textBox4.Text);
-            int modlecreditsValue = int.Parse(textBox5.Text);
+            if (!int.TryParse(textBox4.Text, out int semesterValue) || !int.TryParse(textBox5.Text, out int modlecreditsValue))
+            {
+                MessageBox.Show("Invalid numeric values for semester or module credits.");
+                return;
+            }
+
             string modlegrades = textBox6.Text;
 
-            NpgsqlConnection conn = new NpgsqlConnection(connectionstr);
-            conn.Open();
+            try
+            {
+                using (NpgsqlConnection conn = new NpgsqlConnection(connectionstr))
+                {
+                    conn.Open();
 
-            string module = "INSERT INTO public.studentmoduleresult(stdid, modlecode, modlename, semester, modlecredits, modlegrades) " +
-                            "VALUES (@stdid, @modlecode, @modlename, @semester, @modlecredits, @modlegrades)";
+                    string sqlQuery = "INSERT INTO public.studentmoduleresult VALUES (@stdid, @modlecode, @modlename, @semester, @modlecredits, @modlegrades)";
 
-            NpgsqlCommand cmd = new NpgsqlCommand(module, conn);
-            cmd.Parameters.AddWithValue("@stdid", stdid);
-            cmd.Parameters.AddWithValue("@modlecode", modlecode);
-            cmd.Parameters.AddWithValue("@modlename", modlename);
-            cmd.Parameters.AddWithValue("@semester", semesterValue);
-            cmd.Parameters.AddWithValue("@modlecredits", modlecreditsValue);
-            cmd.Parameters.AddWithValue("@modlegrades", modlegrades);
+                    using (NpgsqlCommand cmd = new NpgsqlCommand(sqlQuery, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@stdid", stdid);
+                        cmd.Parameters.AddWithValue("@modlecode", modlecode);
+                        cmd.Parameters.AddWithValue("@modlename", modlename);
+                        cmd.Parameters.AddWithValue("@semester", semesterValue);
+                        cmd.Parameters.AddWithValue("@modlecredits", modlecreditsValue);
+                        cmd.Parameters.AddWithValue("@modlegrades", modlegrades);
 
-            cmd.ExecuteNonQuery();
+                        int rowsAffected = cmd.ExecuteNonQuery();
 
-            conn.Close();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Data Inserted successfully!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("No rows affected.");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
 
 
-        }
+    }
     }
 }
