@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,63 +18,37 @@ namespace WindowsAppProject
             InitializeComponent();
         }
 
-        private void rjButton3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Modules_Addition_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        private string connectionstr = "Host=165.232.167.179;Port=5432;Username=postgres;Password=rajanith2003;Database=usersdb";
 
         private void rjButton2_Click(object sender, EventArgs e)
         {
+            string stdid = textBox1.Text;
+            string modlecode = textBox2.Text;
+            string modlename = textBox3.Text;
 
-        }
+            // Parse numeric values
+            int semesterValue = int.Parse(textBox4.Text);
+            int modlecreditsValue = int.Parse(textBox5.Text);
+            string modlegrades = textBox6.Text;
 
-        private void rjButton1_Click(object sender, EventArgs e)
-        {
+            NpgsqlConnection conn = new NpgsqlConnection(connectionstr);
+            conn.Open();
 
-        }
+            string module = "INSERT INTO public.studentmoduleresult(stdid, modlecode, modlename, semester, modlecredits, modlegrades) " +
+                            "VALUES (@stdid, @modlecode, @modlename, @semester, @modlecredits, @modlegrades)";
 
-        private void label4_Click(object sender, EventArgs e)
-        {
+            NpgsqlCommand cmd = new NpgsqlCommand(module, conn);
+            cmd.Parameters.AddWithValue("@stdid", stdid);
+            cmd.Parameters.AddWithValue("@modlecode", modlecode);
+            cmd.Parameters.AddWithValue("@modlename", modlename);
+            cmd.Parameters.AddWithValue("@semester", semesterValue);
+            cmd.Parameters.AddWithValue("@modlecredits", modlecreditsValue);
+            cmd.Parameters.AddWithValue("@modlegrades", modlegrades);
+
+            cmd.ExecuteNonQuery();
+
+            conn.Close();
+
 
         }
     }

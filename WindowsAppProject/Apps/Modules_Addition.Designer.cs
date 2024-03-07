@@ -31,6 +31,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.rjPanel1 = new RoundedPanelClass.RJPanel();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -41,8 +43,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.rjPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -60,7 +60,6 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Module Results Form";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // rjButton2
             // 
@@ -107,9 +106,27 @@
             this.rjPanel1.Size = new System.Drawing.Size(522, 325);
             this.rjPanel1.TabIndex = 11;
             // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(268, 249);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(173, 22);
+            this.textBox6.TabIndex = 27;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(73, 172);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(91, 21);
+            this.label7.TabIndex = 26;
+            this.label7.Text = "Semester :";
+            // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(276, 55);
+            this.textBox5.Location = new System.Drawing.Point(268, 209);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(173, 22);
             this.textBox5.TabIndex = 25;
@@ -127,7 +144,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(277, 93);
+            this.textBox4.Location = new System.Drawing.Point(269, 173);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(172, 22);
             this.textBox4.TabIndex = 23;
@@ -145,21 +162,21 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(276, 210);
+            this.textBox3.Location = new System.Drawing.Point(269, 133);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(172, 22);
             this.textBox3.TabIndex = 21;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(276, 249);
+            this.textBox2.Location = new System.Drawing.Point(269, 91);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(172, 22);
             this.textBox2.TabIndex = 20;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(277, 133);
+            this.textBox1.Location = new System.Drawing.Point(269, 53);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(172, 22);
             this.textBox1.TabIndex = 19;
@@ -197,24 +214,6 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "Module name :";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(73, 172);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 21);
-            this.label7.TabIndex = 26;
-            this.label7.Text = "Semester :";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(276, 173);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(173, 22);
-            this.textBox6.TabIndex = 27;
-            // 
             // rjButton1
             // 
             this.rjButton1.BackColor = System.Drawing.Color.LightCoral;
@@ -246,7 +245,6 @@
             this.Controls.Add(this.rjButton2);
             this.Name = "Modules_Addition";
             this.Text = "s";
-            this.Load += new System.EventHandler(this.Modules_Addition_Load);
             this.rjPanel1.ResumeLayout(false);
             this.rjPanel1.PerformLayout();
             this.ResumeLayout(false);
