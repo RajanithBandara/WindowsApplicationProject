@@ -103,17 +103,11 @@
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.textBox3.Location = new System.Drawing.Point(330, 339);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.PasswordChar = '*';
-            this.textBox3.Size = new System.Drawing.Size(309, 32);
-
-            this.textBox3.Location = new System.Drawing.Point(434, 292);
+            this.textBox3.Location = new System.Drawing.Point(330, 343);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox3.Name = "textBox3";
             this.textBox3.PasswordChar = '*';
-            this.textBox3.Size = new System.Drawing.Size(200, 26);
+            this.textBox3.Size = new System.Drawing.Size(318, 32);
             this.textBox3.TabIndex = 13;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged_1);
             // 
@@ -125,11 +119,7 @@
             this.textBox2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
-
-            this.textBox2.Size = new System.Drawing.Size(309, 32);
-
-            this.textBox2.Size = new System.Drawing.Size(200, 26);
-
+            this.textBox2.Size = new System.Drawing.Size(318, 32);
             this.textBox2.TabIndex = 12;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -140,7 +130,7 @@
             this.textBox1.Location = new System.Drawing.Point(330, 190);
             this.textBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(309, 32);
+            this.textBox1.Size = new System.Drawing.Size(318, 32);
             this.textBox1.TabIndex = 11;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -192,10 +182,7 @@
             // 
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.textBox4.Location = new System.Drawing.Point(330, 422);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-
-            this.textBox4.Location = new System.Drawing.Point(434, 350);
+            this.textBox4.Location = new System.Drawing.Point(330, 421);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(309, 32);
@@ -243,7 +230,7 @@
             this.rjButton1.ForeColor = System.Drawing.Color.White;
             this.rjButton1.Image = ((System.Drawing.Image)(resources.GetObject("rjButton1.Image")));
             this.rjButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.rjButton1.Location = new System.Drawing.Point(609, 341);
+            this.rjButton1.Location = new System.Drawing.Point(609, 343);
             this.rjButton1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.rjButton1.Name = "rjButton1";
             this.rjButton1.Size = new System.Drawing.Size(30, 30);
@@ -265,7 +252,7 @@
             this.Hint1.ForeColor = System.Drawing.Color.White;
             this.Hint1.Image = ((System.Drawing.Image)(resources.GetObject("Hint1.Image")));
             this.Hint1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Hint1.Location = new System.Drawing.Point(609, 264);
+            this.Hint1.Location = new System.Drawing.Point(609, 265);
             this.Hint1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Hint1.Name = "Hint1";
             this.Hint1.Size = new System.Drawing.Size(30, 32);
