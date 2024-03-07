@@ -101,7 +101,6 @@
             // 
             // textBox3
             // 
- rajanith
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.textBox3.Location = new System.Drawing.Point(330, 339);
@@ -115,7 +114,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.PasswordChar = '*';
             this.textBox3.Size = new System.Drawing.Size(200, 26);
- master
             this.textBox3.TabIndex = 13;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged_1);
             // 
@@ -127,11 +125,11 @@
             this.textBox2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
- rajanith
+
             this.textBox2.Size = new System.Drawing.Size(309, 32);
 
             this.textBox2.Size = new System.Drawing.Size(200, 26);
- master
+
             this.textBox2.TabIndex = 12;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -192,7 +190,6 @@
             // 
             // textBox4
             // 
- rajanith
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.textBox4.Location = new System.Drawing.Point(330, 422);
@@ -200,7 +197,6 @@
 
             this.textBox4.Location = new System.Drawing.Point(434, 350);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-master
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(309, 32);
             this.textBox4.TabIndex = 17;
