@@ -17,8 +17,8 @@ namespace WindowsAppProject.Apps
         public arloginform()
         {
             InitializeComponent();
-            button1.MouseHover += button1_MouseHover;
-            button1.MouseLeave += button1_MouseLeave;
+            Hint1.MouseHover += Hint1_MouseHover;
+            Hint1.MouseLeave += Hint1_MouseLeave;
         }
 
         private static string HashPassword(string password)
@@ -82,13 +82,18 @@ namespace WindowsAppProject.Apps
         {
             
         }
-        private void button1_MouseHover(object sender, EventArgs e)
+        private void Hint1_MouseHover(object sender, EventArgs e)
         {
             textBox2.PasswordChar = '\0';
         }
-        private void button1_MouseLeave(object sender, EventArgs e)
+        private void Hint1_MouseLeave(object sender, EventArgs e)
         {
             textBox2.PasswordChar = '*';
+        }
+
+        private void Hint1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
