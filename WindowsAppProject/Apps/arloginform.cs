@@ -17,7 +17,10 @@ namespace WindowsAppProject.Apps
         public arloginform()
         {
             InitializeComponent();
+            Hint1.MouseHover += Hint1_MouseHover;
+            Hint1.MouseLeave += Hint1_MouseLeave;
         }
+
         private static string HashPassword(string password)
         {
             using (SHA256 sha256 = SHA256.Create())
@@ -33,7 +36,7 @@ namespace WindowsAppProject.Apps
             string usernameOrEmail = textBox1.Text; 
             string enteredPassword = textBox2.Text;
 
-            using (NpgsqlConnection conn = new NpgsqlConnection(connectionstr))
+            using (NpgsqlConnection conn = new NpgsqlConnection())
             {
                 conn.Open();
                 string sql = "SELECT password FROM public.aruserdata WHERE username = @username";
@@ -74,5 +77,28 @@ namespace WindowsAppProject.Apps
             return hashedEnteredPassword == hashedPasswordFromDatabase;
         }
 
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+        private void Hint1_MouseHover(object sender, EventArgs e)
+        {
+            textBox2.PasswordChar = '\0';
+        }
+        private void Hint1_MouseLeave(object sender, EventArgs e)
+        {
+            textBox2.PasswordChar = '*';
+        }
+
+        private void Hint1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void arloginform_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

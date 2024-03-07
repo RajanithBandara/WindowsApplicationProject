@@ -17,6 +17,10 @@ namespace WindowsAppProject.Apps
         public Form1()
         {
             InitializeComponent();
+            Hint1.MouseHover += Hint1_MouseHover;
+            Hint1.MouseLeave += Hint1_MouseLeave;
+            rjButton1.MouseHover += rjButton1_Mousehover;
+            rjButton1.MouseLeave += rjButton1_MouseLeave;
         }
         private string connectionstr = "Host=165.232.167.179;Port=5432;Username=postgres;Password=rajanith2003;Database=usersdb";  
 
@@ -89,6 +93,49 @@ namespace WindowsAppProject.Apps
         {
             arloginform arlogform = new arloginform();
             arlogform.Show();
+        }
+
+        private void Hint1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Hint1_MouseHover(object sender, EventArgs e)
+        {
+            textBox2.PasswordChar = '\0';
+            
+        }
+        private void Hint1_MouseLeave(object sender, EventArgs e)
+        {
+            textBox2.PasswordChar = '*';
+        }
+        private void rjButton1_Mousehover(object sender, EventArgs e)
+        {
+            textBox3.PasswordChar = '\0';
+        }
+        private void rjButton1_MouseLeave(object sender, EventArgs e)
+        {
+            textBox3.PasswordChar = '*';
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjButton1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
