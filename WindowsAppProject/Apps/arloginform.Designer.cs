@@ -130,6 +130,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "arloginform";
             this.Text = "arloginform";
+            this.Load += new System.EventHandler(this.arloginform_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -29,14 +29,14 @@ namespace WindowsAppProject.Apps
                 return BitConverter.ToString(hashedBytes).Replace("-", "").ToLower();
             }
         }
-        private string connectionstr = "Host=165.232.167.179;Port=5432;Username=postgres;Password=rajanith2003;Database=usersdb";
+        //private string connectionstr = "Host=165.232.167.179;Port=5432;Username=postgres;Password=rajanith2003;Database=usersdb";
 
         private void rjButton1_Click(object sender, EventArgs e)
         {
             string usernameOrEmail = textBox1.Text; 
             string enteredPassword = textBox2.Text;
 
-            using (NpgsqlConnection conn = new NpgsqlConnection(connectionstr))
+            using (NpgsqlConnection conn = new NpgsqlConnection())
             {
                 conn.Open();
                 string sql = "SELECT password FROM public.aruserdata WHERE username = @username";
@@ -92,6 +92,11 @@ namespace WindowsAppProject.Apps
         }
 
         private void Hint1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void arloginform_Load(object sender, EventArgs e)
         {
 
         }
