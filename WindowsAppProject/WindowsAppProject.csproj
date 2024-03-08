@@ -123,12 +123,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Apps\adminloginform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\adminloginform.Designer.cs">
+      <DependentUpon>adminloginform.cs</DependentUpon>
+    </Compile>
     <Compile Include="Apps\arloginform.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Apps\arloginform.Designer.cs">
       <DependentUpon>arloginform.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apps\dbconnection.cs" />
     <Compile Include="Apps\degree and course addition.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +192,9 @@
     <Compile Include="RJPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="Apps\adminloginform.resx">
+      <DependentUpon>adminloginform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Apps\arloginform.resx">
       <DependentUpon>arloginform.cs</DependentUpon>
     </EmbeddedResource>

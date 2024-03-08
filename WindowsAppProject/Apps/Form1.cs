@@ -22,56 +22,64 @@ namespace WindowsAppProject.Apps
             rjButton1.MouseHover += rjButton1_Mousehover;
             rjButton1.MouseLeave += rjButton1_MouseLeave;
         }
-        private string connectionstr = "Host=165.232.167.179;Port=5432;Username=postgres;Password=rajanith2003;Database=usersdb";  
-
+        
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            string connectionstr = dbconnection.Instance.ConnectionString;
+            using (NpgsqlConnection conn = new NpgsqlConnection(connectionstr))
+            {
+                conn.Open();
+                MessageBox.Show("Network connection successful");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String username = textBox1.Text;
-            String password = textBox2.Text;
-            String retypepassword = textBox3.Text;
-            String email = textBox4.Text;
-
-            NpgsqlConnection conn = new NpgsqlConnection(connectionstr);
-            conn.Open();
-            string hashedPassword = HashPassword(password);
-
-            if (password == retypepassword && username != "")
+            string connectionstr = dbconnection.Instance.ConnectionString;
+            using (NpgsqlConnection conn = new NpgsqlConnection(connectionstr))
             {
-                NpgsqlCommand cmd = new NpgsqlCommand("INSERT INTO public.aruserdata (username, password, email) VALUES (@username, @password, @email)", conn);
-                cmd.Parameters.AddWithValue("@username", username);
-                cmd.Parameters.AddWithValue("@password", hashedPassword);
-                cmd.Parameters.AddWithValue("@email", email);
+                conn.Open();
 
-                try
+                String username = textBox1.Text;
+                String password = textBox2.Text;
+                String retypepassword = textBox3.Text;
+                String email = textBox4.Text;
+
+                string hashedPassword = HashPassword(password);
+
+                if (password == retypepassword && username != "")
                 {
-                    int rowsAffected = cmd.ExecuteNonQuery();
-                    if (rowsAffected > 0)
+                    NpgsqlCommand cmd = new NpgsqlCommand("INSERT INTO public.aruserdata (username, password, email) VALUES (@username, @password, @email)",conn);
+                    cmd.Parameters.AddWithValue("@username", username);
+                    cmd.Parameters.AddWithValue("@password", hashedPassword);
+                    cmd.Parameters.AddWithValue("@email", email);
+
+                    try
                     {
-                        MessageBox.Show("Data Inserted");
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Data Inserted");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Data Not Inserted");
+                        }
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        MessageBox.Show("Data Not Inserted");
+                        MessageBox.Show("An error occurred: " + ex.Message);
                     }
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show("An error occurred: " + ex.Message);
+                    MessageBox.Show("Password and Retype Password are not the same");
                 }
-            }
-            else
-            {
-                MessageBox.Show("Password and Retype Password are not the same");
             }
         }
 
