@@ -63,14 +63,9 @@ namespace WindowsAppProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap homework_2825082 {
-            get {
-                object obj = ResourceManager.GetObject("homework_2825082", resourceCulture);
-
         internal static System.Drawing.Bitmap eye_25x25 {
             get {
                 object obj = ResourceManager.GetObject("eye_25x25", resourceCulture);
-
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -78,54 +73,9 @@ namespace WindowsAppProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-
-        internal static System.Drawing.Bitmap padlock {
-            get {
-                object obj = ResourceManager.GetObject("padlock", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap padlock__1_ {
-            get {
-                object obj = ResourceManager.GetObject("padlock (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ripple {
-            get {
-                object obj = ResourceManager.GetObject("ripple", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ripple1 {
-            get {
-                object obj = ResourceManager.GetObject("ripple1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap user {
-            get {
-                object obj = ResourceManager.GetObject("user", resourceCulture);
         internal static System.Drawing.Bitmap view {
             get {
                 object obj = ResourceManager.GetObject("view", resourceCulture);
-
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

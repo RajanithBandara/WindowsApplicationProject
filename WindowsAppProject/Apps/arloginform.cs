@@ -78,23 +78,26 @@ namespace WindowsAppProject.Apps
             return hashedEnteredPassword == hashedPasswordFromDatabase;
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+        private void Hint1_MouseHover(object sender, EventArgs e)
+        {
+            textBox2.PasswordChar = '\0';
+        }
+        private void Hint1_MouseLeave(object sender, EventArgs e)
+        {
+            textBox2.PasswordChar = '*';
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Hint1_Click(object sender, EventArgs e)
         {
 
         }
 
         private void arloginform_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-
         {
 
         }
