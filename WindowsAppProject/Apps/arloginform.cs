@@ -17,7 +17,10 @@ namespace WindowsAppProject.Apps
         public arloginform()
         {
             InitializeComponent();
+            Hint1.MouseHover += Hint1_MouseHover;
+            Hint1.MouseLeave += Hint1_MouseLeave;
         }
+
         private static string HashPassword(string password)
         {
             using (SHA256 sha256 = SHA256.Create())
@@ -26,16 +29,17 @@ namespace WindowsAppProject.Apps
                 return BitConverter.ToString(hashedBytes).Replace("-", "").ToLower();
             }
         }
-        private string connectionstr = "Host=165.232.167.179;Port=5432;Username=postgres;Password=rajanith2003;Database=usersdb";
 
         private void rjButton1_Click(object sender, EventArgs e)
         {
             string usernameOrEmail = textBox1.Text; 
             string enteredPassword = textBox2.Text;
-
-            using (NpgsqlConnection conn = new NpgsqlConnection(connectionstr))
+            string connectionstring = dbconnection.Instance.ConnectionString;
+            using (NpgsqlConnection conn = new NpgsqlConnection(connectionstring))
             {
                 conn.Open();
+                
+                   
                 string sql = "SELECT password FROM public.aruserdata WHERE username = @username";
 
                 using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
@@ -53,7 +57,7 @@ namespace WindowsAppProject.Apps
                                 MessageBox.Show("Login successful!");
                             }
                             else
-                            {                               
+                            {
                                 MessageBox.Show("Incorrect username or password.");
                             }
                         }
@@ -90,6 +94,7 @@ namespace WindowsAppProject.Apps
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+
         {
 
         }

@@ -28,15 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(arloginform));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.Hint1 = new CustomControls.RJControls.RJButton();
             this.SuspendLayout();
             // 
             // textBox1
             // 
+
             this.textBox1.Location = new System.Drawing.Point(279, 119);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
@@ -92,6 +95,28 @@
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
             // 
+            // Hint1
+            // 
+            this.Hint1.BackColor = System.Drawing.Color.White;
+            this.Hint1.BackgroundColor = System.Drawing.Color.White;
+            this.Hint1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.Hint1.BorderRadius = 0;
+            this.Hint1.BorderSize = 0;
+            this.Hint1.FlatAppearance.BorderSize = 0;
+            this.Hint1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Hint1.ForeColor = System.Drawing.Color.White;
+            this.Hint1.Image = ((System.Drawing.Image)(resources.GetObject("Hint1.Image")));
+            this.Hint1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Hint1.Location = new System.Drawing.Point(604, 214);
+            this.Hint1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.Hint1.Name = "Hint1";
+            this.Hint1.Size = new System.Drawing.Size(30, 29);
+            this.Hint1.TabIndex = 21;
+            this.Hint1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Hint1.TextColor = System.Drawing.Color.White;
+            this.Hint1.UseVisualStyleBackColor = false;
+            this.Hint1.Click += new System.EventHandler(this.Hint1_Click);
+            // 
             // arloginform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -118,5 +143,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private CustomControls.RJControls.RJButton rjButton1;
+        private CustomControls.RJControls.RJButton Hint1;
     }
 }
