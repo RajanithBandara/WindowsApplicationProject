@@ -135,6 +135,7 @@
     <Compile Include="Apps\arloginform.Designer.cs">
       <DependentUpon>arloginform.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apps\dbconnection.cs" />
     <Compile Include="Apps\degree and course addition.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -29,7 +29,6 @@ namespace WindowsAppProject.Apps
                 return BitConverter.ToString(hashedBytes).Replace("-", "").ToLower();
             }
         }
-        private string connectionstr = "Host=165.232.167.179;Port=5432;Username=postgres;Password=rajanith2003;Database=usersdb";
 
         private void rjButton1_Click(object sender, EventArgs e)
         {
@@ -98,7 +97,12 @@ namespace WindowsAppProject.Apps
 
         private void arloginform_Load(object sender, EventArgs e)
         {
-
+            string connectionstring = dbconnection.Instance.ConnectionString;
+            using (NpgsqlConnection conn = new NpgsqlConnection(connectionstring))
+            {
+                conn.Open();
+                MessageBox.Show("Connection successful!");
+            }
         }
     }
 }
