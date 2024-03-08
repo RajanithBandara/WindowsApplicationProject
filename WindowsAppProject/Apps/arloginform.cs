@@ -34,10 +34,12 @@ namespace WindowsAppProject.Apps
         {
             string usernameOrEmail = textBox1.Text; 
             string enteredPassword = textBox2.Text;
-
-            using (NpgsqlConnection conn = new NpgsqlConnection())
+            string connectionstring = dbconnection.Instance.ConnectionString;
+            using (NpgsqlConnection conn = new NpgsqlConnection(connectionstring))
             {
                 conn.Open();
+                
+                   
                 string sql = "SELECT password FROM public.aruserdata WHERE username = @username";
 
                 using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
@@ -55,7 +57,7 @@ namespace WindowsAppProject.Apps
                                 MessageBox.Show("Login successful!");
                             }
                             else
-                            {                               
+                            {
                                 MessageBox.Show("Incorrect username or password.");
                             }
                         }
@@ -97,12 +99,7 @@ namespace WindowsAppProject.Apps
 
         private void arloginform_Load(object sender, EventArgs e)
         {
-            string connectionstring = dbconnection.Instance.ConnectionString;
-            using (NpgsqlConnection conn = new NpgsqlConnection(connectionstring))
-            {
-                conn.Open();
-                MessageBox.Show("Connection successful!");
-            }
+
         }
     }
 }
