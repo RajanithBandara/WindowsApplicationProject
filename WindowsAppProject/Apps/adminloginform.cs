@@ -17,6 +17,8 @@ namespace WindowsAppProject.Apps
         public adminloginform()
         {
             InitializeComponent();
+            button1.MouseHover += button1_MousHover;
+            button1.MouseLeave += button1_MouseLeave;
         }
 
         private void rjButton1_Click(object sender, EventArgs e)
@@ -56,6 +58,18 @@ namespace WindowsAppProject.Apps
                     }
                 }
             }
+        }
+        private void button1_MousHover(object sender, EventArgs e)
+        {
+            textBox2.PasswordChar = '\0';
+        }
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            textBox2.PasswordChar = '*';
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
