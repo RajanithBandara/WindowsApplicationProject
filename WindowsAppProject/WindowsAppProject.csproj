@@ -148,6 +148,12 @@
     <Compile Include="Apps\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apps\AR login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\AR login.Designer.cs">
+      <DependentUpon>AR login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Apps\gpacalculator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\AR login.resx">
+      <DependentUpon>AR login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\gpacalculator.resx">
       <DependentUpon>gpacalculator.cs</DependentUpon>
@@ -260,6 +269,24 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+
+    <None Include="Resources\homework_2825082.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ripple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ripple1.png" />
+
     <None Include="Resources\view.png" />
   </ItemGroup>
   <ItemGroup>
