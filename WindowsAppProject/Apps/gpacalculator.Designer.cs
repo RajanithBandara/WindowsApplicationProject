@@ -117,6 +117,7 @@
             this.rjButton4.Text = "Send All";
             this.rjButton4.TextColor = System.Drawing.Color.Black;
             this.rjButton4.UseVisualStyleBackColor = false;
+            this.rjButton4.Click += new System.EventHandler(this.rjButton4_Click);
             // 
             // rjButton3
             // 
