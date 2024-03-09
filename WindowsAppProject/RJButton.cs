@@ -95,7 +95,7 @@ namespace CustomControls.RJControls
         protected override void OnPaint(PaintEventArgs pevent)
         {
             base.OnPaint(pevent);
-           
+
 
             Rectangle rectSurface = this.ClientRectangle;
             Rectangle rectBorder = Rectangle.Inflate(rectSurface, -borderSize, -borderSize);
