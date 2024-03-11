@@ -36,7 +36,7 @@ namespace WindowsAppProject
             TextBox newtextbx2 = new TextBox();
             TextBox newtextbx3 = new TextBox();
 
-            newtextbx.Width = 365;
+            newtextbx.Width = 254;
             newtextbx.TextAlign = HorizontalAlignment.Center;
             newtextbx.Height = 40;
             newtextbx.BorderStyle = BorderStyle.None;
