@@ -30,8 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.Hint1 = new CustomControls.RJControls.RJButton();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,9 +49,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.rjButton1 = new CustomControls.RJControls.RJButton();
-            this.Hint1 = new CustomControls.RJControls.RJButton();
-            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,6 +71,38 @@
             this.panel1.Size = new System.Drawing.Size(637, 470);
             this.panel1.TabIndex = 30;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(109, 38);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(422, 48);
+            this.label10.TabIndex = 22;
+            this.label10.Text = "AR Registration Form";
+            // 
+            // rjButton1
+            // 
+            this.rjButton1.BackColor = System.Drawing.Color.White;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.White;
+            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton1.BorderRadius = 0;
+            this.rjButton1.BorderSize = 0;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.ForeColor = System.Drawing.Color.White;
+            this.rjButton1.Image = ((System.Drawing.Image)(resources.GetObject("rjButton1.Image")));
+            this.rjButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.rjButton1.Location = new System.Drawing.Point(541, 274);
+            this.rjButton1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(27, 24);
+            this.rjButton1.TabIndex = 21;
+            this.rjButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.UseVisualStyleBackColor = false;
+            // 
             // label6
             // 
             this.label6.BackColor = System.Drawing.Color.Transparent;
@@ -91,6 +123,27 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(283, 27);
             this.textBox4.TabIndex = 17;
+            // 
+            // Hint1
+            // 
+            this.Hint1.BackColor = System.Drawing.Color.White;
+            this.Hint1.BackgroundColor = System.Drawing.Color.White;
+            this.Hint1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.Hint1.BorderRadius = 0;
+            this.Hint1.BorderSize = 0;
+            this.Hint1.FlatAppearance.BorderSize = 0;
+            this.Hint1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Hint1.ForeColor = System.Drawing.Color.White;
+            this.Hint1.Image = ((System.Drawing.Image)(resources.GetObject("Hint1.Image")));
+            this.Hint1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Hint1.Location = new System.Drawing.Point(541, 212);
+            this.Hint1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Hint1.Name = "Hint1";
+            this.Hint1.Size = new System.Drawing.Size(27, 26);
+            this.Hint1.TabIndex = 20;
+            this.Hint1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Hint1.TextColor = System.Drawing.Color.White;
+            this.Hint1.UseVisualStyleBackColor = false;
             // 
             // label5
             // 
@@ -206,6 +259,7 @@
             this.button1.TabIndex = 26;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // label3
             // 
@@ -233,59 +287,6 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 16);
             this.label1.TabIndex = 23;
-            // 
-            // rjButton1
-            // 
-            this.rjButton1.BackColor = System.Drawing.Color.White;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.White;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 0;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Image = ((System.Drawing.Image)(resources.GetObject("rjButton1.Image")));
-            this.rjButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.rjButton1.Location = new System.Drawing.Point(541, 274);
-            this.rjButton1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(27, 24);
-            this.rjButton1.TabIndex = 21;
-            this.rjButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            // 
-            // Hint1
-            // 
-            this.Hint1.BackColor = System.Drawing.Color.White;
-            this.Hint1.BackgroundColor = System.Drawing.Color.White;
-            this.Hint1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.Hint1.BorderRadius = 0;
-            this.Hint1.BorderSize = 0;
-            this.Hint1.FlatAppearance.BorderSize = 0;
-            this.Hint1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Hint1.ForeColor = System.Drawing.Color.White;
-            this.Hint1.Image = ((System.Drawing.Image)(resources.GetObject("Hint1.Image")));
-            this.Hint1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Hint1.Location = new System.Drawing.Point(541, 212);
-            this.Hint1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Hint1.Name = "Hint1";
-            this.Hint1.Size = new System.Drawing.Size(27, 26);
-            this.Hint1.TabIndex = 20;
-            this.Hint1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Hint1.TextColor = System.Drawing.Color.White;
-            this.Hint1.UseVisualStyleBackColor = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(109, 38);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(422, 48);
-            this.label10.TabIndex = 22;
-            this.label10.Text = "AR Registration Form";
             // 
             // Form1
             // 
