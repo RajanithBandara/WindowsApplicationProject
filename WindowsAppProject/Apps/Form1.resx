@@ -138,7 +138,7 @@
   <data name="Hint1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
-        MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwAADr0AAA69AUf7kK0AAAAHdElNRQfoAwcEIQ/3ndGIAAAA
+        MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAHdElNRQfoAwcEIQ/3ndGIAAAA
         GXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAjpJREFUSEvF1U9IFGEYx/HJyDAPaSBS
         kVAkgsdAtOhY0B/qlB2MKEhSNBUvXuoYWZcuFh2DDkUUhAcPpeCh1CLooLcIRDAtIg9WhpXo97vtwLjO
         0o4w+YMPszPuvLPv87zzGvzPVKLi78d0sgX3MYIDXkgrZ/EZ73HEC2nlKHzIJzRhE3JTjG3Z47pjuV7j
@@ -154,5 +154,8 @@
   </data>
   <metadata name="npgsqlCommandBuilder1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
   </metadata>
 </root>
