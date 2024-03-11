@@ -64,6 +64,10 @@ namespace WindowsAppProject.Apps
                         int rowsAffected = cmd.ExecuteNonQuery();
                         if (rowsAffected > 0)
                         {
+                            textBox1.Text = "";
+                            textBox2.Text = "";
+                            textBox3.Text = "";
+                            textBox4.Text = "";
                             MessageBox.Show("Data Inserted");
                         }
                         else

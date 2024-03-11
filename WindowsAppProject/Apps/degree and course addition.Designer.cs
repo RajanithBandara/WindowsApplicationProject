@@ -132,6 +132,7 @@
             this.rjButton1.Text = "Add";
             this.rjButton1.TextColor = System.Drawing.Color.Black;
             this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click_1);
             // 
             // rjButton2
             // 

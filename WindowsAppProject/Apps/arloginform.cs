@@ -55,6 +55,9 @@ namespace WindowsAppProject.Apps
                             if (VerifyPassword(enteredPassword, hashedPasswordFromDatabase))
                             {
                                 MessageBox.Show("Login successful!");
+                                maindashboard dashboard = new maindashboard();
+                                dashboard.Show();
+                                this.Hide();
                             }
                             else
                             {
