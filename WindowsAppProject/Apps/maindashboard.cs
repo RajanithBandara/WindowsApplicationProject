@@ -66,7 +66,7 @@ namespace WindowsAppProject
 
         private void rjButton4_Click(object sender, EventArgs e)
         {
-            degree_and_course_addition degree_And_Course_Addition = new degree_and_course_addition();
+            type_select degree_And_Course_Addition = new type_select();
             degree_And_Course_Addition.Show();
         }
 

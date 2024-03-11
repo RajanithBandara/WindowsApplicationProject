@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsAppProject.Apps;
+using Npgsql;
 
 namespace WindowsAppProject
 {
-    public partial class degree_and_course_addition : Form
+    public partial class type_select : Form
     {
-        public degree_and_course_addition()
+        public type_select()
         {
             InitializeComponent();
         }
@@ -58,6 +60,36 @@ namespace WindowsAppProject
         }
 
         private void rjButton1_Click_1(object sender, EventArgs e)
+        {
+            string connectionstr = dbconnection.Instance.ConnectionString;
+            using (NpgsqlConnection conn = new NpgsqlConnection(connectionstr))
+            {
+                conn.Open();
+
+                String coursetype = textBox1.Text;
+                String coursename = textBox2.Text;
+                String credits = textBox3.Text;
+                //String courseid = textBox4.Text;
+
+                NpgsqlCommand cmd = new NpgsqlCommand("INSERT INTO public.degreeandcourse (degreename, course, gpa) VALUES (@degreename, @course, @gpa)", conn);
+                cmd.Parameters.AddWithValue("@degreename", coursename);
+                cmd.Parameters.AddWithValue("@course", coursename);
+                cmd.Parameters.AddWithValue("@gpa", credits);
+
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Degree and course added successfully");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

@@ -31,7 +31,7 @@ namespace WindowsAppProject
 
         private void rjButton2_Click(object sender, EventArgs e)
         {
-            degree_and_course_addition degreereg_sec = new degree_and_course_addition();
+            type_select degreereg_sec = new type_select();
             degreereg_sec.Show();
         }
 
