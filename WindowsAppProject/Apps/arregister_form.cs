@@ -12,9 +12,9 @@ using Npgsql;
 
 namespace WindowsAppProject.Apps
 {
-    public partial class Form1 : Form
+    public partial class arregister_form : Form
     {
-        public Form1()
+        public arregister_form()
         {
             InitializeComponent();
             Hint1.MouseHover += Hint1_MouseHover;
