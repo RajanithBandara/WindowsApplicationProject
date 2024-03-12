@@ -304,5 +304,14 @@
   <ItemGroup>
     <None Include="Resources\57GMha-LogoMakr.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ripple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
