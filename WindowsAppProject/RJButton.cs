@@ -138,12 +138,14 @@ namespace CustomControls.RJControls
                 }
             }
         }
-        protected override void OnHandleCreated(EventArgs e)
+        protected override void Dispose(bool disposing)
         {
-            base.OnHandleCreated(e);
-            this.Parent.BackColorChanged += new EventHandler(Container_BackColorChanged);
+            if (disposing && this.Parent != null)
+            {
+                this.Parent.BackColorChanged -= Container_BackColorChanged;
+            }
+            base.Dispose(disposing);
         }
-
         private void Container_BackColorChanged(object sender, EventArgs e)
         {
             this.Invalidate();
