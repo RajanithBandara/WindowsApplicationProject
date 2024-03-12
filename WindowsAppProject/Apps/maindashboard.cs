@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsAppProject.Apps;
 
 namespace WindowsAppProject
 {
@@ -44,8 +45,8 @@ namespace WindowsAppProject
 
         private void rjButton1_Click(object sender, EventArgs e)
         {
-            profile_page prof_window = new profile_page();
-            prof_window.Show();
+            admin_panel adminpanel = new admin_panel();
+            adminpanel.Show();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -61,19 +62,31 @@ namespace WindowsAppProject
 
         private void rjButton3_Click(object sender, EventArgs e)
         {
-
+            student_dashboard student_Dashboard = new student_dashboard();
+            student_Dashboard.Show();
         }
 
         private void rjButton4_Click(object sender, EventArgs e)
         {
-            degree_and_course_addition degree_And_Course_Addition = new degree_and_course_addition();
-            degree_And_Course_Addition.Show();
+            course_dashboard course_dash = new course_dashboard();
+            course_dash.Show(); 
         }
 
         private void rjButton5_Click(object sender, EventArgs e)
         {
             course_dashboard course_Dashboard = new course_dashboard();
             course_Dashboard.Show();
+        }
+
+        private void rjPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void rjButton2_Click_1(object sender, EventArgs e)
+        {
+            gpacalculator gpacal = new gpacalculator();
+            gpacal.Show();
         }
     }
 }

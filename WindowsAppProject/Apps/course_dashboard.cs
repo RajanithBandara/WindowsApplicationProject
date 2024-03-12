@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using WindowsAppProject;
 
 namespace practice_project
 {
@@ -197,6 +198,12 @@ namespace practice_project
         private void textbxpanel_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void rjButton1_Click(object sender, EventArgs e)
+        {
+            degree_and_course_addition coursereg = new degree_and_course_addition();
+            coursereg.Show();
         }
     }
 }
