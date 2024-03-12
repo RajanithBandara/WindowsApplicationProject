@@ -45,10 +45,10 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.Hint1 = new CustomControls.RJControls.RJButton();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,11 +87,11 @@
             // textBox4
             // 
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.textBox4.Location = new System.Drawing.Point(330, 421);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(318, 32);
+            this.textBox4.Size = new System.Drawing.Size(318, 34);
             this.textBox4.TabIndex = 17;
             // 
             // label5
@@ -141,6 +141,7 @@
             this.label9.Size = new System.Drawing.Size(92, 20);
             this.label9.TabIndex = 37;
             this.label9.Text = "Login here..";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // button2
             // 
@@ -161,6 +162,7 @@
             this.button1.TabIndex = 34;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -174,11 +176,11 @@
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.textBox1.Location = new System.Drawing.Point(330, 190);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(318, 32);
+            this.textBox1.Size = new System.Drawing.Size(318, 34);
             this.textBox1.TabIndex = 11;
             // 
             // npgsqlCommandBuilder1
@@ -189,23 +191,23 @@
             // textBox3
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.textBox3.Location = new System.Drawing.Point(330, 342);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox3.Name = "textBox3";
             this.textBox3.PasswordChar = '*';
-            this.textBox3.Size = new System.Drawing.Size(318, 32);
+            this.textBox3.Size = new System.Drawing.Size(318, 34);
             this.textBox3.TabIndex = 13;
             // 
             // textBox2
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.textBox2.Location = new System.Drawing.Point(330, 264);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(318, 32);
+            this.textBox2.Size = new System.Drawing.Size(318, 34);
             this.textBox2.TabIndex = 12;
             // 
             // panel1
@@ -227,26 +229,6 @@
             this.panel1.Size = new System.Drawing.Size(717, 588);
             this.panel1.TabIndex = 38;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(444, 97);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(526, 58);
-            this.label8.TabIndex = 36;
-            this.label8.Text = "AR Registration Form";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(292, 317);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 20);
-            this.label2.TabIndex = 32;
-            // 
             // rjButton1
             // 
             this.rjButton1.BackColor = System.Drawing.Color.White;
@@ -259,7 +241,7 @@
             this.rjButton1.ForeColor = System.Drawing.Color.White;
             this.rjButton1.Image = ((System.Drawing.Image)(resources.GetObject("rjButton1.Image")));
             this.rjButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.rjButton1.Location = new System.Drawing.Point(609, 342);
+            this.rjButton1.Location = new System.Drawing.Point(613, 343);
             this.rjButton1.Margin = new System.Windows.Forms.Padding(4);
             this.rjButton1.Name = "rjButton1";
             this.rjButton1.Size = new System.Drawing.Size(30, 30);
@@ -280,7 +262,7 @@
             this.Hint1.ForeColor = System.Drawing.Color.White;
             this.Hint1.Image = ((System.Drawing.Image)(resources.GetObject("Hint1.Image")));
             this.Hint1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Hint1.Location = new System.Drawing.Point(609, 265);
+            this.Hint1.Location = new System.Drawing.Point(612, 265);
             this.Hint1.Margin = new System.Windows.Forms.Padding(4);
             this.Hint1.Name = "Hint1";
             this.Hint1.Size = new System.Drawing.Size(30, 32);
@@ -288,6 +270,26 @@
             this.Hint1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Hint1.TextColor = System.Drawing.Color.White;
             this.Hint1.UseVisualStyleBackColor = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(444, 97);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(526, 58);
+            this.label8.TabIndex = 36;
+            this.label8.Text = "AR Registration Form";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(292, 317);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 20);
+            this.label2.TabIndex = 32;
             // 
             // ar_reg
             // 
@@ -304,6 +306,7 @@
             this.Controls.Add(this.label2);
             this.Name = "ar_reg";
             this.Size = new System.Drawing.Size(1220, 743);
+            this.Load += new System.EventHandler(this.ar_reg_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
