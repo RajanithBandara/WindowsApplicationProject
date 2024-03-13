@@ -22,7 +22,7 @@ namespace WindowsAppProject
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ar_register_form());
+            Application.Run(new Modules_Addition());
 
         }
         [System.Runtime.InteropServices.DllImport("user32.dll")]
