@@ -44,11 +44,11 @@
             this.npgsqlCommandBuilder1 = new Npgsql.NpgsqlCommandBuilder();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.rjButton2 = new CustomControls.RJControls.RJButton();
+            this.rjButton3 = new CustomControls.RJControls.RJButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -240,16 +240,6 @@
             this.label9.TabIndex = 29;
             this.label9.Text = "Login here..";
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(435, 519);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(184, 57);
-            this.button2.TabIndex = 27;
-            this.button2.Text = "Clear";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -296,17 +286,36 @@
             this.rjButton2.UseVisualStyleBackColor = false;
             this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click);
             // 
+            // rjButton3
+            // 
+            this.rjButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(177)))), ((int)(((byte)(122)))));
+            this.rjButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(177)))), ((int)(((byte)(122)))));
+            this.rjButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton3.BorderRadius = 12;
+            this.rjButton3.BorderSize = 0;
+            this.rjButton3.FlatAppearance.BorderSize = 0;
+            this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton3.ForeColor = System.Drawing.Color.Black;
+            this.rjButton3.Location = new System.Drawing.Point(418, 519);
+            this.rjButton3.Name = "rjButton3";
+            this.rjButton3.Size = new System.Drawing.Size(177, 57);
+            this.rjButton3.TabIndex = 32;
+            this.rjButton3.Text = "Clear";
+            this.rjButton3.TextColor = System.Drawing.Color.Black;
+            this.rjButton3.UseVisualStyleBackColor = false;
+            this.rjButton3.Click += new System.EventHandler(this.rjButton3_Click);
+            // 
             // ar_register_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
             this.ClientSize = new System.Drawing.Size(1211, 618);
+            this.Controls.Add(this.rjButton3);
             this.Controls.Add(this.rjButton2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -336,11 +345,11 @@
         private Npgsql.NpgsqlCommandBuilder npgsqlCommandBuilder1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label10;
         private CustomControls.RJControls.RJButton rjButton2;
+        private CustomControls.RJControls.RJButton rjButton3;
     }
 }

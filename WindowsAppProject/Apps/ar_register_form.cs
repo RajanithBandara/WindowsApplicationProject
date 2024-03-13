@@ -190,5 +190,13 @@ namespace WindowsAppProject.Apps
                 }
             }
         }
+        private void rjButton3_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+
+        }
     }
 }
