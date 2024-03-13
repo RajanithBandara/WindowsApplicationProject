@@ -113,6 +113,7 @@
             this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(283, 29);
             this.textBox2.TabIndex = 12;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox3
             // 
@@ -123,16 +124,18 @@
             this.textBox3.PasswordChar = '*';
             this.textBox3.Size = new System.Drawing.Size(283, 29);
             this.textBox3.TabIndex = 13;
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.textBox1.Location = new System.Drawing.Point(293, 152);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(10);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(283, 29);
             this.textBox1.TabIndex = 11;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
@@ -185,7 +188,7 @@
             this.Hint1.Location = new System.Drawing.Point(544, 212);
             this.Hint1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Hint1.Name = "Hint1";
-            this.Hint1.Size = new System.Drawing.Size(27, 26);
+            this.Hint1.Size = new System.Drawing.Size(32, 28);
             this.Hint1.TabIndex = 20;
             this.Hint1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Hint1.TextColor = System.Drawing.Color.White;
@@ -199,6 +202,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(283, 29);
             this.textBox4.TabIndex = 17;
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
             // 
@@ -237,10 +241,10 @@
             this.rjButton1.ForeColor = System.Drawing.Color.White;
             this.rjButton1.Image = ((System.Drawing.Image)(resources.GetObject("rjButton1.Image")));
             this.rjButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.rjButton1.Location = new System.Drawing.Point(545, 274);
+            this.rjButton1.Location = new System.Drawing.Point(544, 274);
             this.rjButton1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(27, 24);
+            this.rjButton1.Size = new System.Drawing.Size(32, 29);
             this.rjButton1.TabIndex = 21;
             this.rjButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.rjButton1.TextColor = System.Drawing.Color.White;
