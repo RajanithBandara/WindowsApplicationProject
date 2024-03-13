@@ -13,7 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>D:\Applications\MyApp8\</PublishUrl>
+    <PublishUrl>D:\Applications\MyApp10\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -129,6 +129,12 @@
     <Compile Include="Apps\adminloginform.Designer.cs">
       <DependentUpon>adminloginform.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apps\admin_panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\admin_panel.Designer.cs">
+      <DependentUpon>admin_panel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Apps\arloginform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +153,7 @@
     </Compile>
     <Compile Include="Apps\ar_register_form.Designer.cs">
       <DependentUpon>ar_register_form.cs</DependentUpon>
+
     </Compile>
     <Compile Include="Apps\gpacalculator.cs">
       <SubType>Form</SubType>
@@ -184,6 +191,24 @@
     <Compile Include="Apps\studentregister.Designer.cs">
       <DependentUpon>studentregister.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apps\student_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\student_dashboard.Designer.cs">
+      <DependentUpon>student_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\usercontrol_adminpanel\ar_reg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\usercontrol_adminpanel\ar_reg.Designer.cs">
+      <DependentUpon>ar_reg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\usercontrol_adminpanel\reg_users.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\usercontrol_adminpanel\reg_users.Designer.cs">
+      <DependentUpon>reg_users.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RJButton.cs">
@@ -195,14 +220,19 @@
     <EmbeddedResource Include="Apps\adminloginform.resx">
       <DependentUpon>adminloginform.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Apps\admin_panel.resx">
+      <DependentUpon>admin_panel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Apps\arloginform.resx">
       <DependentUpon>arloginform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\degree and course addition.resx">
       <DependentUpon>degree and course addition.cs</DependentUpon>
     </EmbeddedResource>
+
     <EmbeddedResource Include="Apps\ar_register_form.resx">
       <DependentUpon>ar_register_form.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\gpacalculator.resx">
       <DependentUpon>gpacalculator.cs</DependentUpon>
@@ -221,6 +251,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\studentregister.resx">
       <DependentUpon>studentregister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\usercontrol_adminpanel\ar_reg.resx">
+      <DependentUpon>ar_reg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\usercontrol_adminpanel\reg_users.resx">
+      <DependentUpon>reg_users.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -267,6 +303,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\24OKoU-LogoMakr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\57GMha-LogoMakr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ripple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
