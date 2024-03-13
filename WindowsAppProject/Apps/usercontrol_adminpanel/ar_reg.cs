@@ -113,5 +113,60 @@ namespace WindowsAppProject.Apps.usercontrol_adminpanel
             textBox3.PasswordChar = '*';
         }
 
+        private void rjButton2_Click(object sender, EventArgs e)
+        {
+            string connectionstr = dbconnection.Instance.ConnectionString;
+            using (NpgsqlConnection conn = new NpgsqlConnection(connectionstr))
+            {
+                conn.Open();
+
+                String username = textBox1.Text;
+                String password = textBox2.Text;
+                String retypepassword = textBox3.Text;
+                String email = textBox4.Text;
+
+                string hashedPassword = HashPassword(password);
+
+                if (password == retypepassword && username != "")
+                {
+                    NpgsqlCommand cmd = new NpgsqlCommand("INSERT INTO public.aruserdata (username, password, email) VALUES (@username, @password, @email)", conn);
+                    cmd.Parameters.AddWithValue("@username", username);
+                    cmd.Parameters.AddWithValue("@password", hashedPassword);
+                    cmd.Parameters.AddWithValue("@email", email);
+
+                    try
+                    {
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Data Inserted");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Data Not Inserted");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("An error occurred: " + ex.Message);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Password and Retype Password are not the same");
+                }
+            }
+        }
+
+        private void rjButton3_Click(object sender, EventArgs e)
+        {
+          
+                textBox1.Text = "";
+                textBox2.Text = "";
+                textBox3.Text = "";
+                textBox4.Text = "";
+
+            
+        }
     }
 }

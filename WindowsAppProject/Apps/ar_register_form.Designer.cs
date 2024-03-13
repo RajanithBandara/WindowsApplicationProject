@@ -31,10 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ar_register_form));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.Hint1 = new CustomControls.RJControls.RJButton();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,13 +40,15 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.npgsqlCommandBuilder1 = new Npgsql.NpgsqlCommandBuilder();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.rjButton2 = new CustomControls.RJControls.RJButton();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.rjButton3 = new CustomControls.RJControls.RJButton();
+            this.rjButton2 = new CustomControls.RJControls.RJButton();
+            this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.Hint1 = new CustomControls.RJControls.RJButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +65,7 @@
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Location = new System.Drawing.Point(316, 42);
+            this.panel1.Location = new System.Drawing.Point(546, 20);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(637, 470);
@@ -81,27 +81,6 @@
             this.label10.Size = new System.Drawing.Size(422, 48);
             this.label10.TabIndex = 22;
             this.label10.Text = "AR Registration Form";
-            // 
-            // rjButton1
-            // 
-            this.rjButton1.BackColor = System.Drawing.Color.White;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.White;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 0;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Image = ((System.Drawing.Image)(resources.GetObject("rjButton1.Image")));
-            this.rjButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.rjButton1.Location = new System.Drawing.Point(541, 274);
-            this.rjButton1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(27, 24);
-            this.rjButton1.TabIndex = 21;
-            this.rjButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
             // 
             // label6
             // 
@@ -123,27 +102,6 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(283, 27);
             this.textBox4.TabIndex = 17;
-            // 
-            // Hint1
-            // 
-            this.Hint1.BackColor = System.Drawing.Color.White;
-            this.Hint1.BackgroundColor = System.Drawing.Color.White;
-            this.Hint1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.Hint1.BorderRadius = 0;
-            this.Hint1.BorderSize = 0;
-            this.Hint1.FlatAppearance.BorderSize = 0;
-            this.Hint1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Hint1.ForeColor = System.Drawing.Color.White;
-            this.Hint1.Image = ((System.Drawing.Image)(resources.GetObject("Hint1.Image")));
-            this.Hint1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Hint1.Location = new System.Drawing.Point(541, 212);
-            this.Hint1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Hint1.Name = "Hint1";
-            this.Hint1.Size = new System.Drawing.Size(27, 26);
-            this.Hint1.TabIndex = 20;
-            this.Hint1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Hint1.TextColor = System.Drawing.Color.White;
-            this.Hint1.UseVisualStyleBackColor = false;
             // 
             // label5
             // 
@@ -217,17 +175,6 @@
             this.npgsqlCommandBuilder1.QuotePrefix = "\"";
             this.npgsqlCommandBuilder1.QuoteSuffix = "\"";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(393, 70);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(442, 48);
-            this.label8.TabIndex = 28;
-            this.label8.Text = "AR Registration Form";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -267,6 +214,32 @@
             this.label1.Size = new System.Drawing.Size(0, 16);
             this.label1.TabIndex = 23;
             // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(75, 106);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 100);
+            this.panel2.TabIndex = 33;
+            // 
+            // rjButton3
+            // 
+            this.rjButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(177)))), ((int)(((byte)(122)))));
+            this.rjButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(177)))), ((int)(((byte)(122)))));
+            this.rjButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton3.BorderRadius = 12;
+            this.rjButton3.BorderSize = 0;
+            this.rjButton3.FlatAppearance.BorderSize = 0;
+            this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton3.ForeColor = System.Drawing.Color.Black;
+            this.rjButton3.Location = new System.Drawing.Point(384, 519);
+            this.rjButton3.Name = "rjButton3";
+            this.rjButton3.Size = new System.Drawing.Size(177, 57);
+            this.rjButton3.TabIndex = 32;
+            this.rjButton3.Text = "Clear";
+            this.rjButton3.TextColor = System.Drawing.Color.Black;
+            this.rjButton3.UseVisualStyleBackColor = false;
+            this.rjButton3.Click += new System.EventHandler(this.rjButton3_Click);
+            // 
             // rjButton2
             // 
             this.rjButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(177)))), ((int)(((byte)(122)))));
@@ -286,24 +259,47 @@
             this.rjButton2.UseVisualStyleBackColor = false;
             this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click);
             // 
-            // rjButton3
+            // rjButton1
             // 
-            this.rjButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(177)))), ((int)(((byte)(122)))));
-            this.rjButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(177)))), ((int)(((byte)(122)))));
-            this.rjButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton3.BorderRadius = 12;
-            this.rjButton3.BorderSize = 0;
-            this.rjButton3.FlatAppearance.BorderSize = 0;
-            this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton3.ForeColor = System.Drawing.Color.Black;
-            this.rjButton3.Location = new System.Drawing.Point(418, 519);
-            this.rjButton3.Name = "rjButton3";
-            this.rjButton3.Size = new System.Drawing.Size(177, 57);
-            this.rjButton3.TabIndex = 32;
-            this.rjButton3.Text = "Clear";
-            this.rjButton3.TextColor = System.Drawing.Color.Black;
-            this.rjButton3.UseVisualStyleBackColor = false;
-            this.rjButton3.Click += new System.EventHandler(this.rjButton3_Click);
+            this.rjButton1.BackColor = System.Drawing.Color.White;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.White;
+            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton1.BorderRadius = 0;
+            this.rjButton1.BorderSize = 0;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.ForeColor = System.Drawing.Color.White;
+            this.rjButton1.Image = ((System.Drawing.Image)(resources.GetObject("rjButton1.Image")));
+            this.rjButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.rjButton1.Location = new System.Drawing.Point(541, 274);
+            this.rjButton1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(27, 24);
+            this.rjButton1.TabIndex = 21;
+            this.rjButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.UseVisualStyleBackColor = false;
+            // 
+            // Hint1
+            // 
+            this.Hint1.BackColor = System.Drawing.Color.White;
+            this.Hint1.BackgroundColor = System.Drawing.Color.White;
+            this.Hint1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.Hint1.BorderRadius = 0;
+            this.Hint1.BorderSize = 0;
+            this.Hint1.FlatAppearance.BorderSize = 0;
+            this.Hint1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Hint1.ForeColor = System.Drawing.Color.White;
+            this.Hint1.Image = ((System.Drawing.Image)(resources.GetObject("Hint1.Image")));
+            this.Hint1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Hint1.Location = new System.Drawing.Point(541, 212);
+            this.Hint1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Hint1.Name = "Hint1";
+            this.Hint1.Size = new System.Drawing.Size(27, 26);
+            this.Hint1.TabIndex = 20;
+            this.Hint1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Hint1.TextColor = System.Drawing.Color.White;
+            this.Hint1.UseVisualStyleBackColor = false;
             // 
             // ar_register_form
             // 
@@ -311,10 +307,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
             this.ClientSize = new System.Drawing.Size(1211, 618);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.rjButton3);
             this.Controls.Add(this.rjButton2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -343,7 +339,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private Npgsql.NpgsqlCommandBuilder npgsqlCommandBuilder1;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -351,5 +346,6 @@
         private System.Windows.Forms.Label label10;
         private CustomControls.RJControls.RJButton rjButton2;
         private CustomControls.RJControls.RJButton rjButton3;
+        private System.Windows.Forms.Panel panel2;
     }
 }

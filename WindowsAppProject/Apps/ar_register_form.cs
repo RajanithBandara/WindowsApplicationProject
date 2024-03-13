@@ -198,5 +198,10 @@ namespace WindowsAppProject.Apps
             textBox4.Text = "";
 
         }
+
+        private void rjPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
