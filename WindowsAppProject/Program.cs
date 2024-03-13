@@ -22,7 +22,9 @@ namespace WindowsAppProject
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
             Application.Run(new maindashboard());
+
 
         }
         [System.Runtime.InteropServices.DllImport("user32.dll")]
