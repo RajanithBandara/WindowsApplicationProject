@@ -56,6 +56,8 @@ namespace WindowsAppProject
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show("Data Inserted successfully!");
+                            textBox1.Text = "";
+                            textBox6.Text = "";
                         }
                         else
                         {
