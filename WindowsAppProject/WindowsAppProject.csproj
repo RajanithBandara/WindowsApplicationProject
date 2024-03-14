@@ -184,6 +184,12 @@
     <Compile Include="Apps\Modules_Addition.Designer.cs">
       <DependentUpon>Modules_Addition.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apps\std_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\std_dashboard.Designer.cs">
+      <DependentUpon>std_dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Apps\studentregister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +213,12 @@
     </Compile>
     <Compile Include="Apps\usercontrol_adminpanel\reg_users.Designer.cs">
       <DependentUpon>reg_users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\usercontrol_studentdash\chartview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\usercontrol_studentdash\chartview.Designer.cs">
+      <DependentUpon>chartview.cs</DependentUpon>
     </Compile>
     <Compile Include="Apps\usercontrol_studentdash\module_view.cs">
       <SubType>UserControl</SubType>
@@ -252,6 +264,9 @@
     <EmbeddedResource Include="Apps\Modules_Addition.resx">
       <DependentUpon>Modules_Addition.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Apps\std_dashboard.resx">
+      <DependentUpon>std_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Apps\studentregister.resx">
       <DependentUpon>studentregister.cs</DependentUpon>
     </EmbeddedResource>
@@ -263,6 +278,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\usercontrol_adminpanel\reg_users.resx">
       <DependentUpon>reg_users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\usercontrol_studentdash\chartview.resx">
+      <DependentUpon>chartview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\usercontrol_studentdash\module_view.resx">
       <DependentUpon>module_view.cs</DependentUpon>

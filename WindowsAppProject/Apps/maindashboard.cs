@@ -62,8 +62,8 @@ namespace WindowsAppProject
 
         private void rjButton3_Click(object sender, EventArgs e)
         {
-            student_dashboard student_Dashboard = new student_dashboard();
-            student_Dashboard.Show();
+            std_dashboard std_Dashboard = new std_dashboard();
+            std_Dashboard.Show();
         }
 
         private void rjButton4_Click(object sender, EventArgs e)
