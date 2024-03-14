@@ -153,7 +153,6 @@
     </Compile>
     <Compile Include="Apps\ar_register_form.Designer.cs">
       <DependentUpon>ar_register_form.cs</DependentUpon>
-
     </Compile>
     <Compile Include="Apps\gpacalculator.cs">
       <SubType>Form</SubType>
@@ -209,6 +208,12 @@
     <Compile Include="Apps\usercontrol_adminpanel\reg_users.Designer.cs">
       <DependentUpon>reg_users.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apps\usercontrol_studentdash\module_view.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\usercontrol_studentdash\module_view.Designer.cs">
+      <DependentUpon>module_view.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RJButton.cs">
@@ -229,10 +234,8 @@
     <EmbeddedResource Include="Apps\degree and course addition.resx">
       <DependentUpon>degree and course addition.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="Apps\ar_register_form.resx">
       <DependentUpon>ar_register_form.cs</DependentUpon>
-
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\gpacalculator.resx">
       <DependentUpon>gpacalculator.cs</DependentUpon>
@@ -252,11 +255,17 @@
     <EmbeddedResource Include="Apps\studentregister.resx">
       <DependentUpon>studentregister.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Apps\student_dashboard.resx">
+      <DependentUpon>student_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Apps\usercontrol_adminpanel\ar_reg.resx">
       <DependentUpon>ar_reg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\usercontrol_adminpanel\reg_users.resx">
       <DependentUpon>reg_users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\usercontrol_studentdash\module_view.resx">
+      <DependentUpon>module_view.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

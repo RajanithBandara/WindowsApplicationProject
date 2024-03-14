@@ -16,5 +16,10 @@ namespace WindowsAppProject.Apps
         {
             InitializeComponent();
         }
+
+        private void student_dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
