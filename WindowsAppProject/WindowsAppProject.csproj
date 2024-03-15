@@ -112,6 +112,7 @@
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -196,12 +197,7 @@
     <Compile Include="Apps\studentregister.Designer.cs">
       <DependentUpon>studentregister.cs</DependentUpon>
     </Compile>
-    <Compile Include="Apps\student_dashboard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Apps\student_dashboard.Designer.cs">
-      <DependentUpon>student_dashboard.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Apps\students_chart\student_progess.cs" />
     <Compile Include="Apps\usercontrol_adminpanel\ar_reg.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -270,9 +266,6 @@
     <EmbeddedResource Include="Apps\studentregister.resx">
       <DependentUpon>studentregister.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Apps\student_dashboard.resx">
-      <DependentUpon>student_dashboard.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Apps\usercontrol_adminpanel\ar_reg.resx">
       <DependentUpon>ar_reg.cs</DependentUpon>
     </EmbeddedResource>
@@ -296,6 +289,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\WindowsAppProject.Apps.students_chart.student_progess.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
