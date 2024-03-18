@@ -33,10 +33,11 @@
             // 
             // plotView1
             // 
-            this.plotView1.Location = new System.Drawing.Point(38, 32);
+            this.plotView1.Location = new System.Drawing.Point(60, 26);
+            this.plotView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.plotView1.Name = "plotView1";
             this.plotView1.PanCursor = System.Windows.Forms.Cursors.Hand;
-            this.plotView1.Size = new System.Drawing.Size(831, 591);
+            this.plotView1.Size = new System.Drawing.Size(739, 473);
             this.plotView1.TabIndex = 0;
             this.plotView1.Text = "plotView1";
             this.plotView1.ZoomHorizontalCursor = System.Windows.Forms.Cursors.SizeWE;
@@ -45,12 +46,11 @@
             // 
             // testchart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.plotView1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "testchart";
-            this.Size = new System.Drawing.Size(963, 670);
+            this.Size = new System.Drawing.Size(856, 536);
             this.Load += new System.EventHandler(this.testchart_Load);
             this.ResumeLayout(false);
 

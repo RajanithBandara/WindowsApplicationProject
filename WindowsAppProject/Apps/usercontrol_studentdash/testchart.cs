@@ -27,7 +27,7 @@ namespace WindowsAppProject.Apps.usercontrol_studentdash
 
             var series = new LineSeries();
             Random rand = new Random();
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 11; i++)
             {
                 series.Points.Add(new DataPoint(i, rand.Next(1, 100)));
             }
