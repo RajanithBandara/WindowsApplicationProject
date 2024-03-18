@@ -15,6 +15,9 @@ namespace WindowsAppProject.Apps.usercontrol_studentdash
 {
     public partial class testchart : UserControl
     {
+        private PlotModel plotModel;
+        private Label valueLabe1;
+        private LineSeries series;
         public testchart()
         {
             InitializeComponent();
@@ -35,6 +38,27 @@ namespace WindowsAppProject.Apps.usercontrol_studentdash
             plotModel.Series.Add(series);
             plotView1.Model = plotModel;
             
+        }
+
+        private void Initializecontrols()
+        {
+            valueLabe1 = new Label();
+            valueLabe1.Text = "Last value";
+            valueLabe1.AutoSize = true;
+            valueLabe1.Location = new System.Drawing.Point(10, 10);
+            this.Controls.Add(valueLabe1);
+
+        }
+
+        private void UpdateValueLabel(double value)
+        {
+            valueLabe1.Text = "Last value :" + value.ToString();
+        }
+
+        private void plotView1_MouseClick(object sender, MouseEventArgs e)
+        {
+            double lastvalue = series.Points[series.Points.Count - 1].Y;
+            UpdateValueLabel(lastvalue);
         }
 
         private void testchart_Load(object sender, EventArgs e)
