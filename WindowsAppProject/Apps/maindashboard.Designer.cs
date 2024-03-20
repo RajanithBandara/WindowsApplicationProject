@@ -35,12 +35,13 @@ namespace WindowsAppProject
             this.rjPanel6 = new RoundedPanelClass.RJPanel();
             this.rjPanel2 = new RoundedPanelClass.RJPanel();
             this.rjPanel3 = new RoundedPanelClass.RJPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.rjPanel5 = new RoundedPanelClass.RJPanel();
             this.rjPanel4 = new RoundedPanelClass.RJPanel();
             this.rjPanel1 = new RoundedPanelClass.RJPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.rjButton3 = new CustomControls.RJControls.RJButton();
-            this.label1 = new System.Windows.Forms.Label();
             this.rjPanel6.SuspendLayout();
             this.rjPanel3.SuspendLayout();
             this.rjPanel1.SuspendLayout();
@@ -81,6 +82,7 @@ namespace WindowsAppProject
             this.rjButton1.Location = new System.Drawing.Point(28, 19);
             this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Padding = new System.Windows.Forms.Padding(75, 0, 0, 0);
             this.rjButton1.Size = new System.Drawing.Size(269, 62);
             this.rjButton1.TabIndex = 0;
             this.rjButton1.Text = "Admin Panel";
@@ -120,7 +122,7 @@ namespace WindowsAppProject
             this.rjPanel2.Location = new System.Drawing.Point(526, 374);
             this.rjPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel2.Name = "rjPanel2";
-            this.rjPanel2.Size = new System.Drawing.Size(377, 406);
+            this.rjPanel2.Size = new System.Drawing.Size(378, 406);
             this.rjPanel2.TabIndex = 1;
             // 
             // rjPanel3
@@ -138,6 +140,18 @@ namespace WindowsAppProject
             this.rjPanel3.Size = new System.Drawing.Size(492, 770);
             this.rjPanel3.TabIndex = 0;
             this.rjPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.rjPanel3_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(52, 193);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(373, 36);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Top student details content";
             // 
             // rjPanel5
             // 
@@ -172,6 +186,7 @@ namespace WindowsAppProject
             // 
             this.rjPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
             this.rjPanel1.BorderRadius = 30;
+            this.rjPanel1.Controls.Add(this.panel1);
             this.rjPanel1.Controls.Add(this.rjButton2);
             this.rjPanel1.Controls.Add(this.rjButton4);
             this.rjPanel1.Controls.Add(this.rjButton1);
@@ -185,6 +200,16 @@ namespace WindowsAppProject
             this.rjPanel1.Name = "rjPanel1";
             this.rjPanel1.Size = new System.Drawing.Size(1488, 90);
             this.rjPanel1.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(206)))), ((int)(((byte)(248)))));
+            this.panel1.BackgroundImage = global::WindowsAppProject.Properties.Resources._0lNSL4_LogoMakr;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel1.Location = new System.Drawing.Point(47, 23);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(65, 56);
+            this.panel1.TabIndex = 1;
             // 
             // rjButton2
             // 
@@ -229,18 +254,6 @@ namespace WindowsAppProject
             this.rjButton3.UseVisualStyleBackColor = false;
             this.rjButton3.Click += new System.EventHandler(this.rjButton3_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(52, 193);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(373, 36);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Top student details content";
-            // 
             // maindashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -275,5 +288,6 @@ namespace WindowsAppProject
         private CustomControls.RJControls.RJButton rjButton2;
         private CustomControls.RJControls.RJButton rjButton3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
