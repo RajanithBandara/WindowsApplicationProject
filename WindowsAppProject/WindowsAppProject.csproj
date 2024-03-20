@@ -118,6 +118,7 @@
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
+
     <Reference Include="System.Web.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Chart.Controls.4.7.2046\lib\net35\System.Web.DataVisualization.dll</HintPath>
       <Private>True</Private>
@@ -174,12 +175,6 @@
     <Compile Include="Apps\degree and course addition.Designer.cs">
       <DependentUpon>degree and course addition.cs</DependentUpon>
     </Compile>
-    <Compile Include="Apps\ar_register_form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Apps\ar_register_form.Designer.cs">
-      <DependentUpon>ar_register_form.cs</DependentUpon>
-    </Compile>
     <Compile Include="Apps\gpacalculator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,7 +217,7 @@
     <Compile Include="Apps\studentregister.Designer.cs">
       <DependentUpon>studentregister.cs</DependentUpon>
     </Compile>
-    <Compile Include="Apps\students_chart\student_progess.cs" />
+
     <Compile Include="Apps\usercontrol_adminpanel\ar_reg.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -272,9 +267,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\degree and course addition.resx">
       <DependentUpon>degree and course addition.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Apps\ar_register_form.resx">
-      <DependentUpon>ar_register_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\gpacalculator.resx">
       <DependentUpon>gpacalculator.cs</DependentUpon>
@@ -370,6 +362,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0lNSL4-LogoMakr.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

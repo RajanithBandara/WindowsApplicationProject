@@ -63,6 +63,16 @@ namespace WindowsAppProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _0lNSL4_LogoMakr {
+            get {
+                object obj = ResourceManager.GetObject("0lNSL4-LogoMakr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _24OKoU_LogoMakr {
             get {
                 object obj = ResourceManager.GetObject("24OKoU-LogoMakr", resourceCulture);
