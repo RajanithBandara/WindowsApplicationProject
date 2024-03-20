@@ -56,5 +56,10 @@ namespace WindowsAppProject
         {
 
         }
+
+        private void degree_and_course_addition_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
