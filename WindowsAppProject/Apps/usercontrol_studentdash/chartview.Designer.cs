@@ -66,6 +66,7 @@
             this.chart1.Size = new System.Drawing.Size(466, 461);
             this.chart1.TabIndex = 2;
             this.chart1.Text = "chart1";
+
             // 
             // chartview
             // 
@@ -84,8 +85,10 @@
 
         #endregion
 
+
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+
     }
 }

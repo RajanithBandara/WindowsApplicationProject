@@ -36,7 +36,7 @@ namespace WindowsAppProject.Apps
 
         private void rjButton2_Click(object sender, EventArgs e)
         {
-            chartview chartview = new chartview();
+            testchart chartview = new testchart();
             addusercontrol(chartview);
         }
     }
