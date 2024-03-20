@@ -78,11 +78,6 @@ namespace WindowsAppProject
             course_Dashboard.Show();
         }
 
-        private void rjPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void rjButton2_Click_1(object sender, EventArgs e)
         {
             gpacalculator gpacal = new gpacalculator();
