@@ -149,12 +149,6 @@
     <Compile Include="Apps\degree and course addition.Designer.cs">
       <DependentUpon>degree and course addition.cs</DependentUpon>
     </Compile>
-    <Compile Include="Apps\ar_register_form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Apps\ar_register_form.Designer.cs">
-      <DependentUpon>ar_register_form.cs</DependentUpon>
-    </Compile>
     <Compile Include="Apps\gpacalculator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -240,9 +234,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\degree and course addition.resx">
       <DependentUpon>degree and course addition.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Apps\ar_register_form.resx">
-      <DependentUpon>ar_register_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\gpacalculator.resx">
       <DependentUpon>gpacalculator.cs</DependentUpon>
