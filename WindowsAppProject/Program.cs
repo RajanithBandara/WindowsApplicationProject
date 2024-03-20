@@ -23,7 +23,7 @@ namespace WindowsAppProject
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new Modules_Addition());
+            Application.Run(new degree_and_course_addition());
 
 
         }
