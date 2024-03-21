@@ -30,6 +30,7 @@ namespace WindowsAppProject
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(maindashboard));
             this.rjButton4 = new CustomControls.RJControls.RJButton();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.rjPanel6 = new RoundedPanelClass.RJPanel();
@@ -246,6 +247,7 @@ namespace WindowsAppProject
             this.ClientSize = new System.Drawing.Size(1585, 932);
             this.Controls.Add(this.rjPanel1);
             this.Controls.Add(this.rjPanel6);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "maindashboard";
             this.Text = "maindashboard";

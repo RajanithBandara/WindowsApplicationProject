@@ -39,12 +39,12 @@
             // 
             // admincontentpanel
             // 
-            this.admincontentpanel.BackColor = System.Drawing.Color.White;
+            this.admincontentpanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.admincontentpanel.BorderRadius = 30;
             this.admincontentpanel.ForeColor = System.Drawing.Color.White;
             this.admincontentpanel.GradientAngle = 90F;
-            this.admincontentpanel.GradientBottomColor = System.Drawing.Color.DarkGray;
-            this.admincontentpanel.GradientTopColor = System.Drawing.Color.DarkGray;
+            this.admincontentpanel.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
+            this.admincontentpanel.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.admincontentpanel.Location = new System.Drawing.Point(285, 118);
             this.admincontentpanel.Name = "admincontentpanel";
             this.admincontentpanel.Size = new System.Drawing.Size(1220, 743);
@@ -59,15 +59,15 @@
             // 
             // rjPanel2
             // 
-            this.rjPanel2.BackColor = System.Drawing.Color.White;
+            this.rjPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.rjPanel2.BorderRadius = 30;
             this.rjPanel2.Controls.Add(this.rjButton3);
             this.rjPanel2.Controls.Add(this.rjButton2);
             this.rjPanel2.Controls.Add(this.rjButton1);
             this.rjPanel2.ForeColor = System.Drawing.Color.White;
             this.rjPanel2.GradientAngle = 90F;
-            this.rjPanel2.GradientBottomColor = System.Drawing.Color.DarkGray;
-            this.rjPanel2.GradientTopColor = System.Drawing.Color.DarkGray;
+            this.rjPanel2.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
+            this.rjPanel2.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.rjPanel2.Location = new System.Drawing.Point(12, 118);
             this.rjPanel2.Name = "rjPanel2";
             this.rjPanel2.Size = new System.Drawing.Size(257, 743);
@@ -133,6 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
             this.ClientSize = new System.Drawing.Size(1517, 873);
             this.Controls.Add(this.rjPanel2);
             this.Controls.Add(this.panel1);
