@@ -45,8 +45,8 @@ namespace WindowsAppProject
 
         private void rjButton1_Click(object sender, EventArgs e)
         {
-            admin_panel adminpanel = new admin_panel();
-            adminpanel.Show();
+            adminloginform adminlogin = new adminloginform();
+            adminlogin.Show();
         }
 
         private void label4_Click(object sender, EventArgs e)

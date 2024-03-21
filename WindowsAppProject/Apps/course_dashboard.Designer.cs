@@ -28,17 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(course_dashboard));
             this.rjPanel1 = new RoundedPanelClass.RJPanel();
+            this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.rjPanel2 = new RoundedPanelClass.RJPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.rjPanel1.SuspendLayout();
             this.rjPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // rjPanel1
             // 
-            this.rjPanel1.BackColor = System.Drawing.Color.White;
+            this.rjPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.rjPanel1.BorderRadius = 30;
             this.rjPanel1.Controls.Add(this.rjButton1);
             this.rjPanel1.ForeColor = System.Drawing.Color.White;
@@ -49,30 +50,6 @@
             this.rjPanel1.Name = "rjPanel1";
             this.rjPanel1.Size = new System.Drawing.Size(381, 147);
             this.rjPanel1.TabIndex = 0;
-            // 
-            // rjPanel2
-            // 
-            this.rjPanel2.BackColor = System.Drawing.Color.White;
-            this.rjPanel2.BorderRadius = 30;
-            this.rjPanel2.Controls.Add(this.label1);
-            this.rjPanel2.ForeColor = System.Drawing.Color.White;
-            this.rjPanel2.GradientAngle = 90F;
-            this.rjPanel2.GradientBottomColor = System.Drawing.Color.DarkGray;
-            this.rjPanel2.GradientTopColor = System.Drawing.Color.Green;
-            this.rjPanel2.Location = new System.Drawing.Point(65, 35);
-            this.rjPanel2.Name = "rjPanel2";
-            this.rjPanel2.Size = new System.Drawing.Size(953, 707);
-            this.rjPanel2.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(335, 170);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(197, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Current registered courses";
             // 
             // rjButton1
             // 
@@ -93,6 +70,30 @@
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
             // 
+            // rjPanel2
+            // 
+            this.rjPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
+            this.rjPanel2.BorderRadius = 30;
+            this.rjPanel2.Controls.Add(this.label1);
+            this.rjPanel2.ForeColor = System.Drawing.Color.White;
+            this.rjPanel2.GradientAngle = 90F;
+            this.rjPanel2.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
+            this.rjPanel2.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
+            this.rjPanel2.Location = new System.Drawing.Point(65, 35);
+            this.rjPanel2.Name = "rjPanel2";
+            this.rjPanel2.Size = new System.Drawing.Size(953, 707);
+            this.rjPanel2.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(335, 170);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(197, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Current registered courses";
+            // 
             // course_dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -101,6 +102,7 @@
             this.ClientSize = new System.Drawing.Size(1469, 779);
             this.Controls.Add(this.rjPanel2);
             this.Controls.Add(this.rjPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "course_dashboard";
             this.Text = "gpacalculator";

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Npgsql;
+using System.Data.OleDb;
 using System.Data.SqlClient;
 
 namespace WindowsAppProject.Apps
@@ -27,16 +27,16 @@ namespace WindowsAppProject.Apps
             string password = textBox2.Text;
 
             string connectionstr = dbconnection.Instance.ConnectionString;
-            using (NpgsqlConnection conn = new NpgsqlConnection(connectionstr))
+            using (OleDbConnection conn = new OleDbConnection(connectionstr))
             {
                 conn.Open();
 
-                string sql = "SELECT password FROM public.adminuser WHERE username = @username";
+                string sql = "SELECT password FROM adminuser WHERE username = @username";
 
-                using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
+                using (OleDbCommand cmd = new OleDbCommand(sql, conn))
                 {
                     cmd.Parameters.AddWithValue("@username", username);
-                    using (NpgsqlDataReader reader = cmd.ExecuteReader())
+                    using (OleDbDataReader reader = cmd.ExecuteReader())
                     {
                         if (reader.Read())
                         {
@@ -45,6 +45,9 @@ namespace WindowsAppProject.Apps
                             if (password == hashedPasswordFromDatabase)
                             {
                                 MessageBox.Show("Login successful!");
+                                admin_panel adminpanel = new admin_panel();
+                                adminpanel.Show();
+                                this.Hide();
                             }
                             else
                             {
@@ -68,6 +71,11 @@ namespace WindowsAppProject.Apps
             textBox2.PasswordChar = '*';
         }
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
