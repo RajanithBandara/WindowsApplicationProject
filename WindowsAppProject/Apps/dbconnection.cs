@@ -14,7 +14,7 @@ namespace WindowsAppProject.Apps
         public string ConnectionString { get; private set; }
         private dbconnection()
         {
-            ConnectionString = "Host=165.232.167.179;Port=5432;Username=postgres;Password=rajanith2003;Database=usersdb";
+            ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=ProjectDB.accdb";
         }
     }
 

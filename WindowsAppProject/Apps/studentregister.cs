@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -54,9 +55,26 @@ namespace WindowsAppProject.Apps
 
         private void rjButton1_Click(object sender, EventArgs e)
         {
-            string studentname = textBox1.Text;
-            string studentcourse = textBox2.Text;
-            string studentgpa = textBox3.Text;
+            string studentid = textBox1.Text;
+            string studentname = textBox2.Text;
+            string studentcourse = textBox3.Text;
+
+            string connectstr = dbconnection.Instance.ConnectionString;
+            using(NpgsqlConnection conn = new NpgsqlConnection(connectstr))
+            {
+                conn.Open();
+                string sql = "INSERT INTO public.student VALUES(@StudentID, @StudentName, @courseid)";
+                string sql2 = "Select * from public.coursetable where courseid = ";
+                using(NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("StudentID", studentid);
+                    cmd.Parameters.AddWithValue("StudentName", studentname);
+                    cmd.Parameters.AddWithValue("courseid", studentcourse);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Student Registered Successfully");
+                }
+                conn.Close();
+            }
         }
     }
 }
