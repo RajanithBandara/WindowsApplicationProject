@@ -1,5 +1,4 @@
-﻿using Npgsql;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +8,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace WindowsAppProject.Apps.usercontrol_adminpanel
 {
@@ -29,7 +29,7 @@ namespace WindowsAppProject.Apps.usercontrol_adminpanel
         private void button1_Click(object sender, EventArgs e)
         {
             string connectionstr = dbconnection.Instance.ConnectionString;
-            using (NpgsqlConnection conn = new NpgsqlConnection(connectionstr))
+            using (OleDbConnection conn = new OleDbConnection(connectionstr))
             {
                 conn.Open();
 
@@ -42,7 +42,7 @@ namespace WindowsAppProject.Apps.usercontrol_adminpanel
 
                 if (password == retypepassword && username != "")
                 {
-                    NpgsqlCommand cmd = new NpgsqlCommand("INSERT INTO public.aruserdata (username, password, email) VALUES (@username, @password, @email)", conn);
+                    OleDbCommand cmd = new OleDbCommand("INSERT INTO aruserdata VALUES (@username, @password, @email)", conn);
                     cmd.Parameters.AddWithValue("@username", username);
                     cmd.Parameters.AddWithValue("@password", hashedPassword);
                     cmd.Parameters.AddWithValue("@email", email);
@@ -53,32 +53,30 @@ namespace WindowsAppProject.Apps.usercontrol_adminpanel
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show("Data Inserted");
+                            conn.Close();
                         }
                         else
                         {
                             MessageBox.Show("Data Not Inserted");
+                            conn.Close();
                         }
                     }
                     catch (Exception ex)
                     {
                         MessageBox.Show("An error occurred: " + ex.Message);
+                        conn.Close();
                     }
                 }
                 else
                 {
                     MessageBox.Show("Password and Retype Password are not the same");
+                    conn.Close();
                 }
             }
             }
 
         private void ar_reg_Load(object sender, EventArgs e)
         {
-            string connectionstr = dbconnection.Instance.ConnectionString;
-            using (NpgsqlConnection conn = new NpgsqlConnection(connectionstr))
-            {
-                conn.Open();
-                MessageBox.Show("Network connection successful");
-            }
         }
 
         private static string HashPassword(string password)
@@ -116,7 +114,7 @@ namespace WindowsAppProject.Apps.usercontrol_adminpanel
         private void rjButton2_Click(object sender, EventArgs e)
         {
             string connectionstr = dbconnection.Instance.ConnectionString;
-            using (NpgsqlConnection conn = new NpgsqlConnection(connectionstr))
+            using (OleDbConnection conn = new OleDbConnection(connectionstr))
             {
                 conn.Open();
 
@@ -129,7 +127,7 @@ namespace WindowsAppProject.Apps.usercontrol_adminpanel
 
                 if (password == retypepassword && username != "")
                 {
-                    NpgsqlCommand cmd = new NpgsqlCommand("INSERT INTO public.aruserdata (username, password, email) VALUES (@username, @password, @email)", conn);
+                    OleDbCommand cmd = new OleDbCommand("INSERT INTO aruserdata VALUES (@username, @password, @email)", conn);
                     cmd.Parameters.AddWithValue("@username", username);
                     cmd.Parameters.AddWithValue("@password", hashedPassword);
                     cmd.Parameters.AddWithValue("@email", email);
@@ -140,20 +138,24 @@ namespace WindowsAppProject.Apps.usercontrol_adminpanel
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show("Data Inserted");
+                            conn.Close();
                         }
                         else
                         {
                             MessageBox.Show("Data Not Inserted");
+                            conn.Close();
                         }
                     }
                     catch (Exception ex)
                     {
                         MessageBox.Show("An error occurred: " + ex.Message);
+                        conn.Close();
                     }
                 }
                 else
                 {
                     MessageBox.Show("Password and Retype Password are not the same");
+                    conn.Close();   
                 }
             }
         }
@@ -172,6 +174,12 @@ namespace WindowsAppProject.Apps.usercontrol_adminpanel
         private void label10_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label9_Click_1(object sender, EventArgs e)
+        {
+            arloginform arlog = new arloginform();
+            arlog.Show();
         }
     }
 }

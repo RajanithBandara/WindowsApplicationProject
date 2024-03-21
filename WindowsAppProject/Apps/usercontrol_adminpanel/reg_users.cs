@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Npgsql;
+using System.Data.OleDb;
 
 namespace WindowsAppProject.Apps.usercontrol_adminpanel
 {
@@ -24,12 +24,12 @@ namespace WindowsAppProject.Apps.usercontrol_adminpanel
         public void display_cont()
         {
             int y = 0; 
-            NpgsqlConnection conn = new NpgsqlConnection(connectionstr);
+            OleDbConnection conn = new OleDbConnection(connectionstr);
             conn.Open();
-            string sqlline1 = "SELECT username FROM public.aruserdata";
-            using (NpgsqlCommand cmd = new NpgsqlCommand(sqlline1, conn))
+            string sqlline1 = "SELECT username FROM aruserdata";
+            using (OleDbCommand cmd = new OleDbCommand(sqlline1, conn))
             {
-                using (NpgsqlDataReader reader = cmd.ExecuteReader())
+                using (OleDbDataReader reader = cmd.ExecuteReader())
                 {
                     while (reader.Read()) 
                     {
@@ -41,7 +41,7 @@ namespace WindowsAppProject.Apps.usercontrol_adminpanel
                         lbl.Text = username;
                         lbl.AutoSize = false;
                         lbl.Height = 50;
-                        lbl.Width = 100;
+                        lbl.Width = 300;
                         lbl.Font = new Font("Microsoft Sans Serif",18);
                         rjPanel1.Controls.Add(lbl);
                         y += 50;

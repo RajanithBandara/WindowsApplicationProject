@@ -8,7 +8,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Npgsql;
+using System.Data.OleDb;
 
 namespace WindowsAppProject.Apps
 {
@@ -32,21 +32,21 @@ namespace WindowsAppProject.Apps
 
         private void rjButton1_Click(object sender, EventArgs e)
         {
-            string usernameOrEmail = textBox1.Text; 
+            string username = textBox1.Text; 
             string enteredPassword = textBox2.Text;
             string connectionstring = dbconnection.Instance.ConnectionString;
-            using (NpgsqlConnection conn = new NpgsqlConnection(connectionstring))
+            using (OleDbConnection conn = new OleDbConnection(connectionstring))
             {
                 conn.Open();
                 
                    
-                string sql = "SELECT password FROM public.aruserdata WHERE username = @username";
+                string sql = "SELECT pasword FROM aruserdata WHERE username = @username";
 
-                using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
+                using (OleDbCommand cmd = new OleDbCommand(sql, conn))
                 {
-                    cmd.Parameters.AddWithValue("@username", usernameOrEmail);
+                    cmd.Parameters.AddWithValue("@username", username);
 
-                    using (NpgsqlDataReader reader = cmd.ExecuteReader())
+                    using (OleDbDataReader reader = cmd.ExecuteReader())
                     {
                         if (reader.Read())
                         {
@@ -130,6 +130,11 @@ namespace WindowsAppProject.Apps
         private void button1_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

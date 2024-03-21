@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.rjPanel1 = new RoundedPanelClass.RJPanel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,7 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.rjPanel2 = new RoundedPanelClass.RJPanel();
             this.label4 = new System.Windows.Forms.Label();
-            this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.rjPanel1.SuspendLayout();
             this.rjPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -46,8 +46,8 @@
             // 
             this.rjPanel1.BackColor = System.Drawing.Color.White;
             this.rjPanel1.BorderRadius = 30;
-            this.rjPanel1.Controls.Add(this.rjButton1);
             this.rjPanel1.Controls.Add(this.textBox3);
+            this.rjPanel1.Controls.Add(this.rjButton1);
             this.rjPanel1.Controls.Add(this.textBox2);
             this.rjPanel1.Controls.Add(this.textBox1);
             this.rjPanel1.Controls.Add(this.label3);
@@ -62,31 +62,42 @@
             this.rjPanel1.Size = new System.Drawing.Size(925, 484);
             this.rjPanel1.TabIndex = 6;
             // 
-            // textBox3
+            // rjButton1
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.textBox3.Location = new System.Drawing.Point(421, 192);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(286, 30);
-            this.textBox3.TabIndex = 11;
+            this.rjButton1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton1.BorderRadius = 12;
+            this.rjButton1.BorderSize = 0;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.rjButton1.ForeColor = System.Drawing.Color.Transparent;
+            this.rjButton1.Location = new System.Drawing.Point(368, 361);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(286, 43);
+            this.rjButton1.TabIndex = 12;
+            this.rjButton1.Text = "Submit";
+            this.rjButton1.TextColor = System.Drawing.Color.Transparent;
+            this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
             // 
             // textBox2
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.textBox2.Location = new System.Drawing.Point(421, 307);
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(368, 176);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(286, 30);
+            this.textBox2.Size = new System.Drawing.Size(390, 37);
             this.textBox2.TabIndex = 10;
             // 
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.textBox1.Location = new System.Drawing.Point(421, 78);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(368, 62);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(286, 30);
+            this.textBox1.Size = new System.Drawing.Size(390, 37);
             this.textBox1.TabIndex = 9;
             // 
             // label3
@@ -95,11 +106,11 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(182, 298);
+            this.label3.Location = new System.Drawing.Point(129, 282);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 30);
+            this.label3.Size = new System.Drawing.Size(128, 30);
             this.label3.TabIndex = 8;
-            this.label3.Text = "GPA";
+            this.label3.Text = "Course ID";
             // 
             // label2
             // 
@@ -107,11 +118,11 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(182, 192);
+            this.label2.Location = new System.Drawing.Point(129, 176);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 30);
+            this.label2.Size = new System.Drawing.Size(176, 30);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Course ID";
+            this.label2.Text = "Student Name";
             // 
             // label1
             // 
@@ -119,7 +130,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(182, 78);
+            this.label1.Location = new System.Drawing.Point(129, 62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(132, 30);
             this.label1.TabIndex = 6;
@@ -152,25 +163,14 @@
             this.label4.Text = "Student Register Form";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // rjButton1
+            // textBox3
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 12;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.rjButton1.ForeColor = System.Drawing.Color.Transparent;
-            this.rjButton1.Location = new System.Drawing.Point(421, 377);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(286, 43);
-            this.rjButton1.TabIndex = 12;
-            this.rjButton1.Text = "Submit";
-            this.rjButton1.TextColor = System.Drawing.Color.Transparent;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(368, 275);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(390, 37);
+            this.textBox3.TabIndex = 13;
             // 
             // studentregister
             // 
@@ -193,7 +193,6 @@
         #endregion
 
         private RoundedPanelClass.RJPanel rjPanel1;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
@@ -202,5 +201,6 @@
         private CustomControls.RJControls.RJButton rjButton1;
         private RoundedPanelClass.RJPanel rjPanel2;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
