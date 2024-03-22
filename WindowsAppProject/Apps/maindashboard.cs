@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsAppProject.Apps;
+using System.Data.OleDb;
+using WindowsAppProject.Apps.usercontrol_maindashboard;
 
 namespace WindowsAppProject
 {
@@ -17,6 +19,13 @@ namespace WindowsAppProject
         public maindashboard()
         {
             InitializeComponent();
+        }
+
+        private string connectstr = dbconnection.Instance.ConnectionString;
+
+        private void showtopdetails()
+        {
+
         }
 
         private void rjPanel4_Paint(object sender, PaintEventArgs e)
@@ -31,7 +40,8 @@ namespace WindowsAppProject
 
         private void maindashboard_Load(object sender, EventArgs e)
         {
-
+            student_top_view student_Top_View = new student_top_view();
+            addusercontrol(student_Top_View);
         }
         private void maindashboard_Resize(object sender, EventArgs e)
         {
@@ -82,6 +92,25 @@ namespace WindowsAppProject
         {
             gpacalculator gpacal = new gpacalculator();
             gpacal.Show();
+        }
+        private void addusercontrol(UserControl usrctrl)
+        {
+            usrctrl.Dock = DockStyle.Fill;
+            rjPanel3.Controls.Clear();
+            rjPanel3.Controls.Add(usrctrl);
+
+        }
+
+        private void rjButton5_Click_1(object sender, EventArgs e)
+        {
+            student_register_usrctrl std_reg = new student_register_usrctrl();
+            addusercontrol(std_reg);
+        }
+
+        private void rjButton6_Click(object sender, EventArgs e)
+        {
+            student_top_view studenttop_usrctrl = new student_top_view();
+            addusercontrol(studenttop_usrctrl);
         }
     }
 }

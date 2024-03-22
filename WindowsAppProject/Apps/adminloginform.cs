@@ -23,6 +23,31 @@ namespace WindowsAppProject.Apps
 
         private void rjButton1_Click(object sender, EventArgs e)
         {
+            checkfunction();   
+        }
+        private void button1_MousHover(object sender, EventArgs e)
+        {
+            textBox2.PasswordChar = '\0';
+        }
+        private void task_enter(object sender, KeyPressEventArgs e)
+        {
+
+        }
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            textBox2.PasswordChar = '*';
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void checkfunction()
+        {
             string username = textBox1.Text;
             string password = textBox2.Text;
 
@@ -61,23 +86,6 @@ namespace WindowsAppProject.Apps
                     }
                 }
             }
-        }
-        private void button1_MousHover(object sender, EventArgs e)
-        {
-            textBox2.PasswordChar = '\0';
-        }
-        private void button1_MouseLeave(object sender, EventArgs e)
-        {
-            textBox2.PasswordChar = '*';
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rjPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
