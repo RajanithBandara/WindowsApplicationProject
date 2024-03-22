@@ -36,7 +36,7 @@ namespace WindowsAppProject
             TextBox newtextbx2 = new TextBox();
             TextBox newtextbx3 = new TextBox();
 
-            newtextbx.Width = 363;
+            newtextbx.Width = 283;
             newtextbx.TextAlign = HorizontalAlignment.Center;
             newtextbx.Height = 40;
             newtextbx.BorderStyle = BorderStyle.None;
@@ -49,7 +49,7 @@ namespace WindowsAppProject
             newtextbx.Text = null;
             newtextbx.Name = "Module Name";
 
-            newtextbx3.Width = 237;
+            newtextbx3.Width = 184;
             newtextbx3.Height = 40;
             newtextbx3.BorderStyle = BorderStyle.None;
             newtextbx3.TextAlign = HorizontalAlignment.Center;
@@ -63,7 +63,7 @@ namespace WindowsAppProject
             newtextbx3.Text = null;
             newtextbx3.Name = "Grade";
 
-            newtextbx2.Width = 299;
+            newtextbx2.Width = 232;
             newtextbx2.TextAlign = HorizontalAlignment.Center;
             newtextbx2.Height = 40;
             newtextbx2.BorderStyle = BorderStyle.None;

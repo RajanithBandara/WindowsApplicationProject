@@ -31,13 +31,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.rjPanel3 = new RoundedPanelClass.RJPanel();
             this.label4 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.rjPanel2 = new RoundedPanelClass.RJPanel();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.rjPanel1 = new RoundedPanelClass.RJPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.rjPanel3.SuspendLayout();
             this.rjPanel2.SuspendLayout();
             this.rjPanel1.SuspendLayout();
@@ -79,6 +79,14 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Credits";
             // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(17, 74);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(172, 481);
+            this.panel3.TabIndex = 9;
+            this.panel3.Scroll += new System.Windows.Forms.ScrollEventHandler(this.panel3_Scroll);
+            // 
             // rjPanel2
             // 
             this.rjPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
@@ -103,6 +111,14 @@
             this.label3.Size = new System.Drawing.Size(187, 32);
             this.label3.TabIndex = 9;
             this.label3.Text = "Course Name";
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(17, 73);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(509, 481);
+            this.panel2.TabIndex = 8;
+            this.panel2.Scroll += new System.Windows.Forms.ScrollEventHandler(this.panel2_Scroll);
             // 
             // rjPanel1
             // 
@@ -129,13 +145,6 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Course ID";
             // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(17, 73);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(509, 481);
-            this.panel2.TabIndex = 8;
-            // 
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(9, 74);
@@ -143,13 +152,6 @@
             this.panel1.Size = new System.Drawing.Size(172, 481);
             this.panel1.TabIndex = 0;
             this.panel1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.panel1_Scroll);
-            // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(17, 74);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(172, 481);
-            this.panel3.TabIndex = 9;
             // 
             // courses_view
             // 
