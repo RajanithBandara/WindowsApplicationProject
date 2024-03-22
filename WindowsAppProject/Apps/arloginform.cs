@@ -56,6 +56,7 @@ namespace WindowsAppProject.Apps
                             {
                                 MessageBox.Show("Login successful!");
                                 maindashboard maindash = new maindashboard();
+                                this.Hide();
                                 maindash.Show();
                             }
                             else
@@ -137,6 +138,13 @@ namespace WindowsAppProject.Apps
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            adminloginform adminlogin = new adminloginform();
+            this.Hide();
+            adminlogin.Show();
         }
     }
 }

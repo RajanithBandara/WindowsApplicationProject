@@ -246,6 +246,24 @@ namespace WindowsAppProject
 
         }
 
+        private void mname_Scroll(object sender, ScrollEventArgs e)
+        {
+            Mgrade.VerticalScroll.Value = MName.VerticalScroll.Value;
+            Mcredits.VerticalScroll.Value = MName.VerticalScroll.Value;
+        }
+
+        private void Mgrade_Scroll(object sender, ScrollEventArgs e)
+        {
+            MName.VerticalScroll.Value = Mgrade.VerticalScroll.Value;
+            Mcredits.VerticalScroll.Value = Mgrade.VerticalScroll.Value;
+        }
+
+        private void MCredits_Scroll(object sender, ScrollEventArgs e)
+        {
+            Mgrade.VerticalScroll.Value = Mcredits.VerticalScroll.Value;
+            MName.VerticalScroll.Value = Mcredits.VerticalScroll.Value;
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
         }
