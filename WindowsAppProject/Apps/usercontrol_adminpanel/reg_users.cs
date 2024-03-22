@@ -35,8 +35,8 @@ namespace WindowsAppProject.Apps.usercontrol_adminpanel
                     {
                         string username = reader["username"].ToString();
                         Label lbl = new Label(); 
-                        lbl.ForeColor = Color.Black;
-                        lbl.Location = new Point(40, 40 + y);
+                        lbl.ForeColor = Color.White;
+                        lbl.Location = new Point(40, 140 + y);
                         lbl.BackColor = Color.Transparent;
                         lbl.Text = username;
                         lbl.AutoSize = false;

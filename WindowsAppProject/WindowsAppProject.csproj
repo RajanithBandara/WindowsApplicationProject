@@ -13,7 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>D:\Applications\MyApp20\</PublishUrl>
+    <PublishUrl>D:\Applications\MyApp22\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationRevision>8</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -169,12 +169,6 @@
       <DependentUpon>arloginform.cs</DependentUpon>
     </Compile>
     <Compile Include="Apps\dbconnection.cs" />
-    <Compile Include="Apps\degree and course addition.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Apps\degree and course addition.Designer.cs">
-      <DependentUpon>degree and course addition.cs</DependentUpon>
-    </Compile>
     <Compile Include="Apps\gpacalculator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,12 +205,6 @@
     <Compile Include="Apps\std_dashboard.Designer.cs">
       <DependentUpon>std_dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Apps\studentregister.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Apps\studentregister.Designer.cs">
-      <DependentUpon>studentregister.cs</DependentUpon>
-    </Compile>
     <Compile Include="Apps\usercontrol_adminpanel\ar_reg.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -228,6 +216,18 @@
     </Compile>
     <Compile Include="Apps\usercontrol_adminpanel\reg_users.Designer.cs">
       <DependentUpon>reg_users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\usercontrol_coursedashboard\courses_view.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\usercontrol_coursedashboard\courses_view.Designer.cs">
+      <DependentUpon>courses_view.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\usercontrol_coursedashboard\reg_course.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\usercontrol_coursedashboard\reg_course.Designer.cs">
+      <DependentUpon>reg_course.cs</DependentUpon>
     </Compile>
     <Compile Include="Apps\usercontrol_maindashboard\student_register_usrctrl.cs">
       <SubType>UserControl</SubType>
@@ -270,9 +270,6 @@
     <EmbeddedResource Include="Apps\arloginform.resx">
       <DependentUpon>arloginform.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Apps\degree and course addition.resx">
-      <DependentUpon>degree and course addition.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Apps\gpacalculator.resx">
       <DependentUpon>gpacalculator.cs</DependentUpon>
     </EmbeddedResource>
@@ -291,14 +288,17 @@
     <EmbeddedResource Include="Apps\std_dashboard.resx">
       <DependentUpon>std_dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Apps\studentregister.resx">
-      <DependentUpon>studentregister.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Apps\usercontrol_adminpanel\ar_reg.resx">
       <DependentUpon>ar_reg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\usercontrol_adminpanel\reg_users.resx">
       <DependentUpon>reg_users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\usercontrol_coursedashboard\courses_view.resx">
+      <DependentUpon>courses_view.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\usercontrol_coursedashboard\reg_course.resx">
+      <DependentUpon>reg_course.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\usercontrol_maindashboard\student_register_usrctrl.resx">
       <DependentUpon>student_register_usrctrl.cs</DependentUpon>
@@ -379,5 +379,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -90,7 +90,7 @@
             // 
             this.button1.BackgroundImage = global::WindowsAppProject.Properties.Resources.eye_25x25;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Location = new System.Drawing.Point(515, 361);
+            this.button1.Location = new System.Drawing.Point(516, 362);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(44, 37);
             this.button1.TabIndex = 5;
@@ -121,6 +121,7 @@
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.White;
             this.textBox2.Location = new System.Drawing.Point(241, 361);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
@@ -132,6 +133,7 @@
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.White;
             this.textBox1.Location = new System.Drawing.Point(241, 245);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(318, 39);

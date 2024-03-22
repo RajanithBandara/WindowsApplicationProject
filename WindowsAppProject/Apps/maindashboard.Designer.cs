@@ -31,7 +31,11 @@ namespace WindowsAppProject
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(maindashboard));
+            this.rjPanel1 = new RoundedPanelClass.RJPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.rjButton4 = new CustomControls.RJControls.RJButton();
+            this.rjButton3 = new CustomControls.RJControls.RJButton();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.rjPanel6 = new RoundedPanelClass.RJPanel();
             this.rjPanel3 = new RoundedPanelClass.RJPanel();
@@ -40,15 +44,61 @@ namespace WindowsAppProject
             this.rjPanel4 = new RoundedPanelClass.RJPanel();
             this.rjButton6 = new CustomControls.RJControls.RJButton();
             this.rjButton5 = new CustomControls.RJControls.RJButton();
-            this.rjPanel1 = new RoundedPanelClass.RJPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.rjButton2 = new CustomControls.RJControls.RJButton();
-            this.rjButton3 = new CustomControls.RJControls.RJButton();
+            this.rjPanel1.SuspendLayout();
             this.rjPanel6.SuspendLayout();
             this.rjPanel3.SuspendLayout();
             this.rjPanel4.SuspendLayout();
-            this.rjPanel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // rjPanel1
+            // 
+            this.rjPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
+            this.rjPanel1.BorderRadius = 30;
+            this.rjPanel1.Controls.Add(this.panel1);
+            this.rjPanel1.Controls.Add(this.rjButton2);
+            this.rjPanel1.Controls.Add(this.rjButton4);
+            this.rjPanel1.Controls.Add(this.rjButton3);
+            this.rjPanel1.Controls.Add(this.rjButton1);
+            this.rjPanel1.ForeColor = System.Drawing.Color.White;
+            this.rjPanel1.GradientAngle = 90F;
+            this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
+            this.rjPanel1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
+            this.rjPanel1.Location = new System.Drawing.Point(45, 30);
+            this.rjPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rjPanel1.Name = "rjPanel1";
+            this.rjPanel1.Size = new System.Drawing.Size(1488, 90);
+            this.rjPanel1.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = global::WindowsAppProject.Properties.Resources._0lNSL4_LogoMakr;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel1.Location = new System.Drawing.Point(46, 23);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(65, 56);
+            this.panel1.TabIndex = 5;
+            // 
+            // rjButton2
+            // 
+            this.rjButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(206)))), ((int)(((byte)(248)))));
+            this.rjButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(206)))), ((int)(((byte)(248)))));
+            this.rjButton2.BorderColor = System.Drawing.Color.Transparent;
+            this.rjButton2.BorderRadius = 12;
+            this.rjButton2.BorderSize = 1;
+            this.rjButton2.FlatAppearance.BorderSize = 0;
+            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton2.ForeColor = System.Drawing.Color.Black;
+            this.rjButton2.Location = new System.Drawing.Point(1192, 19);
+            this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rjButton2.Name = "rjButton2";
+            this.rjButton2.Size = new System.Drawing.Size(269, 62);
+            this.rjButton2.TabIndex = 4;
+            this.rjButton2.Text = "GPA Calculator";
+            this.rjButton2.TextColor = System.Drawing.Color.Black;
+            this.rjButton2.UseVisualStyleBackColor = false;
+            this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click_1);
             // 
             // rjButton4
             // 
@@ -70,6 +120,28 @@ namespace WindowsAppProject
             this.rjButton4.TextColor = System.Drawing.Color.Black;
             this.rjButton4.UseVisualStyleBackColor = false;
             this.rjButton4.Click += new System.EventHandler(this.rjButton4_Click);
+            // 
+            // rjButton3
+            // 
+            this.rjButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(206)))), ((int)(((byte)(248)))));
+            this.rjButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(206)))), ((int)(((byte)(248)))));
+            this.rjButton3.BorderColor = System.Drawing.Color.Transparent;
+            this.rjButton3.BorderRadius = 12;
+            this.rjButton3.BorderSize = 0;
+            this.rjButton3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.rjButton3.FlatAppearance.BorderSize = 0;
+            this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton3.ForeColor = System.Drawing.Color.Black;
+            this.rjButton3.Location = new System.Drawing.Point(416, 19);
+            this.rjButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rjButton3.Name = "rjButton3";
+            this.rjButton3.Size = new System.Drawing.Size(269, 62);
+            this.rjButton3.TabIndex = 2;
+            this.rjButton3.Text = "Student Dashboard";
+            this.rjButton3.TextColor = System.Drawing.Color.Black;
+            this.rjButton3.UseVisualStyleBackColor = false;
+            this.rjButton3.Click += new System.EventHandler(this.rjButton3_Click);
             // 
             // rjButton1
             // 
@@ -123,6 +195,8 @@ namespace WindowsAppProject
             this.rjPanel3.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.rjPanel3.Location = new System.Drawing.Point(28, 10);
             this.rjPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rjPanel3.MaximumSize = new System.Drawing.Size(876, 770);
+            this.rjPanel3.MinimumSize = new System.Drawing.Size(876, 770);
             this.rjPanel3.Name = "rjPanel3";
             this.rjPanel3.Size = new System.Drawing.Size(876, 770);
             this.rjPanel3.TabIndex = 0;
@@ -211,78 +285,6 @@ namespace WindowsAppProject
             this.rjButton5.UseVisualStyleBackColor = false;
             this.rjButton5.Click += new System.EventHandler(this.rjButton5_Click_1);
             // 
-            // rjPanel1
-            // 
-            this.rjPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
-            this.rjPanel1.BorderRadius = 30;
-            this.rjPanel1.Controls.Add(this.panel1);
-            this.rjPanel1.Controls.Add(this.rjButton2);
-            this.rjPanel1.Controls.Add(this.rjButton4);
-            this.rjPanel1.Controls.Add(this.rjButton3);
-            this.rjPanel1.Controls.Add(this.rjButton1);
-            this.rjPanel1.ForeColor = System.Drawing.Color.White;
-            this.rjPanel1.GradientAngle = 90F;
-            this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
-            this.rjPanel1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
-            this.rjPanel1.Location = new System.Drawing.Point(45, 30);
-            this.rjPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rjPanel1.Name = "rjPanel1";
-            this.rjPanel1.Size = new System.Drawing.Size(1488, 90);
-            this.rjPanel1.TabIndex = 1;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = global::WindowsAppProject.Properties.Resources._0lNSL4_LogoMakr;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1.Location = new System.Drawing.Point(46, 19);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(65, 56);
-            this.panel1.TabIndex = 5;
-            // 
-            // rjButton2
-            // 
-            this.rjButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(206)))), ((int)(((byte)(248)))));
-            this.rjButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(206)))), ((int)(((byte)(248)))));
-            this.rjButton2.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton2.BorderRadius = 12;
-            this.rjButton2.BorderSize = 1;
-            this.rjButton2.FlatAppearance.BorderSize = 0;
-            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton2.ForeColor = System.Drawing.Color.Black;
-            this.rjButton2.Location = new System.Drawing.Point(1192, 19);
-            this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(269, 62);
-            this.rjButton2.TabIndex = 4;
-            this.rjButton2.Text = "GPA Calculator";
-            this.rjButton2.TextColor = System.Drawing.Color.Black;
-            this.rjButton2.UseVisualStyleBackColor = false;
-            this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click_1);
-            // 
-            // rjButton3
-            // 
-            this.rjButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(206)))), ((int)(((byte)(248)))));
-            this.rjButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(206)))), ((int)(((byte)(248)))));
-            this.rjButton3.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton3.BorderRadius = 12;
-            this.rjButton3.BorderSize = 0;
-            this.rjButton3.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.rjButton3.FlatAppearance.BorderSize = 0;
-            this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton3.ForeColor = System.Drawing.Color.Black;
-            this.rjButton3.Location = new System.Drawing.Point(416, 19);
-            this.rjButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rjButton3.Name = "rjButton3";
-            this.rjButton3.Size = new System.Drawing.Size(269, 62);
-            this.rjButton3.TabIndex = 2;
-            this.rjButton3.Text = "Student Dashboard";
-            this.rjButton3.TextColor = System.Drawing.Color.Black;
-            this.rjButton3.UseVisualStyleBackColor = false;
-            this.rjButton3.Click += new System.EventHandler(this.rjButton3_Click);
-            // 
             // maindashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -294,14 +296,17 @@ namespace WindowsAppProject
             this.Controls.Add(this.rjPanel6);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1607, 988);
+            this.MinimumSize = new System.Drawing.Size(1607, 988);
             this.Name = "maindashboard";
             this.Text = "maindashboard";
             this.Load += new System.EventHandler(this.maindashboard_Load);
+            this.rjPanel1.ResumeLayout(false);
             this.rjPanel6.ResumeLayout(false);
             this.rjPanel3.ResumeLayout(false);
             this.rjPanel3.PerformLayout();
             this.rjPanel4.ResumeLayout(false);
-            this.rjPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

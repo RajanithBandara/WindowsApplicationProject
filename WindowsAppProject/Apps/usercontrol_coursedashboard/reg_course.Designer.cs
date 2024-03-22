@@ -1,13 +1,13 @@
-﻿namespace WindowsAppProject
+﻿namespace WindowsAppProject.Apps.usercontrol_coursedashboard
 {
-    partial class degree_and_course_addition
+    partial class reg_course
     {
-        /// <summary>
+        /// <summary> 
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
+        /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,18 +20,16 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Component Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(degree_and_course_addition));
-            this.label5 = new System.Windows.Forms.Label();
-            this.rjPanel1 = new RoundedPanelClass.RJPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
@@ -42,36 +40,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.rjPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(0, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 20);
-            this.label5.TabIndex = 10;
-            // 
-            // rjPanel1
-            // 
-            this.rjPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.rjPanel1.BorderRadius = 0;
-            this.rjPanel1.Controls.Add(this.panel1);
-            this.rjPanel1.ForeColor = System.Drawing.Color.White;
-            this.rjPanel1.GradientAngle = 9F;
-            this.rjPanel1.GradientBottomColor = System.Drawing.Color.CadetBlue;
-            this.rjPanel1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
-            this.rjPanel1.Location = new System.Drawing.Point(484, 1);
-            this.rjPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.rjPanel1.Name = "rjPanel1";
-            this.rjPanel1.Size = new System.Drawing.Size(754, 854);
-            this.rjPanel1.TabIndex = 17;
-            // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.rjButton2);
             this.panel1.Controls.Add(this.rjButton1);
@@ -82,10 +57,21 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(61, 23);
+            this.panel1.Location = new System.Drawing.Point(120, 52);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(657, 798);
-            this.panel1.TabIndex = 0;
+            this.panel1.Size = new System.Drawing.Size(688, 590);
+            this.panel1.TabIndex = 3;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label6.Location = new System.Drawing.Point(111, 81);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(455, 69);
+            this.label6.TabIndex = 34;
+            this.label6.Text = "Course Addition";
             // 
             // label4
             // 
@@ -216,43 +202,26 @@
             this.label1.TabIndex = 23;
             this.label1.Text = "Course Name";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(12, 341);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(455, 69);
-            this.label6.TabIndex = 33;
-            this.label6.Text = "Course Addition";
-            // 
-            // degree_and_course_addition
+            // reg_course
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
-            this.ClientSize = new System.Drawing.Size(1231, 856);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.rjPanel1);
-            this.Controls.Add(this.label5);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "degree_and_course_addition";
-            this.Text = "degree_and_course_addition";
-            this.Load += new System.EventHandler(this.degree_and_course_addition_Load);
-            this.rjPanel1.ResumeLayout(false);
+            this.Controls.Add(this.panel1);
+            this.MaximumSize = new System.Drawing.Size(953, 707);
+            this.MinimumSize = new System.Drawing.Size(953, 707);
+            this.Name = "reg_course";
+            this.Size = new System.Drawing.Size(953, 707);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label5;
-        private RoundedPanelClass.RJPanel rjPanel1;
+
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private CustomControls.RJControls.RJButton rjButton2;
         private CustomControls.RJControls.RJButton rjButton1;
@@ -263,6 +232,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label6;
     }
 }
