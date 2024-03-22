@@ -75,17 +75,17 @@
             // 
             // rjButton3
             // 
-            this.rjButton3.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton3.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton3.BackColor = System.Drawing.Color.RoyalBlue;
+            this.rjButton3.BackgroundColor = System.Drawing.Color.RoyalBlue;
             this.rjButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton3.BorderRadius = 0;
+            this.rjButton3.BorderRadius = 12;
             this.rjButton3.BorderSize = 0;
             this.rjButton3.FlatAppearance.BorderSize = 0;
             this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton3.ForeColor = System.Drawing.Color.White;
             this.rjButton3.Location = new System.Drawing.Point(36, 275);
             this.rjButton3.Name = "rjButton3";
-            this.rjButton3.Size = new System.Drawing.Size(150, 40);
+            this.rjButton3.Size = new System.Drawing.Size(174, 72);
             this.rjButton3.TabIndex = 2;
             this.rjButton3.Text = "rjButton3";
             this.rjButton3.TextColor = System.Drawing.Color.White;
@@ -93,17 +93,17 @@
             // 
             // rjButton2
             // 
-            this.rjButton2.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton2.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.rjButton2.BackgroundColor = System.Drawing.Color.RoyalBlue;
             this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton2.BorderRadius = 0;
+            this.rjButton2.BorderRadius = 12;
             this.rjButton2.BorderSize = 0;
             this.rjButton2.FlatAppearance.BorderSize = 0;
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.ForeColor = System.Drawing.Color.White;
             this.rjButton2.Location = new System.Drawing.Point(36, 191);
             this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(150, 40);
+            this.rjButton2.Size = new System.Drawing.Size(174, 72);
             this.rjButton2.TabIndex = 1;
             this.rjButton2.Text = "Register a user";
             this.rjButton2.TextColor = System.Drawing.Color.White;
@@ -112,17 +112,17 @@
             // 
             // rjButton1
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.RoyalBlue;
             this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 0;
+            this.rjButton1.BorderRadius = 12;
             this.rjButton1.BorderSize = 0;
             this.rjButton1.FlatAppearance.BorderSize = 0;
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.ForeColor = System.Drawing.Color.White;
             this.rjButton1.Location = new System.Drawing.Point(36, 104);
             this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(150, 40);
+            this.rjButton1.Size = new System.Drawing.Size(174, 72);
             this.rjButton1.TabIndex = 0;
             this.rjButton1.Text = "Current users";
             this.rjButton1.TextColor = System.Drawing.Color.White;
@@ -138,6 +138,9 @@
             this.Controls.Add(this.rjPanel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.admincontentpanel);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1539, 929);
+            this.MinimumSize = new System.Drawing.Size(1539, 929);
             this.Name = "admin_panel";
             this.Text = "admin_panel";
             this.Load += new System.EventHandler(this.admin_panel_Load);
