@@ -44,9 +44,9 @@
             this.contentpanel.GradientAngle = 90F;
             this.contentpanel.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.contentpanel.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
-            this.contentpanel.Location = new System.Drawing.Point(65, 35);
+            this.contentpanel.Location = new System.Drawing.Point(42, 36);
             this.contentpanel.Name = "contentpanel";
-            this.contentpanel.Size = new System.Drawing.Size(953, 707);
+            this.contentpanel.Size = new System.Drawing.Size(982, 712);
             this.contentpanel.TabIndex = 1;
             this.contentpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.contentpanel_Paint);
             // 
