@@ -81,6 +81,7 @@
             // 
             // panel3
             // 
+            this.panel3.AutoScroll = true;
             this.panel3.Location = new System.Drawing.Point(17, 74);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(172, 481);
@@ -114,6 +115,7 @@
             // 
             // panel2
             // 
+            this.panel2.AutoScroll = true;
             this.panel2.Location = new System.Drawing.Point(17, 73);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(509, 481);
@@ -147,6 +149,7 @@
             // 
             // panel1
             // 
+            this.panel1.AutoScroll = true;
             this.panel1.Location = new System.Drawing.Point(9, 74);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(172, 481);

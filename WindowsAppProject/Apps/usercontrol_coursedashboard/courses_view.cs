@@ -123,6 +123,7 @@ namespace WindowsAppProject.Apps.usercontrol_coursedashboard
         {
             panel2.VerticalScroll.Value = panel3.VerticalScroll.Value;
             panel1.VerticalScroll.Value = panel3.VerticalScroll.Value;
+            
         }
     }
 }
