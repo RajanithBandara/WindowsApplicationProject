@@ -112,5 +112,11 @@ namespace WindowsAppProject
             student_top_view studenttop_usrctrl = new student_top_view();
             addusercontrol(studenttop_usrctrl);
         }
+
+        private void rjButton7_Click(object sender, EventArgs e)
+        {
+            Modules_Addition resultadd = new Modules_Addition();
+            resultadd.Show();
+        }
     }
 }

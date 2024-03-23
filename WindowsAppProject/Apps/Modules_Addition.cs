@@ -1,4 +1,4 @@
-﻿using Npgsql;
+﻿using System.Data.OleDb;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsAppProject.Apps;
 
 namespace WindowsAppProject
 {
@@ -18,13 +19,36 @@ namespace WindowsAppProject
             InitializeComponent();
         }
 
-        private string connectionstr = "Host=165.232.167.179;Port=5432;Username=postgres;Password=rajanith2003;Database=usersdb";
+        private string connectionstr = dbconnection.Instance.ConnectionString;
 
         private void rjButton2_Click(object sender, EventArgs e)
+        {
+            additiondetailsandchecking();
+        }
+        private void additiondetailsandchecking()
         {
             string stdid = textBox1.Text;
             string modlecode = textBox2.Text;
             string modlename = textBox3.Text;
+
+            using (OleDbConnection checkconn = new OleDbConnection(connectionstr))
+            {
+                checkconn.Open();
+                string dbquery = "Select * from student where studentid = @stdid";
+                using (OleDbCommand checkcmd = new OleDbCommand(dbquery, checkconn))
+                {
+                    checkcmd.Parameters.AddWithValue("@stdid", stdid);
+                    using (OleDbDataReader reader = checkcmd.ExecuteReader())
+                    {
+                        if (!reader.HasRows)
+                        {
+                            MessageBox.Show("Student ID not found. Please register the relevant student first");
+                            return;
+                        }
+                    }
+                }
+                checkconn.Close();
+            }
 
             if (!int.TryParse(textBox4.Text, out int semesterValue) || !int.TryParse(textBox5.Text, out int modlecreditsValue))
             {
@@ -36,13 +60,13 @@ namespace WindowsAppProject
 
             try
             {
-                using (NpgsqlConnection conn = new NpgsqlConnection(connectionstr))
+                using (OleDbConnection conn = new OleDbConnection(connectionstr))
                 {
                     conn.Open();
 
-                    string sqlQuery = "INSERT INTO public.studentmoduleresult VALUES (@stdid, @modlecode, @modlename, @semester, @modlecredits, @modlegrades)";
+                    string sqlQuery = "INSERT INTO studentmoduleresult VALUES (@stdid, @modlecode, @modlename, @semester, @modlecredits, @modlegrades)";
 
-                    using (NpgsqlCommand cmd = new NpgsqlCommand(sqlQuery, conn))
+                    using (OleDbCommand cmd = new OleDbCommand(sqlQuery, conn))
                     {
                         cmd.Parameters.AddWithValue("@stdid", stdid);
                         cmd.Parameters.AddWithValue("@modlecode", modlecode);
@@ -64,12 +88,15 @@ namespace WindowsAppProject
                             MessageBox.Show("No rows affected.");
                         }
                     }
+                    conn.Close();
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("An error occurred: " + ex.Message);
             }
+            
+        
 
 
     }

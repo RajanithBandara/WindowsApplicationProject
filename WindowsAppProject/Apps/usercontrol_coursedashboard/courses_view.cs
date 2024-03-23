@@ -112,5 +112,18 @@ namespace WindowsAppProject.Apps.usercontrol_coursedashboard
             panel2.VerticalScroll.Value = panel1.VerticalScroll.Value;
             panel3.VerticalScroll.Value = panel1.VerticalScroll.Value;
         }
+
+        private void panel2_Scroll(object sender, ScrollEventArgs e)
+        {
+            panel1.VerticalScroll.Value = panel2.VerticalScroll.Value;
+            panel3.VerticalScroll.Value = panel2.VerticalScroll.Value;
+        }
+
+        private void panel3_Scroll(object sender, ScrollEventArgs e)
+        {
+            panel2.VerticalScroll.Value = panel3.VerticalScroll.Value;
+            panel1.VerticalScroll.Value = panel3.VerticalScroll.Value;
+            
+        }
     }
 }

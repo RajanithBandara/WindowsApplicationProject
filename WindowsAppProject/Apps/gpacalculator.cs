@@ -17,7 +17,17 @@ namespace WindowsAppProject
         public gpacalculator()
         {
             InitializeComponent();
+            MName.Scroll += mname_Scroll;
+            Mgrade.Scroll += Mgrade_Scroll;
+            Mcredits.Scroll += MCredits_Scroll;
+            
         }
+
+        private void MName_Scroll(object sender, ScrollEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         private static int x = 8;
         private static string[] credits_array = new string[100];
         private static string[] grades_array = new string[100];
@@ -36,7 +46,7 @@ namespace WindowsAppProject
             TextBox newtextbx2 = new TextBox();
             TextBox newtextbx3 = new TextBox();
 
-            newtextbx.Width = 363;
+            newtextbx.Width = 283;
             newtextbx.TextAlign = HorizontalAlignment.Center;
             newtextbx.Height = 40;
             newtextbx.BorderStyle = BorderStyle.None;
@@ -49,7 +59,7 @@ namespace WindowsAppProject
             newtextbx.Text = null;
             newtextbx.Name = "Module Name";
 
-            newtextbx3.Width = 237;
+            newtextbx3.Width = 184;
             newtextbx3.Height = 40;
             newtextbx3.BorderStyle = BorderStyle.None;
             newtextbx3.TextAlign = HorizontalAlignment.Center;
@@ -63,7 +73,7 @@ namespace WindowsAppProject
             newtextbx3.Text = null;
             newtextbx3.Name = "Grade";
 
-            newtextbx2.Width = 299;
+            newtextbx2.Width = 232;
             newtextbx2.TextAlign = HorizontalAlignment.Center;
             newtextbx2.Height = 40;
             newtextbx2.BorderStyle = BorderStyle.None;
@@ -83,8 +93,6 @@ namespace WindowsAppProject
             Mgrade.Controls.Add(newtextbx3);
             Mcredits.Controls.Add(newtextbx2);
             x = x + 46;
-
-
 
         }
 
@@ -246,22 +254,26 @@ namespace WindowsAppProject
 
         }
 
+        private void SyncVerticalScroll(ScrollEventArgs e)
+        {
+            MName.VerticalScroll.Value = e.NewValue;
+            Mgrade.VerticalScroll.Value = e.NewValue;
+            Mcredits.VerticalScroll.Value = e.NewValue;
+        }
+
         private void mname_Scroll(object sender, ScrollEventArgs e)
         {
-            Mgrade.VerticalScroll.Value = MName.VerticalScroll.Value;
-            Mcredits.VerticalScroll.Value = MName.VerticalScroll.Value;
+            SyncVerticalScroll(e);
         }
 
         private void Mgrade_Scroll(object sender, ScrollEventArgs e)
         {
-            MName.VerticalScroll.Value = Mgrade.VerticalScroll.Value;
-            Mcredits.VerticalScroll.Value = Mgrade.VerticalScroll.Value;
+            SyncVerticalScroll(e);
         }
 
         private void MCredits_Scroll(object sender, ScrollEventArgs e)
         {
-            Mgrade.VerticalScroll.Value = Mcredits.VerticalScroll.Value;
-            MName.VerticalScroll.Value = Mcredits.VerticalScroll.Value;
+            SyncVerticalScroll(e);
         }
 
         private void Form1_Load(object sender, EventArgs e)
