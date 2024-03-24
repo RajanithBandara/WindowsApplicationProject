@@ -170,7 +170,7 @@
     <Compile Include="Apps\arloginform.Designer.cs">
       <DependentUpon>arloginform.cs</DependentUpon>
     </Compile>
-    <Compile Include="Apps\dbconnection.cs" />
+    <Compile Include="dbconnection.cs" />
     <Compile Include="Apps\gpacalculator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -390,6 +390,5 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
