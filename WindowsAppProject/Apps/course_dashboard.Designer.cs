@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(course_dashboard));
             this.contentpanel = new RoundedPanelClass.RJPanel();
             this.rjPanel1 = new RoundedPanelClass.RJPanel();
+            this.rjButton3 = new CustomControls.RJControls.RJButton();
             this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.rjPanel1.SuspendLayout();
@@ -54,6 +55,7 @@
             // 
             this.rjPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.rjPanel1.BorderRadius = 30;
+            this.rjPanel1.Controls.Add(this.rjButton3);
             this.rjPanel1.Controls.Add(this.rjButton2);
             this.rjPanel1.Controls.Add(this.rjButton1);
             this.rjPanel1.ForeColor = System.Drawing.Color.White;
@@ -64,6 +66,26 @@
             this.rjPanel1.Name = "rjPanel1";
             this.rjPanel1.Size = new System.Drawing.Size(387, 571);
             this.rjPanel1.TabIndex = 0;
+            // 
+            // rjButton3
+            // 
+            this.rjButton3.BackColor = System.Drawing.Color.RoyalBlue;
+            this.rjButton3.BackgroundColor = System.Drawing.Color.RoyalBlue;
+            this.rjButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton3.BorderRadius = 12;
+            this.rjButton3.BorderSize = 0;
+            this.rjButton3.FlatAppearance.BorderSize = 0;
+            this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton3.ForeColor = System.Drawing.Color.White;
+            this.rjButton3.Location = new System.Drawing.Point(41, 407);
+            this.rjButton3.Name = "rjButton3";
+            this.rjButton3.Size = new System.Drawing.Size(302, 81);
+            this.rjButton3.TabIndex = 12;
+            this.rjButton3.Text = "Remove Course";
+            this.rjButton3.TextColor = System.Drawing.Color.White;
+            this.rjButton3.UseVisualStyleBackColor = false;
+            this.rjButton3.Click += new System.EventHandler(this.rjButton3_Click);
             // 
             // rjButton2
             // 
@@ -119,7 +141,8 @@
             this.MaximumSize = new System.Drawing.Size(1491, 835);
             this.MinimumSize = new System.Drawing.Size(1491, 835);
             this.Name = "course_dashboard";
-            this.Text = "gpacalculator";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Course Dashboard";
             this.Load += new System.EventHandler(this.course_dashboard_Load);
             this.rjPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -132,5 +155,6 @@
         private CustomControls.RJControls.RJButton rjButton1;
         private RoundedPanelClass.RJPanel contentpanel;
         private CustomControls.RJControls.RJButton rjButton2;
+        private CustomControls.RJControls.RJButton rjButton3;
     }
 }

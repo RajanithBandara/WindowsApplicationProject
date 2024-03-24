@@ -125,5 +125,20 @@ namespace WindowsAppProject.Apps.usercontrol_coursedashboard
             panel1.VerticalScroll.Value = panel3.VerticalScroll.Value;
             
         }
+
+        private void usercontrolinausercontrol(UserControl usrctrl)
+        {
+            usrctrl.Dock = DockStyle.Fill;
+            panel2.Controls.Clear();
+            panel2.Controls.Add(usrctrl);
+            panel1.Controls.Clear();
+            panel3.Controls.Clear();
+        }
+
+        private void rjButton1_Click(object sender, EventArgs e)
+        {
+            remove_course removecourse = new remove_course();   
+            usercontrolinausercontrol(removecourse);
+        }
     }
 }

@@ -142,6 +142,7 @@
             this.MaximumSize = new System.Drawing.Size(1539, 929);
             this.MinimumSize = new System.Drawing.Size(1539, 929);
             this.Name = "admin_panel";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "admin_panel";
             this.Load += new System.EventHandler(this.admin_panel_Load);
             this.rjPanel2.ResumeLayout(false);

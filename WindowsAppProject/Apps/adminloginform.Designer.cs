@@ -173,6 +173,7 @@
             this.Controls.Add(this.rjPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "adminloginform";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "adminloginform";
             this.rjPanel2.ResumeLayout(false);
             this.rjPanel1.ResumeLayout(false);

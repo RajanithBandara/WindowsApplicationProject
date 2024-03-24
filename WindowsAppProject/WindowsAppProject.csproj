@@ -170,6 +170,12 @@
     <Compile Include="Apps\arloginform.Designer.cs">
       <DependentUpon>arloginform.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apps\usercontrol_coursedashboard\remove_course.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\usercontrol_coursedashboard\remove_course.Designer.cs">
+      <DependentUpon>remove_course.cs</DependentUpon>
+    </Compile>
     <Compile Include="dbconnection.cs" />
     <Compile Include="Apps\gpacalculator.cs">
       <SubType>Form</SubType>
@@ -194,12 +200,6 @@
     </Compile>
     <Compile Include="Apps\profile_page.Designer.cs">
       <DependentUpon>profile_page.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Apps\Modules_Addition.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Apps\Modules_Addition.Designer.cs">
-      <DependentUpon>Modules_Addition.cs</DependentUpon>
     </Compile>
     <Compile Include="Apps\std_dashboard.cs">
       <SubType>Form</SubType>
@@ -290,9 +290,6 @@
     <EmbeddedResource Include="Apps\profile_page.resx">
       <DependentUpon>profile_page.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Apps\Modules_Addition.resx">
-      <DependentUpon>Modules_Addition.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Apps\std_dashboard.resx">
       <DependentUpon>std_dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -307,6 +304,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\usercontrol_coursedashboard\reg_course.resx">
       <DependentUpon>reg_course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\usercontrol_coursedashboard\remove_course.resx">
+      <DependentUpon>remove_course.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\usercontrol_maindashboard\student_markadd.resx">
       <DependentUpon>student_markadd.cs</DependentUpon>

@@ -171,6 +171,7 @@
             this.MaximumSize = new System.Drawing.Size(1354, 954);
             this.MinimumSize = new System.Drawing.Size(1354, 954);
             this.Name = "std_dashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "std_dashboard";
             this.rjPanel6.ResumeLayout(false);
             this.ResumeLayout(false);

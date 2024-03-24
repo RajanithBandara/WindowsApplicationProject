@@ -89,5 +89,11 @@ namespace practice_project
             courses_view corsesview = new courses_view();
             addusercontrol(corsesview);
         }
+
+        private void rjButton3_Click(object sender, EventArgs e)
+        {
+            remove_course removecourse = new remove_course();
+            addusercontrol(removecourse);
+        }
     }
 }

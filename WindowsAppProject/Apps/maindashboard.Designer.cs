@@ -323,6 +323,7 @@ namespace WindowsAppProject
             this.MaximumSize = new System.Drawing.Size(1607, 988);
             this.MinimumSize = new System.Drawing.Size(1607, 988);
             this.Name = "maindashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "maindashboard";
             this.Load += new System.EventHandler(this.maindashboard_Load);
             this.rjPanel1.ResumeLayout(false);
