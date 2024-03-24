@@ -229,6 +229,12 @@
     <Compile Include="Apps\usercontrol_coursedashboard\reg_course.Designer.cs">
       <DependentUpon>reg_course.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apps\usercontrol_maindashboard\student_markadd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\usercontrol_maindashboard\student_markadd.Designer.cs">
+      <DependentUpon>student_markadd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Apps\usercontrol_maindashboard\student_register_usrctrl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -299,6 +305,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\usercontrol_coursedashboard\reg_course.resx">
       <DependentUpon>reg_course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\usercontrol_maindashboard\student_markadd.resx">
+      <DependentUpon>student_markadd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\usercontrol_maindashboard\student_register_usrctrl.resx">
       <DependentUpon>student_register_usrctrl.cs</DependentUpon>

@@ -115,8 +115,8 @@ namespace WindowsAppProject
 
         private void rjButton7_Click(object sender, EventArgs e)
         {
-            Modules_Addition resultadd = new Modules_Addition();
-            resultadd.Show();
+            student_markadd student_Markadd = new student_markadd();
+            addusercontrol(student_Markadd);
         }
     }
 }
