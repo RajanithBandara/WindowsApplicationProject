@@ -41,7 +41,7 @@ namespace WindowsAppProject.Apps.usercontrol_coursedashboard
                             lbl.Text = course_name;
                             lbl.AutoSize = false;
                             lbl.Height = 50;
-                            lbl.Width = 900;
+                            lbl.Width = 480;
                             lbl.Font = new Font("Microsoft Sans Serif", 18);
                             panel2.Controls.Add(lbl);
                             x += 50;
@@ -65,7 +65,7 @@ namespace WindowsAppProject.Apps.usercontrol_coursedashboard
                         lbl2.Text = course_id;
                         lbl2.AutoSize = false;
                         lbl2.Height = 50;
-                        lbl2.Width = 900;
+                        lbl2.Width = 150;
                         lbl2.Font = new Font("Microsoft Sans Serif", 18);
                         panel1.Controls.Add(lbl2);
                         y += 50;
@@ -88,7 +88,7 @@ namespace WindowsAppProject.Apps.usercontrol_coursedashboard
                         lbl3.Text = course_credits;
                         lbl3.AutoSize = false;
                         lbl3.Height = 50;
-                        lbl3.Width = 900;
+                        lbl3.Width = 100;
                         lbl3.Font = new Font("Microsoft Sans Serif", 18);
                         panel3.Controls.Add(lbl3);
                         z += 50;
