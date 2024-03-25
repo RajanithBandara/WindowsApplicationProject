@@ -65,10 +65,10 @@ namespace WindowsAppProject
             this.rjPanel1.GradientAngle = 90F;
             this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
             this.rjPanel1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
-            this.rjPanel1.Location = new System.Drawing.Point(45, 30);
+            this.rjPanel1.Location = new System.Drawing.Point(12, 30);
             this.rjPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel1.Name = "rjPanel1";
-            this.rjPanel1.Size = new System.Drawing.Size(1488, 90);
+            this.rjPanel1.Size = new System.Drawing.Size(1521, 90);
             this.rjPanel1.TabIndex = 1;
             // 
             // panel1
@@ -178,11 +178,11 @@ namespace WindowsAppProject
             this.rjPanel6.GradientAngle = 20F;
             this.rjPanel6.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
             this.rjPanel6.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
-            this.rjPanel6.Location = new System.Drawing.Point(45, 128);
+            this.rjPanel6.Location = new System.Drawing.Point(9, 128);
             this.rjPanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel6.MaximumSize = new System.Drawing.Size(2000, 1000);
             this.rjPanel6.Name = "rjPanel6";
-            this.rjPanel6.Size = new System.Drawing.Size(1488, 794);
+            this.rjPanel6.Size = new System.Drawing.Size(1567, 794);
             this.rjPanel6.TabIndex = 1;
             this.rjPanel6.Paint += new System.Windows.Forms.PaintEventHandler(this.rjPanel6_Paint);
             // 
@@ -195,12 +195,11 @@ namespace WindowsAppProject
             this.rjPanel3.GradientAngle = 90F;
             this.rjPanel3.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.rjPanel3.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
-            this.rjPanel3.Location = new System.Drawing.Point(28, 10);
+            this.rjPanel3.Location = new System.Drawing.Point(3, 3);
             this.rjPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rjPanel3.MaximumSize = new System.Drawing.Size(876, 770);
             this.rjPanel3.MinimumSize = new System.Drawing.Size(876, 770);
             this.rjPanel3.Name = "rjPanel3";
-            this.rjPanel3.Size = new System.Drawing.Size(876, 770);
+            this.rjPanel3.Size = new System.Drawing.Size(925, 777);
             this.rjPanel3.TabIndex = 0;
             this.rjPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.rjPanel3_Paint);
             // 
@@ -224,10 +223,10 @@ namespace WindowsAppProject
             this.rjPanel5.GradientAngle = 180F;
             this.rjPanel5.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.rjPanel5.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
-            this.rjPanel5.Location = new System.Drawing.Point(910, 10);
+            this.rjPanel5.Location = new System.Drawing.Point(934, 3);
             this.rjPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel5.Name = "rjPanel5";
-            this.rjPanel5.Size = new System.Drawing.Size(551, 512);
+            this.rjPanel5.Size = new System.Drawing.Size(630, 519);
             this.rjPanel5.TabIndex = 0;
             // 
             // rjPanel4
@@ -242,10 +241,10 @@ namespace WindowsAppProject
             this.rjPanel4.GradientAngle = 90F;
             this.rjPanel4.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.rjPanel4.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
-            this.rjPanel4.Location = new System.Drawing.Point(910, 526);
+            this.rjPanel4.Location = new System.Drawing.Point(934, 526);
             this.rjPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel4.Name = "rjPanel4";
-            this.rjPanel4.Size = new System.Drawing.Size(551, 254);
+            this.rjPanel4.Size = new System.Drawing.Size(630, 254);
             this.rjPanel4.TabIndex = 0;
             this.rjPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.rjPanel4_Paint);
             // 

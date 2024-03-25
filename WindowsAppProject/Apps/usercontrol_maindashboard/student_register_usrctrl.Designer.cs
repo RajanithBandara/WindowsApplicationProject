@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.rjPanel1 = new RoundedPanelClass.RJPanel();
+            this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -37,7 +38,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.rjPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,10 +57,30 @@
             this.rjPanel1.GradientAngle = 90F;
             this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.rjPanel1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
-            this.rjPanel1.Location = new System.Drawing.Point(37, 116);
+            this.rjPanel1.Location = new System.Drawing.Point(72, 132);
             this.rjPanel1.Name = "rjPanel1";
             this.rjPanel1.Size = new System.Drawing.Size(783, 612);
             this.rjPanel1.TabIndex = 8;
+            // 
+            // rjButton2
+            // 
+            this.rjButton2.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton2.BackgroundColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton2.BorderRadius = 12;
+            this.rjButton2.BorderSize = 0;
+            this.rjButton2.FlatAppearance.BorderSize = 0;
+            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton2.ForeColor = System.Drawing.Color.White;
+            this.rjButton2.Location = new System.Drawing.Point(132, 419);
+            this.rjButton2.Name = "rjButton2";
+            this.rjButton2.Size = new System.Drawing.Size(220, 43);
+            this.rjButton2.TabIndex = 14;
+            this.rjButton2.Text = "Clear";
+            this.rjButton2.TextColor = System.Drawing.Color.White;
+            this.rjButton2.UseVisualStyleBackColor = false;
+            this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click);
             // 
             // textBox3
             // 
@@ -150,31 +170,11 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(217, 38);
+            this.label4.Location = new System.Drawing.Point(243, 52);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(422, 55);
             this.label4.TabIndex = 9;
             this.label4.Text = "Register a Student";
-            // 
-            // rjButton2
-            // 
-            this.rjButton2.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton2.BackgroundColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton2.BorderRadius = 12;
-            this.rjButton2.BorderSize = 0;
-            this.rjButton2.FlatAppearance.BorderSize = 0;
-            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(132, 419);
-            this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(220, 43);
-            this.rjButton2.TabIndex = 14;
-            this.rjButton2.Text = "Clear";
-            this.rjButton2.TextColor = System.Drawing.Color.White;
-            this.rjButton2.UseVisualStyleBackColor = false;
-            this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click);
             // 
             // student_register_usrctrl
             // 
@@ -184,7 +184,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.rjPanel1);
             this.Name = "student_register_usrctrl";
-            this.Size = new System.Drawing.Size(876, 770);
+            this.Size = new System.Drawing.Size(925, 777);
             this.rjPanel1.ResumeLayout(false);
             this.rjPanel1.PerformLayout();
             this.ResumeLayout(false);

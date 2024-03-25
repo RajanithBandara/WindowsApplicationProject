@@ -28,6 +28,7 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
             {
                 conn.Open();
                 string sql = "INSERT INTO student VALUES(@StudentID, @StudentName, @courseid)";
+                string sql3 = "Insert into studentgpa values(@StudentID, @StudentGPA,@courseid)";
                 string sql2 = "Select * from coursetable where courseid = ";
                 using (OleDbCommand cmd = new OleDbCommand(sql, conn))
                 {
@@ -36,6 +37,14 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
                     cmd.Parameters.AddWithValue("courseid", studentcourse);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Student Registered Successfully");
+                    using (OleDbCommand cmd2 = new OleDbCommand(sql3, conn))
+                    {
+                        cmd2.Parameters.AddWithValue("StudentID", studentid);
+                        cmd2.Parameters.AddWithValue("StudentGPA", 0);
+                        cmd2.Parameters.AddWithValue("courseid", studentcourse);
+                        cmd2.ExecuteNonQuery();
+                        MessageBox.Show("GPA related stuff ready");
+                    }
                 }
                 conn.Close();
             }
