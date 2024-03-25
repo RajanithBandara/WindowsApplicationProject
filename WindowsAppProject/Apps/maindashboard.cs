@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using WindowsAppProject.Apps;
 using System.Data.OleDb;
 using WindowsAppProject.Apps.usercontrol_maindashboard;
+using static WindowsAppProject.maindashboard;
 
 namespace WindowsAppProject
 {
@@ -117,6 +118,120 @@ namespace WindowsAppProject
         {
             student_markadd student_Markadd = new student_markadd();
             addusercontrol(student_Markadd);
+        }
+
+        private void rjButton8_Click(object sender, EventArgs e)
+        {
+            gpacalculation();
+            //Console.WriteLine("Hellow");
+        }
+
+        public class student
+        {
+            public string ID { get; set; }
+            public string grade { get; set; }
+            public int credits { get; set; }
+            public float gpa { get; set; }
+        }
+        private void gpacalculation()
+        {
+            Dictionary<string, List<student>> studentlist = new Dictionary<string, List<student>>();
+            using (OleDbConnection conn = new OleDbConnection(connectstr))
+            {
+                string sqlcmd = "Select StudentId,ModuleCredits,ModuleGrade from studentmoduleresult";
+                using (OleDbCommand cmd = new OleDbCommand(sqlcmd, conn))
+                {
+                    try
+                    {
+                        conn.Open();
+                        OleDbDataReader reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            string stdid = reader.GetString(0);
+                            int mdlcredits = reader.GetInt32(1);
+                            string mdlgrade = reader.GetString(2);
+                            if (!studentlist.ContainsKey(stdid))
+                            {
+                                studentlist[stdid] = new List<student>();   
+                            }
+                            studentlist[stdid].Add(new student { ID = stdid, credits = mdlcredits, grade = mdlgrade });
+                        }
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show("Error", ex.Message);
+                    }
+                }
+            }
+
+           
+            int totalcredits = 0;
+
+            float creditstogpa = 0;
+            float gpaforgrade = 0;
+            foreach (var studentEntry in studentlist)
+            {
+                string stdid = studentEntry.Key;
+                List<student> studentdata = studentEntry.Value;
+                
+
+                foreach (var student in studentdata)
+                {
+                    totalcredits = totalcredits + student.credits;
+                    string grade = student.grade;
+                    switch (grade)
+                    {
+                        case "A":
+                        case "A+":
+                            gpaforgrade = 4.00f;
+                            break;
+                        case "A-":
+                            gpaforgrade = 3.70f;
+                            break;
+                        case "B+":
+                            gpaforgrade = 3.30f;
+                            break;
+                        case "B":
+                            gpaforgrade = 3.00f;
+                            break;
+                        case "B-":
+                            gpaforgrade = 2.70f;
+                            break;
+                        case "C+":
+                            gpaforgrade = 2.30f;
+                            break;
+                        case "C":
+                            gpaforgrade = 2.00f;
+                            break; 
+                        case "C-":
+                            gpaforgrade = 1.70f;
+                            break;
+                        default:
+                            gpaforgrade = 0.00f;
+                            break;
+                    }
+                    float temp = gpaforgrade * student.credits;
+                    creditstogpa = creditstogpa + temp;
+                }
+                float finalresult = creditstogpa / totalcredits;
+                string sqlcmd3 = $"UPDATE studentgpa SET StudentGPA = @finalresult WHERE studentid = @stdid";
+
+                using (OleDbConnection conn = new OleDbConnection(connectstr))
+                {
+                    conn.Open();
+                    using (OleDbCommand cmdrun = new OleDbCommand(sqlcmd3, conn))
+                    {
+                        cmdrun.Parameters.AddWithValue("@finalresult", finalresult);
+                        cmdrun.Parameters.AddWithValue("@stdid", stdid);
+                        int rowsAffected = cmdrun.ExecuteNonQuery();
+
+                        
+                        
+                    }
+                    conn.Close();
+                }
+            }
+            
         }
     }
 }

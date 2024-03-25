@@ -78,7 +78,8 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show("Data Inserted successfully!");
-                            textBox1.Text = "";
+                            textBox2.Text = "";
+                            textBox3.Text = "";
                             textBox6.Text = "";
                         }
                         else
@@ -96,6 +97,11 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
         }
 
         private void rjButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjButton1_Click_1(object sender, EventArgs e)
         {
 
         }

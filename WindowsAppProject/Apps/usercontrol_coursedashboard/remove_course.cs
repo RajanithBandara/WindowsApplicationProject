@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.OleDb;
 
 namespace WindowsAppProject.Apps.usercontrol_coursedashboard
 {
@@ -18,13 +18,19 @@ namespace WindowsAppProject.Apps.usercontrol_coursedashboard
         {
             InitializeComponent();
         }
-
+        private string connectionstr = dbconnection.Instance.ConnectionString;
         private void addusercontrol(UserControl uc)
         {
         }   
         private void rjButton1_Click(object sender, EventArgs e)
         {
-            
+            string courseid = textBox1.Text;
+            using(OleDbConnection conn = new OleDbConnection(connectionstr))
+            {
+                conn.Open();
+                string sqlcmd = "delete * from coursetable where courseid = @courseid";
+
+            }
         }
 
         private void remove_course_Load(object sender, EventArgs e)

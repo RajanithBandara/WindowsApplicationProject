@@ -16,5 +16,10 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
         {
             InitializeComponent();
         }
+
+        private void student_top_view_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

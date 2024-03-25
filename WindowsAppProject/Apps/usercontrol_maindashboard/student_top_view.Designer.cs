@@ -36,7 +36,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(196, 145);
+            this.label1.Location = new System.Drawing.Point(207, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(461, 55);
             this.label1.TabIndex = 0;
@@ -50,6 +50,7 @@
             this.Controls.Add(this.label1);
             this.Name = "student_top_view";
             this.Size = new System.Drawing.Size(876, 770);
+            this.Load += new System.EventHandler(this.student_top_view_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
