@@ -113,10 +113,17 @@ namespace WindowsAppProject
             addusercontrol(student_Markadd);
         }
 
-        private void rjButton8_Click(object sender, EventArgs e)
+        private async void rjButton8_Click(object sender, EventArgs e)
         {
-            gpacalculation();
-            //Console.WriteLine("Hellow");
+            maindash_loading maindash_Loading = new maindash_loading();
+            rjButton8.Enabled = false;
+            addusercontrol(maindash_Loading);
+            await gpacalculation();
+            rjButton8.Enabled = true;
+            maindash_Loading.StopLoading();
+            maindash_Loading.Visible = false;
+            student_top_view student_top_view = new student_top_view();
+            addusercontrol(student_top_view);
         }
 
         public class student
@@ -126,7 +133,7 @@ namespace WindowsAppProject
             public int credits { get; set; }
             public float gpa { get; set; }
         }
-        private void gpacalculation()
+        private async Task gpacalculation()
         {
             Dictionary<string, List<student>> studentlist = new Dictionary<string, List<student>>();
             using (OleDbConnection conn = new OleDbConnection(connectstr))
@@ -175,6 +182,8 @@ namespace WindowsAppProject
                     switch (grade)
                     {
                         case "A":
+                            gpaforgrade = 4.00f;
+                            break;
                         case "A+":
                             gpaforgrade = 4.00f;
                             break;
@@ -199,6 +208,12 @@ namespace WindowsAppProject
                         case "C-":
                             gpaforgrade = 1.70f;
                             break;
+                        case "D+":
+                            gpaforgrade = 1.30f;
+                            break;
+                        case "D":
+                            gpaforgrade = 1.00f;
+                            break;
                         default:
                             gpaforgrade = 0.00f;
                             break;
@@ -207,6 +222,7 @@ namespace WindowsAppProject
                     creditstogpa = creditstogpa + temp;
                 }
                 float finalresult = creditstogpa / totalcredits;
+                finalresult = (float)Math.Round(finalresult, 2);
                 string sqlcmd3 = $"UPDATE studentgpa SET StudentGPA = @finalresult WHERE studentid = @stdid";
 
                 using (OleDbConnection conn = new OleDbConnection(connectstr))
@@ -224,6 +240,7 @@ namespace WindowsAppProject
                     conn.Close();
                 }
             }
+            await Task.Delay(3000);
             
         }
     }

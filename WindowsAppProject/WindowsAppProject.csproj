@@ -182,6 +182,12 @@
     <Compile Include="Apps\usercontrol_coursedashboard\remove_course.Designer.cs">
       <DependentUpon>remove_course.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apps\usercontrol_maindashboard\maindash_loading.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\usercontrol_maindashboard\maindash_loading.Designer.cs">
+      <DependentUpon>maindash_loading.cs</DependentUpon>
+    </Compile>
     <Compile Include="dbconnection.cs" />
     <Compile Include="Apps\gpacalculator.cs">
       <SubType>Form</SubType>
@@ -316,6 +322,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\usercontrol_coursedashboard\remove_course.resx">
       <DependentUpon>remove_course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\usercontrol_maindashboard\maindash_loading.resx">
+      <DependentUpon>maindash_loading.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\usercontrol_maindashboard\student_markadd.resx">
       <DependentUpon>student_markadd.cs</DependentUpon>
