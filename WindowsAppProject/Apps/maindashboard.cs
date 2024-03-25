@@ -24,10 +24,6 @@ namespace WindowsAppProject
 
         private string connectstr = dbconnection.Instance.ConnectionString;
 
-        private void showtopdetails()
-        {
-
-        }
 
         private void rjPanel4_Paint(object sender, PaintEventArgs e)
         {
@@ -165,16 +161,15 @@ namespace WindowsAppProject
             }
 
            
-            int totalcredits = 0;
-
-            float creditstogpa = 0;
-            float gpaforgrade = 0;
+            
             foreach (var studentEntry in studentlist)
             {
                 string stdid = studentEntry.Key;
                 List<student> studentdata = studentEntry.Value;
-                
 
+                int totalcredits = 0;
+                float creditstogpa = 0;
+                float gpaforgrade = 0;
                 foreach (var student in studentdata)
                 {
                     totalcredits = totalcredits + student.credits;
@@ -223,6 +218,7 @@ namespace WindowsAppProject
                 }
                 float finalresult = creditstogpa / totalcredits;
                 finalresult = (float)Math.Round(finalresult, 2);
+
                 string sqlcmd3 = $"UPDATE studentgpa SET StudentGPA = @finalresult WHERE studentid = @stdid";
 
                 using (OleDbConnection conn = new OleDbConnection(connectstr))
