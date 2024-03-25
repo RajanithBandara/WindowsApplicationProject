@@ -184,7 +184,6 @@ namespace WindowsAppProject
             this.rjPanel6.Name = "rjPanel6";
             this.rjPanel6.Size = new System.Drawing.Size(1567, 794);
             this.rjPanel6.TabIndex = 1;
-            this.rjPanel6.Paint += new System.Windows.Forms.PaintEventHandler(this.rjPanel6_Paint);
             // 
             // rjPanel3
             // 

@@ -24,6 +24,10 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
 
         private void student_top_view_Load(object sender, EventArgs e)
         {
+           loadstudentcontent();
+        }
+        private void loadstudentcontent()
+        {
             using (OleDbConnection conn = new OleDbConnection(connectionstr))
             {
                 conn.Open();
@@ -39,9 +43,11 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
                             string student_gpa = reader["StudentGPA"].ToString();
                             string course_id = reader["courseid"].ToString();
 
+                            
+
                             Label lbl = new Label();
                             lbl.ForeColor = Color.White;
-                            lbl.Location = new Point(10, 75+yoffset);
+                            lbl.Location = new Point(10, 75 + yoffset);
                             lbl.BackColor = Color.Transparent;
                             lbl.Text = student_id;
                             lbl.AutoSize = false;
@@ -50,7 +56,7 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
                             lbl.Font = new Font("Microsoft Sans Serif", 18);
                             panel1.Controls.Add(lbl);
 
-                            Label lbl2  =new Label();
+                            Label lbl2 = new Label();
                             lbl2.ForeColor = Color.White;
                             lbl2.Location = new Point(10, 75 + yoffset);
                             lbl2.BackColor = Color.Transparent;
@@ -79,9 +85,7 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
                         }
                     }
                 }
-
-
             }
         }
-    }
+        }
 }

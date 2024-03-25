@@ -39,30 +39,22 @@ namespace WindowsAppProject
 
         }
 
-        private void maindashboard_Load(object sender, EventArgs e)
+        private async void maindashboard_Load(object sender, EventArgs e)
+        {
+            await Task.Delay(1000);
+            await Task.Run(() => displayusrctrl());
+
+        }
+        private void displayusrctrl()
         {
             student_top_view student_Top_View = new student_top_view();
             addusercontrol(student_Top_View);
-        }
-        private void maindashboard_Resize(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void rjPanel6_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void rjButton1_Click(object sender, EventArgs e)
         {
             adminloginform adminlogin = new adminloginform();
             adminlogin.Show();
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void rjButton2_Click(object sender, EventArgs e)
@@ -96,10 +88,11 @@ namespace WindowsAppProject
         }
         private void addusercontrol(UserControl usrctrl)
         {
-            usrctrl.Dock = DockStyle.Fill;
-            rjPanel3.Controls.Clear();
-            rjPanel3.Controls.Add(usrctrl);
-
+            rjPanel3.Invoke((MethodInvoker)delegate {
+                usrctrl.Dock = DockStyle.Fill;
+                rjPanel3.Controls.Clear();
+                rjPanel3.Controls.Add(usrctrl);
+            });
         }
 
         private void rjButton5_Click_1(object sender, EventArgs e)
