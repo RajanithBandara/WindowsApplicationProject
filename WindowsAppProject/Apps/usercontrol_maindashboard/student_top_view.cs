@@ -47,18 +47,18 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
 
                             Label lbl = new Label();
                             lbl.ForeColor = Color.White;
-                            lbl.Location = new Point(10, 75 + yoffset);
+                            lbl.Location = new Point(40, 75 + yoffset);
                             lbl.BackColor = Color.Transparent;
                             lbl.Text = student_id;
                             lbl.AutoSize = false;
                             lbl.Height = 50;
-                            lbl.Width = 212;
+                            lbl.Width = 201;
                             lbl.Font = new Font("Microsoft Sans Serif", 18);
                             panel1.Controls.Add(lbl);
 
                             Label lbl2 = new Label();
                             lbl2.ForeColor = Color.White;
-                            lbl2.Location = new Point(10, 75 + yoffset);
+                            lbl2.Location = new Point(50, 75 + yoffset);
                             lbl2.BackColor = Color.Transparent;
                             lbl2.Text = student_name;
                             lbl2.AutoSize = false;
@@ -69,7 +69,7 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
 
                             Label lbl3 = new Label();
                             lbl3.ForeColor = Color.White;
-                            lbl3.Location = new Point(10, 75 + yoffset);
+                            lbl3.Location = new Point(40, 75 + yoffset);
                             lbl3.BackColor = Color.Transparent;
                             lbl3.Text = student_gpa;
                             lbl3.AutoSize = false;

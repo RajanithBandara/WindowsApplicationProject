@@ -39,7 +39,6 @@ namespace WindowsAppProject
             this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.rjPanel6 = new RoundedPanelClass.RJPanel();
             this.rjPanel3 = new RoundedPanelClass.RJPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.rjPanel5 = new RoundedPanelClass.RJPanel();
             this.rjPanel4 = new RoundedPanelClass.RJPanel();
             this.rjButton8 = new CustomControls.RJControls.RJButton();
@@ -48,7 +47,6 @@ namespace WindowsAppProject
             this.rjButton5 = new CustomControls.RJControls.RJButton();
             this.rjPanel1.SuspendLayout();
             this.rjPanel6.SuspendLayout();
-            this.rjPanel3.SuspendLayout();
             this.rjPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -189,11 +187,10 @@ namespace WindowsAppProject
             // 
             this.rjPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.rjPanel3.BorderRadius = 20;
-            this.rjPanel3.Controls.Add(this.label1);
             this.rjPanel3.ForeColor = System.Drawing.Color.White;
             this.rjPanel3.GradientAngle = 90F;
-            this.rjPanel3.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
-            this.rjPanel3.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
+            this.rjPanel3.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
+            this.rjPanel3.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
             this.rjPanel3.Location = new System.Drawing.Point(3, 3);
             this.rjPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel3.MinimumSize = new System.Drawing.Size(876, 770);
@@ -201,18 +198,6 @@ namespace WindowsAppProject
             this.rjPanel3.Size = new System.Drawing.Size(925, 777);
             this.rjPanel3.TabIndex = 0;
             this.rjPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.rjPanel3_Paint);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(232, 47);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(373, 36);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Top student details content";
             // 
             // rjPanel5
             // 
@@ -347,8 +332,6 @@ namespace WindowsAppProject
             this.Load += new System.EventHandler(this.maindashboard_Load);
             this.rjPanel1.ResumeLayout(false);
             this.rjPanel6.ResumeLayout(false);
-            this.rjPanel3.ResumeLayout(false);
-            this.rjPanel3.PerformLayout();
             this.rjPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -364,7 +347,6 @@ namespace WindowsAppProject
         private RoundedPanelClass.RJPanel rjPanel1;
         private CustomControls.RJControls.RJButton rjButton2;
         private CustomControls.RJControls.RJButton rjButton3;
-        private System.Windows.Forms.Label label1;
         private CustomControls.RJControls.RJButton rjButton5;
         private CustomControls.RJControls.RJButton rjButton6;
         private System.Windows.Forms.Panel panel1;
