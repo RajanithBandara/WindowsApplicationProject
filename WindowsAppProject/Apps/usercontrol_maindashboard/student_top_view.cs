@@ -40,10 +40,10 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
                         {
                             string student_id = reader["StudentID"].ToString();
                             string student_name = reader["StudentName"].ToString();
-                            string student_gpa = reader["StudentGPA"].ToString();
+                            float student_gpa = Convert.ToSingle(reader["StudentGPA"]);
+                            string formatted_gpa = student_gpa.ToString("0.00");
                             string course_id = reader["courseid"].ToString();
 
-                            
 
                             Label lbl = new Label();
                             lbl.ForeColor = Color.White;
@@ -52,7 +52,7 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
                             lbl.Text = student_id;
                             lbl.AutoSize = false;
                             lbl.Height = 50;
-                            lbl.Width = 201;
+                            lbl.Width = 100;
                             lbl.Font = new Font("Microsoft Sans Serif", 18);
                             panel1.Controls.Add(lbl);
 
@@ -63,7 +63,7 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
                             lbl2.Text = student_name;
                             lbl2.AutoSize = false;
                             lbl2.Height = 50;
-                            lbl2.Width = 462;
+                            lbl2.Width = 450;
                             lbl2.Font = new Font("Microsoft Sans Serif", 18);
                             panel2.Controls.Add(lbl2);
 
@@ -71,10 +71,10 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
                             lbl3.ForeColor = Color.White;
                             lbl3.Location = new Point(40, 75 + yoffset);
                             lbl3.BackColor = Color.Transparent;
-                            lbl3.Text = student_gpa;
+                            lbl3.Text = formatted_gpa;
                             lbl3.AutoSize = false;
                             lbl3.Height = 50;
-                            lbl3.Width = 160;
+                            lbl3.Width = 136;
                             lbl3.Font = new Font("Microsoft Sans Serif", 18);
                             panel3.Controls.Add(lbl3);
                             yoffset = yoffset + 50;

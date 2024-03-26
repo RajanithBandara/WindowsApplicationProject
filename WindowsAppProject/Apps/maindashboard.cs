@@ -217,7 +217,6 @@ namespace WindowsAppProject
                     creditstogpa = creditstogpa + temp;
                 }
                 float finalresult = creditstogpa / totalcredits;
-                finalresult = (float)Math.Round(finalresult, 2);
 
                 string sqlcmd3 = $"UPDATE studentgpa SET StudentGPA = @finalresult WHERE studentid = @stdid";
 
