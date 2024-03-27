@@ -28,7 +28,7 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
             {
                 conn.Open();
                 string sql = "INSERT INTO student VALUES(@StudentID, @StudentName, @courseid)";
-                string sql3 = "Insert into studentgpa(studentid,studentgpa,courseid) values(@StudentID, @StudentGPA,@courseid)";
+                string sql3 = "Insert into studentgpa(studentid,studentgpa) values(@StudentID, @StudentGPA)";
                 string sql2 = "Select * from coursetable where courseid = ";
                 using (OleDbCommand cmd = new OleDbCommand(sql, conn))
                 {
