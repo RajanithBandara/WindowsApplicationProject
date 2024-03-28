@@ -52,7 +52,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Banner", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label4.Location = new System.Drawing.Point(234, 39);
+            this.label4.Location = new System.Drawing.Point(270, 115);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(451, 65);
             this.label4.TabIndex = 43;
@@ -80,7 +80,7 @@
             this.rjPanel1.GradientAngle = 90F;
             this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.rjPanel1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
-            this.rjPanel1.Location = new System.Drawing.Point(69, 107);
+            this.rjPanel1.Location = new System.Drawing.Point(105, 183);
             this.rjPanel1.Name = "rjPanel1";
             this.rjPanel1.Size = new System.Drawing.Size(783, 612);
             this.rjPanel1.TabIndex = 44;
@@ -273,7 +273,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.rjPanel1);
             this.Name = "student_markadd";
-            this.Size = new System.Drawing.Size(925, 777);
+            this.Size = new System.Drawing.Size(1024, 928);
             this.rjPanel1.ResumeLayout(false);
             this.rjPanel1.PerformLayout();
             this.ResumeLayout(false);

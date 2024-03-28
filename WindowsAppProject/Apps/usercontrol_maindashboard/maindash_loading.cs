@@ -65,5 +65,10 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
         {
             progressBar1.Visible = false;
         }
+
+        private void rjPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

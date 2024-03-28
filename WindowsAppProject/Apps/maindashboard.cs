@@ -37,12 +37,13 @@ namespace WindowsAppProject
 
         private async void maindashboard_Load(object sender, EventArgs e)
         {
-            await Task.Delay(1000);
-            await Task.Run(() => displayusrctrl());
-
+            await Task.Delay(1200);
+            displayusrctrl();
         }
-        private void displayusrctrl()
+
+        private async void displayusrctrl()
         {
+            await Task.Delay(100);
             student_top_view student_Top_View = new student_top_view();
             addusercontrol(student_Top_View);
         }
@@ -208,6 +209,12 @@ namespace WindowsAppProject
                             break;
                         case "D":
                             gpaforgrade = 1.00f;
+                            break;
+                        case "D-":
+                            gpaforgrade = 0.70f;
+                            break;
+                        case "F":
+                            gpaforgrade = 0.00f;
                             break;
                         default:
                             gpaforgrade = 0.00f;
