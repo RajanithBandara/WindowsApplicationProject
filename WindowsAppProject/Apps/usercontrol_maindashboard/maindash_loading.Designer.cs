@@ -48,7 +48,7 @@
             this.rjPanel1.GradientAngle = 90F;
             this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
             this.rjPanel1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
-            this.rjPanel1.Location = new System.Drawing.Point(55, 342);
+            this.rjPanel1.Location = new System.Drawing.Point(172, 299);
             this.rjPanel1.Name = "rjPanel1";
             this.rjPanel1.Size = new System.Drawing.Size(887, 200);
             this.rjPanel1.TabIndex = 4;
@@ -103,7 +103,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.rjPanel1);
             this.Name = "maindash_loading";
-            this.Size = new System.Drawing.Size(1024, 928);
+            this.Size = new System.Drawing.Size(1282, 909);
             this.rjPanel1.ResumeLayout(false);
             this.rjPanel1.PerformLayout();
             this.ResumeLayout(false);

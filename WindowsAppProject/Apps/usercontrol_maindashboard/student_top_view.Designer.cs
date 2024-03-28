@@ -36,10 +36,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.topstudentview.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -47,7 +50,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(228, 73);
+            this.label1.Location = new System.Drawing.Point(397, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(461, 55);
             this.label1.TabIndex = 0;
@@ -57,6 +60,7 @@
             // 
             this.topstudentview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.topstudentview.BorderRadius = 30;
+            this.topstudentview.Controls.Add(this.panel4);
             this.topstudentview.Controls.Add(this.panel3);
             this.topstudentview.Controls.Add(this.panel2);
             this.topstudentview.Controls.Add(this.panel1);
@@ -66,16 +70,16 @@
             this.topstudentview.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.topstudentview.Location = new System.Drawing.Point(3, 141);
             this.topstudentview.Name = "topstudentview";
-            this.topstudentview.Size = new System.Drawing.Size(1018, 784);
+            this.topstudentview.Size = new System.Drawing.Size(1276, 784);
             this.topstudentview.TabIndex = 1;
             // 
             // panel3
             // 
             this.panel3.AutoScroll = true;
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Location = new System.Drawing.Point(835, 12);
+            this.panel3.Location = new System.Drawing.Point(1093, 12);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(180, 769);
+            this.panel3.Size = new System.Drawing.Size(180, 753);
             this.panel3.TabIndex = 2;
             // 
             // label4
@@ -94,7 +98,7 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(227, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(599, 769);
+            this.panel2.Size = new System.Drawing.Size(599, 753);
             this.panel2.TabIndex = 1;
             // 
             // label3
@@ -113,7 +117,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(8, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(212, 769);
+            this.panel1.Size = new System.Drawing.Size(212, 753);
             this.panel1.TabIndex = 0;
             // 
             // label2
@@ -126,6 +130,25 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Student ID";
             // 
+            // panel4
+            // 
+            this.panel4.AutoScroll = true;
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Location = new System.Drawing.Point(832, 12);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(255, 753);
+            this.panel4.TabIndex = 3;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(51, 12);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(160, 37);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Course ID";
+            // 
             // student_top_view
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -134,7 +157,7 @@
             this.Controls.Add(this.topstudentview);
             this.Controls.Add(this.label1);
             this.Name = "student_top_view";
-            this.Size = new System.Drawing.Size(1024, 928);
+            this.Size = new System.Drawing.Size(1282, 909);
             this.Load += new System.EventHandler(this.student_top_view_Load);
             this.topstudentview.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -143,6 +166,8 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,5 +183,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label5;
     }
 }
