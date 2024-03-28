@@ -58,7 +58,7 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
 
                             Label lbl2 = new Label();
                             lbl2.ForeColor = Color.White;
-                            lbl2.Location = new Point(50, 75 + yoffset);
+                            lbl2.Location = new Point(40, 75 + yoffset);
                             lbl2.BackColor = Color.Transparent;
                             lbl2.Text = student_name;
                             lbl2.AutoSize = false;
@@ -71,13 +71,26 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
                             lbl3.ForeColor = Color.White;
                             lbl3.Location = new Point(40, 75 + yoffset);
                             lbl3.BackColor = Color.Transparent;
-                            lbl3.Text = formatted_gpa;
+                            lbl3.Text = course_id;
                             lbl3.AutoSize = false;
                             lbl3.Height = 50;
-                            lbl3.Width = 136;
+                            lbl3.Width = 190;
                             lbl3.Font = new Font("Microsoft Sans Serif", 18);
-                            panel3.Controls.Add(lbl3);
+                            panel4.Controls.Add(lbl3);
+
+                            Label lbl4 = new Label();
+                            lbl4.ForeColor = Color.White;
+                            lbl4.Location = new Point(40, 75 + yoffset);
+                            lbl4.BackColor = Color.Transparent;
+                            lbl4.Text = formatted_gpa;
+                            lbl4.AutoSize = false;
+                            lbl4.Height = 50;
+                            lbl4.Width = 136;
+                            lbl4.Font = new Font("Microsoft Sans Serif", 18);
+                            panel3.Controls.Add(lbl4);
                             yoffset = yoffset + 50;
+
+
                         }
                         if (!reader.HasRows)
                         {

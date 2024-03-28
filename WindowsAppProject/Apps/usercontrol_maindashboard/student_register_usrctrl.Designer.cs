@@ -57,7 +57,7 @@
             this.rjPanel1.GradientAngle = 90F;
             this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.rjPanel1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
-            this.rjPanel1.Location = new System.Drawing.Point(115, 191);
+            this.rjPanel1.Location = new System.Drawing.Point(247, 172);
             this.rjPanel1.Name = "rjPanel1";
             this.rjPanel1.Size = new System.Drawing.Size(783, 612);
             this.rjPanel1.TabIndex = 8;
@@ -170,7 +170,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(286, 111);
+            this.label4.Location = new System.Drawing.Point(418, 92);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(422, 55);
             this.label4.TabIndex = 9;
@@ -184,7 +184,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.rjPanel1);
             this.Name = "student_register_usrctrl";
-            this.Size = new System.Drawing.Size(1024, 928);
+            this.Size = new System.Drawing.Size(1282, 909);
             this.rjPanel1.ResumeLayout(false);
             this.rjPanel1.PerformLayout();
             this.ResumeLayout(false);
