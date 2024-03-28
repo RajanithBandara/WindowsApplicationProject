@@ -25,12 +25,18 @@ namespace WindowsAppProject.Apps.usercontrol_coursedashboard
         private void rjButton1_Click(object sender, EventArgs e)
         {
             string courseid = textBox1.Text;
-            using(OleDbConnection conn = new OleDbConnection(connectionstr))
+            using (OleDbConnection conn = new OleDbConnection(connectionstr))
             {
                 conn.Open();
-                string sqlcmd = "delete * from coursetable where courseid = @courseid";
-
+                string sqlcmd = "DELETE FROM coursetable WHERE courseid = @courseid";
+                using (OleDbCommand cmd = new OleDbCommand(sqlcmd, conn))
+                {
+                    cmd.Parameters.AddWithValue("@courseid", courseid);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Course Removed Successfully");
+                }
             }
+
         }
 
         private void remove_course_Load(object sender, EventArgs e)
