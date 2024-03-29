@@ -275,6 +275,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="RJButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -343,14 +348,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\WindowsAppProject.Apps.students_chart.student_progess.datasource" />
     <None Include="Properties\Settings.settings">
@@ -398,15 +398,19 @@
     <None Include="Resources\padlock %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\user.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\0lNSL4-LogoMakr.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ProjectDB.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\icons8-update-48.png" />
+    <None Include="Resources\icons8-add-properties-48-removebg-preview.png" />
+    <None Include="Resources\icons8-add-properties-48.png" />
+    <None Include="Resources\file1.png" />
+    <None Include="Resources\file.png" />
+    <None Include="Resources\graduates.png" />
+    <None Include="Resources\graduating-student.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

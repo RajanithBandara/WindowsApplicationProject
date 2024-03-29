@@ -171,7 +171,6 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::WindowsAppProject.Properties.Resources.user;
             this.pictureBox3.Location = new System.Drawing.Point(69, 226);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox3.Name = "pictureBox3";
