@@ -30,19 +30,19 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.topstudentview = new RoundedPanelClass.RJPanel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.topstudentview.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -50,7 +50,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(397, 67);
+            this.label1.Location = new System.Drawing.Point(405, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(461, 55);
             this.label1.TabIndex = 0;
@@ -68,10 +68,29 @@
             this.topstudentview.GradientAngle = 90F;
             this.topstudentview.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.topstudentview.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
-            this.topstudentview.Location = new System.Drawing.Point(3, 141);
+            this.topstudentview.Location = new System.Drawing.Point(3, 112);
             this.topstudentview.Name = "topstudentview";
             this.topstudentview.Size = new System.Drawing.Size(1276, 784);
             this.topstudentview.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.AutoScroll = true;
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Location = new System.Drawing.Point(832, 12);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(255, 753);
+            this.panel4.TabIndex = 3;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(51, 12);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(160, 37);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Course ID";
             // 
             // panel3
             // 
@@ -130,25 +149,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Student ID";
             // 
-            // panel4
-            // 
-            this.panel4.AutoScroll = true;
-            this.panel4.Controls.Add(this.label5);
-            this.panel4.Location = new System.Drawing.Point(832, 12);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(255, 753);
-            this.panel4.TabIndex = 3;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(51, 12);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(160, 37);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Course ID";
-            // 
             // student_top_view
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -160,14 +160,14 @@
             this.Size = new System.Drawing.Size(1282, 909);
             this.Load += new System.EventHandler(this.student_top_view_Load);
             this.topstudentview.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -37,8 +37,48 @@ namespace WindowsAppProject
 
         private async void maindashboard_Load(object sender, EventArgs e)
         {
+            label1.Visible = false;
+            label2.Visible = false;
+            label3.Visible = false;
+            label4.Visible = false;
             await Task.Delay(1200);
             displayusrctrl();
+        }
+        private void rjButton_MouseHover(object sender, EventArgs e)
+        {
+            label1.Visible = true;
+        }
+
+        private void rjButton_MouseLeave(object sender, EventArgs e)
+        {
+            label1.Visible = false;
+        }
+        private void rjButton6_MouseHover(object sender, EventArgs e)
+        {
+            label2.Visible = true;
+        }
+
+        private void rjButton6_MouseLeave(object sender, EventArgs e)
+        {
+            label2.Visible = false;
+        }
+
+        private void rjButton7_MouseHover(object sender, EventArgs e)
+        {
+            label3.Visible = true;
+        }
+        private void rjButton7_MouseLeave(object sender, EventArgs e)
+        {
+            label3.Visible = false;
+        }
+
+        private void rjButton8_MouseHover(object sender, EventArgs e)
+        {
+            label4.Visible = true;
+        }
+        private void rjButton8_MouseLeave(object sender, EventArgs e)
+        {
+            label4.Visible = false;
         }
 
         private async void displayusrctrl()
@@ -97,6 +137,8 @@ namespace WindowsAppProject
             student_register_usrctrl std_reg = new student_register_usrctrl();
             addusercontrol(std_reg);
         }
+
+
 
         private void rjButton6_Click(object sender, EventArgs e)
         {
@@ -245,5 +287,7 @@ namespace WindowsAppProject
             await Task.Delay(3000);
             
         }
+
+        
     }
 }
