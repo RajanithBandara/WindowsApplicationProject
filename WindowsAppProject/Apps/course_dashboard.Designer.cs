@@ -45,9 +45,10 @@
             this.contentpanel.GradientAngle = 90F;
             this.contentpanel.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.contentpanel.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
-            this.contentpanel.Location = new System.Drawing.Point(42, 36);
+            this.contentpanel.Location = new System.Drawing.Point(37, 29);
+            this.contentpanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.contentpanel.Name = "contentpanel";
-            this.contentpanel.Size = new System.Drawing.Size(982, 712);
+            this.contentpanel.Size = new System.Drawing.Size(873, 570);
             this.contentpanel.TabIndex = 1;
             this.contentpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.contentpanel_Paint);
             // 
@@ -62,9 +63,10 @@
             this.rjPanel1.GradientAngle = 90F;
             this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.rjPanel1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
-            this.rjPanel1.Location = new System.Drawing.Point(1053, 117);
+            this.rjPanel1.Location = new System.Drawing.Point(939, 118);
+            this.rjPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel1.Name = "rjPanel1";
-            this.rjPanel1.Size = new System.Drawing.Size(387, 571);
+            this.rjPanel1.Size = new System.Drawing.Size(344, 457);
             this.rjPanel1.TabIndex = 0;
             // 
             // rjButton3
@@ -78,9 +80,10 @@
             this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton3.ForeColor = System.Drawing.Color.White;
-            this.rjButton3.Location = new System.Drawing.Point(41, 314);
+            this.rjButton3.Location = new System.Drawing.Point(36, 251);
+            this.rjButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton3.Name = "rjButton3";
-            this.rjButton3.Size = new System.Drawing.Size(302, 81);
+            this.rjButton3.Size = new System.Drawing.Size(268, 65);
             this.rjButton3.TabIndex = 12;
             this.rjButton3.Text = "Remove Course";
             this.rjButton3.TextColor = System.Drawing.Color.White;
@@ -98,9 +101,10 @@
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(41, 197);
+            this.rjButton2.Location = new System.Drawing.Point(36, 158);
+            this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(302, 81);
+            this.rjButton2.Size = new System.Drawing.Size(268, 65);
             this.rjButton2.TabIndex = 1;
             this.rjButton2.Text = "Register a new course";
             this.rjButton2.TextColor = System.Drawing.Color.White;
@@ -118,9 +122,10 @@
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(41, 77);
+            this.rjButton1.Location = new System.Drawing.Point(36, 62);
+            this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(302, 81);
+            this.rjButton1.Size = new System.Drawing.Size(268, 65);
             this.rjButton1.TabIndex = 0;
             this.rjButton1.Text = "Courses";
             this.rjButton1.TextColor = System.Drawing.Color.White;
@@ -129,17 +134,17 @@
             // 
             // course_dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
-            this.ClientSize = new System.Drawing.Size(1469, 779);
+            this.ClientSize = new System.Drawing.Size(1309, 630);
             this.Controls.Add(this.contentpanel);
             this.Controls.Add(this.rjPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1491, 835);
-            this.MinimumSize = new System.Drawing.Size(1491, 835);
+            this.MaximumSize = new System.Drawing.Size(1327, 677);
+            this.MinimumSize = new System.Drawing.Size(1327, 677);
             this.Name = "course_dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Course Dashboard";

@@ -47,10 +47,10 @@
             this.rjPanel3.GradientAngle = 90F;
             this.rjPanel3.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.rjPanel3.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
-            this.rjPanel3.Location = new System.Drawing.Point(960, 22);
+            this.rjPanel3.Location = new System.Drawing.Point(851, 23);
             this.rjPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel3.Name = "rjPanel3";
-            this.rjPanel3.Size = new System.Drawing.Size(350, 200);
+            this.rjPanel3.Size = new System.Drawing.Size(311, 160);
             this.rjPanel3.TabIndex = 1;
             // 
             // rjPanel4
@@ -61,10 +61,10 @@
             this.rjPanel4.GradientAngle = 90F;
             this.rjPanel4.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.rjPanel4.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
-            this.rjPanel4.Location = new System.Drawing.Point(271, 22);
+            this.rjPanel4.Location = new System.Drawing.Point(238, 23);
             this.rjPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel4.Name = "rjPanel4";
-            this.rjPanel4.Size = new System.Drawing.Size(683, 200);
+            this.rjPanel4.Size = new System.Drawing.Size(607, 160);
             this.rjPanel4.TabIndex = 1;
             // 
             // rjPanel6
@@ -77,10 +77,10 @@
             this.rjPanel6.GradientAngle = 90F;
             this.rjPanel6.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.rjPanel6.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
-            this.rjPanel6.Location = new System.Drawing.Point(38, 252);
+            this.rjPanel6.Location = new System.Drawing.Point(30, 206);
             this.rjPanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel6.Name = "rjPanel6";
-            this.rjPanel6.Size = new System.Drawing.Size(313, 625);
+            this.rjPanel6.Size = new System.Drawing.Size(285, 500);
             this.rjPanel6.TabIndex = 1;
             // 
             // rjButton2
@@ -94,10 +94,10 @@
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(24, 176);
+            this.rjButton2.Location = new System.Drawing.Point(22, 141);
             this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(272, 77);
+            this.rjButton2.Size = new System.Drawing.Size(242, 62);
             this.rjButton2.TabIndex = 1;
             this.rjButton2.Text = "View Progression";
             this.rjButton2.TextColor = System.Drawing.Color.White;
@@ -115,10 +115,10 @@
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(24, 71);
+            this.rjButton1.Location = new System.Drawing.Point(22, 59);
             this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(272, 77);
+            this.rjButton1.Size = new System.Drawing.Size(242, 62);
             this.rjButton1.TabIndex = 0;
             this.rjButton1.Text = "View Modules";
             this.rjButton1.TextColor = System.Drawing.Color.White;
@@ -133,10 +133,10 @@
             this.mainpanelstd.GradientAngle = 90F;
             this.mainpanelstd.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.mainpanelstd.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
-            this.mainpanelstd.Location = new System.Drawing.Point(376, 252);
+            this.mainpanelstd.Location = new System.Drawing.Point(332, 206);
             this.mainpanelstd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mainpanelstd.Name = "mainpanelstd";
-            this.mainpanelstd.Size = new System.Drawing.Size(934, 625);
+            this.mainpanelstd.Size = new System.Drawing.Size(830, 500);
             this.mainpanelstd.TabIndex = 1;
             this.mainpanelstd.Paint += new System.Windows.Forms.PaintEventHandler(this.mainpanelstd_Paint);
             // 
@@ -148,18 +148,18 @@
             this.rjPanel1.GradientAngle = 90F;
             this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.rjPanel1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
-            this.rjPanel1.Location = new System.Drawing.Point(38, 18);
+            this.rjPanel1.Location = new System.Drawing.Point(30, 23);
             this.rjPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel1.Name = "rjPanel1";
-            this.rjPanel1.Size = new System.Drawing.Size(227, 200);
+            this.rjPanel1.Size = new System.Drawing.Size(202, 160);
             this.rjPanel1.TabIndex = 0;
             // 
             // std_dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
-            this.ClientSize = new System.Drawing.Size(1332, 898);
+            this.ClientSize = new System.Drawing.Size(1188, 726);
             this.Controls.Add(this.rjPanel3);
             this.Controls.Add(this.rjPanel4);
             this.Controls.Add(this.rjPanel6);
@@ -168,8 +168,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1354, 954);
-            this.MinimumSize = new System.Drawing.Size(1354, 954);
+            this.MaximumSize = new System.Drawing.Size(1206, 773);
+            this.MinimumSize = new System.Drawing.Size(1206, 773);
             this.Name = "std_dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "std_dashboard";
