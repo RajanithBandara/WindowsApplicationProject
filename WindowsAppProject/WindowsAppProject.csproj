@@ -176,6 +176,12 @@
     <Compile Include="Apps\arloginform.Designer.cs">
       <DependentUpon>arloginform.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apps\student_det_viewform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\student_det_viewform.Designer.cs">
+      <DependentUpon>student_det_viewform.cs</DependentUpon>
+    </Compile>
     <Compile Include="Apps\loading_screen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -312,6 +318,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\std_dashboard.resx">
       <DependentUpon>std_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\student_det_viewform.resx">
+      <DependentUpon>student_det_viewform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\usercontrol_adminpanel\ar_reg.resx">
       <DependentUpon>ar_reg.cs</DependentUpon>
