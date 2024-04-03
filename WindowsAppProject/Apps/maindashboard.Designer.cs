@@ -32,6 +32,8 @@ namespace WindowsAppProject
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(maindashboard));
             this.rjPanel2 = new RoundedPanelClass.RJPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.rjPanel4 = new RoundedPanelClass.RJPanel();
@@ -48,12 +50,10 @@ namespace WindowsAppProject
             this.rjButton3 = new CustomControls.RJControls.RJButton();
             this.rjPanel6 = new RoundedPanelClass.RJPanel();
             this.rjPanel3 = new RoundedPanelClass.RJPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.rjPanel2.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.rjPanel4.SuspendLayout();
             this.rjPanel6.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // rjPanel2
@@ -76,6 +76,24 @@ namespace WindowsAppProject
             this.rjPanel2.Name = "rjPanel2";
             this.rjPanel2.Size = new System.Drawing.Size(369, 909);
             this.rjPanel2.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Location = new System.Drawing.Point(6, 207);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(360, 52);
+            this.panel2.TabIndex = 6;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label5.Location = new System.Drawing.Point(25, 18);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(311, 15);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "ARUser details and some minor details will appear here";
             // 
             // panel1
             // 
@@ -375,24 +393,6 @@ namespace WindowsAppProject
             this.rjPanel3.TabIndex = 0;
             this.rjPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.rjPanel3_Paint);
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(6, 207);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(360, 52);
-            this.panel2.TabIndex = 6;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.label5.Location = new System.Drawing.Point(25, 18);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(311, 15);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "ARUser details and some minor details will appear here";
-            // 
             // maindashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -404,17 +404,19 @@ namespace WindowsAppProject
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1760, 1016);
+            this.MinimumSize = new System.Drawing.Size(1760, 1016);
             this.Name = "maindashboard";
             this.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "maindashboard";
             this.Load += new System.EventHandler(this.maindashboard_Load);
             this.rjPanel2.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.rjPanel4.ResumeLayout(false);
             this.rjPanel4.PerformLayout();
             this.rjPanel6.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
