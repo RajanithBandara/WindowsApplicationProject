@@ -164,6 +164,12 @@
     <Compile Include="Apps\admin_panel.Designer.cs">
       <DependentUpon>admin_panel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apps\all_student_content.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\all_student_content.Designer.cs">
+      <DependentUpon>all_student_content.cs</DependentUpon>
+    </Compile>
     <Compile Include="Apps\arloginform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -285,6 +291,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\admin_panel.resx">
       <DependentUpon>admin_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\all_student_content.resx">
+      <DependentUpon>all_student_content.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\arloginform.resx">
       <DependentUpon>arloginform.cs</DependentUpon>
