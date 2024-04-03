@@ -207,12 +207,6 @@
     <Compile Include="Apps\maindashboard.Designer.cs">
       <DependentUpon>maindashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Apps\profile_page.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Apps\profile_page.Designer.cs">
-      <DependentUpon>profile_page.cs</DependentUpon>
-    </Compile>
     <Compile Include="Apps\std_dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -306,9 +300,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\maindashboard.resx">
       <DependentUpon>maindashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Apps\profile_page.resx">
-      <DependentUpon>profile_page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\std_dashboard.resx">
       <DependentUpon>std_dashboard.cs</DependentUpon>
