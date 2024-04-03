@@ -82,6 +82,9 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1504, 899);
+            this.MinimumSize = new System.Drawing.Size(1504, 899);
             this.Name = "all_student_content";
             this.Text = "all_student_content";
             this.ResumeLayout(false);
