@@ -195,6 +195,7 @@ namespace WindowsAppProject
             this.label4.Size = new System.Drawing.Size(102, 20);
             this.label4.TabIndex = 14;
             this.label4.Text = "Results Update";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -372,7 +373,7 @@ namespace WindowsAppProject
             this.rjPanel6.GradientAngle = 20F;
             this.rjPanel6.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
             this.rjPanel6.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
-            this.rjPanel6.Location = new System.Drawing.Point(4, 16);
+            this.rjPanel6.Location = new System.Drawing.Point(4, 13);
             this.rjPanel6.Margin = new System.Windows.Forms.Padding(0);
             this.rjPanel6.Name = "rjPanel6";
             this.rjPanel6.Size = new System.Drawing.Size(1730, 939);
@@ -380,12 +381,12 @@ namespace WindowsAppProject
             // 
             // rjPanel3
             // 
-            this.rjPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
+            this.rjPanel3.BackColor = System.Drawing.Color.Black;
             this.rjPanel3.BorderRadius = 20;
             this.rjPanel3.ForeColor = System.Drawing.Color.White;
             this.rjPanel3.GradientAngle = 90F;
-            this.rjPanel3.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
-            this.rjPanel3.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
+            this.rjPanel3.GradientBottomColor = System.Drawing.Color.Black;
+            this.rjPanel3.GradientTopColor = System.Drawing.Color.Black;
             this.rjPanel3.Location = new System.Drawing.Point(29, 16);
             this.rjPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel3.Name = "rjPanel3";
