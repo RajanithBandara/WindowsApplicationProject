@@ -37,44 +37,45 @@
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(12, 91);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(153, 828);
+            this.panel1.Size = new System.Drawing.Size(153, 749);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(171, 12);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(171, 91);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(827, 828);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(827, 749);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(1004, 12);
+            this.panel2.Location = new System.Drawing.Point(1004, 91);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(153, 828);
+            this.panel2.Size = new System.Drawing.Size(153, 749);
             this.panel2.TabIndex = 2;
             // 
             // panel3
             // 
-            this.panel3.Location = new System.Drawing.Point(1163, 12);
+            this.panel3.Location = new System.Drawing.Point(1163, 91);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(153, 828);
+            this.panel3.Size = new System.Drawing.Size(153, 749);
             this.panel3.TabIndex = 3;
             // 
             // panel4
             // 
-            this.panel4.Location = new System.Drawing.Point(1322, 12);
+            this.panel4.Location = new System.Drawing.Point(1322, 91);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(153, 828);
+            this.panel4.Size = new System.Drawing.Size(153, 749);
             this.panel4.TabIndex = 4;
             // 
             // all_student_content
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
             this.ClientSize = new System.Drawing.Size(1486, 852);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
