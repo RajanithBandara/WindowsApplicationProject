@@ -16,5 +16,10 @@ namespace WindowsAppProject.Apps
         {
             InitializeComponent();
         }
+
+        private void rjButton2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = string.Empty;
+        }
     }
 }
