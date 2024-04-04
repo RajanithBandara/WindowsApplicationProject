@@ -59,7 +59,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(34, 4);
+            this.label1.Location = new System.Drawing.Point(52, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(179, 32);
             this.label1.TabIndex = 16;
@@ -81,8 +81,8 @@
             this.rjPanel1.Controls.Add(this.label4);
             this.rjPanel1.ForeColor = System.Drawing.Color.White;
             this.rjPanel1.GradientAngle = 90F;
-            this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(220)))));
-            this.rjPanel1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(220)))));
+            this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.rjPanel1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
             this.rjPanel1.Location = new System.Drawing.Point(106, 40);
             this.rjPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel1.Name = "rjPanel1";
@@ -124,64 +124,64 @@
             // 
             // rjButton3
             // 
-            this.rjButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(65)))), ((int)(((byte)(100)))));
-            this.rjButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(65)))), ((int)(((byte)(100)))));
+            this.rjButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(81)))));
+            this.rjButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(81)))));
             this.rjButton3.BorderColor = System.Drawing.Color.Transparent;
             this.rjButton3.BorderRadius = 10;
             this.rjButton3.BorderSize = 0;
             this.rjButton3.FlatAppearance.BorderSize = 0;
             this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton3.Font = new System.Drawing.Font("Segoe UI Symbol", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton3.ForeColor = System.Drawing.Color.Black;
+            this.rjButton3.ForeColor = System.Drawing.Color.White;
             this.rjButton3.Location = new System.Drawing.Point(652, 507);
             this.rjButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton3.Name = "rjButton3";
             this.rjButton3.Size = new System.Drawing.Size(256, 45);
             this.rjButton3.TabIndex = 22;
             this.rjButton3.Text = "Calculate";
-            this.rjButton3.TextColor = System.Drawing.Color.Black;
+            this.rjButton3.TextColor = System.Drawing.Color.White;
             this.rjButton3.UseVisualStyleBackColor = false;
             this.rjButton3.Click += new System.EventHandler(this.rjButton3_Click);
             // 
             // rjButton2
             // 
-            this.rjButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(134)))), ((int)(((byte)(122)))));
-            this.rjButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(134)))), ((int)(((byte)(122)))));
+            this.rjButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(78)))), ((int)(((byte)(81)))));
+            this.rjButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(78)))), ((int)(((byte)(81)))));
             this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rjButton2.BorderRadius = 10;
             this.rjButton2.BorderSize = 0;
             this.rjButton2.FlatAppearance.BorderSize = 0;
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.Font = new System.Drawing.Font("Segoe UI Symbol", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton2.ForeColor = System.Drawing.Color.Black;
+            this.rjButton2.ForeColor = System.Drawing.Color.White;
             this.rjButton2.Location = new System.Drawing.Point(381, 507);
             this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton2.Name = "rjButton2";
             this.rjButton2.Size = new System.Drawing.Size(256, 45);
             this.rjButton2.TabIndex = 21;
             this.rjButton2.Text = "Remove Module";
-            this.rjButton2.TextColor = System.Drawing.Color.Black;
+            this.rjButton2.TextColor = System.Drawing.Color.White;
             this.rjButton2.UseVisualStyleBackColor = false;
             this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click);
             // 
             // rjButton1
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(177)))), ((int)(((byte)(122)))));
-            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(177)))), ((int)(((byte)(122)))));
+            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
             this.rjButton1.BorderColor = System.Drawing.Color.Transparent;
             this.rjButton1.BorderRadius = 10;
             this.rjButton1.BorderSize = 0;
             this.rjButton1.FlatAppearance.BorderSize = 0;
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.Font = new System.Drawing.Font("Segoe UI Symbol", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton1.ForeColor = System.Drawing.Color.Black;
+            this.rjButton1.ForeColor = System.Drawing.Color.White;
             this.rjButton1.Location = new System.Drawing.Point(106, 507);
             this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton1.Name = "rjButton1";
             this.rjButton1.Size = new System.Drawing.Size(256, 45);
             this.rjButton1.TabIndex = 20;
             this.rjButton1.Text = "Add Module";
-            this.rjButton1.TextColor = System.Drawing.Color.Black;
+            this.rjButton1.TextColor = System.Drawing.Color.White;
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
             // 
@@ -192,8 +192,8 @@
             this.rjPanel2.Controls.Add(this.label1);
             this.rjPanel2.ForeColor = System.Drawing.Color.White;
             this.rjPanel2.GradientAngle = 90F;
-            this.rjPanel2.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(111)))), ((int)(((byte)(157)))));
-            this.rjPanel2.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(111)))), ((int)(((byte)(157)))));
+            this.rjPanel2.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
+            this.rjPanel2.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
             this.rjPanel2.Location = new System.Drawing.Point(106, 87);
             this.rjPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel2.Name = "rjPanel2";
@@ -209,8 +209,8 @@
             this.rjPanel3.Font = new System.Drawing.Font("Segoe UI Symbol", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjPanel3.ForeColor = System.Drawing.Color.White;
             this.rjPanel3.GradientAngle = 90F;
-            this.rjPanel3.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(111)))), ((int)(((byte)(157)))));
-            this.rjPanel3.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(111)))), ((int)(((byte)(157)))));
+            this.rjPanel3.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
+            this.rjPanel3.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
             this.rjPanel3.Location = new System.Drawing.Point(438, 87);
             this.rjPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel3.Name = "rjPanel3";
@@ -223,7 +223,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(40, 4);
+            this.label5.Location = new System.Drawing.Point(51, 7);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(82, 32);
             this.label5.TabIndex = 16;
@@ -237,8 +237,8 @@
             this.rjPanel4.Font = new System.Drawing.Font("Segoe UI Symbol", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjPanel4.ForeColor = System.Drawing.Color.White;
             this.rjPanel4.GradientAngle = 90F;
-            this.rjPanel4.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(111)))), ((int)(((byte)(157)))));
-            this.rjPanel4.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(111)))), ((int)(((byte)(157)))));
+            this.rjPanel4.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
+            this.rjPanel4.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
             this.rjPanel4.Location = new System.Drawing.Point(674, 87);
             this.rjPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel4.Name = "rjPanel4";
@@ -251,7 +251,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(67, 4);
+            this.label2.Location = new System.Drawing.Point(69, 7);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 32);
             this.label2.TabIndex = 16;

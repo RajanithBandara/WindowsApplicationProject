@@ -127,7 +127,7 @@
             this.rjButton1.BorderSize = 0;
             this.rjButton1.FlatAppearance.BorderSize = 0;
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.rjButton1.ForeColor = System.Drawing.Color.White;
             this.rjButton1.Location = new System.Drawing.Point(32, 83);
             this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

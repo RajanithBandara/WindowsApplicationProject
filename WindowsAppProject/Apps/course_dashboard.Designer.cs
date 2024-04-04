@@ -39,12 +39,12 @@
             // 
             // contentpanel
             // 
-            this.contentpanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
+            this.contentpanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
             this.contentpanel.BorderRadius = 30;
             this.contentpanel.ForeColor = System.Drawing.Color.White;
             this.contentpanel.GradientAngle = 90F;
-            this.contentpanel.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
-            this.contentpanel.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
+            this.contentpanel.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.contentpanel.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
             this.contentpanel.Location = new System.Drawing.Point(37, 29);
             this.contentpanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.contentpanel.Name = "contentpanel";
@@ -54,15 +54,15 @@
             // 
             // rjPanel1
             // 
-            this.rjPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
+            this.rjPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
             this.rjPanel1.BorderRadius = 30;
             this.rjPanel1.Controls.Add(this.rjButton3);
             this.rjPanel1.Controls.Add(this.rjButton2);
             this.rjPanel1.Controls.Add(this.rjButton1);
             this.rjPanel1.ForeColor = System.Drawing.Color.White;
             this.rjPanel1.GradientAngle = 90F;
-            this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
-            this.rjPanel1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
+            this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.rjPanel1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
             this.rjPanel1.Location = new System.Drawing.Point(939, 118);
             this.rjPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel1.Name = "rjPanel1";
@@ -71,14 +71,14 @@
             // 
             // rjButton3
             // 
-            this.rjButton3.BackColor = System.Drawing.Color.RoyalBlue;
-            this.rjButton3.BackgroundColor = System.Drawing.Color.RoyalBlue;
+            this.rjButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(81)))));
+            this.rjButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(81)))));
             this.rjButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rjButton3.BorderRadius = 12;
             this.rjButton3.BorderSize = 0;
             this.rjButton3.FlatAppearance.BorderSize = 0;
             this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton3.ForeColor = System.Drawing.Color.White;
             this.rjButton3.Location = new System.Drawing.Point(36, 251);
             this.rjButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -92,14 +92,14 @@
             // 
             // rjButton2
             // 
-            this.rjButton2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.rjButton2.BackgroundColor = System.Drawing.Color.RoyalBlue;
+            this.rjButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(81)))));
+            this.rjButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(81)))));
             this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rjButton2.BorderRadius = 16;
             this.rjButton2.BorderSize = 0;
             this.rjButton2.FlatAppearance.BorderSize = 0;
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton2.ForeColor = System.Drawing.Color.White;
             this.rjButton2.Location = new System.Drawing.Point(36, 158);
             this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -113,14 +113,14 @@
             // 
             // rjButton1
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.RoyalBlue;
+            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(81)))));
+            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(81)))));
             this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rjButton1.BorderRadius = 16;
             this.rjButton1.BorderSize = 0;
             this.rjButton1.FlatAppearance.BorderSize = 0;
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton1.ForeColor = System.Drawing.Color.White;
             this.rjButton1.Location = new System.Drawing.Point(36, 62);
             this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
