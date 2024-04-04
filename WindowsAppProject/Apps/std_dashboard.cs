@@ -39,10 +39,5 @@ namespace WindowsAppProject.Apps
             testchart chartview = new testchart();
             addusercontrol(chartview);
         }
-
-        private void std_dashboard_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
