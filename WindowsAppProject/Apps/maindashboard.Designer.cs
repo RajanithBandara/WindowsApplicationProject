@@ -381,12 +381,12 @@ namespace WindowsAppProject
             // 
             // rjPanel3
             // 
-            this.rjPanel3.BackColor = System.Drawing.Color.Black;
+            this.rjPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.rjPanel3.BorderRadius = 20;
             this.rjPanel3.ForeColor = System.Drawing.Color.White;
             this.rjPanel3.GradientAngle = 90F;
-            this.rjPanel3.GradientBottomColor = System.Drawing.Color.Black;
-            this.rjPanel3.GradientTopColor = System.Drawing.Color.Black;
+            this.rjPanel3.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
+            this.rjPanel3.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.rjPanel3.Location = new System.Drawing.Point(29, 16);
             this.rjPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel3.Name = "rjPanel3";
