@@ -18,23 +18,7 @@ namespace WindowsAppProject.Apps.usercontrol_studentdash
         public testchart()
         {
             InitializeComponent();
-            InitializePlot();
 
-        }
-
-        private void InitializePlot()
-        {
-            var Plotmodel = new PlotModel { Title = "Student Detials" };
-            var series1 = new LineSeries
-            {
-                Title = "Marks",
-                MarkerType = MarkerType.Circle
-            };
-            series1.Points.Add(new DataPoint(0, 0));
-            series1.Points.Add(new DataPoint(1, 10));
-            series1.Points.Add(new DataPoint(2, 20));
-            series1.Points.Add(new DataPoint(3, 30));
-            series1.Points.Add(new DataPoint(4, 40));
         }
 
         
