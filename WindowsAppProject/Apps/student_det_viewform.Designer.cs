@@ -48,10 +48,11 @@
             this.rjPanel1.GradientAngle = 90F;
             this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.rjPanel1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
-            this.rjPanel1.Location = new System.Drawing.Point(40, 16);
+            this.rjPanel1.Location = new System.Drawing.Point(40, 31);
             this.rjPanel1.Name = "rjPanel1";
-            this.rjPanel1.Size = new System.Drawing.Size(601, 249);
+            this.rjPanel1.Size = new System.Drawing.Size(615, 257);
             this.rjPanel1.TabIndex = 0;
+            this.rjPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.rjPanel1_Paint);
             // 
             // rjButton2
             // 
@@ -63,7 +64,7 @@
             this.rjButton2.FlatAppearance.BorderSize = 0;
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(235, 132);
+            this.rjButton2.Location = new System.Drawing.Point(188, 168);
             this.rjButton2.Name = "rjButton2";
             this.rjButton2.Size = new System.Drawing.Size(115, 36);
             this.rjButton2.TabIndex = 14;
@@ -82,7 +83,7 @@
             this.rjButton1.FlatAppearance.BorderSize = 0;
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(373, 132);
+            this.rjButton1.Location = new System.Drawing.Point(357, 168);
             this.rjButton1.Name = "rjButton1";
             this.rjButton1.Size = new System.Drawing.Size(115, 36);
             this.rjButton1.TabIndex = 13;
@@ -93,7 +94,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(248, 73);
+            this.textBox1.Location = new System.Drawing.Point(236, 98);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(295, 30);
             this.textBox1.TabIndex = 12;
@@ -102,7 +103,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(116, 73);
+            this.label1.Location = new System.Drawing.Point(104, 98);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 25);
             this.label1.TabIndex = 11;
@@ -113,7 +114,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
-            this.ClientSize = new System.Drawing.Size(676, 289);
+            this.ClientSize = new System.Drawing.Size(699, 330);
             this.Controls.Add(this.rjPanel1);
             this.Name = "student_det_viewform";
             this.Text = "Form1";

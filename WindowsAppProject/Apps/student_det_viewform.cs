@@ -21,5 +21,10 @@ namespace WindowsAppProject.Apps
         {
             textBox1.Text = string.Empty;
         }
+
+        private void rjPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
