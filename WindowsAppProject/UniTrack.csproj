@@ -176,6 +176,12 @@
     <Compile Include="Apps\arloginform.Designer.cs">
       <DependentUpon>arloginform.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apps\progression_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\progression_dashboard.Designer.cs">
+      <DependentUpon>progression_dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Apps\student_det_viewform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,24 @@
     </Compile>
     <Compile Include="Apps\usercontrol_maindashboard\maindash_loading.Designer.cs">
       <DependentUpon>maindash_loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\usercontrol_progressiondash\GPA distribution.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\usercontrol_progressiondash\GPA distribution.Designer.cs">
+      <DependentUpon>GPA distribution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\usercontrol_progressiondash\PassFail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\usercontrol_progressiondash\PassFail.Designer.cs">
+      <DependentUpon>PassFail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\usercontrol_progressiondash\Student by student.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\usercontrol_progressiondash\Student by student.Designer.cs">
+      <DependentUpon>Student by student.cs</DependentUpon>
     </Compile>
     <Compile Include="dbconnection.cs" />
     <Compile Include="Apps\gpacalculator.cs">
@@ -316,6 +340,9 @@
     <EmbeddedResource Include="Apps\maindashboard.resx">
       <DependentUpon>maindashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Apps\progression_dashboard.resx">
+      <DependentUpon>progression_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Apps\std_dashboard.resx">
       <DependentUpon>std_dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -348,6 +375,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\usercontrol_maindashboard\student_top_view.resx">
       <DependentUpon>student_top_view.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\usercontrol_progressiondash\GPA distribution.resx">
+      <DependentUpon>GPA distribution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\usercontrol_progressiondash\PassFail.resx">
+      <DependentUpon>PassFail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\usercontrol_progressiondash\Student by student.resx">
+      <DependentUpon>Student by student.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\usercontrol_studentdash\module_view.resx">
       <DependentUpon>module_view.cs</DependentUpon>
