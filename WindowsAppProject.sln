@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsAppProject", "WindowsAppProject\WindowsAppProject.csproj", "{E8D484F8-DBD1-4A62-8760-C51C6B03B0B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniTrack", "WindowsAppProject\UniTrack.csproj", "{E8D484F8-DBD1-4A62-8760-C51C6B03B0B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

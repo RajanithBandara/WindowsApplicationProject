@@ -79,7 +79,7 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
                                     lbl3.Text = course_id;
                                     lbl3.AutoSize = false;
                                     lbl3.Height = 50;
-                                    lbl3.Width = 190;
+                                    lbl3.Width = 120;
                                     lbl3.Font = new Font("Microsoft Sans Serif", 18);
                                     panel4.Controls.Add(lbl3);
 
@@ -90,7 +90,7 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
                                     lbl4.Text = formatted_gpa;
                                     lbl4.AutoSize = false;
                                     lbl4.Height = 50;
-                                    lbl4.Width = 136;
+                                    lbl4.Width = 116;
                                     lbl4.Font = new Font("Microsoft Sans Serif", 18);
                                     panel3.Controls.Add(lbl4);
                                     yoffset = yoffset + 50;
