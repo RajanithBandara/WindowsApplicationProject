@@ -38,7 +38,7 @@
             // 
             // rjPanel1
             // 
-            this.rjPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
+            this.rjPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
             this.rjPanel1.BorderRadius = 30;
             this.rjPanel1.Controls.Add(this.rjButton2);
             this.rjPanel1.Controls.Add(this.rjButton1);
@@ -46,26 +46,27 @@
             this.rjPanel1.Controls.Add(this.label1);
             this.rjPanel1.ForeColor = System.Drawing.Color.White;
             this.rjPanel1.GradientAngle = 90F;
-            this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
-            this.rjPanel1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
-            this.rjPanel1.Location = new System.Drawing.Point(40, 16);
+            this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.rjPanel1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.rjPanel1.Location = new System.Drawing.Point(40, 19);
             this.rjPanel1.Name = "rjPanel1";
             this.rjPanel1.Size = new System.Drawing.Size(601, 249);
             this.rjPanel1.TabIndex = 0;
             // 
             // rjButton2
             // 
-            this.rjButton2.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton2.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(81)))));
+            this.rjButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(81)))));
             this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rjButton2.BorderRadius = 12;
             this.rjButton2.BorderSize = 0;
             this.rjButton2.FlatAppearance.BorderSize = 0;
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(235, 132);
+            this.rjButton2.Location = new System.Drawing.Point(160, 146);
             this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(115, 36);
+            this.rjButton2.Size = new System.Drawing.Size(115, 37);
             this.rjButton2.TabIndex = 14;
             this.rjButton2.Text = "Clear";
             this.rjButton2.TextColor = System.Drawing.Color.White;
@@ -74,17 +75,18 @@
             // 
             // rjButton1
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(81)))));
+            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(81)))));
             this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rjButton1.BorderRadius = 12;
             this.rjButton1.BorderSize = 0;
             this.rjButton1.FlatAppearance.BorderSize = 0;
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(373, 132);
+            this.rjButton1.Location = new System.Drawing.Point(326, 146);
             this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(115, 36);
+            this.rjButton1.Size = new System.Drawing.Size(115, 37);
             this.rjButton1.TabIndex = 13;
             this.rjButton1.Text = "Search";
             this.rjButton1.TextColor = System.Drawing.Color.White;
@@ -93,7 +95,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(248, 73);
+            this.textBox1.Location = new System.Drawing.Point(219, 68);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(295, 30);
             this.textBox1.TabIndex = 12;
@@ -101,10 +103,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(116, 73);
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label1.Location = new System.Drawing.Point(87, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 25);
+            this.label1.Size = new System.Drawing.Size(114, 25);
             this.label1.TabIndex = 11;
             this.label1.Text = "Student ID";
             // 
@@ -112,7 +116,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(223)))), ((int)(((byte)(213)))));
             this.ClientSize = new System.Drawing.Size(676, 289);
             this.Controls.Add(this.rjPanel1);
             this.Name = "student_det_viewform";

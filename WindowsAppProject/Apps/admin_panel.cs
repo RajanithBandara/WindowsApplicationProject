@@ -40,5 +40,10 @@ namespace WindowsAppProject.Apps
             ar_reg ar_Reg = new ar_reg();
             addusercontrol(ar_Reg);
         }
+
+        private void admincontentpanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
