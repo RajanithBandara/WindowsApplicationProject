@@ -449,6 +449,17 @@
     <Content Include="ProjectDB.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\profile.png" />
+    <None Include="Resources\group.png" />
+    <None Include="Resources\user1.png" />
+    <None Include="Resources\customer.png" />
+    <None Include="Resources\add-user.png" />
+    <None Include="Resources\article.png" />
+    <None Include="Resources\ebook.png" />
+    <None Include="Resources\ebook %281%29.png" />
+    <None Include="Resources\case-study.png" />
+    <None Include="Resources\rising.png" />
+    <None Include="Resources\online-course.png" />
     <None Include="Resources\icons8-update-48.png" />
     <None Include="Resources\icons8-add-properties-48-removebg-preview.png" />
     <None Include="Resources\icons8-add-properties-48.png" />
