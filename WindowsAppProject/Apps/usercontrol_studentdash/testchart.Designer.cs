@@ -28,24 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.rjPanel1 = new RoundedPanelClass.RJPanel();
             this.SuspendLayout();
             // 
-            // panel1
+            // rjPanel1
             // 
-            this.panel1.Location = new System.Drawing.Point(37, 25);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(894, 619);
-            this.panel1.TabIndex = 0;
+            this.rjPanel1.BackColor = System.Drawing.Color.Purple;
+            this.rjPanel1.BorderRadius = 30;
+            this.rjPanel1.ForeColor = System.Drawing.Color.White;
+            this.rjPanel1.GradientAngle = 90F;
+            this.rjPanel1.GradientBottomColor = System.Drawing.Color.Purple;
+            this.rjPanel1.GradientTopColor = System.Drawing.Color.Purple;
+            this.rjPanel1.Location = new System.Drawing.Point(22, 20);
+            this.rjPanel1.Name = "rjPanel1";
+            this.rjPanel1.Size = new System.Drawing.Size(795, 454);
+            this.rjPanel1.TabIndex = 0;
             // 
             // testchart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Controls.Add(this.rjPanel1);
             this.Name = "testchart";
-            this.Size = new System.Drawing.Size(963, 670);
+            this.Size = new System.Drawing.Size(858, 500);
             this.Load += new System.EventHandler(this.testchart_Load);
             this.ResumeLayout(false);
 
@@ -53,6 +58,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private RoundedPanelClass.RJPanel rjPanel1;
     }
 }
