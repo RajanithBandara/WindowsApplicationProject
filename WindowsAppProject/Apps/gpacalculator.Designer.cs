@@ -58,7 +58,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(34, 4);
+            this.label1.Location = new System.Drawing.Point(43, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(205, 38);
             this.label1.TabIndex = 16;
@@ -66,7 +66,7 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(106, 495);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(117, 495);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(802, 69);
@@ -82,7 +82,7 @@
             this.rjPanel1.GradientAngle = 90F;
             this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
             this.rjPanel1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
-            this.rjPanel1.Location = new System.Drawing.Point(106, 40);
+            this.rjPanel1.Location = new System.Drawing.Point(181, 29);
             this.rjPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel1.Name = "rjPanel1";
             this.rjPanel1.Size = new System.Drawing.Size(674, 42);
@@ -112,7 +112,7 @@
             this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton3.Font = new System.Drawing.Font("Segoe UI Symbol", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton3.ForeColor = System.Drawing.Color.White;
-            this.rjButton3.Location = new System.Drawing.Point(652, 507);
+            this.rjButton3.Location = new System.Drawing.Point(663, 507);
             this.rjButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton3.Name = "rjButton3";
             this.rjButton3.Size = new System.Drawing.Size(256, 45);
@@ -133,7 +133,7 @@
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.Font = new System.Drawing.Font("Segoe UI Symbol", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(381, 507);
+            this.rjButton2.Location = new System.Drawing.Point(390, 507);
             this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton2.Name = "rjButton2";
             this.rjButton2.Size = new System.Drawing.Size(256, 45);
@@ -154,7 +154,7 @@
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.Font = new System.Drawing.Font("Segoe UI Symbol", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(106, 507);
+            this.rjButton1.Location = new System.Drawing.Point(117, 507);
             this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton1.Name = "rjButton1";
             this.rjButton1.Size = new System.Drawing.Size(256, 45);
@@ -173,7 +173,7 @@
             this.rjPanel2.GradientAngle = 90F;
             this.rjPanel2.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
             this.rjPanel2.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
-            this.rjPanel2.Location = new System.Drawing.Point(106, 87);
+            this.rjPanel2.Location = new System.Drawing.Point(117, 87);
             this.rjPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel2.Name = "rjPanel2";
             this.rjPanel2.Size = new System.Drawing.Size(284, 49);
@@ -190,7 +190,7 @@
             this.rjPanel3.GradientAngle = 90F;
             this.rjPanel3.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
             this.rjPanel3.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
-            this.rjPanel3.Location = new System.Drawing.Point(438, 87);
+            this.rjPanel3.Location = new System.Drawing.Point(451, 87);
             this.rjPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel3.Name = "rjPanel3";
             this.rjPanel3.Size = new System.Drawing.Size(185, 49);
@@ -202,7 +202,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(40, 4);
+            this.label5.Location = new System.Drawing.Point(46, 5);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(96, 38);
             this.label5.TabIndex = 16;
@@ -218,10 +218,10 @@
             this.rjPanel4.GradientAngle = 90F;
             this.rjPanel4.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
             this.rjPanel4.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
-            this.rjPanel4.Location = new System.Drawing.Point(674, 87);
+            this.rjPanel4.Location = new System.Drawing.Point(686, 87);
             this.rjPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel4.Name = "rjPanel4";
-            this.rjPanel4.Size = new System.Drawing.Size(234, 49);
+            this.rjPanel4.Size = new System.Drawing.Size(233, 49);
             this.rjPanel4.TabIndex = 31;
             // 
             // label2
@@ -230,7 +230,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(67, 4);
+            this.label2.Location = new System.Drawing.Point(65, 5);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 38);
             this.label2.TabIndex = 16;
@@ -239,17 +239,17 @@
             // MName
             // 
             this.MName.AutoScroll = true;
-            this.MName.Location = new System.Drawing.Point(0, 2);
+            this.MName.Location = new System.Drawing.Point(0, 0);
             this.MName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MName.Name = "MName";
-            this.MName.Size = new System.Drawing.Size(284, 346);
+            this.MName.Size = new System.Drawing.Size(284, 348);
             this.MName.TabIndex = 0;
             this.MName.Scroll += new System.Windows.Forms.ScrollEventHandler(this.mname_Scroll);
             // 
             // Mgrade
             // 
             this.Mgrade.AutoScroll = true;
-            this.Mgrade.Location = new System.Drawing.Point(332, 2);
+            this.Mgrade.Location = new System.Drawing.Point(334, 0);
             this.Mgrade.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Mgrade.Name = "Mgrade";
             this.Mgrade.Size = new System.Drawing.Size(185, 348);
@@ -259,10 +259,10 @@
             // Mcredits
             // 
             this.Mcredits.AutoScroll = true;
-            this.Mcredits.Location = new System.Drawing.Point(568, 2);
+            this.Mcredits.Location = new System.Drawing.Point(569, 0);
             this.Mcredits.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Mcredits.Name = "Mcredits";
-            this.Mcredits.Size = new System.Drawing.Size(233, 346);
+            this.Mcredits.Size = new System.Drawing.Size(233, 348);
             this.Mcredits.TabIndex = 0;
             this.Mcredits.Scroll += new System.Windows.Forms.ScrollEventHandler(this.MCredits_Scroll);
             // 
@@ -272,7 +272,7 @@
             this.textbxpanel.Controls.Add(this.Mcredits);
             this.textbxpanel.Controls.Add(this.Mgrade);
             this.textbxpanel.Controls.Add(this.MName);
-            this.textbxpanel.Location = new System.Drawing.Point(106, 141);
+            this.textbxpanel.Location = new System.Drawing.Point(117, 141);
             this.textbxpanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textbxpanel.Name = "textbxpanel";
             this.textbxpanel.Size = new System.Drawing.Size(802, 348);
