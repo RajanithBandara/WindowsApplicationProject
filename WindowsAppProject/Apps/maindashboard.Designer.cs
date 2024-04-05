@@ -182,7 +182,7 @@ namespace WindowsAppProject
             // 
             this.rjButton6.BackColor = System.Drawing.Color.Transparent;
             this.rjButton6.BackgroundColor = System.Drawing.Color.Transparent;
-            this.rjButton6.BackgroundImage = global::WindowsAppProject.Properties.Resources.graduates;
+            this.rjButton6.BackgroundImage = global::WindowsAppProject.Properties.Resources.graduating_student;
             this.rjButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.rjButton6.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rjButton6.BorderRadius = 15;
