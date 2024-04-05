@@ -42,6 +42,7 @@
             this.progressBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(537, 16);
+
             this.progressBar1.TabIndex = 0;
             this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
             // 
@@ -77,6 +78,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
             this.ClientSize = new System.Drawing.Size(526, 346);
             this.ControlBox = false;
@@ -88,6 +90,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+
             this.Name = "loading_screen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "loading_screen";
