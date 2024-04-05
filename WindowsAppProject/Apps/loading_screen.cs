@@ -24,6 +24,8 @@ namespace WindowsAppProject.Apps
             loaderWorker.ProgressChanged += LoaderWorker_ProgressChanged;
             loaderWorker.RunWorkerCompleted += LoaderWorker_RunWorkerCompleted;
 
+            progressBar1.MarqueeAnimationSpeed = 150;
+
             // Start the background worker
             loaderWorker.RunWorkerAsync();
         }
@@ -68,6 +70,16 @@ namespace WindowsAppProject.Apps
         {
             // Close the loading screen form
             this.Close();
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
