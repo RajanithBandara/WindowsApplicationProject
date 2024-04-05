@@ -221,11 +221,11 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Sitka Banner", 28.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 29F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(336, 34);
+            this.label10.Location = new System.Drawing.Point(299, 34);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(414, 68);
+            this.label10.Size = new System.Drawing.Size(488, 66);
             this.label10.TabIndex = 46;
             this.label10.Text = "AR Registration Form";
             this.label10.Click += new System.EventHandler(this.label10_Click);
@@ -312,7 +312,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(508, 158);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(10);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(283, 33);
             this.textBox1.TabIndex = 41;
