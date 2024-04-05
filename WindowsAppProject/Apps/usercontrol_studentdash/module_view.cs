@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,17 @@ namespace WindowsAppProject.Apps.usercontrol_studentdash
         public module_view()
         {
             InitializeComponent();
+        }
+
+        private string connectionstr = dbconnection.Instance.ConnectionString;
+
+        public void loadcontent()
+        {
+            using (OleDbConnection conn = new OleDbConnection(connectionstr))
+            {
+                conn.Open();
+
+            }
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
