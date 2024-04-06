@@ -17,10 +17,34 @@ namespace WindowsAppProject
 {
     public partial class maindashboard : Form
     {
+
         public maindashboard()
         {
             InitializeComponent();
         }
+        private T FindOpenForm<T>() where T : Form
+        {
+            return Application.OpenForms.OfType<T>().FirstOrDefault();
+        }
+        private void OpenChildForm<T>() where T : Form, new()
+        {
+            T form = FindOpenForm<T>();
+            if (form == null)
+            {
+                form = new T();
+                form.FormClosed += ChildForm_FormClosed; // Subscribe to the FormClosed event
+                form.Show();
+            }
+            else
+            {
+                form.BringToFront();
+            }
+        }
+        private void ChildForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            // No need to remove the closed form from the list or do anything here
+        }
+
 
         private string connectstr = dbconnection.Instance.ConnectionString;
 
@@ -90,33 +114,28 @@ namespace WindowsAppProject
 
         private void rjButton1_Click(object sender, EventArgs e)
         {
-            adminloginform adminlogin = new adminloginform();
-            adminlogin.Show();
+            OpenChildForm<adminloginform>();
         }
-
         private void rjButton2_Click(object sender, EventArgs e)
         {
-            gpacalculator gpa_window = new gpacalculator();
-            gpa_window.Show();
+            OpenChildForm<gpacalculator>(); 
         }
 
         private void rjButton3_Click(object sender, EventArgs e)
         {
-            std_dashboard std_Dashboard = new std_dashboard();
-            std_Dashboard.Show();
+            OpenChildForm<std_dashboard>(); 
         }
 
         private void rjButton4_Click(object sender, EventArgs e)
         {
-            course_dashboard course_dash = new course_dashboard();
-            course_dash.Show(); 
+            OpenChildForm<course_dashboard>(); 
         }
 
         private void rjButton5_Click(object sender, EventArgs e)
         {
-            course_dashboard course_Dashboard = new course_dashboard();
-            course_Dashboard.Show();
+            OpenChildForm<course_dashboard>(); 
         }
+
 
         private void rjButton2_Click_1(object sender, EventArgs e)
         {
