@@ -21,10 +21,24 @@ namespace WindowsAppProject
         public maindashboard()
         {
             InitializeComponent();
+            //this.FormClosing += maindashboard_FormClosing;
         }
         private T FindOpenForm<T>() where T : Form
         {
             return Application.OpenForms.OfType<T>().FirstOrDefault();
+        }
+
+        private void maindashboard_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to close this form?", "Close Form", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else if(result == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
         }
         private void OpenChildForm<T>() where T : Form, new()
         {
@@ -32,7 +46,7 @@ namespace WindowsAppProject
             if (form == null)
             {
                 form = new T();
-                form.FormClosed += ChildForm_FormClosed; // Subscribe to the FormClosed event
+                form.FormClosed += ChildForm_FormClosed;
                 form.Show();
             }
             else
@@ -42,7 +56,15 @@ namespace WindowsAppProject
         }
         private void ChildForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            // No need to remove the closed form from the list or do anything here
+            DialogResult result = MessageBox.Show("Are you sure you want to close this form?", "Close Form", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                ((Form)sender).FormClosed -= ChildForm_FormClosed;
+            }
+            else
+            {
+                this.Close();
+            }
         }
 
 
@@ -139,8 +161,7 @@ namespace WindowsAppProject
 
         private void rjButton2_Click_1(object sender, EventArgs e)
         {
-            gpacalculator gpacal = new gpacalculator();
-            gpacal.Show();
+            OpenChildForm<gpacalculator>();
         }
         private void addusercontrol(UserControl usrctrl)
         {
