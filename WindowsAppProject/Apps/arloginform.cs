@@ -55,9 +55,9 @@ namespace WindowsAppProject.Apps
                             if (VerifyPassword(enteredPassword, hashedPasswordFromDatabase))
                             {
                                 MessageBox.Show("Login successful!");
-                                maindashboard maindash = new maindashboard();
+                                loading_screen loaddash = new loading_screen();
                                 this.Hide();
-                                maindash.Show();
+                                loaddash.Show();
                             }
                             else
                             {
@@ -143,7 +143,6 @@ namespace WindowsAppProject.Apps
         private void label5_Click(object sender, EventArgs e)
         {
             adminloginform adminlogin = new adminloginform();
-            this.Hide();
             adminlogin.Show();
         }
     }

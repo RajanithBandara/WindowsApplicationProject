@@ -13,7 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\Amasha Nethmi\Downloads\WebSite\</PublishUrl>
+    <PublishUrl>D:\Applications\MyApp31\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>16</ApplicationRevision>
+    <ApplicationRevision>17</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -316,6 +316,7 @@
     <Compile Include="RJPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="session.cs" />
     <EmbeddedResource Include="Apps\adminloginform.resx">
       <DependentUpon>adminloginform.cs</DependentUpon>
     </EmbeddedResource>

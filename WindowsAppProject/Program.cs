@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsAppProject.Apps;
+using WindowsAppProject.Apps.usercontrol_maindashboard;
 
 namespace WindowsAppProject
 {
@@ -23,7 +24,7 @@ namespace WindowsAppProject
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new maindashboard());
+            Application.Run(new arloginform());
 
 
         }
