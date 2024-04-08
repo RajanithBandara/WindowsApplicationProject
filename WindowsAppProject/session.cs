@@ -16,7 +16,7 @@ namespace WindowsAppProject
             set { _username = value; }
         }
 
-        public static bool IsAr { 
+        public static bool IsAr {
             get { return !string.IsNullOrEmpty(_username); }
         }
 
