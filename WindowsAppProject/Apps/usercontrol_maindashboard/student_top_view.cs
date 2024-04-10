@@ -53,7 +53,7 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
                                     Label lbl = new Label();
                                     lbl.ForeColor = Color.White;
                                     lbl.Location = new Point(40, 75 + yoffset);
-                                    lbl.BackColor = Color.Transparent;
+                                    lbl.BackColor = Color.DarkGray;
                                     lbl.Text = student_id;
                                     lbl.AutoSize = false;
                                     lbl.Height = 50;
