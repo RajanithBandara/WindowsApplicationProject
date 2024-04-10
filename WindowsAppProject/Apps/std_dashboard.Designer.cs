@@ -35,7 +35,11 @@
             this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.mainpanelstd = new RoundedPanelClass.RJPanel();
             this.rjPanel1 = new RoundedPanelClass.RJPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.rjPanel6.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // rjPanel4
@@ -56,8 +60,7 @@
             // 
             this.rjPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
             this.rjPanel6.BorderRadius = 30;
-            this.rjPanel6.Controls.Add(this.rjButton2);
-            this.rjPanel6.Controls.Add(this.rjButton1);
+            this.rjPanel6.Controls.Add(this.panel1);
             this.rjPanel6.ForeColor = System.Drawing.Color.White;
             this.rjPanel6.GradientAngle = 90F;
             this.rjPanel6.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(105)))));
@@ -70,8 +73,10 @@
             // 
             // rjButton2
             // 
-            this.rjButton2.BackColor = System.Drawing.Color.SlateBlue;
-            this.rjButton2.BackgroundColor = System.Drawing.Color.SlateBlue;
+            this.rjButton2.BackColor = System.Drawing.Color.Transparent;
+            this.rjButton2.BackgroundColor = System.Drawing.Color.Transparent;
+            this.rjButton2.BackgroundImage = global::WindowsAppProject.Properties.Resources.rising;
+            this.rjButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rjButton2.BorderRadius = 14;
             this.rjButton2.BorderSize = 0;
@@ -79,20 +84,21 @@
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(20, 292);
+            this.rjButton2.Location = new System.Drawing.Point(108, 114);
             this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(242, 62);
+            this.rjButton2.Size = new System.Drawing.Size(68, 50);
             this.rjButton2.TabIndex = 1;
-            this.rjButton2.Text = "View Progression";
             this.rjButton2.TextColor = System.Drawing.Color.White;
             this.rjButton2.UseVisualStyleBackColor = false;
             this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click);
             // 
             // rjButton1
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.SlateBlue;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.SlateBlue;
+            this.rjButton1.BackColor = System.Drawing.Color.Transparent;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.Transparent;
+            this.rjButton1.BackgroundImage = global::WindowsAppProject.Properties.Resources.case_study;
+            this.rjButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rjButton1.BorderRadius = 14;
             this.rjButton1.BorderSize = 0;
@@ -100,12 +106,11 @@
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(20, 210);
+            this.rjButton1.Location = new System.Drawing.Point(108, 19);
             this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(242, 62);
+            this.rjButton1.Size = new System.Drawing.Size(68, 50);
             this.rjButton1.TabIndex = 0;
-            this.rjButton1.Text = "View Modules";
             this.rjButton1.TextColor = System.Drawing.Color.White;
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
@@ -139,6 +144,35 @@
             this.rjPanel1.Size = new System.Drawing.Size(230, 160);
             this.rjPanel1.TabIndex = 0;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.rjButton1);
+            this.panel1.Controls.Add(this.rjButton2);
+            this.panel1.Location = new System.Drawing.Point(0, 208);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(285, 212);
+            this.panel1.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(100, 72);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 16);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "View Module";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(86, 168);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(112, 16);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "View Progression";
+            // 
             // std_dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -158,6 +192,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "std_dashboard";
             this.rjPanel6.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -170,5 +206,8 @@
         private RoundedPanelClass.RJPanel rjPanel6;
         private CustomControls.RJControls.RJButton rjButton2;
         private CustomControls.RJControls.RJButton rjButton1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
