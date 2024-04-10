@@ -21,7 +21,7 @@ namespace WindowsAppProject
         public maindashboard()
         {
             InitializeComponent();
-            //this.FormClosing += maindashboard_FormClosing;
+            this.FormClosing += maindashboard_FormClosing;
         }
         private T FindOpenForm<T>() where T : Form
         {
@@ -89,6 +89,8 @@ namespace WindowsAppProject
             label4.Visible = false;
             await Task.Delay(1200);
             displayusrctrl();
+
+            label5.Text = session.Username;
         }
         private void rjButton_MouseHover(object sender, EventArgs e)
         {

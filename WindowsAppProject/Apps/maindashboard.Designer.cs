@@ -97,7 +97,7 @@ namespace WindowsAppProject
             // panel2
             // 
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(6, 208);
+            this.panel2.Location = new System.Drawing.Point(3, 188);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(360, 52);
@@ -106,12 +106,11 @@ namespace WindowsAppProject
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.label5.Location = new System.Drawing.Point(26, 18);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(73, 11);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(311, 15);
+            this.label5.Size = new System.Drawing.Size(0, 32);
             this.label5.TabIndex = 0;
-            this.label5.Text = "ARUser details and some minor details will appear here";
             // 
             // panel1
             // 
