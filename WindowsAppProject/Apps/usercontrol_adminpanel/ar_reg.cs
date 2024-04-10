@@ -127,7 +127,7 @@ namespace WindowsAppProject.Apps.usercontrol_adminpanel
 
                 if (password == retypepassword && username != "")
                 {
-                    OleDbCommand cmd = new OleDbCommand("INSERT INTO aruserdata VALUES (@username, @password, @email)", conn);
+                    OleDbCommand cmd = new OleDbCommand("INSERT INTO aruserdata(username,pasword,email) VALUES (@username, @password, @email)", conn);
                     cmd.Parameters.AddWithValue("@username", username);
                     cmd.Parameters.AddWithValue("@password", hashedPassword);
                     cmd.Parameters.AddWithValue("@email", email);
