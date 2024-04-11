@@ -52,11 +52,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 29F, System.Drawing.FontStyle.Underline);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 28.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(81)))));
             this.label1.Location = new System.Drawing.Point(176, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(603, 66);
+            this.label1.Size = new System.Drawing.Size(646, 66);
             this.label1.TabIndex = 0;
             this.label1.Text = "Currently Registered Users";
             // 
