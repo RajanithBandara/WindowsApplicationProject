@@ -58,10 +58,5 @@ namespace WindowsAppProject.Apps.usercontrol_studentdash
         {
 
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
