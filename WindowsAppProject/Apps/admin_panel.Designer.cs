@@ -155,6 +155,8 @@
             this.rjButton2.TextColor = System.Drawing.Color.White;
             this.rjButton2.UseVisualStyleBackColor = false;
             this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click);
+            this.rjButton2.MouseLeave += new System.EventHandler(this.rjButton2_mouseleave);
+            this.rjButton2.MouseHover += new System.EventHandler(this.rjButton2_mousehover);
             // 
             // rjButton1
             // 
@@ -176,6 +178,8 @@
             this.rjButton1.TextColor = System.Drawing.Color.White;
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
+            this.rjButton1.MouseLeave += new System.EventHandler(this.rjButton1_mouseleave);
+            this.rjButton1.MouseHover += new System.EventHandler(this.rjButton1_mousehover);
             // 
             // rjButton4
             // 
@@ -186,7 +190,7 @@
             this.rjButton4.BorderSize = 1;
             this.rjButton4.FlatAppearance.BorderSize = 0;
             this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton4.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton4.ForeColor = System.Drawing.Color.White;
             this.rjButton4.Location = new System.Drawing.Point(19, 508);
             this.rjButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -206,7 +210,7 @@
             this.rjButton6.BorderSize = 1;
             this.rjButton6.FlatAppearance.BorderSize = 0;
             this.rjButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton6.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton6.ForeColor = System.Drawing.Color.White;
             this.rjButton6.Location = new System.Drawing.Point(19, 446);
             this.rjButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -227,12 +231,12 @@
             this.rjButton7.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.rjButton7.FlatAppearance.BorderSize = 0;
             this.rjButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton7.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton7.ForeColor = System.Drawing.Color.White;
             this.rjButton7.Location = new System.Drawing.Point(19, 384);
             this.rjButton7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton7.Name = "rjButton7";
-            this.rjButton7.Size = new System.Drawing.Size(189, 45);
+            this.rjButton7.Size = new System.Drawing.Size(189, 42);
             this.rjButton7.TabIndex = 6;
             this.rjButton7.Text = "Student Dashboard";
             this.rjButton7.TextColor = System.Drawing.Color.White;

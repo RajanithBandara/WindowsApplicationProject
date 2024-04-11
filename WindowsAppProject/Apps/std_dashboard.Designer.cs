@@ -191,6 +191,8 @@
             this.rjButton1.TextColor = System.Drawing.Color.White;
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
+            this.rjButton1.MouseLeave += new System.EventHandler(this.rjButton1_mouseleave);
+            this.rjButton1.MouseHover += new System.EventHandler(this.rjButton1_mousehover);
             // 
             // rjButton2
             // 
@@ -213,6 +215,8 @@
             this.rjButton2.TextColor = System.Drawing.Color.White;
             this.rjButton2.UseVisualStyleBackColor = false;
             this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click);
+            this.rjButton2.MouseLeave += new System.EventHandler(this.rjButton2_mouseleave);
+            this.rjButton2.MouseHover += new System.EventHandler(this.rjButton2_mousehover);
             // 
             // mainpanelstd
             // 
@@ -261,6 +265,7 @@
             this.Name = "std_dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "std_dashboard";
+            this.Load += new System.EventHandler(this.std_dashboard_Load);
             this.rjPanel6.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

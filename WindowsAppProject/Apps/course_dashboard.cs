@@ -6,6 +6,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -88,12 +89,46 @@ namespace practice_project
         {
             courses_view corsesview = new courses_view();
             addusercontrol(corsesview);
+
+            label1.Visible = false;
+            label2.Visible = false;
+            label3.Visible = false;
         }
 
         private void rjButton3_Click(object sender, EventArgs e)
         {
             remove_course removecourse = new remove_course();
             addusercontrol(removecourse);
+        }
+
+        private void rjButton1_mousehover(object sender, EventArgs e)
+        {
+            label1.Visible = true;
+        }
+
+        private void rjButton1_mouseleave(object sender, EventArgs e)
+        {
+            label1.Visible = false;
+        }
+
+        private void rjButton2_mousehover(object sender, EventArgs e)
+        {
+            label2.Visible = true;
+        }
+
+        private void rjButton2_mouseleave(object sender, EventArgs e)
+        {
+            label2.Visible = false;
+        }
+
+        private void rjButton3_mousehover(object sender, EventArgs e)
+        {
+            label3.Visible = true;
+        }
+
+        private void rjButton3_mouseleave(object sender, EventArgs e)
+        {
+            label3.Visible = false;
         }
     }
 }
