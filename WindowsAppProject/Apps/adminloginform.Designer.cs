@@ -153,7 +153,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
-            this.label2.Location = new System.Drawing.Point(54, 258);
+            this.label2.Location = new System.Drawing.Point(54, 254);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(114, 31);
             this.label2.TabIndex = 1;
@@ -165,7 +165,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
-            this.label1.Location = new System.Drawing.Point(54, 160);
+            this.label1.Location = new System.Drawing.Point(54, 161);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(121, 31);
             this.label1.TabIndex = 0;
