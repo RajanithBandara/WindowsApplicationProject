@@ -60,7 +60,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(43, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(205, 38);
+            this.label1.Size = new System.Drawing.Size(179, 32);
             this.label1.TabIndex = 16;
             this.label1.Text = "Module Name";
             // 
@@ -96,7 +96,7 @@
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(326, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 46);
+            this.label4.Size = new System.Drawing.Size(64, 39);
             this.label4.TabIndex = 0;
             this.label4.Text = "0.0";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -204,7 +204,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(46, 5);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 38);
+            this.label5.Size = new System.Drawing.Size(82, 32);
             this.label5.TabIndex = 16;
             this.label5.Text = "Grade";
             // 
@@ -232,13 +232,14 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(65, 5);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 38);
+            this.label2.Size = new System.Drawing.Size(95, 32);
             this.label2.TabIndex = 16;
             this.label2.Text = "Credits";
             // 
             // MName
             // 
             this.MName.AutoScroll = true;
+            this.MName.ForeColor = System.Drawing.Color.Black;
             this.MName.Location = new System.Drawing.Point(0, 0);
             this.MName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MName.Name = "MName";
@@ -249,6 +250,7 @@
             // Mgrade
             // 
             this.Mgrade.AutoScroll = true;
+            this.Mgrade.ForeColor = System.Drawing.Color.Black;
             this.Mgrade.Location = new System.Drawing.Point(334, 0);
             this.Mgrade.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Mgrade.Name = "Mgrade";
@@ -259,6 +261,7 @@
             // Mcredits
             // 
             this.Mcredits.AutoScroll = true;
+            this.Mcredits.ForeColor = System.Drawing.Color.Black;
             this.Mcredits.Location = new System.Drawing.Point(569, 0);
             this.Mcredits.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Mcredits.Name = "Mcredits";
@@ -281,10 +284,10 @@
             // 
             // gpacalculator
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(223)))), ((int)(((byte)(213)))));
-            this.ClientSize = new System.Drawing.Size(1014, 586);
+            this.ClientSize = new System.Drawing.Size(1018, 595);
             this.Controls.Add(this.rjPanel4);
             this.Controls.Add(this.rjPanel3);
             this.Controls.Add(this.rjPanel1);
