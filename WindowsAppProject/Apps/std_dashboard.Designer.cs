@@ -56,7 +56,7 @@
             this.rjPanel4.Location = new System.Drawing.Point(556, 24);
             this.rjPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel4.Name = "rjPanel4";
-            this.rjPanel4.Size = new System.Drawing.Size(622, 160);
+            this.rjPanel4.Size = new System.Drawing.Size(893, 160);
             this.rjPanel4.TabIndex = 1;
             // 
             // rjPanel6
@@ -225,7 +225,7 @@
             this.mainpanelstd.Location = new System.Drawing.Point(320, 203);
             this.mainpanelstd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mainpanelstd.Name = "mainpanelstd";
-            this.mainpanelstd.Size = new System.Drawing.Size(858, 500);
+            this.mainpanelstd.Size = new System.Drawing.Size(1129, 500);
             this.mainpanelstd.TabIndex = 1;
             this.mainpanelstd.Paint += new System.Windows.Forms.PaintEventHandler(this.mainpanelstd_Paint);
             // 
@@ -248,7 +248,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(223)))), ((int)(((byte)(213)))));
-            this.ClientSize = new System.Drawing.Size(1188, 726);
+            this.ClientSize = new System.Drawing.Size(1482, 726);
             this.Controls.Add(this.rjPanel6);
             this.Controls.Add(this.rjPanel4);
             this.Controls.Add(this.mainpanelstd);
@@ -256,8 +256,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1206, 773);
-            this.MinimumSize = new System.Drawing.Size(1206, 773);
+            this.MaximumSize = new System.Drawing.Size(1500, 773);
+            this.MinimumSize = new System.Drawing.Size(1500, 773);
             this.Name = "std_dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "std_dashboard";

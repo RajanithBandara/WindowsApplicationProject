@@ -87,16 +87,16 @@
             this.panel1.Controls.Add(this.rjButton3);
             this.panel1.Controls.Add(this.rjButton2);
             this.panel1.Controls.Add(this.rjButton1);
-            this.panel1.Location = new System.Drawing.Point(0, 36);
+            this.panel1.Location = new System.Drawing.Point(0, 143);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(353, 305);
+            this.panel1.Size = new System.Drawing.Size(353, 198);
             this.panel1.TabIndex = 17;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 8F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(130, 262);
+            this.label3.Location = new System.Drawing.Point(41, 162);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 17);
             this.label3.TabIndex = 15;
@@ -106,7 +106,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 8F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(114, 169);
+            this.label2.Location = new System.Drawing.Point(203, 162);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 17);
             this.label2.TabIndex = 14;
@@ -116,7 +116,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 8F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(150, 76);
+            this.label1.Location = new System.Drawing.Point(149, 74);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 17);
             this.label1.TabIndex = 13;
@@ -135,7 +135,7 @@
             this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton3.ForeColor = System.Drawing.Color.White;
-            this.rjButton3.Location = new System.Drawing.Point(142, 212);
+            this.rjButton3.Location = new System.Drawing.Point(53, 112);
             this.rjButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton3.Name = "rjButton3";
             this.rjButton3.Size = new System.Drawing.Size(68, 50);
@@ -157,7 +157,7 @@
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(142, 119);
+            this.rjButton2.Location = new System.Drawing.Point(231, 112);
             this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton2.Name = "rjButton2";
             this.rjButton2.Size = new System.Drawing.Size(68, 50);
@@ -179,7 +179,7 @@
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(142, 26);
+            this.rjButton1.Location = new System.Drawing.Point(142, 24);
             this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton1.Name = "rjButton1";
             this.rjButton1.Size = new System.Drawing.Size(68, 50);

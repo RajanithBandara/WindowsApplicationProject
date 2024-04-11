@@ -33,24 +33,25 @@
             // 
             // rjPanel1
             // 
-            this.rjPanel1.BackColor = System.Drawing.Color.Purple;
+            this.rjPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
             this.rjPanel1.BorderRadius = 30;
             this.rjPanel1.ForeColor = System.Drawing.Color.White;
             this.rjPanel1.GradientAngle = 90F;
-            this.rjPanel1.GradientBottomColor = System.Drawing.Color.Purple;
-            this.rjPanel1.GradientTopColor = System.Drawing.Color.Purple;
-            this.rjPanel1.Location = new System.Drawing.Point(22, 20);
+            this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
+            this.rjPanel1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
+            this.rjPanel1.Location = new System.Drawing.Point(37, 23);
             this.rjPanel1.Name = "rjPanel1";
-            this.rjPanel1.Size = new System.Drawing.Size(795, 454);
+            this.rjPanel1.Size = new System.Drawing.Size(1055, 454);
             this.rjPanel1.TabIndex = 0;
             // 
             // testchart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
             this.Controls.Add(this.rjPanel1);
             this.Name = "testchart";
-            this.Size = new System.Drawing.Size(858, 500);
+            this.Size = new System.Drawing.Size(1129, 500);
             this.Load += new System.EventHandler(this.testchart_Load);
             this.ResumeLayout(false);
 
