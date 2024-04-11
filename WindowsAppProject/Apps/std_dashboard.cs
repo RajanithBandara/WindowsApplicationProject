@@ -39,5 +39,31 @@ namespace WindowsAppProject.Apps
             testchart chartview = new testchart();
             addusercontrol(chartview);
         }
+
+        private void std_dashboard_Load(object sender, EventArgs e)
+        {
+            label1.Visible = false;
+            label2.Visible = false;
+        }
+
+        private void rjButton1_mousehover(object sender, EventArgs e)
+        {
+            label1.Visible=true;
+        }
+
+        private void rjButton1_mouseleave(object sender, EventArgs e)
+        {
+            label1.Visible = false;
+        }
+
+        private void rjButton2_mousehover(object sender, EventArgs e)
+        {
+            label2.Visible = true;
+        }
+
+        private void rjButton2_mouseleave(object sender, EventArgs e)
+        {
+            label2.Visible = false;
+        }
     }
 }
