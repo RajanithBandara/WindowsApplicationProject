@@ -42,14 +42,13 @@ namespace WindowsAppProject.Apps
         private void rjButton1_Click(object sender, EventArgs e)
         {
             session.Username = textBox1.Text;
-            string username = textBox1.Text; 
+            string username = textBox1.Text;
             string enteredPassword = textBox2.Text;
             string connectionstring = dbconnection.Instance.ConnectionString;
             using (OleDbConnection conn = new OleDbConnection(connectionstring))
             {
                 conn.Open();
-                
-                   
+
                 string sql = "SELECT pasword FROM aruserdata WHERE username = @username";
 
                 using (OleDbCommand cmd = new OleDbCommand(sql, conn))
@@ -65,7 +64,6 @@ namespace WindowsAppProject.Apps
                             if (VerifyPassword(enteredPassword, hashedPasswordFromDatabase))
                             {
                                 MessageBox.Show("Login successful!");
-                                conn.Close();
                                 loading_screen loaddash = new loading_screen();
                                 this.Hide();
                                 loaddash.Show();
@@ -83,7 +81,6 @@ namespace WindowsAppProject.Apps
                 }
                 conn.Close();
             }
-
         }
 
         private static bool VerifyPassword(string enteredPassword, string hashedPasswordFromDatabase)
