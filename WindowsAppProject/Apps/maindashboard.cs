@@ -87,6 +87,7 @@ namespace WindowsAppProject
             label2.Visible = false;
             label3.Visible = false;
             label4.Visible = false;
+            rjButton10.Visible = false;
             await Task.Delay(1200);
             displayusrctrl();
 
@@ -333,6 +334,38 @@ namespace WindowsAppProject
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void rjButton9_Click(object sender, EventArgs e)
+        {
+            BackColor = Color.Black;
+            rjPanel6.BackColor = Color.Black;
+            rjPanel6.GradientBottomColor = Color.Black;
+            rjPanel6.GradientTopColor = Color.Black;
+            rjPanel2.GradientTopColor = Color.FromArgb(32, 64, 81);
+            rjPanel2.GradientBottomColor = Color.FromArgb(32, 64, 81);
+            rjPanel2.BackColor = Color.FromArgb(32, 64, 81);
+            rjPanel3.BackColor = Color.FromArgb(32, 64, 81);
+            rjPanel3.GradientTopColor = Color.FromArgb(32, 64, 81);
+            rjPanel3.GradientBottomColor = Color.FromArgb(32, 64, 81);
+            rjButton9.Visible = false;
+            rjButton10.Visible = true;
+        }
+
+        private void rjButton10_Click(object sender, EventArgs e)
+        {
+            BackColor = Color.White;
+            rjPanel6.BackColor = Color.FromArgb(231, 223, 213);
+            rjPanel6.GradientBottomColor = Color.FromArgb(231, 223, 213);
+            rjPanel6.GradientTopColor = Color.FromArgb(231, 223, 213);
+            rjPanel2.BackColor = Color.FromArgb(132, 169, 172);
+            rjPanel2.GradientBottomColor = Color.FromArgb(132, 169, 172);
+            rjPanel2.GradientTopColor = Color.FromArgb(132, 169, 172);
+            rjPanel3.BackColor = Color.FromArgb(132, 169, 172);
+            rjPanel3.GradientTopColor = Color.FromArgb(132, 169, 172); 
+            rjPanel3.GradientBottomColor = Color.FromArgb(132, 169, 172);
+            rjButton10.Visible = false;
+            rjButton9.Visible = true;
         }
     }
 }
