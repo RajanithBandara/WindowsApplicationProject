@@ -81,6 +81,7 @@ namespace WindowsAppProject.Apps
                         }
                     }
                 }
+                conn.Close();
             }
 
         }

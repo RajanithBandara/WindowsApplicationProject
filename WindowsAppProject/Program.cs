@@ -24,7 +24,7 @@ namespace WindowsAppProject
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new maindashboard());
+            Application.Run(new arloginform());
 
 
         }
