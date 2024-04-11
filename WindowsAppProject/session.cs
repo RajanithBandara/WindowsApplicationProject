@@ -24,6 +24,5 @@ namespace WindowsAppProject
         {
             _username = null;
         }
-
     }
 }
