@@ -171,7 +171,8 @@ namespace WindowsAppProject
 
         private void rjButton3_Click(object sender, EventArgs e)
         {
-            OpenChildForm<student_det_viewform>(); 
+            student_det_viewform studentdetview = new student_det_viewform();
+            studentdetview.Show();
         }
 
         private void rjButton4_Click(object sender, EventArgs e)

@@ -18,6 +18,8 @@ namespace WindowsAppProject.Apps
         {
             InitializeComponent();
             //this.KeyPress += arloginform_KeyPress;
+            this.KeyPreview = true;
+            this.KeyPress += task_enter;
             Hint1.MouseHover += Hint1_MouseHover;
             Hint1.MouseLeave += Hint1_MouseLeave;
         }
@@ -35,11 +37,15 @@ namespace WindowsAppProject.Apps
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
-                rjButton1_Click(sender, e);
+                enterdata();
             }
         }
 
         private void rjButton1_Click(object sender, EventArgs e)
+        {
+            enterdata();
+        }
+        private void enterdata()
         {
             session.Username = textBox1.Text;
             string username = textBox1.Text;
@@ -63,7 +69,6 @@ namespace WindowsAppProject.Apps
 
                             if (VerifyPassword(enteredPassword, hashedPasswordFromDatabase))
                             {
-                                MessageBox.Show("Login successful!");
                                 loading_screen loaddash = new loading_screen();
                                 this.Hide();
                                 loaddash.Show();
@@ -89,8 +94,6 @@ namespace WindowsAppProject.Apps
             string hashedEnteredPassword = HashPassword(enteredPassword);
             return hashedEnteredPassword == hashedPasswordFromDatabase;
         }
-
-
         private void button1_Click(object sender, EventArgs e)
         {
             
