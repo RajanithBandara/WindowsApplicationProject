@@ -92,6 +92,29 @@ namespace WindowsAppProject
             displayusrctrl();
 
             label5.Text = session.Username;
+            ardataload();
+            
+        }
+        private void ardataload()
+        {
+            string arusername = session.Username;
+            using (OleDbConnection conn = new OleDbConnection(connectstr))
+            {
+                string sqlcmd = "SELECT * FROM aruserdata WHERE username = @arusername";
+                using (OleDbCommand cmd = new OleDbCommand(sqlcmd, conn))
+                {
+                    cmd.Parameters.AddWithValue("@arusername", arusername);
+                    conn.Open();
+                    using (OleDbDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            label6.Text = reader["Fullname"].ToString();
+                        }
+                    }
+                    conn.Close();
+                }
+            }
         }
         private void rjButton_MouseHover(object sender, EventArgs e)
         {
@@ -148,7 +171,7 @@ namespace WindowsAppProject
 
         private void rjButton3_Click(object sender, EventArgs e)
         {
-            OpenChildForm<std_dashboard>(); 
+            OpenChildForm<student_det_viewform>(); 
         }
 
         private void rjButton4_Click(object sender, EventArgs e)

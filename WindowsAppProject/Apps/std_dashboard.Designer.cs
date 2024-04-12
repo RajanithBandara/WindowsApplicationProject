@@ -30,7 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(std_dashboard));
             this.rjPanel4 = new RoundedPanelClass.RJPanel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.rjPanel6 = new RoundedPanelClass.RJPanel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.rjButton3 = new CustomControls.RJControls.RJButton();
             this.rjButton5 = new CustomControls.RJControls.RJButton();
             this.rjButton6 = new CustomControls.RJControls.RJButton();
@@ -39,16 +48,28 @@
             this.label1 = new System.Windows.Forms.Label();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.rjButton2 = new CustomControls.RJControls.RJButton();
+            this.label3 = new System.Windows.Forms.Label();
             this.mainpanelstd = new RoundedPanelClass.RJPanel();
             this.rjPanel1 = new RoundedPanelClass.RJPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.rjPanel4.SuspendLayout();
             this.rjPanel6.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.rjPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // rjPanel4
             // 
             this.rjPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
             this.rjPanel4.BorderRadius = 30;
+            this.rjPanel4.Controls.Add(this.textBox3);
+            this.rjPanel4.Controls.Add(this.textBox2);
+            this.rjPanel4.Controls.Add(this.textBox1);
+            this.rjPanel4.Controls.Add(this.label6);
+            this.rjPanel4.Controls.Add(this.label5);
+            this.rjPanel4.Controls.Add(this.label4);
             this.rjPanel4.ForeColor = System.Drawing.Color.White;
             this.rjPanel4.GradientAngle = 90F;
             this.rjPanel4.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
@@ -59,10 +80,72 @@
             this.rjPanel4.Size = new System.Drawing.Size(1005, 200);
             this.rjPanel4.TabIndex = 1;
             // 
+            // textBox3
+            // 
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(163, 141);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(769, 28);
+            this.textBox3.TabIndex = 14;
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(163, 87);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(769, 28);
+            this.textBox2.TabIndex = 13;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(163, 35);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(769, 28);
+            this.textBox1.TabIndex = 12;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(22, 144);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(100, 20);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Current GPA";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(22, 90);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(60, 20);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Course";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(22, 35);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(112, 20);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Student Name";
+            // 
             // rjPanel6
             // 
             this.rjPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
             this.rjPanel6.BorderRadius = 30;
+            this.rjPanel6.Controls.Add(this.panel4);
+            this.rjPanel6.Controls.Add(this.panel2);
             this.rjPanel6.Controls.Add(this.rjButton3);
             this.rjPanel6.Controls.Add(this.rjButton5);
             this.rjPanel6.Controls.Add(this.rjButton6);
@@ -76,6 +159,34 @@
             this.rjPanel6.Name = "rjPanel6";
             this.rjPanel6.Size = new System.Drawing.Size(321, 849);
             this.rjPanel6.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.label8);
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Location = new System.Drawing.Point(42, 206);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(225, 108);
+            this.panel4.TabIndex = 0;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(62, 18);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(98, 32);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "label7";
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::WindowsAppProject.Properties.Resources.user;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel2.Location = new System.Drawing.Point(41, 71);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(226, 129);
+            this.panel2.TabIndex = 0;
             // 
             // rjButton3
             // 
@@ -145,7 +256,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.rjButton1);
             this.panel1.Controls.Add(this.rjButton2);
-            this.panel1.Location = new System.Drawing.Point(0, 293);
+            this.panel1.Location = new System.Drawing.Point(0, 321);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(321, 161);
@@ -219,6 +330,15 @@
             this.rjButton2.MouseLeave += new System.EventHandler(this.rjButton2_mouseleave);
             this.rjButton2.MouseHover += new System.EventHandler(this.rjButton2_mousehover);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(100, 168);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(51, 20);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "label3";
+            // 
             // mainpanelstd
             // 
             this.mainpanelstd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
@@ -238,6 +358,8 @@
             // 
             this.rjPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
             this.rjPanel1.BorderRadius = 30;
+            this.rjPanel1.Controls.Add(this.label3);
+            this.rjPanel1.Controls.Add(this.panel3);
             this.rjPanel1.ForeColor = System.Drawing.Color.White;
             this.rjPanel1.GradientAngle = 90F;
             this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
@@ -247,6 +369,25 @@
             this.rjPanel1.Name = "rjPanel1";
             this.rjPanel1.Size = new System.Drawing.Size(259, 200);
             this.rjPanel1.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = global::WindowsAppProject.Properties.Resources.user;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel3.Location = new System.Drawing.Point(16, 34);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(226, 129);
+            this.panel3.TabIndex = 1;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(62, 59);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(98, 32);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "label8";
             // 
             // std_dashboard
             // 
@@ -267,9 +408,15 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "std_dashboard";
             this.Load += new System.EventHandler(this.std_dashboard_Load);
+            this.rjPanel4.ResumeLayout(false);
+            this.rjPanel4.PerformLayout();
             this.rjPanel6.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.rjPanel1.ResumeLayout(false);
+            this.rjPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -288,5 +435,17 @@
         private CustomControls.RJControls.RJButton rjButton3;
         private CustomControls.RJControls.RJButton rjButton5;
         private CustomControls.RJControls.RJButton rjButton6;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }

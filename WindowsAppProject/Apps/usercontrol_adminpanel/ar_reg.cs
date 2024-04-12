@@ -117,8 +117,8 @@ namespace WindowsAppProject.Apps.usercontrol_adminpanel
             using (OleDbConnection conn = new OleDbConnection(connectionstr))
             {
                 conn.Open();
-
-                String username = textBox1.Text;
+                string fullname = textBox1.Text;
+                String username = textBox5.Text;
                 String password = textBox2.Text;
                 String retypepassword = textBox3.Text;
                 String email = textBox4.Text;
@@ -127,7 +127,8 @@ namespace WindowsAppProject.Apps.usercontrol_adminpanel
 
                 if (password == retypepassword && username != "")
                 {
-                    OleDbCommand cmd = new OleDbCommand("INSERT INTO aruserdata(username,pasword,email) VALUES (@username, @password, @email)", conn);
+                    OleDbCommand cmd = new OleDbCommand("INSERT INTO aruserdata(Fullname,username,pasword,email) VALUES (@fullname,@username, @password, @email)", conn);
+                    cmd.Parameters.AddWithValue("@fullname", fullname);
                     cmd.Parameters.AddWithValue("@username", username);
                     cmd.Parameters.AddWithValue("@password", hashedPassword);
                     cmd.Parameters.AddWithValue("@email", email);

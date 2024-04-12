@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,8 @@ namespace WindowsAppProject.Apps
             mainpanelstd.Controls.Clear();
             mainpanelstd.Controls.Add(usrctrl);
         }
+
+        private string connectionstring = dbconnection.Instance.ConnectionString;
         private void mainpanelstd_Paint(object sender, PaintEventArgs e)
         {
 
@@ -44,6 +47,34 @@ namespace WindowsAppProject.Apps
         {
             label1.Visible = false;
             label2.Visible = false;
+            label3.Text = StudentIdGetter.StudentId;
+            label7.Text = session.Username;
+            
+
+            studentnameget();
+        }
+        
+        private void addardata()
+        {
+            string username = session.Username;
+            using (OleDbConnection conn = new OleDbConnection(connectionstring))
+            {
+                string sql = "SELECT * FROM aruserdata WHERE username = @username";
+                using (OleDbCommand cmd = new OleDbCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@username", username);
+                    conn.Open();
+                    using (OleDbDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            label4.Text = reader["Fullname"].ToString();
+                            label5.Text = reader["email"].ToString();
+                        }
+                    }
+                    conn.Close();
+                }
+            }
         }
 
         private void rjButton1_mousehover(object sender, EventArgs e)
@@ -64,6 +95,49 @@ namespace WindowsAppProject.Apps
         private void rjButton2_mouseleave(object sender, EventArgs e)
         {
             label2.Visible = false;
+        }
+
+        private void studentnameget()
+        {
+            string stdid = StudentIdGetter.StudentId;
+            label3.Text = stdid;
+            using (OleDbConnection conn = new OleDbConnection(connectionstring))
+            {
+                conn.Open();    
+                string sql = "SELECT * FROM studentgpa WHERE studentid = @studentid";
+                string sql2 = "SELECT student.StudentName, coursetable.coursename, student.StudentID FROM coursetable INNER JOIN student ON coursetable.courseid = student.courseid where studentid = @studentid;";
+
+                using (OleDbCommand cmd = new OleDbCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@studentid", stdid);
+                    using (OleDbDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            textBox1.Text = reader["studentgpa"].ToString();
+                        }
+                    }
+                }
+                using (OleDbCommand cmd2 = new OleDbCommand(sql2, conn))
+                {
+                    cmd2.Parameters.AddWithValue("@studentid", stdid);
+                    using (OleDbDataReader reader2 = cmd2.ExecuteReader())
+                    {
+                        if (reader2.Read())
+                        {
+                            textBox2.Text = reader2["StudentName"].ToString();
+                            textBox3.Text = reader2["coursename"].ToString();
+                        }
+                        else
+                        {
+                            textBox2.Text = "No Name Assigned";
+                            textBox3.Text = "No Course Assigned";
+                        }
+                    }
+                }
+                
+                conn.Close();
+            }
         }
     }
 }

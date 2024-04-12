@@ -36,6 +36,7 @@ namespace WindowsAppProject
             this.rjButton10 = new CustomControls.RJControls.RJButton();
             this.rjButton9 = new CustomControls.RJControls.RJButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.rjButton2 = new CustomControls.RJControls.RJButton();
@@ -108,7 +109,7 @@ namespace WindowsAppProject
             this.rjButton10.FlatAppearance.BorderSize = 0;
             this.rjButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton10.ForeColor = System.Drawing.Color.White;
-            this.rjButton10.Location = new System.Drawing.Point(49, 257);
+            this.rjButton10.Location = new System.Drawing.Point(68, 524);
             this.rjButton10.Name = "rjButton10";
             this.rjButton10.Size = new System.Drawing.Size(150, 40);
             this.rjButton10.TabIndex = 0;
@@ -127,7 +128,7 @@ namespace WindowsAppProject
             this.rjButton9.FlatAppearance.BorderSize = 0;
             this.rjButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton9.ForeColor = System.Drawing.Color.White;
-            this.rjButton9.Location = new System.Drawing.Point(49, 257);
+            this.rjButton9.Location = new System.Drawing.Point(111, 524);
             this.rjButton9.Name = "rjButton9";
             this.rjButton9.Size = new System.Drawing.Size(150, 40);
             this.rjButton9.TabIndex = 0;
@@ -138,21 +139,33 @@ namespace WindowsAppProject
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Location = new System.Drawing.Point(3, 188);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(360, 52);
+            this.panel2.Size = new System.Drawing.Size(360, 110);
             this.panel2.TabIndex = 6;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(19, 67);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(107, 32);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Label6";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(73, 11);
+            this.label5.Location = new System.Drawing.Point(108, 14);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 32);
+            this.label5.Size = new System.Drawing.Size(107, 32);
             this.label5.TabIndex = 0;
+            this.label5.Text = "Label5";
             // 
             // panel1
             // 
@@ -488,5 +501,6 @@ namespace WindowsAppProject
         private System.Windows.Forms.Label label5;
         private CustomControls.RJControls.RJButton rjButton9;
         private CustomControls.RJControls.RJButton rjButton10;
+        private System.Windows.Forms.Label label6;
     }
 }
