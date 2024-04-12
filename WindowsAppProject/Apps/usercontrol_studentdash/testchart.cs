@@ -22,6 +22,8 @@ namespace WindowsAppProject.Apps.usercontrol_studentdash
             InitializeChart();
         }
 
+
+
         public void InitializeChart()
         {
             var plotmodel = new PlotModel { Title = "Student Details" };

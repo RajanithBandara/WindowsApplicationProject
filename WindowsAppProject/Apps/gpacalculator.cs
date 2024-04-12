@@ -19,8 +19,7 @@ namespace WindowsAppProject
             InitializeComponent();
             MName.Scroll += mname_Scroll;
             Mgrade.Scroll += Mgrade_Scroll;
-            Mcredits.Scroll += MCredits_Scroll;
-            
+            Mcredits.Scroll += MCredits_Scroll; 
         }
 
         private void MName_Scroll(object sender, ScrollEventArgs e)

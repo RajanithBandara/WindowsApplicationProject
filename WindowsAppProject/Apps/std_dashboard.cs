@@ -139,5 +139,10 @@ namespace WindowsAppProject.Apps
                 conn.Close();
             }
         }
+
+        private void rjPanel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
