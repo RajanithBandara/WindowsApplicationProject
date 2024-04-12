@@ -109,7 +109,7 @@ namespace WindowsAppProject
             this.rjButton10.FlatAppearance.BorderSize = 0;
             this.rjButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton10.ForeColor = System.Drawing.Color.White;
-            this.rjButton10.Location = new System.Drawing.Point(68, 524);
+            this.rjButton10.Location = new System.Drawing.Point(107, 524);
             this.rjButton10.Name = "rjButton10";
             this.rjButton10.Size = new System.Drawing.Size(150, 40);
             this.rjButton10.TabIndex = 0;
@@ -128,7 +128,7 @@ namespace WindowsAppProject
             this.rjButton9.FlatAppearance.BorderSize = 0;
             this.rjButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton9.ForeColor = System.Drawing.Color.White;
-            this.rjButton9.Location = new System.Drawing.Point(111, 524);
+            this.rjButton9.Location = new System.Drawing.Point(107, 524);
             this.rjButton9.Name = "rjButton9";
             this.rjButton9.Size = new System.Drawing.Size(150, 40);
             this.rjButton9.TabIndex = 0;
