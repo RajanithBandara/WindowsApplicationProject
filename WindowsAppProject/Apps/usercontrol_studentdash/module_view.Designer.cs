@@ -56,9 +56,7 @@
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(166, 514);
-            this.panel6.TabIndex = 9;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
-            // 
+            this.panel6.TabIndex = 9;            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -77,9 +75,7 @@
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(196, 514);
-            this.panel5.TabIndex = 8;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
-            // 
+            this.panel5.TabIndex = 8;            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -98,9 +94,7 @@
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(396, 514);
-            this.panel4.TabIndex = 7;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
-            // 
+            this.panel4.TabIndex = 7;            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -119,9 +113,7 @@
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(230, 514);
-            this.panel3.TabIndex = 6;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
+            this.panel3.TabIndex = 6;            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -140,9 +132,7 @@
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(208, 514);
-            this.panel2.TabIndex = 5;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
+            this.panel2.TabIndex = 5;            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -202,6 +192,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "module_view";
             this.Size = new System.Drawing.Size(1270, 625);
+            this.Load += new System.EventHandler(this.module_view_Load);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
