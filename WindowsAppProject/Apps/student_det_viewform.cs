@@ -48,37 +48,5 @@ namespace WindowsAppProject.Apps
 
         }
 
-        private void rjPStDeView_Paint(object sender, PaintEventArgs e)// Panel 2 changes
-        {
-
-        }
-
-        private void txtStDVStName_TextChanged(object sender, EventArgs e)//show st name txt
-        {
-
-        }
-
-        private void txtStDVShStID_TextChanged(object sender, EventArgs e)// show st id txt
-        {
-
-        }
-
-        private void txtSTDVCoName_TextChanged(object sender, EventArgs e)//show course txt
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)//show st gpa txt
-        {
-
-        }
-
-        private void rjButGoBack_Click(object sender, EventArgs e)// go back button
-        {
-            all_student_content all_Student_Content = new all_student_content();
-            all_Student_Content.Show();
-        }
-
-
     }
 }
