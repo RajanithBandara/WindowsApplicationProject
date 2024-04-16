@@ -476,5 +476,8 @@
     <None Include="Resources\graduates.png" />
     <None Include="Resources\graduating-student.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Apps\usercontrol_allstudent\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
