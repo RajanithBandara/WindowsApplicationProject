@@ -76,6 +76,7 @@
             // StNaPanel
             // 
             this.StNaPanel.AutoScroll = true;
+            this.StNaPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
             this.StNaPanel.Controls.Add(this.rjPanel3);
             this.StNaPanel.Location = new System.Drawing.Point(199, 12);
             this.StNaPanel.Name = "StNaPanel";
@@ -89,8 +90,8 @@
             this.rjPanel3.Controls.Add(this.lblStName);
             this.rjPanel3.ForeColor = System.Drawing.Color.White;
             this.rjPanel3.GradientAngle = 90F;
-            this.rjPanel3.GradientBottomColor = System.Drawing.Color.DarkGray;
-            this.rjPanel3.GradientTopColor = System.Drawing.Color.Green;
+            this.rjPanel3.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(111)))), ((int)(((byte)(157)))));
+            this.rjPanel3.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(111)))), ((int)(((byte)(157)))));
             this.rjPanel3.Location = new System.Drawing.Point(3, 19);
             this.rjPanel3.Name = "rjPanel3";
             this.rjPanel3.Size = new System.Drawing.Size(566, 62);
@@ -126,8 +127,8 @@
             this.rjPanel6.Controls.Add(this.lblGPA);
             this.rjPanel6.ForeColor = System.Drawing.Color.White;
             this.rjPanel6.GradientAngle = 90F;
-            this.rjPanel6.GradientBottomColor = System.Drawing.Color.DarkGray;
-            this.rjPanel6.GradientTopColor = System.Drawing.Color.Green;
+            this.rjPanel6.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(111)))), ((int)(((byte)(157)))));
+            this.rjPanel6.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(111)))), ((int)(((byte)(157)))));
             this.rjPanel6.Location = new System.Drawing.Point(3, 19);
             this.rjPanel6.Name = "rjPanel6";
             this.rjPanel6.Size = new System.Drawing.Size(176, 62);
@@ -148,6 +149,7 @@
             // CoNaPanel
             // 
             this.CoNaPanel.AutoScroll = true;
+            this.CoNaPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
             this.CoNaPanel.Controls.Add(this.rjPanel5);
             this.CoNaPanel.Location = new System.Drawing.Point(965, 12);
             this.CoNaPanel.Name = "CoNaPanel";
@@ -161,8 +163,8 @@
             this.rjPanel5.Controls.Add(this.lblCoName);
             this.rjPanel5.ForeColor = System.Drawing.Color.White;
             this.rjPanel5.GradientAngle = 90F;
-            this.rjPanel5.GradientBottomColor = System.Drawing.Color.DarkGray;
-            this.rjPanel5.GradientTopColor = System.Drawing.Color.Green;
+            this.rjPanel5.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(111)))), ((int)(((byte)(157)))));
+            this.rjPanel5.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(111)))), ((int)(((byte)(157)))));
             this.rjPanel5.Location = new System.Drawing.Point(3, 19);
             this.rjPanel5.Name = "rjPanel5";
             this.rjPanel5.Size = new System.Drawing.Size(287, 62);
@@ -197,8 +199,8 @@
             this.rjPanel4.Controls.Add(this.lblCoID);
             this.rjPanel4.ForeColor = System.Drawing.Color.White;
             this.rjPanel4.GradientAngle = 90F;
-            this.rjPanel4.GradientBottomColor = System.Drawing.Color.DarkGray;
-            this.rjPanel4.GradientTopColor = System.Drawing.Color.Green;
+            this.rjPanel4.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(111)))), ((int)(((byte)(157)))));
+            this.rjPanel4.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(111)))), ((int)(((byte)(157)))));
             this.rjPanel4.Location = new System.Drawing.Point(3, 19);
             this.rjPanel4.Name = "rjPanel4";
             this.rjPanel4.Size = new System.Drawing.Size(176, 62);
@@ -234,8 +236,8 @@
             this.rjPanel2.Controls.Add(this.lblStID);
             this.rjPanel2.ForeColor = System.Drawing.Color.White;
             this.rjPanel2.GradientAngle = 90F;
-            this.rjPanel2.GradientBottomColor = System.Drawing.Color.DarkGray;
-            this.rjPanel2.GradientTopColor = System.Drawing.Color.Green;
+            this.rjPanel2.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(111)))), ((int)(((byte)(157)))));
+            this.rjPanel2.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(111)))), ((int)(((byte)(157)))));
             this.rjPanel2.Location = new System.Drawing.Point(3, 19);
             this.rjPanel2.Name = "rjPanel2";
             this.rjPanel2.Size = new System.Drawing.Size(173, 62);
@@ -260,8 +262,8 @@
             this.rjPanel1.Controls.Add(this.label1);
             this.rjPanel1.ForeColor = System.Drawing.Color.White;
             this.rjPanel1.GradientAngle = 90F;
-            this.rjPanel1.GradientBottomColor = System.Drawing.Color.DarkGray;
-            this.rjPanel1.GradientTopColor = System.Drawing.Color.Green;
+            this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.rjPanel1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(111)))), ((int)(((byte)(157)))));
             this.rjPanel1.Location = new System.Drawing.Point(12, 13);
             this.rjPanel1.Name = "rjPanel1";
             this.rjPanel1.Size = new System.Drawing.Size(1258, 69);
@@ -289,20 +291,21 @@
             this.rjbtnSearch.FlatAppearance.BorderSize = 0;
             this.rjbtnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjbtnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjbtnSearch.ForeColor = System.Drawing.Color.Black;
+            this.rjbtnSearch.ForeColor = System.Drawing.Color.White;
             this.rjbtnSearch.Location = new System.Drawing.Point(1296, 13);
             this.rjbtnSearch.Name = "rjbtnSearch";
             this.rjbtnSearch.Size = new System.Drawing.Size(178, 69);
             this.rjbtnSearch.TabIndex = 2;
             this.rjbtnSearch.Text = "View More";
-            this.rjbtnSearch.TextColor = System.Drawing.Color.Black;
+            this.rjbtnSearch.TextColor = System.Drawing.Color.White;
             this.rjbtnSearch.UseVisualStyleBackColor = false;
+            this.rjbtnSearch.Click += new System.EventHandler(this.rjbtnSearch_Click);
             // 
             // all_student_content
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
             this.ClientSize = new System.Drawing.Size(1486, 852);
             this.Controls.Add(this.rjbtnSearch);
             this.Controls.Add(this.rjPanel1);
