@@ -13,11 +13,6 @@ namespace WindowsAppProject.Apps
 {
     public partial class student_det_viewform : Form
     {
-
-        // Add data base.
-        private string connectionString = "YourConnectionString";
-        private SqlConnection connection;
-
         public student_det_viewform()
         {
             InitializeComponent();
