@@ -21,5 +21,15 @@ namespace WindowsAppProject.Apps
         {
 
         }
+
+        private void lblStName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCoID_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
