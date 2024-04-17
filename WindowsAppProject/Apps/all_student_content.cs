@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Data.OleDb;
-using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace WindowsAppProject.Apps
