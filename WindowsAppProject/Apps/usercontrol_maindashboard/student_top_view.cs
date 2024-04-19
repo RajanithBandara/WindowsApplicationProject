@@ -47,7 +47,6 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
                                 string formatted_gpa = student_gpa.ToString("0.00");
                                 string course_id = reader["courseid"].ToString();
 
-                                // Update UI controls on the main UI thread
                                 Invoke((MethodInvoker)delegate
                                 {
                                     Label lbl = new Label();

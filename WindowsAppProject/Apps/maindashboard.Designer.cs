@@ -425,7 +425,7 @@ namespace WindowsAppProject
             this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton3.ForeColor = System.Drawing.Color.White;
-            this.rjButton3.Location = new System.Drawing.Point(50, 646);
+            this.rjButton3.Location = new System.Drawing.Point(51, 646);
             this.rjButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton3.Name = "rjButton3";
             this.rjButton3.Size = new System.Drawing.Size(268, 62);
