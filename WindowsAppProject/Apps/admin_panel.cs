@@ -30,10 +30,19 @@ namespace WindowsAppProject.Apps
             addusercontrol(reg_Users);
         }
 
-        private void admin_panel_Load(object sender, EventArgs e)
+        private async void admin_panel_Load(object sender, EventArgs e)
         {
             label1.Visible = false;
             label2.Visible = false;
+            label3.Visible = false;
+            await loadcont();
+        }
+
+        private async Task loadcont()
+        {
+            reg_users regursr = new reg_users();
+            admincontentpanel.Controls.Clear();
+            admincontentpanel.Controls.Add(regursr);
         }
 
         private void rjButton2_Click(object sender, EventArgs e)
@@ -60,6 +69,22 @@ namespace WindowsAppProject.Apps
         private void rjButton2_mouseleave(object sender, EventArgs e)
         {
             label2.Visible = false;
+        }
+
+        private void rjButton3_MouseHover(object sender, EventArgs e)
+        {
+            label3.Visible = true;
+        }
+
+        private void rjButton3_MouseLeave(object sender, EventArgs e)
+        {
+            label3.Visible = false;
+        }
+
+        private void rjButton3_Click(object sender, EventArgs e)
+        {
+            ar_remove removear = new ar_remove();
+            addusercontrol(removear);
         }
     }
 }
