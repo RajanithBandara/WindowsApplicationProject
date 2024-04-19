@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsAppProject.Apps
@@ -15,67 +10,169 @@ namespace WindowsAppProject.Apps
         public all_student_content()
         {
             InitializeComponent();
-            BackPanel.AutoScroll = true;
+            try
+            {
+                PopulateMenu();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error occurred while populating menu: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void PopulateMenu()
+        {
+            try
+            {
+                string connectionString = dbconnection.Instance.ConnectionString;
+                string query = "SELECT coursetable.coursename FROM coursetable";
+
+                using (OleDbConnection connection = new OleDbConnection(connectionString))
+                {
+                    OleDbCommand command = new OleDbCommand(query, connection);
+                    connection.Open();
+                    OleDbDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        string menuItemName = reader.GetString(0);
+                        ToolStripMenuItem menuItem = new ToolStripMenuItem(menuItemName);
+                        menuItem.Click += MenuItem_Click;
+                        MenuItem.Items.Add(menuItem);
+                    }
+                    reader.Close();
+                    connection.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error occurred while populating menu: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void MenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ToolStripMenuItem clickedItem = (ToolStripMenuItem)sender;
+                string degreename = clickedItem.Text;
+                displaystudentdata(degreename);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error occurred while processing menu item click: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        private void displaystudentdata(string degreename)
+        {
+            try
+            {
+                int yoffset = 30;
+                int height = 35;
+                StIDPanel.Controls.Clear();
+                StNaPanel.Controls.Clear();
+                CoIDPanel.Controls.Clear();
+                CoNaPanel.Controls.Clear();
+                GPAPanel.Controls.Clear();
+
+                string connectionstr = dbconnection.Instance.ConnectionString;
+                using (OleDbConnection conn = new OleDbConnection(connectionstr))
+                {
+                    string sql = "SELECT student.StudentID, student.StudentName, coursetable.courseid, coursetable.coursename, studentgpa.StudentGPA " +
+                        "FROM (coursetable INNER JOIN student ON coursetable.courseid = student.courseid) INNER JOIN studentgpa ON student.StudentID = studentgpa.StudentID " +
+                        "WHERE (((coursetable.coursename)=@degreename));";
+                    conn.Open();
+                    using (OleDbCommand cmd = new OleDbCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@degreename", degreename);
+                        using (OleDbDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                string studentid = reader.GetString(0);
+                                string studentname = reader.GetString(1);
+                                string courseid = reader.GetString(2);
+                                string coursename = reader.GetString(3);
+                                double stdgpa = reader.GetDouble(4);
+
+                                Label studentidlabel = new Label();
+                                studentidlabel.Text = studentid;
+                                studentidlabel.AutoSize = false;
+                                studentidlabel.Width = StIDPanel.Width;
+                                studentidlabel.Height = height;
+                                studentidlabel.Font = new Font("Microsoft Sans Serif", 18);
+                                studentidlabel.ForeColor = Color.White;
+                                studentidlabel.TextAlign = ContentAlignment.MiddleCenter;
+                                studentidlabel.Location = new Point(0, yoffset);
+                                StIDPanel.Controls.Add(studentidlabel);
+
+                                Label studentnamelabel = new Label();
+                                studentnamelabel.Text = studentname;
+                                studentnamelabel.AutoSize = false;
+                                studentnamelabel.Width = StNaPanel.Width;
+                                studentnamelabel.Height = height;
+                                studentnamelabel.Font = new Font("Microsoft Sans Serif", 18);
+                                studentnamelabel.ForeColor = Color.White;
+                                studentnamelabel.TextAlign = ContentAlignment.MiddleCenter;
+                                studentnamelabel.Location = new Point(0, yoffset);
+                                StNaPanel.Controls.Add(studentnamelabel);
+
+                                Label stdcourseid = new Label();
+                                stdcourseid.Text = courseid;
+                                stdcourseid.AutoSize = false;
+                                stdcourseid.Width = CoIDPanel.Width;
+                                stdcourseid.Height = height;
+                                stdcourseid.Font = new Font("Microsoft Sans Serif", 18);
+                                stdcourseid.ForeColor = Color.White;
+                                stdcourseid.TextAlign = ContentAlignment.MiddleCenter;
+                                stdcourseid.Location = new Point(0, yoffset);
+                                CoIDPanel.Controls.Add(stdcourseid);
+
+                                Label stdcoursename = new Label();
+                                stdcoursename.Text = coursename;
+                                stdcoursename.AutoSize = false;
+                                stdcoursename.Width = CoNaPanel.Width;
+                                stdcoursename.Height = height;
+                                stdcoursename.Font = new Font("Microsoft Sans Serif", 18);
+                                stdcoursename.ForeColor = Color.White;
+                                stdcoursename.TextAlign = ContentAlignment.MiddleCenter;
+                                stdcoursename.Location = new Point(0, yoffset);
+                                CoNaPanel.Controls.Add(stdcoursename);
+
+                                Label stdgpalabel = new Label();
+                                stdgpalabel.Text = Convert.ToString(stdgpa);
+                                stdgpalabel.AutoSize = false;
+                                stdgpalabel.Width = GPAPanel.Width;
+                                stdgpalabel.Height = height;
+                                stdgpalabel.Font = new Font("Microsoft Sans Serif", 18);
+                                stdgpalabel.ForeColor = Color.White;
+                                stdgpalabel.TextAlign = ContentAlignment.MiddleCenter;
+                                stdgpalabel.Location = new Point(0, yoffset);
+                                GPAPanel.Controls.Add(stdgpalabel);
+
+                                yoffset += 40;
+                            }
+                        }
+                    }
+                    conn.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error occurred while displaying student data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
-        }
-
-        private void lblStName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblCoID_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void rjbtnSearch_Click(object sender, EventArgs e)
         {
-            student_det_viewform student_Det_Viewform = new student_det_viewform();
-            student_Det_Viewform.Show();
+            student_det_viewform viewform = new student_det_viewform();
+            viewform.Show();
         }
-
-        private void all_student_content_Load(object sender, EventArgs e)
-        {
-            LoadStudentDetails();
-        }
-
-        private void LoadStudentDetails()
-        {
-            string[] studentIds = { "1001", "1002", "1003", "1004", "1005" };
-            string[] studentNames = { "John", "Alice", "Bob", "Emily", "David" };
-            string[] degreeIds = { "D1001", "D1002", "D1003", "D1004", "D1005" };
-            string[] courseNames = { "Math", "Physics", "Chemistry", "Biology", "Computer Science" };
-            double[] gpas = { 3.5, 3.8, 3.2, 3.9, 3.7 };
-
-            // Add student details to each panel
-            for (int i = 0; i < studentIds.Length; i++)
-            {
-                Label idLabel = new Label();
-                idLabel.Text = "ID: " + studentIds[i];
-                StIDPanel.Controls.Add(idLabel);
-
-                Label nameLabel = new Label();
-                nameLabel.Text = "Name: " + studentNames[i];
-                StNaPanel.Controls.Add(nameLabel);
-
-                Label degreeLabel = new Label();
-                degreeLabel.Text = "Degree ID: " + degreeIds[i];
-                CoIDPanel.Controls.Add(degreeLabel);
-
-                Label courseLabel = new Label();
-                courseLabel.Text = "Course: " + courseNames[i];
-                CoNaPanel.Controls.Add(courseLabel);
-
-                Label gpaLabel = new Label();
-                gpaLabel.Text = "GPA: " + gpas[i].ToString();
-                GPAPanel.Controls.Add(gpaLabel);
-            }
-        }
-
     }
 }
