@@ -23,7 +23,7 @@ namespace WindowsAppProject
         public maindashboard()
         {
             InitializeComponent();
-            this.FormClosing += maindashboard_FormClosing;
+            //this.FormClosing += maindashboard_FormClosing;
         }
         private T FindOpenForm<T>() where T : Form
         {
@@ -32,6 +32,7 @@ namespace WindowsAppProject
 
         private void maindashboard_FormClosing(object sender, FormClosingEventArgs e)
         {
+
             DialogResult result = MessageBox.Show("Are you sure you want to close this form?", "Close Form", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
@@ -89,9 +90,16 @@ namespace WindowsAppProject
             label2.Visible = false;
             label3.Visible = false;
             label4.Visible = false;
+            label5.AutoSize = false;
+            label6.AutoSize = false;
+            label5.Width = rjPanel2.Width;
+            label6.Height = 40;
+            label5.Height = 40;
+            label6.Width = rjPanel2.Width;
+            label5.TextAlign = ContentAlignment.MiddleCenter;
+            label6.TextAlign = ContentAlignment.MiddleCenter;
             await Task.Delay(1200);
             displayusrctrl();
-
             label5.Text = session.Username;
             ardataload();
             
@@ -358,6 +366,14 @@ namespace WindowsAppProject
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void rjButton1_Click_1(object sender, EventArgs e)
+        {
+            StudentIdGetter.StudentId = "";
+            arloginform arloginform = new arloginform();
+            arloginform.Show();
+            this.Hide();
         }
     }
 }
