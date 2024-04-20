@@ -18,10 +18,12 @@ namespace WindowsAppProject
     public partial class maindashboard : Form
     {
 
+        private Form[] otherdashes;
+
         public maindashboard()
         {
             InitializeComponent();
-            this.FormClosing += maindashboard_FormClosing;
+            //this.FormClosing += maindashboard_FormClosing;
         }
         private T FindOpenForm<T>() where T : Form
         {
@@ -30,6 +32,7 @@ namespace WindowsAppProject
 
         private void maindashboard_FormClosing(object sender, FormClosingEventArgs e)
         {
+
             DialogResult result = MessageBox.Show("Are you sure you want to close this form?", "Close Form", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
@@ -87,10 +90,16 @@ namespace WindowsAppProject
             label2.Visible = false;
             label3.Visible = false;
             label4.Visible = false;
-            rjButton10.Visible = false;
+            label5.AutoSize = false;
+            label6.AutoSize = false;
+            label5.Width = rjPanel2.Width;
+            label6.Height = 40;
+            label5.Height = 40;
+            label6.Width = rjPanel2.Width;
+            label5.TextAlign = ContentAlignment.MiddleCenter;
+            label6.TextAlign = ContentAlignment.MiddleCenter;
             await Task.Delay(1200);
             displayusrctrl();
-
             label5.Text = session.Username;
             ardataload();
             
@@ -359,36 +368,12 @@ namespace WindowsAppProject
 
         }
 
-        private void rjButton9_Click(object sender, EventArgs e)
+        private void rjButton1_Click_1(object sender, EventArgs e)
         {
-            BackColor = Color.Black;
-            rjPanel6.BackColor = Color.Black;
-            rjPanel6.GradientBottomColor = Color.Black;
-            rjPanel6.GradientTopColor = Color.Black;
-            rjPanel2.GradientTopColor = Color.FromArgb(32, 64, 81);
-            rjPanel2.GradientBottomColor = Color.FromArgb(32, 64, 81);
-            rjPanel2.BackColor = Color.FromArgb(32, 64, 81);
-            rjPanel3.BackColor = Color.FromArgb(32, 64, 81);
-            rjPanel3.GradientTopColor = Color.FromArgb(32, 64, 81);
-            rjPanel3.GradientBottomColor = Color.FromArgb(32, 64, 81);
-            rjButton9.Visible = false;
-            rjButton10.Visible = true;
-        }
-
-        private void rjButton10_Click(object sender, EventArgs e)
-        {
-            BackColor = Color.White;
-            rjPanel6.BackColor = Color.FromArgb(231, 223, 213);
-            rjPanel6.GradientBottomColor = Color.FromArgb(231, 223, 213);
-            rjPanel6.GradientTopColor = Color.FromArgb(231, 223, 213);
-            rjPanel2.BackColor = Color.FromArgb(132, 169, 172);
-            rjPanel2.GradientBottomColor = Color.FromArgb(132, 169, 172);
-            rjPanel2.GradientTopColor = Color.FromArgb(132, 169, 172);
-            rjPanel3.BackColor = Color.FromArgb(132, 169, 172);
-            rjPanel3.GradientTopColor = Color.FromArgb(132, 169, 172); 
-            rjPanel3.GradientBottomColor = Color.FromArgb(132, 169, 172);
-            rjButton10.Visible = false;
-            rjButton9.Visible = true;
+            StudentIdGetter.StudentId = "";
+            arloginform arloginform = new arloginform();
+            arloginform.Show();
+            this.Hide();
         }
     }
 }

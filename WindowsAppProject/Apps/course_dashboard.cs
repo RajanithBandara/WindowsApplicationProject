@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
@@ -12,6 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using WindowsAppProject;
+using WindowsAppProject.Apps;
 using WindowsAppProject.Apps.usercontrol_coursedashboard;
 
 namespace practice_project
@@ -89,12 +91,43 @@ namespace practice_project
         {
             courses_view corsesview = new courses_view();
             addusercontrol(corsesview);
-
+            ardataload();
             label1.Visible = false;
             label2.Visible = false;
             label3.Visible = false;
+            label5.Width = rjPanel1.Width;
+            label6.Width = rjPanel1.Width;
+            label5.AutoSize = false;
+            label6.AutoSize = false;
+            label5.Height = 40;
+            label6.Height = 40;
+            label5.Text = session.Username;
+            label5.TextAlign = ContentAlignment.MiddleCenter;
+            label6.TextAlign = ContentAlignment.MiddleCenter;
+
         }
 
+        private void ardataload()
+        {
+            string arusername = session.Username;
+            using (OleDbConnection conn = new OleDbConnection(dbconnection.Instance.ConnectionString))
+            {
+                string sqlcmd = "SELECT * FROM aruserdata WHERE username = @arusername";
+                using (OleDbCommand cmd = new OleDbCommand(sqlcmd, conn))
+                {
+                    cmd.Parameters.AddWithValue("@arusername", arusername);
+                    conn.Open();
+                    using (OleDbDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            label6.Text = reader["Fullname"].ToString();
+                        }
+                    }
+                    conn.Close();
+                }
+            }
+        }
         private void rjButton3_Click(object sender, EventArgs e)
         {
             remove_course removecourse = new remove_course();
@@ -129,6 +162,12 @@ namespace practice_project
         private void rjButton3_mouseleave(object sender, EventArgs e)
         {
             label3.Visible = false;
+        }
+
+        private void rjButton7_Click(object sender, EventArgs e)
+        {
+            all_student_content all_Student_Content = new all_student_content();
+            all_Student_Content.Show();
         }
     }
 }

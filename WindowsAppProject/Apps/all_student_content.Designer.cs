@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
             this.rjPanel6 = new RoundedPanelClass.RJPanel();
             this.lblGPA = new System.Windows.Forms.Label();
             this.rjPanel5 = new RoundedPanelClass.RJPanel();
@@ -45,8 +46,10 @@
             this.StIDPanel = new System.Windows.Forms.Panel();
             this.MenuItem = new System.Windows.Forms.ToolStrip();
             this.rjbtnSearch = new CustomControls.RJControls.RJButton();
+
             this.label1 = new System.Windows.Forms.Label();
             this.rjPanel7 = new RoundedPanelClass.RJPanel();
+
             this.rjPanel6.SuspendLayout();
             this.rjPanel5.SuspendLayout();
             this.rjPanel4.SuspendLayout();
@@ -135,11 +138,13 @@
             // 
             // rjPanel3
             // 
+
             this.rjPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
             this.rjPanel3.BorderRadius = 30;
             this.rjPanel3.Controls.Add(this.lblStName);
             this.rjPanel3.ForeColor = System.Drawing.Color.White;
             this.rjPanel3.GradientAngle = 90F;
+
             this.rjPanel3.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
             this.rjPanel3.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
             this.rjPanel3.Location = new System.Drawing.Point(237, 21);
@@ -193,6 +198,7 @@
             this.StNaPanel.Location = new System.Drawing.Point(222, 84);
             this.StNaPanel.Name = "StNaPanel";
             this.StNaPanel.Size = new System.Drawing.Size(409, 655);
+
             this.StNaPanel.TabIndex = 10;
             // 
             // GPAPanel
@@ -203,6 +209,7 @@
             this.GPAPanel.Location = new System.Drawing.Point(1421, 84);
             this.GPAPanel.Name = "GPAPanel";
             this.GPAPanel.Size = new System.Drawing.Size(230, 655);
+
             this.GPAPanel.TabIndex = 9;
             // 
             // CoNaPanel
@@ -213,6 +220,7 @@
             this.CoNaPanel.Location = new System.Drawing.Point(900, 84);
             this.CoNaPanel.Name = "CoNaPanel";
             this.CoNaPanel.Size = new System.Drawing.Size(515, 655);
+
             this.CoNaPanel.TabIndex = 8;
             // 
             // CoIDPanel
@@ -223,6 +231,7 @@
             this.CoIDPanel.Location = new System.Drawing.Point(637, 84);
             this.CoIDPanel.Name = "CoIDPanel";
             this.CoIDPanel.Size = new System.Drawing.Size(257, 655);
+
             this.CoIDPanel.TabIndex = 7;
             // 
             // StIDPanel
@@ -233,6 +242,7 @@
             this.StIDPanel.Location = new System.Drawing.Point(6, 84);
             this.StIDPanel.Name = "StIDPanel";
             this.StIDPanel.Size = new System.Drawing.Size(210, 655);
+
             this.StIDPanel.TabIndex = 5;
             // 
             // MenuItem
@@ -242,6 +252,7 @@
             this.MenuItem.Location = new System.Drawing.Point(24, 107);
             this.MenuItem.Name = "MenuItem";
             this.MenuItem.Size = new System.Drawing.Size(112, 25);
+
             this.MenuItem.TabIndex = 1;
             this.MenuItem.Text = "MenuList";
             // 
@@ -249,6 +260,7 @@
             // 
             this.rjbtnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(81)))));
             this.rjbtnSearch.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(81)))));
+
             this.rjbtnSearch.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rjbtnSearch.BorderRadius = 15;
             this.rjbtnSearch.BorderSize = 0;
@@ -259,12 +271,14 @@
             this.rjbtnSearch.Location = new System.Drawing.Point(1472, 89);
             this.rjbtnSearch.Name = "rjbtnSearch";
             this.rjbtnSearch.Size = new System.Drawing.Size(178, 69);
+
             this.rjbtnSearch.TabIndex = 2;
             this.rjbtnSearch.Text = "View More";
             this.rjbtnSearch.TextColor = System.Drawing.Color.White;
             this.rjbtnSearch.UseVisualStyleBackColor = false;
             this.rjbtnSearch.Click += new System.EventHandler(this.rjbtnSearch_Click);
             // 
+
             // label1
             // 
             this.label1.AutoSize = true;
@@ -274,6 +288,7 @@
             this.label1.Location = new System.Drawing.Point(500, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(700, 65);
+
             this.label1.TabIndex = 0;
             this.label1.Text = "Registerd Students Dashbord.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -301,6 +316,7 @@
             this.rjPanel7.Size = new System.Drawing.Size(1657, 753);
             this.rjPanel7.TabIndex = 3;
             // 
+
             // all_student_content
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -311,11 +327,13 @@
             this.Controls.Add(this.rjPanel7);
             this.Controls.Add(this.MenuItem);
             this.Controls.Add(this.rjbtnSearch);
+
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1700, 1000);
             this.MinimumSize = new System.Drawing.Size(1700, 824);
             this.Name = "all_student_content";
             this.Text = "all_student_content";
+
             this.rjPanel6.ResumeLayout(false);
             this.rjPanel6.PerformLayout();
             this.rjPanel5.ResumeLayout(false);
@@ -326,7 +344,9 @@
             this.rjPanel3.PerformLayout();
             this.rjPanel2.ResumeLayout(false);
             this.rjPanel2.PerformLayout();
+
             this.rjPanel7.ResumeLayout(false);
+
             this.ResumeLayout(false);
             this.PerformLayout();
 
