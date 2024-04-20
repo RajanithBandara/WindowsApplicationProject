@@ -78,6 +78,7 @@
             this.rjPanel1.BackColor = System.Drawing.Color.White;
             this.rjPanel1.BorderRadius = 30;
             this.rjPanel1.Controls.Add(this.label4);
+            this.rjPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.rjPanel1.ForeColor = System.Drawing.Color.White;
             this.rjPanel1.GradientAngle = 90F;
             this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
@@ -239,6 +240,7 @@
             // MName
             // 
             this.MName.AutoScroll = true;
+            this.MName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.MName.ForeColor = System.Drawing.Color.Black;
             this.MName.Location = new System.Drawing.Point(0, 0);
             this.MName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -250,6 +252,7 @@
             // Mgrade
             // 
             this.Mgrade.AutoScroll = true;
+            this.Mgrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.Mgrade.ForeColor = System.Drawing.Color.Black;
             this.Mgrade.Location = new System.Drawing.Point(334, 0);
             this.Mgrade.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -261,6 +264,7 @@
             // Mcredits
             // 
             this.Mcredits.AutoScroll = true;
+            this.Mcredits.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.Mcredits.ForeColor = System.Drawing.Color.Black;
             this.Mcredits.Location = new System.Drawing.Point(569, 0);
             this.Mcredits.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
