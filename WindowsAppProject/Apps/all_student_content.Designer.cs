@@ -188,7 +188,7 @@
             // StNaPanel
             // 
             this.StNaPanel.AutoScroll = true;
-            this.StNaPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
+            this.StNaPanel.BackColor = System.Drawing.Color.Transparent;
             this.StNaPanel.ForeColor = System.Drawing.Color.Black;
             this.StNaPanel.Location = new System.Drawing.Point(222, 84);
             this.StNaPanel.Name = "StNaPanel";
@@ -198,7 +198,7 @@
             // GPAPanel
             // 
             this.GPAPanel.AutoScroll = true;
-            this.GPAPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.GPAPanel.BackColor = System.Drawing.Color.Transparent;
             this.GPAPanel.ForeColor = System.Drawing.Color.Black;
             this.GPAPanel.Location = new System.Drawing.Point(1421, 84);
             this.GPAPanel.Name = "GPAPanel";
@@ -208,7 +208,7 @@
             // CoNaPanel
             // 
             this.CoNaPanel.AutoScroll = true;
-            this.CoNaPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
+            this.CoNaPanel.BackColor = System.Drawing.Color.Transparent;
             this.CoNaPanel.ForeColor = System.Drawing.Color.Black;
             this.CoNaPanel.Location = new System.Drawing.Point(900, 84);
             this.CoNaPanel.Name = "CoNaPanel";
@@ -218,7 +218,7 @@
             // CoIDPanel
             // 
             this.CoIDPanel.AutoScroll = true;
-            this.CoIDPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.CoIDPanel.BackColor = System.Drawing.Color.Transparent;
             this.CoIDPanel.ForeColor = System.Drawing.Color.Black;
             this.CoIDPanel.Location = new System.Drawing.Point(637, 84);
             this.CoIDPanel.Name = "CoIDPanel";
@@ -228,7 +228,7 @@
             // StIDPanel
             // 
             this.StIDPanel.AutoScroll = true;
-            this.StIDPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.StIDPanel.BackColor = System.Drawing.Color.Transparent;
             this.StIDPanel.ForeColor = System.Drawing.Color.Black;
             this.StIDPanel.Location = new System.Drawing.Point(6, 84);
             this.StIDPanel.Name = "StIDPanel";
