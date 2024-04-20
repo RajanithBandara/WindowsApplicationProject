@@ -71,7 +71,7 @@
             this.BackPanel.Location = new System.Drawing.Point(14, 126);
             this.BackPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BackPanel.Name = "BackPanel";
-            this.BackPanel.Size = new System.Drawing.Size(1645, 924);
+            this.BackPanel.Size = new System.Drawing.Size(1837, 924);
             this.BackPanel.TabIndex = 0;
             // 
             // rjPanel6
@@ -230,10 +230,10 @@
             this.rjbtnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjbtnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjbtnSearch.ForeColor = System.Drawing.Color.White;
-            this.rjbtnSearch.Location = new System.Drawing.Point(1441, 32);
+            this.rjbtnSearch.Location = new System.Drawing.Point(1597, 23);
             this.rjbtnSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjbtnSearch.Name = "rjbtnSearch";
-            this.rjbtnSearch.Size = new System.Drawing.Size(200, 86);
+            this.rjbtnSearch.Size = new System.Drawing.Size(200, 53);
             this.rjbtnSearch.TabIndex = 2;
             this.rjbtnSearch.Text = "View More";
             this.rjbtnSearch.TextColor = System.Drawing.Color.White;
@@ -282,7 +282,7 @@
             this.rjPanel7.GradientTopColor = System.Drawing.Color.Green;
             this.rjPanel7.Location = new System.Drawing.Point(2, 103);
             this.rjPanel7.Name = "rjPanel7";
-            this.rjPanel7.Size = new System.Drawing.Size(1638, 813);
+            this.rjPanel7.Size = new System.Drawing.Size(1832, 813);
             this.rjPanel7.TabIndex = 2;
             // 
             // StNaPanel
@@ -340,7 +340,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
-            this.ClientSize = new System.Drawing.Size(1667, 1054);
+            this.ClientSize = new System.Drawing.Size(1863, 1054);
             this.Controls.Add(this.MenuItem);
             this.Controls.Add(this.rjbtnSearch);
             this.Controls.Add(this.rjPanel1);
@@ -349,8 +349,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1689, 1110);
-            this.MinimumSize = new System.Drawing.Size(1689, 1110);
             this.Name = "all_student_content";
             this.Text = "all_student_content";
             this.BackPanel.ResumeLayout(false);
