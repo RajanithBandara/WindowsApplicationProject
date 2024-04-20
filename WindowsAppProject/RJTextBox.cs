@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CustomControls.RJControls
@@ -125,6 +120,12 @@ namespace CustomControls.RJControls
             set { borderFocusColor = value; }
         }
 
+        // Method to set read-only mode
+        public void SetReadOnly(bool readOnly)
+        {
+            textBox1.ReadOnly = readOnly;
+        }
+
         //Overridden methods
 
         protected override void OnPaint(PaintEventArgs e)
@@ -210,7 +211,5 @@ namespace CustomControls.RJControls
             isFocused = false;
             this.Invalidate();
         }
-
-        ///::::+
     }
 }

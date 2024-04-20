@@ -86,21 +86,8 @@ namespace WindowsAppProject
 
         private async void maindashboard_Load(object sender, EventArgs e)
         {
-            label1.Visible = false;
-            label2.Visible = false;
-            label3.Visible = false;
-            label4.Visible = false;
-            label5.AutoSize = false;
-            label6.AutoSize = false;
-            label5.Width = rjPanel2.Width;
-            label6.Height = 40;
-            label5.Height = 40;
-            label6.Width = rjPanel2.Width;
-            label5.TextAlign = ContentAlignment.MiddleCenter;
-            label6.TextAlign = ContentAlignment.MiddleCenter;
             await Task.Delay(1200);
             displayusrctrl();
-            label5.Text = session.Username;
             ardataload();
             
         }
@@ -118,7 +105,10 @@ namespace WindowsAppProject
                     {
                         if (reader.Read())
                         {
-                            label6.Text = reader["Fullname"].ToString();
+                            string fullname = reader["Fullname"].ToString();
+                            string username = session.Username;
+                            textBox1.Text = $"{username}";
+                            textBox2.Text = fullname;
                         }
                     }
                     conn.Close();

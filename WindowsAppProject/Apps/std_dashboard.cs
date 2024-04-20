@@ -48,8 +48,8 @@ namespace WindowsAppProject.Apps
             label1.Visible = false;
             label2.Visible = false;
             label3.Text = StudentIdGetter.StudentId;
-            label7.Text = session.Username;
-            
+            label8.Text = session.Username;
+            addardata();
 
             studentnameget();
         }
@@ -68,8 +68,7 @@ namespace WindowsAppProject.Apps
                     {
                         if (reader.Read())
                         {
-                            label4.Text = reader["Fullname"].ToString();
-                            label5.Text = reader["email"].ToString();
+                            label7.Text = reader["Fullname"].ToString();
                         }
                     }
                     conn.Close();
@@ -140,9 +139,5 @@ namespace WindowsAppProject.Apps
             }
         }
 
-        private void rjPanel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

@@ -37,13 +37,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.rjPanel6 = new RoundedPanelClass.RJPanel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.rjButton3 = new CustomControls.RJControls.RJButton();
-            this.rjButton5 = new CustomControls.RJControls.RJButton();
-            this.rjButton6 = new CustomControls.RJControls.RJButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,11 +46,15 @@
             this.mainpanelstd = new RoundedPanelClass.RJPanel();
             this.rjPanel1 = new RoundedPanelClass.RJPanel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.rjPanel4.SuspendLayout();
             this.rjPanel6.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.rjPanel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // rjPanel4
@@ -144,11 +141,8 @@
             // 
             this.rjPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
             this.rjPanel6.BorderRadius = 30;
-            this.rjPanel6.Controls.Add(this.panel4);
             this.rjPanel6.Controls.Add(this.panel2);
-            this.rjPanel6.Controls.Add(this.rjButton3);
-            this.rjPanel6.Controls.Add(this.rjButton5);
-            this.rjPanel6.Controls.Add(this.rjButton6);
+            this.rjPanel6.Controls.Add(this.panel4);
             this.rjPanel6.Controls.Add(this.panel1);
             this.rjPanel6.ForeColor = System.Drawing.Color.White;
             this.rjPanel6.GradientAngle = 90F;
@@ -159,106 +153,6 @@
             this.rjPanel6.Name = "rjPanel6";
             this.rjPanel6.Size = new System.Drawing.Size(321, 849);
             this.rjPanel6.TabIndex = 1;
-            this.rjPanel6.Paint += new System.Windows.Forms.PaintEventHandler(this.rjPanel6_Paint);
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.label8);
-            this.panel4.Controls.Add(this.label7);
-            this.panel4.Location = new System.Drawing.Point(42, 206);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(225, 108);
-            this.panel4.TabIndex = 0;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(62, 59);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(98, 32);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "label8";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(62, 18);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(98, 32);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "label7";
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = global::WindowsAppProject.Properties.Resources.user;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel2.Location = new System.Drawing.Point(41, 71);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(226, 129);
-            this.panel2.TabIndex = 0;
-            // 
-            // rjButton3
-            // 
-            this.rjButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(81)))));
-            this.rjButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(81)))));
-            this.rjButton3.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton3.BorderRadius = 12;
-            this.rjButton3.BorderSize = 1;
-            this.rjButton3.FlatAppearance.BorderSize = 0;
-            this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton3.ForeColor = System.Drawing.Color.White;
-            this.rjButton3.Location = new System.Drawing.Point(26, 712);
-            this.rjButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rjButton3.Name = "rjButton3";
-            this.rjButton3.Size = new System.Drawing.Size(268, 62);
-            this.rjButton3.TabIndex = 8;
-            this.rjButton3.Text = "GPA Calculator";
-            this.rjButton3.TextColor = System.Drawing.Color.White;
-            this.rjButton3.UseVisualStyleBackColor = false;
-            // 
-            // rjButton5
-            // 
-            this.rjButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(81)))));
-            this.rjButton5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(81)))));
-            this.rjButton5.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton5.BorderRadius = 12;
-            this.rjButton5.BorderSize = 1;
-            this.rjButton5.FlatAppearance.BorderSize = 0;
-            this.rjButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton5.ForeColor = System.Drawing.Color.White;
-            this.rjButton5.Location = new System.Drawing.Point(26, 628);
-            this.rjButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rjButton5.Name = "rjButton5";
-            this.rjButton5.Size = new System.Drawing.Size(268, 62);
-            this.rjButton5.TabIndex = 7;
-            this.rjButton5.Text = "Course Dashboard";
-            this.rjButton5.TextColor = System.Drawing.Color.White;
-            this.rjButton5.UseVisualStyleBackColor = false;
-            // 
-            // rjButton6
-            // 
-            this.rjButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(81)))));
-            this.rjButton6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(64)))), ((int)(((byte)(81)))));
-            this.rjButton6.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton6.BorderRadius = 12;
-            this.rjButton6.BorderSize = 0;
-            this.rjButton6.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.rjButton6.FlatAppearance.BorderSize = 0;
-            this.rjButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton6.ForeColor = System.Drawing.Color.White;
-            this.rjButton6.Location = new System.Drawing.Point(26, 542);
-            this.rjButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rjButton6.Name = "rjButton6";
-            this.rjButton6.Size = new System.Drawing.Size(268, 62);
-            this.rjButton6.TabIndex = 6;
-            this.rjButton6.Text = "Student Dashboard";
-            this.rjButton6.TextColor = System.Drawing.Color.White;
-            this.rjButton6.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -267,7 +161,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.rjButton1);
             this.panel1.Controls.Add(this.rjButton2);
-            this.panel1.Location = new System.Drawing.Point(0, 321);
+            this.panel1.Location = new System.Drawing.Point(0, 393);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(321, 161);
@@ -390,6 +284,44 @@
             this.panel3.Size = new System.Drawing.Size(226, 129);
             this.panel3.TabIndex = 1;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Location = new System.Drawing.Point(0, 222);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(321, 110);
+            this.panel2.TabIndex = 21;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(9, 69);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(0, 32);
+            this.label7.TabIndex = 1;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(10, 10);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(0, 32);
+            this.label8.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.BackgroundImage = global::WindowsAppProject.Properties.Resources.user;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel4.Location = new System.Drawing.Point(76, 60);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(158, 149);
+            this.panel4.TabIndex = 20;
+            // 
             // std_dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -412,12 +344,12 @@
             this.rjPanel4.ResumeLayout(false);
             this.rjPanel4.PerformLayout();
             this.rjPanel6.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.rjPanel1.ResumeLayout(false);
             this.rjPanel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -433,11 +365,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private CustomControls.RJControls.RJButton rjButton3;
-        private CustomControls.RJControls.RJButton rjButton5;
-        private CustomControls.RJControls.RJButton rjButton6;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -445,8 +373,9 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel panel4;
     }
 }
