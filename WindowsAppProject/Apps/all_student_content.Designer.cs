@@ -40,15 +40,11 @@
             this.lblStName = new System.Windows.Forms.Label();
             this.rjPanel2 = new RoundedPanelClass.RJPanel();
             this.lblStID = new System.Windows.Forms.Label();
-            this.StNaPanel = new System.Windows.Forms.Panel();
-            this.GPAPanel = new System.Windows.Forms.Panel();
-            this.CoNaPanel = new System.Windows.Forms.Panel();
-            this.CoIDPanel = new System.Windows.Forms.Panel();
-            this.StIDPanel = new System.Windows.Forms.Panel();
             this.MenuItem = new System.Windows.Forms.ToolStrip();
             this.rjbtnSearch = new CustomControls.RJControls.RJButton();
             this.rjPanel1 = new RoundedPanelClass.RJPanel();
             this.label1 = new System.Windows.Forms.Label();
+            this.rjPanel7 = new RoundedPanelClass.RJPanel();
             this.BackPanel.SuspendLayout();
             this.rjPanel6.SuspendLayout();
             this.rjPanel5.SuspendLayout();
@@ -60,16 +56,12 @@
             // 
             // BackPanel
             // 
+            this.BackPanel.Controls.Add(this.rjPanel7);
             this.BackPanel.Controls.Add(this.rjPanel6);
             this.BackPanel.Controls.Add(this.rjPanel5);
             this.BackPanel.Controls.Add(this.rjPanel4);
             this.BackPanel.Controls.Add(this.rjPanel3);
             this.BackPanel.Controls.Add(this.rjPanel2);
-            this.BackPanel.Controls.Add(this.StNaPanel);
-            this.BackPanel.Controls.Add(this.GPAPanel);
-            this.BackPanel.Controls.Add(this.CoNaPanel);
-            this.BackPanel.Controls.Add(this.CoIDPanel);
-            this.BackPanel.Controls.Add(this.StIDPanel);
             this.BackPanel.Location = new System.Drawing.Point(14, 126);
             this.BackPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BackPanel.Name = "BackPanel";
@@ -211,63 +203,13 @@
             this.lblStID.TabIndex = 0;
             this.lblStID.Text = "Student ID";
             // 
-            // StNaPanel
-            // 
-            this.StNaPanel.AutoScroll = true;
-            this.StNaPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
-            this.StNaPanel.Location = new System.Drawing.Point(223, 101);
-            this.StNaPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.StNaPanel.Name = "StNaPanel";
-            this.StNaPanel.Size = new System.Drawing.Size(645, 806);
-            this.StNaPanel.TabIndex = 10;
-            // 
-            // GPAPanel
-            // 
-            this.GPAPanel.AutoScroll = true;
-            this.GPAPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.GPAPanel.Location = new System.Drawing.Point(1422, 101);
-            this.GPAPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.GPAPanel.Name = "GPAPanel";
-            this.GPAPanel.Size = new System.Drawing.Size(205, 806);
-            this.GPAPanel.TabIndex = 9;
-            // 
-            // CoNaPanel
-            // 
-            this.CoNaPanel.AutoScroll = true;
-            this.CoNaPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
-            this.CoNaPanel.Location = new System.Drawing.Point(1086, 101);
-            this.CoNaPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CoNaPanel.Name = "CoNaPanel";
-            this.CoNaPanel.Size = new System.Drawing.Size(330, 806);
-            this.CoNaPanel.TabIndex = 8;
-            // 
-            // CoIDPanel
-            // 
-            this.CoIDPanel.AutoScroll = true;
-            this.CoIDPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.CoIDPanel.Location = new System.Drawing.Point(874, 101);
-            this.CoIDPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CoIDPanel.Name = "CoIDPanel";
-            this.CoIDPanel.Size = new System.Drawing.Size(205, 806);
-            this.CoIDPanel.TabIndex = 7;
-            // 
-            // StIDPanel
-            // 
-            this.StIDPanel.AutoScroll = true;
-            this.StIDPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.StIDPanel.Location = new System.Drawing.Point(16, 101);
-            this.StIDPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.StIDPanel.Name = "StIDPanel";
-            this.StIDPanel.Size = new System.Drawing.Size(201, 806);
-            this.StIDPanel.TabIndex = 5;
-            // 
             // MenuItem
             // 
             this.MenuItem.Dock = System.Windows.Forms.DockStyle.None;
             this.MenuItem.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.MenuItem.Location = new System.Drawing.Point(15, 80);
             this.MenuItem.Name = "MenuItem";
-            this.MenuItem.Size = new System.Drawing.Size(166, 38);
+            this.MenuItem.Size = new System.Drawing.Size(116, 25);
             this.MenuItem.TabIndex = 1;
             this.MenuItem.Text = "MenuList";
             // 
@@ -319,6 +261,19 @@
             this.label1.Text = "Registerd Students Dashbord.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // rjPanel7
+            // 
+            this.rjPanel7.BackColor = System.Drawing.Color.Green;
+            this.rjPanel7.BorderRadius = 30;
+            this.rjPanel7.ForeColor = System.Drawing.Color.White;
+            this.rjPanel7.GradientAngle = 90F;
+            this.rjPanel7.GradientBottomColor = System.Drawing.Color.Green;
+            this.rjPanel7.GradientTopColor = System.Drawing.Color.Green;
+            this.rjPanel7.Location = new System.Drawing.Point(2, 103);
+            this.rjPanel7.Name = "rjPanel7";
+            this.rjPanel7.Size = new System.Drawing.Size(1638, 813);
+            this.rjPanel7.TabIndex = 2;
+            // 
             // all_student_content
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -362,20 +317,16 @@
         private CustomControls.RJControls.RJButton rjbtnSearch;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStrip MenuItem;
-        private System.Windows.Forms.Panel StNaPanel;
         private RoundedPanelClass.RJPanel rjPanel3;
         private System.Windows.Forms.Label lblStName;
-        private System.Windows.Forms.Panel GPAPanel;
         private RoundedPanelClass.RJPanel rjPanel6;
         private System.Windows.Forms.Label lblGPA;
-        private System.Windows.Forms.Panel CoNaPanel;
         private RoundedPanelClass.RJPanel rjPanel5;
         private System.Windows.Forms.Label lblCoName;
-        private System.Windows.Forms.Panel CoIDPanel;
         private RoundedPanelClass.RJPanel rjPanel4;
         private System.Windows.Forms.Label lblCoID;
-        private System.Windows.Forms.Panel StIDPanel;
         private RoundedPanelClass.RJPanel rjPanel2;
         private System.Windows.Forms.Label lblStID;
+        private RoundedPanelClass.RJPanel rjPanel7;
     }
 }
