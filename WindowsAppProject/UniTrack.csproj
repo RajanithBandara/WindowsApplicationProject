@@ -230,6 +230,12 @@
     <Compile Include="Apps\usercontrol_progressiondash\Student by student.Designer.cs">
       <DependentUpon>Student by student.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apps\usercontrol_studentdash\remove_module.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\usercontrol_studentdash\remove_module.Designer.cs">
+      <DependentUpon>remove_module.cs</DependentUpon>
+    </Compile>
     <Compile Include="dbconnection.cs" />
     <Compile Include="Apps\gpacalculator.cs">
       <SubType>Form</SubType>
@@ -405,6 +411,9 @@
     <EmbeddedResource Include="Apps\usercontrol_studentdash\module_view.resx">
       <DependentUpon>module_view.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Apps\usercontrol_studentdash\remove_module.resx">
+      <DependentUpon>remove_module.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Apps\usercontrol_studentdash\testchart.resx">
       <DependentUpon>testchart.cs</DependentUpon>
     </EmbeddedResource>
@@ -466,6 +475,8 @@
     <Content Include="ProjectDB.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\reset.png" />
+    <None Include="Resources\remove-file.png" />
     <None Include="Resources\remove-user.png" />
     <None Include="Resources\profile.png" />
     <None Include="Resources\group.png" />

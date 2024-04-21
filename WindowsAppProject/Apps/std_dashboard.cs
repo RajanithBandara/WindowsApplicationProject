@@ -142,5 +142,19 @@ namespace WindowsAppProject.Apps
         {
 
         }
+
+        private void rjButton3_Click(object sender, EventArgs e)
+        {
+            remove_module rmv = new remove_module();
+            rmv.Show();
+        }
+
+        private void rjButton4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            std_dashboard std_Dashboard = new std_dashboard();
+            std_Dashboard.Show();
+            studentnameget();
+        }
     }
 }
