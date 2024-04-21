@@ -48,15 +48,14 @@ namespace WindowsAppProject.Apps
             label1.Visible = false;
             label2.Visible = false;
             label3.Text = StudentIdGetter.StudentId;
-            label7.Text = session.Username;
-            
-
+            addardata();
             studentnameget();
         }
         
         private void addardata()
         {
             string username = session.Username;
+            textBox5.Text = username;
             using (OleDbConnection conn = new OleDbConnection(connectionstring))
             {
                 string sql = "SELECT * FROM aruserdata WHERE username = @username";
@@ -68,8 +67,7 @@ namespace WindowsAppProject.Apps
                     {
                         if (reader.Read())
                         {
-                            label4.Text = reader["Fullname"].ToString();
-                            label5.Text = reader["email"].ToString();
+                            textBox4.Text = reader["Fullname"].ToString();
                         }
                     }
                     conn.Close();

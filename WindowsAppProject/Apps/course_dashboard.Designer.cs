@@ -39,8 +39,8 @@
             this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.rjPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -67,8 +67,8 @@
             this.rjPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
             this.rjPanel1.BorderRadius = 30;
             this.rjPanel1.Controls.Add(this.panel2);
-            this.rjPanel1.Controls.Add(this.panel3);
             this.rjPanel1.Controls.Add(this.panel1);
+            this.rjPanel1.Controls.Add(this.panel3);
             this.rjPanel1.ForeColor = System.Drawing.Color.White;
             this.rjPanel1.GradientAngle = 90F;
             this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
@@ -198,41 +198,47 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(13, 170);
+            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Location = new System.Drawing.Point(0, 174);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(369, 110);
-            this.panel2.TabIndex = 19;
+            this.panel2.Size = new System.Drawing.Size(394, 110);
+            this.panel2.TabIndex = 17;
             // 
-            // label6
+            // textBox2
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(9, 69);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 32);
-            this.label6.TabIndex = 1;
+            this.textBox2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.textBox2.Location = new System.Drawing.Point(0, 64);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(394, 34);
+            this.textBox2.TabIndex = 1;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label5
+            // textBox1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(10, 10);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 32);
-            this.label5.TabIndex = 0;
+            this.textBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.textBox1.Location = new System.Drawing.Point(0, 17);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(394, 34);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel3
             // 
             this.panel3.BackgroundImage = global::WindowsAppProject.Properties.Resources.user;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel3.Location = new System.Drawing.Point(124, 11);
+            this.panel3.Location = new System.Drawing.Point(125, 15);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(158, 149);
-            this.panel3.TabIndex = 18;
+            this.panel3.TabIndex = 16;
             // 
             // course_dashboard
             // 
@@ -272,8 +278,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel3;
     }
 }

@@ -95,21 +95,13 @@ namespace practice_project
             label1.Visible = false;
             label2.Visible = false;
             label3.Visible = false;
-            label5.Width = rjPanel1.Width;
-            label6.Width = rjPanel1.Width;
-            label5.AutoSize = false;
-            label6.AutoSize = false;
-            label5.Height = 40;
-            label6.Height = 40;
-            label5.Text = session.Username;
-            label5.TextAlign = ContentAlignment.MiddleCenter;
-            label6.TextAlign = ContentAlignment.MiddleCenter;
 
         }
 
         private void ardataload()
         {
             string arusername = session.Username;
+            textBox1.Text = arusername;
             using (OleDbConnection conn = new OleDbConnection(dbconnection.Instance.ConnectionString))
             {
                 string sqlcmd = "SELECT * FROM aruserdata WHERE username = @arusername";
@@ -121,7 +113,7 @@ namespace practice_project
                     {
                         if (reader.Read())
                         {
-                            label6.Text = reader["Fullname"].ToString();
+                            textBox2.Text = reader["Fullname"].ToString();
                         }
                     }
                     conn.Close();
