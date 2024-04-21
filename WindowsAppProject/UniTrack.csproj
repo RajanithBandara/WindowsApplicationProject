@@ -328,12 +328,6 @@
     <Compile Include="RJPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="RJTextBox.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="RJTextBox.Designer.cs">
-      <DependentUpon>RJTextBox.cs</DependentUpon>
-    </Compile>
     <Compile Include="session.cs" />
     <Compile Include="studentidget.cs" />
     <EmbeddedResource Include="Apps\adminloginform.resx">

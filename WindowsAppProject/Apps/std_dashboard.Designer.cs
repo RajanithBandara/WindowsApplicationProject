@@ -83,7 +83,7 @@
             // 
             this.panel2.Controls.Add(this.textBox4);
             this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Location = new System.Drawing.Point(0, 179);
+            this.panel2.Location = new System.Drawing.Point(0, 241);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(318, 110);
@@ -117,7 +117,7 @@
             // 
             this.panel4.BackgroundImage = global::WindowsAppProject.Properties.Resources.user;
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel4.Location = new System.Drawing.Point(81, 20);
+            this.panel4.Location = new System.Drawing.Point(81, 82);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(158, 149);
@@ -134,7 +134,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.rjButton1);
             this.panel1.Controls.Add(this.rjButton2);
-            this.panel1.Location = new System.Drawing.Point(0, 321);
+            this.panel1.Location = new System.Drawing.Point(0, 383);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(321, 271);
@@ -406,7 +406,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(223)))), ((int)(((byte)(213)))));
-            this.ClientSize = new System.Drawing.Size(1663, 896);
+            this.ClientSize = new System.Drawing.Size(1648, 891);
             this.Controls.Add(this.rjPanel6);
             this.Controls.Add(this.rjPanel4);
             this.Controls.Add(this.mainpanelstd);
@@ -415,7 +415,6 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1685, 952);
-            this.MinimumSize = new System.Drawing.Size(1685, 952);
             this.Name = "std_dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "std_dashboard";

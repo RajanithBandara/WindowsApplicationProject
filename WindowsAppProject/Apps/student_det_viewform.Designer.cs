@@ -128,6 +128,7 @@
             this.Controls.Add(this.rjPanel1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "student_det_viewform";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form1";
             this.rjPanel1.ResumeLayout(false);
             this.rjPanel1.PerformLayout();

@@ -362,10 +362,16 @@ namespace WindowsAppProject
 
         private void rjButton1_Click_1(object sender, EventArgs e)
         {
-            StudentIdGetter.StudentId = "";
-            arloginform arloginform = new arloginform();
-            arloginform.Show();
-            this.Hide();
+            DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Log Out", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                StudentIdGetter.StudentId = "";
+                arloginform arloginform = new arloginform();
+                arloginform.Show();
+                this.Hide();
+            }
         }
+
     }
 }

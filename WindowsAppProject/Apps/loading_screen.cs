@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -17,9 +18,9 @@ namespace WindowsAppProject.Apps
             BackgroundWorker loaderWorker = new BackgroundWorker();
             loaderWorker.DoWork += LoaderWorker_DoWork;
             loaderWorker.RunWorkerCompleted += LoaderWorker_RunWorkerCompleted;
+            progressBar1.ForeColor = Color.Blue;
 
             progressBar1.Style = ProgressBarStyle.Marquee;
-
             loaderWorker.RunWorkerAsync();
         }
 
