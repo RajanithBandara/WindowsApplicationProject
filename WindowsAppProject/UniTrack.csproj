@@ -13,7 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>D:\Applications\MyApp38\</PublishUrl>
+    <PublishUrl>D:\Applications\MyApp39\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>23</ApplicationRevision>
+    <ApplicationRevision>24</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -179,11 +179,23 @@
     <Compile Include="Apps\all_student_content.Designer.cs">
       <DependentUpon>all_student_content.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apps\ardata_changeform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\ardata_changeform.Designer.cs">
+      <DependentUpon>ardata_changeform.cs</DependentUpon>
+    </Compile>
     <Compile Include="Apps\arloginform.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Apps\arloginform.Designer.cs">
       <DependentUpon>arloginform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\profile_settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\profile_settings.Designer.cs">
+      <DependentUpon>profile_settings.cs</DependentUpon>
     </Compile>
     <Compile Include="Apps\student_det_viewform.cs">
       <SubType>Form</SubType>
@@ -348,6 +360,9 @@
     <EmbeddedResource Include="Apps\all_student_content.resx">
       <DependentUpon>all_student_content.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Apps\ardata_changeform.resx">
+      <DependentUpon>ardata_changeform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Apps\arloginform.resx">
       <DependentUpon>arloginform.cs</DependentUpon>
     </EmbeddedResource>
@@ -362,6 +377,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\maindashboard.resx">
       <DependentUpon>maindashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\profile_settings.resx">
+      <DependentUpon>profile_settings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\std_dashboard.resx">
       <DependentUpon>std_dashboard.cs</DependentUpon>

@@ -485,5 +485,11 @@ namespace WindowsAppProject
         {
             label6.Visible = false;
         }
+
+        private void rjButton11_Click(object sender, EventArgs e)
+        {
+            profile_settings profile_Settings = new profile_settings();
+            profile_Settings.Show();
+        }
     }
 }
