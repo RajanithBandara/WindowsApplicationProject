@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admin_panel));
             this.admincontentpanel = new RoundedPanelClass.RJPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.rjPanel2 = new RoundedPanelClass.RJPanel();
@@ -208,6 +209,7 @@
             this.ClientSize = new System.Drawing.Size(1347, 629);
             this.Controls.Add(this.rjPanel2);
             this.Controls.Add(this.admincontentpanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1369, 751);
