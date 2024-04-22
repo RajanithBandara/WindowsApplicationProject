@@ -30,9 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ar_reg));
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.npgsqlCommandBuilder1 = new Npgsql.NpgsqlCommandBuilder();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();            this.label2 = new System.Windows.Forms.Label();
             this.rjPanel1 = new RoundedPanelClass.RJPanel();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.Hint1 = new CustomControls.RJControls.RJButton();
@@ -71,10 +69,6 @@
             this.label3.Size = new System.Drawing.Size(0, 20);
             this.label3.TabIndex = 33;
             // 
-            // npgsqlCommandBuilder1
-            // 
-            this.npgsqlCommandBuilder1.QuotePrefix = "\"";
-            this.npgsqlCommandBuilder1.QuoteSuffix = "\"";
             // 
             // label2
             // 
@@ -381,7 +375,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private Npgsql.NpgsqlCommandBuilder npgsqlCommandBuilder1;
         private System.Windows.Forms.Label label2;
         private CustomControls.RJControls.RJButton rjButton3;
         private CustomControls.RJControls.RJButton rjButton2;

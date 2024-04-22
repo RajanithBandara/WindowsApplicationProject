@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Data.OleDb;
 using System.Windows.Forms;
+using MaterialSkin;
+using MaterialSkin.Controls;
 using OxyPlot;
 using OxyPlot.Series;
 using OxyPlot.WindowsForms;
@@ -13,12 +15,25 @@ namespace WindowsAppProject.Apps.usercontrol_studentdash
         private readonly string connectionstr = dbconnection.Instance.ConnectionString;
         private int semesters;
         private string userid;
+        private PlotView plotView;
 
         public testchart()
         {
             InitializeComponent();
+            ApplyMaterialSkin();
             userid = StudentIdGetter.StudentId;
             LoadData();
+        }
+
+        private void ApplyMaterialSkin()
+        {
+            MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(
+                Primary.BlueGrey800, Primary.BlueGrey900,
+                Primary.BlueGrey500, Accent.LightBlue200,
+                TextShade.WHITE
+            );
         }
 
         private void LoadData()
@@ -48,8 +63,12 @@ namespace WindowsAppProject.Apps.usercontrol_studentdash
 
         private void PlotGPAProgression()
         {
-            var plotmodel = new PlotModel { Title = "Student GPA Progression" };
-            var series = new LineSeries { Title = "GPA", MarkerType = MarkerType.Circle };
+            plotView = new PlotView();
+            plotView.Dock = DockStyle.Fill;
+            rjPanel1.Controls.Add(plotView);
+
+            var plotModel = new PlotModel { Title = "GPA Progression" };
+            var lineSeries = new LineSeries { Title = "GPA" };
 
             for (int i = 1; i <= semesters; i++)
             {
@@ -66,12 +85,12 @@ namespace WindowsAppProject.Apps.usercontrol_studentdash
                 }
 
                 double gpa = totalCredits > 0 ? totalGradePoints / totalCredits : 0;
-                series.Points.Add(new DataPoint(i, gpa));
+                lineSeries.Points.Add(new DataPoint(i, gpa));
             }
 
-            plotmodel.Series.Add(series);
-            var plotView = new PlotView { Dock = DockStyle.Fill, Model = plotmodel };
-            rjPanel1.Controls.Add(plotView);
+            plotModel.Series.Add(lineSeries);
+
+            plotView.Model = plotModel;
         }
 
         private Dictionary<string, int> GetModuleCredits(int semester)
@@ -111,6 +130,7 @@ namespace WindowsAppProject.Apps.usercontrol_studentdash
         {
             switch (grade)
             {
+                case "A+": return 4.0;
                 case "A": return 4.0;
                 case "A-": return 3.7;
                 case "B+": return 3.3;

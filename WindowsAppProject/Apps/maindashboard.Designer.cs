@@ -34,9 +34,6 @@ namespace WindowsAppProject
             this.rjPanel6 = new RoundedPanelClass.RJPanel();
             this.rjPanel2 = new RoundedPanelClass.RJPanel();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.rjPanel4 = new RoundedPanelClass.RJPanel();
@@ -55,9 +52,10 @@ namespace WindowsAppProject
             this.rjButton4 = new CustomControls.RJControls.RJButton();
             this.rjButton3 = new CustomControls.RJControls.RJButton();
             this.rjPanel3 = new RoundedPanelClass.RJPanel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.rjPanel6.SuspendLayout();
             this.rjPanel2.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.rjPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,8 +80,9 @@ namespace WindowsAppProject
             // 
             this.rjPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
             this.rjPanel2.BorderRadius = 30;
+            this.rjPanel2.Controls.Add(this.textBox2);
+            this.rjPanel2.Controls.Add(this.textBox1);
             this.rjPanel2.Controls.Add(this.rjButton1);
-            this.rjPanel2.Controls.Add(this.panel2);
             this.rjPanel2.Controls.Add(this.panel1);
             this.rjPanel2.Controls.Add(this.rjButton2);
             this.rjPanel2.Controls.Add(this.rjPanel4);
@@ -119,42 +118,6 @@ namespace WindowsAppProject
             this.rjButton1.TextColor = System.Drawing.Color.DarkRed;
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click_1);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Location = new System.Drawing.Point(0, 190);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(369, 110);
-            this.panel2.TabIndex = 6;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.textBox2.Location = new System.Drawing.Point(0, 64);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(369, 34);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.textBox1.Location = new System.Drawing.Point(0, 18);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(369, 34);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel1
             // 
@@ -496,6 +459,32 @@ namespace WindowsAppProject
             this.rjPanel3.TabIndex = 0;
             this.rjPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.rjPanel3_Paint);
             // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(223)))), ((int)(((byte)(213)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.textBox2.Location = new System.Drawing.Point(-14, 260);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(393, 34);
+            this.textBox2.TabIndex = 7;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(223)))), ((int)(((byte)(213)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.textBox1.Location = new System.Drawing.Point(-14, 214);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(393, 34);
+            this.textBox1.TabIndex = 6;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // maindashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -516,8 +505,7 @@ namespace WindowsAppProject
             this.Load += new System.EventHandler(this.maindashboard_Load);
             this.rjPanel6.ResumeLayout(false);
             this.rjPanel2.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.rjPanel2.PerformLayout();
             this.rjPanel4.ResumeLayout(false);
             this.rjPanel4.PerformLayout();
             this.ResumeLayout(false);
@@ -542,13 +530,12 @@ namespace WindowsAppProject
         private System.Windows.Forms.Label label1;
         private RoundedPanelClass.RJPanel rjPanel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         private CustomControls.RJControls.RJButton rjButton1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
         private CustomControls.RJControls.RJButton rjButton9;
         private System.Windows.Forms.Label label6;
         private CustomControls.RJControls.RJButton rjButton10;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
