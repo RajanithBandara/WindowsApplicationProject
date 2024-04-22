@@ -61,9 +61,9 @@
             this.MenuItem.Dock = System.Windows.Forms.DockStyle.None;
             this.MenuItem.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MenuItem.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.MenuItem.Location = new System.Drawing.Point(67, 110);
+            this.MenuItem.Location = new System.Drawing.Point(75, 138);
             this.MenuItem.Name = "MenuItem";
-            this.MenuItem.Size = new System.Drawing.Size(52, 25);
+            this.MenuItem.Size = new System.Drawing.Size(116, 25);
             this.MenuItem.TabIndex = 9;
             this.MenuItem.Text = "MenuList";
             // 
@@ -76,9 +76,10 @@
             this.rjPanel4.GradientAngle = 90F;
             this.rjPanel4.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
             this.rjPanel4.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
-            this.rjPanel4.Location = new System.Drawing.Point(768, 14);
+            this.rjPanel4.Location = new System.Drawing.Point(864, 18);
+            this.rjPanel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjPanel4.Name = "rjPanel4";
-            this.rjPanel4.Size = new System.Drawing.Size(192, 62);
+            this.rjPanel4.Size = new System.Drawing.Size(216, 78);
             this.rjPanel4.TabIndex = 14;
             // 
             // lblCoID
@@ -87,9 +88,9 @@
             this.lblCoID.BackColor = System.Drawing.Color.Transparent;
             this.lblCoID.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
             this.lblCoID.ForeColor = System.Drawing.Color.White;
-            this.lblCoID.Location = new System.Drawing.Point(32, 15);
+            this.lblCoID.Location = new System.Drawing.Point(36, 19);
             this.lblCoID.Name = "lblCoID";
-            this.lblCoID.Size = new System.Drawing.Size(127, 32);
+            this.lblCoID.Size = new System.Drawing.Size(147, 38);
             this.lblCoID.TabIndex = 2;
             this.lblCoID.Text = "Course ID";
             // 
@@ -98,9 +99,10 @@
             this.StNaPanel.AutoScroll = true;
             this.StNaPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
             this.StNaPanel.ForeColor = System.Drawing.Color.Black;
-            this.StNaPanel.Location = new System.Drawing.Point(232, 80);
+            this.StNaPanel.Location = new System.Drawing.Point(261, 100);
+            this.StNaPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.StNaPanel.Name = "StNaPanel";
-            this.StNaPanel.Size = new System.Drawing.Size(529, 645);
+            this.StNaPanel.Size = new System.Drawing.Size(595, 806);
             this.StNaPanel.TabIndex = 20;
             // 
             // rjPanel1
@@ -121,10 +123,10 @@
             this.rjPanel1.GradientAngle = 90F;
             this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
             this.rjPanel1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
-            this.rjPanel1.Location = new System.Drawing.Point(29, 150);
+            this.rjPanel1.Location = new System.Drawing.Point(33, 188);
             this.rjPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel1.Name = "rjPanel1";
-            this.rjPanel1.Size = new System.Drawing.Size(1654, 738);
+            this.rjPanel1.Size = new System.Drawing.Size(1861, 922);
             this.rjPanel1.TabIndex = 11;
             // 
             // rjPanel6
@@ -136,9 +138,10 @@
             this.rjPanel6.GradientAngle = 90F;
             this.rjPanel6.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
             this.rjPanel6.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
-            this.rjPanel6.Location = new System.Drawing.Point(1460, 14);
+            this.rjPanel6.Location = new System.Drawing.Point(1642, 18);
+            this.rjPanel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjPanel6.Name = "rjPanel6";
-            this.rjPanel6.Size = new System.Drawing.Size(182, 62);
+            this.rjPanel6.Size = new System.Drawing.Size(205, 78);
             this.rjPanel6.TabIndex = 12;
             // 
             // lblGPA
@@ -147,9 +150,9 @@
             this.lblGPA.BackColor = System.Drawing.Color.Transparent;
             this.lblGPA.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
             this.lblGPA.ForeColor = System.Drawing.Color.White;
-            this.lblGPA.Location = new System.Drawing.Point(60, 15);
+            this.lblGPA.Location = new System.Drawing.Point(68, 19);
             this.lblGPA.Name = "lblGPA";
-            this.lblGPA.Size = new System.Drawing.Size(61, 32);
+            this.lblGPA.Size = new System.Drawing.Size(73, 38);
             this.lblGPA.TabIndex = 1;
             this.lblGPA.Text = "GPA";
             // 
@@ -162,9 +165,10 @@
             this.rjPanel5.GradientAngle = 90F;
             this.rjPanel5.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
             this.rjPanel5.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
-            this.rjPanel5.Location = new System.Drawing.Point(965, 14);
+            this.rjPanel5.Location = new System.Drawing.Point(1086, 18);
+            this.rjPanel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjPanel5.Name = "rjPanel5";
-            this.rjPanel5.Size = new System.Drawing.Size(489, 62);
+            this.rjPanel5.Size = new System.Drawing.Size(550, 78);
             this.rjPanel5.TabIndex = 13;
             // 
             // lblCoName
@@ -173,9 +177,9 @@
             this.lblCoName.BackColor = System.Drawing.Color.Transparent;
             this.lblCoName.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
             this.lblCoName.ForeColor = System.Drawing.Color.White;
-            this.lblCoName.Location = new System.Drawing.Point(159, 15);
+            this.lblCoName.Location = new System.Drawing.Point(179, 19);
             this.lblCoName.Name = "lblCoName";
-            this.lblCoName.Size = new System.Drawing.Size(170, 32);
+            this.lblCoName.Size = new System.Drawing.Size(196, 38);
             this.lblCoName.TabIndex = 1;
             this.lblCoName.Text = "Course Name";
             // 
@@ -188,9 +192,10 @@
             this.rjPanel3.GradientAngle = 90F;
             this.rjPanel3.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
             this.rjPanel3.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
-            this.rjPanel3.Location = new System.Drawing.Point(231, 14);
+            this.rjPanel3.Location = new System.Drawing.Point(260, 18);
+            this.rjPanel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjPanel3.Name = "rjPanel3";
-            this.rjPanel3.Size = new System.Drawing.Size(532, 62);
+            this.rjPanel3.Size = new System.Drawing.Size(598, 78);
             this.rjPanel3.TabIndex = 15;
             // 
             // lblStName
@@ -199,9 +204,9 @@
             this.lblStName.BackColor = System.Drawing.Color.Transparent;
             this.lblStName.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
             this.lblStName.ForeColor = System.Drawing.Color.White;
-            this.lblStName.Location = new System.Drawing.Point(175, 15);
+            this.lblStName.Location = new System.Drawing.Point(197, 19);
             this.lblStName.Name = "lblStName";
-            this.lblStName.Size = new System.Drawing.Size(181, 32);
+            this.lblStName.Size = new System.Drawing.Size(207, 38);
             this.lblStName.TabIndex = 2;
             this.lblStName.Text = "Student Name";
             // 
@@ -214,9 +219,10 @@
             this.rjPanel2.GradientAngle = 90F;
             this.rjPanel2.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
             this.rjPanel2.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
-            this.rjPanel2.Location = new System.Drawing.Point(14, 14);
+            this.rjPanel2.Location = new System.Drawing.Point(16, 18);
+            this.rjPanel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjPanel2.Name = "rjPanel2";
-            this.rjPanel2.Size = new System.Drawing.Size(213, 62);
+            this.rjPanel2.Size = new System.Drawing.Size(240, 78);
             this.rjPanel2.TabIndex = 11;
             // 
             // lblStID
@@ -225,9 +231,9 @@
             this.lblStID.BackColor = System.Drawing.Color.Transparent;
             this.lblStID.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
             this.lblStID.ForeColor = System.Drawing.Color.White;
-            this.lblStID.Location = new System.Drawing.Point(37, 15);
+            this.lblStID.Location = new System.Drawing.Point(42, 19);
             this.lblStID.Name = "lblStID";
-            this.lblStID.Size = new System.Drawing.Size(138, 32);
+            this.lblStID.Size = new System.Drawing.Size(158, 38);
             this.lblStID.TabIndex = 0;
             this.lblStID.Text = "Student ID";
             // 
@@ -236,9 +242,10 @@
             this.GPAPanel.AutoScroll = true;
             this.GPAPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
             this.GPAPanel.ForeColor = System.Drawing.Color.Black;
-            this.GPAPanel.Location = new System.Drawing.Point(1460, 80);
+            this.GPAPanel.Location = new System.Drawing.Point(1642, 100);
+            this.GPAPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.GPAPanel.Name = "GPAPanel";
-            this.GPAPanel.Size = new System.Drawing.Size(182, 645);
+            this.GPAPanel.Size = new System.Drawing.Size(205, 806);
             this.GPAPanel.TabIndex = 19;
             // 
             // CoNaPanel
@@ -246,9 +253,10 @@
             this.CoNaPanel.AutoScroll = true;
             this.CoNaPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
             this.CoNaPanel.ForeColor = System.Drawing.Color.Black;
-            this.CoNaPanel.Location = new System.Drawing.Point(966, 80);
+            this.CoNaPanel.Location = new System.Drawing.Point(1087, 100);
+            this.CoNaPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CoNaPanel.Name = "CoNaPanel";
-            this.CoNaPanel.Size = new System.Drawing.Size(489, 645);
+            this.CoNaPanel.Size = new System.Drawing.Size(550, 806);
             this.CoNaPanel.TabIndex = 18;
             // 
             // CoIDPanel
@@ -256,9 +264,10 @@
             this.CoIDPanel.AutoScroll = true;
             this.CoIDPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
             this.CoIDPanel.ForeColor = System.Drawing.Color.Black;
-            this.CoIDPanel.Location = new System.Drawing.Point(766, 80);
+            this.CoIDPanel.Location = new System.Drawing.Point(862, 100);
+            this.CoIDPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CoIDPanel.Name = "CoIDPanel";
-            this.CoIDPanel.Size = new System.Drawing.Size(194, 645);
+            this.CoIDPanel.Size = new System.Drawing.Size(218, 806);
             this.CoIDPanel.TabIndex = 17;
             // 
             // StIDPanel
@@ -266,9 +275,10 @@
             this.StIDPanel.AutoScroll = true;
             this.StIDPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
             this.StIDPanel.ForeColor = System.Drawing.Color.Black;
-            this.StIDPanel.Location = new System.Drawing.Point(13, 80);
+            this.StIDPanel.Location = new System.Drawing.Point(15, 100);
+            this.StIDPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.StIDPanel.Name = "StIDPanel";
-            this.StIDPanel.Size = new System.Drawing.Size(213, 645);
+            this.StIDPanel.Size = new System.Drawing.Size(240, 806);
             this.StIDPanel.TabIndex = 16;
             // 
             // label1
@@ -277,9 +287,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 28.8F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
-            this.label1.Location = new System.Drawing.Point(514, 29);
+            this.label1.Location = new System.Drawing.Point(578, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(700, 65);
+            this.label1.Size = new System.Drawing.Size(846, 77);
             this.label1.TabIndex = 8;
             this.label1.Text = "Registerd Students Dashbord.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -295,26 +305,29 @@
             this.rjbtnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjbtnSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.rjbtnSearch.ForeColor = System.Drawing.Color.White;
-            this.rjbtnSearch.Location = new System.Drawing.Point(1396, 65);
+            this.rjbtnSearch.Location = new System.Drawing.Point(1570, 81);
+            this.rjbtnSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjbtnSearch.Name = "rjbtnSearch";
-            this.rjbtnSearch.Size = new System.Drawing.Size(309, 42);
+            this.rjbtnSearch.Size = new System.Drawing.Size(348, 52);
             this.rjbtnSearch.TabIndex = 10;
             this.rjbtnSearch.Text = "View Studentwise Details";
             this.rjbtnSearch.TextColor = System.Drawing.Color.White;
             this.rjbtnSearch.UseVisualStyleBackColor = false;
+            this.rjbtnSearch.Click += new System.EventHandler(this.rjbtnSearch_Click);
             // 
             // all_student_content
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(223)))), ((int)(((byte)(213)))));
-            this.ClientSize = new System.Drawing.Size(1710, 844);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.MenuItem);
             this.Controls.Add(this.rjPanel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rjbtnSearch);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "all_student_content";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

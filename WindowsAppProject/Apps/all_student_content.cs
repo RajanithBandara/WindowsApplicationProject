@@ -174,5 +174,6 @@ namespace WindowsAppProject.Apps
             student_det_viewform viewform = new student_det_viewform();
             viewform.Show();
         }
+
     }
 }
