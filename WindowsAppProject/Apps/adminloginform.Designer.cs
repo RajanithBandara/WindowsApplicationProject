@@ -60,12 +60,12 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = global::WindowsAppProject.Properties.Resources._24OKoU_LogoMakr;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel1.Location = new System.Drawing.Point(25, 46);
+            this.panel1.BackgroundImage = global::WindowsAppProject.Properties.Resources._08Xd0g_LogoMakr;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel1.Location = new System.Drawing.Point(25, 37);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(281, 232);
+            this.panel1.Size = new System.Drawing.Size(281, 254);
             this.panel1.TabIndex = 6;
             // 
             // rjPanel1
