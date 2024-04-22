@@ -322,7 +322,7 @@
             this.MenuItem.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.MenuItem.Location = new System.Drawing.Point(7, 6);
             this.MenuItem.Name = "MenuItem";
-            this.MenuItem.Size = new System.Drawing.Size(64, 28);
+            this.MenuItem.Size = new System.Drawing.Size(116, 25);
             this.MenuItem.TabIndex = 10;
             this.MenuItem.Text = "MenuList";
             // 
