@@ -61,6 +61,9 @@
   <PropertyGroup>
     <SignManifests>true</SignManifests>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>WhatsApp_Image_2024-04-22_at_12.51.44_PM-removebg-preview.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
@@ -475,6 +478,7 @@
     <Content Include="ProjectDB.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="WhatsApp_Image_2024-04-22_at_12.51.44_PM-removebg-preview.ico" />
     <None Include="Resources\icons8-username-48.png" />
     <None Include="Resources\icons8-denied-48.png" />
     <None Include="Resources\icons8-users-48.png" />
