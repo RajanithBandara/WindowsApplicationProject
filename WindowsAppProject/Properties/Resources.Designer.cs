@@ -359,5 +359,65 @@ namespace WindowsAppProject.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_04_22_at_12_51_21_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-04-22 at 12.51.21 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_04_22_at_12_51_21_PM__1_ {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-04-22 at 12.51.21 PM (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_04_22_at_12_51_21_PM__1__removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp_Image_2024-04-22_at_12.51.21_PM__1_-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_04_22_at_12_51_21_PM_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp_Image_2024-04-22_at_12.51.21_PM-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_04_22_at_12_51_44_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-04-22 at 12.51.44 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_04_22_at_12_51_44_PM_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp_Image_2024-04-22_at_12.51.44_PM-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
