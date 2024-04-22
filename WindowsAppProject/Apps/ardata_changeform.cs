@@ -73,6 +73,7 @@ namespace WindowsAppProject.Apps
                 {
                     MessageBox.Show("Password and Retype Password are not the same");
                 }
+                conn.Close();
             }
         }
 
@@ -97,12 +98,12 @@ namespace WindowsAppProject.Apps
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            label12.Visible = true;
+            label11.Visible = true;
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
-            label11.Visible = true;
+            label12.Visible = true;
         }
     }
 }

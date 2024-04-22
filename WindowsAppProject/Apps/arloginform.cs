@@ -157,5 +157,11 @@ namespace WindowsAppProject.Apps
             adminloginform adminlogin = new adminloginform();
             adminlogin.Show();
         }
+
+        private void rjButton2_Click(object sender, EventArgs e)
+        {
+            ardata_changeform ardata_Changeform = new ardata_changeform();
+            ardata_Changeform.Show();
+        }
     }
 }
