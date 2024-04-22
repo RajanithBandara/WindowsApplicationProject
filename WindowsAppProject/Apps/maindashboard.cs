@@ -12,6 +12,9 @@ using WindowsAppProject.Apps;
 using System.Data.OleDb;
 using WindowsAppProject.Apps.usercontrol_maindashboard;
 using static WindowsAppProject.maindashboard;
+using System.Data.Common;
+using System.Data.SqlClient;
+using System.IO;
 
 namespace WindowsAppProject
 {
@@ -90,6 +93,8 @@ namespace WindowsAppProject
             label2.Visible = false;
             label3.Visible = false;
             label4.Visible = false;
+            label5.Visible = false;
+            label6.Visible = false;
             await Task.Delay(1200);
             displayusrctrl();
             ardataload();
@@ -373,5 +378,112 @@ namespace WindowsAppProject
             }
         }
 
+        private void rjButton9_Click(object sender, EventArgs e)
+        {
+            student_remove student_remov = new student_remove();
+            addusercontrol(student_remov);
+        }
+
+        private void rjButton9_MouseHover(object sender, EventArgs e)
+        {
+            label5.Visible = true;
+        }
+
+        private void rjButton9_MouseLeave(object sender, EventArgs e)
+        {
+            label5.Visible = false;
+        }
+
+        private void rjButton10_Click(object sender, EventArgs e)
+        {
+            ExportToCSV();
+        }
+
+        private void ExportToCSV()
+        {
+            string connectionString = dbconnection.Instance.ConnectionString;
+            DataSet dataSet = new DataSet();
+            string[] tableNames = { "courseTable", "student", "studentgpa", "studentmoduleresult" };
+
+            using (OleDbConnection connection = new OleDbConnection(connectionString))
+            {
+                connection.Open();
+                foreach (string tableName in tableNames)
+                {
+                    string query = $"SELECT * FROM {tableName}";
+                    using (OleDbCommand command = new OleDbCommand(query, connection))
+                    {
+                        OleDbDataAdapter adapter = new OleDbDataAdapter(command);
+                        adapter.Fill(dataSet, tableName);
+                    }
+                }
+                connection.Close();
+            }
+
+            string selectedFilePath = "";
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.Filter = "CSV files (*.csv)|*.csv";
+                saveFileDialog.Title = "Save CSV File";
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    selectedFilePath = saveFileDialog.FileName;
+                }
+                else
+                {
+                    MessageBox.Show("Invalid file selection.");
+                    return;
+                }
+            }
+
+            foreach (DataTable dataTable in dataSet.Tables)
+            {
+                string fileName = $"{dataTable.TableName}.csv";
+                SaveDataTableToCSV(dataTable, selectedFilePath);
+            }
+
+            MessageBox.Show("Data exported to CSV successfully!");
+        }
+
+        private void SaveDataTableToCSV(DataTable dataTable, string filePath)
+        {
+            using (StreamWriter writer = new StreamWriter(filePath, true))
+            {
+                foreach (DataColumn column in dataTable.Columns)
+                {
+                    writer.Write(column.ColumnName + ",");
+                }
+                writer.WriteLine();
+
+                foreach (DataRow row in dataTable.Rows)
+                {
+                    foreach (var item in row.ItemArray)
+                    {
+                        writer.Write(item.ToString() + ",");
+                    }
+                    writer.WriteLine();
+                }
+
+                writer.WriteLine();
+
+                for (int i = 0; i < dataTable.Columns.Count; i++)
+                {
+                    writer.Write("----,");
+
+                    if (i == dataTable.Columns.Count - 1)
+                        writer.WriteLine();
+                }
+            }
+        }
+
+        private void rjButton10_MouseHover(object sender, EventArgs e)
+        {
+            label6.Visible = true;
+        }
+
+        private void rjButton10_MouseLeave(object sender, EventArgs e)
+        {
+            label6.Visible = false;
+        }
     }
 }

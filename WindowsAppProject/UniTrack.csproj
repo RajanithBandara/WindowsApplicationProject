@@ -212,6 +212,12 @@
     <Compile Include="Apps\usercontrol_maindashboard\maindash_loading.Designer.cs">
       <DependentUpon>maindash_loading.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apps\usercontrol_maindashboard\student_remove.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\usercontrol_maindashboard\student_remove.Designer.cs">
+      <DependentUpon>student_remove.cs</DependentUpon>
+    </Compile>
     <Compile Include="Apps\usercontrol_progressiondash\GPA distribution.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -390,6 +396,9 @@
     <EmbeddedResource Include="Apps\usercontrol_maindashboard\student_register_usrctrl.resx">
       <DependentUpon>student_register_usrctrl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Apps\usercontrol_maindashboard\student_remove.resx">
+      <DependentUpon>student_remove.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Apps\usercontrol_maindashboard\student_top_view.resx">
       <DependentUpon>student_top_view.cs</DependentUpon>
     </EmbeddedResource>
@@ -469,6 +478,8 @@
     <Content Include="ProjectDB.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\icons8-export-csv-48.png" />
+    <None Include="Resources\icons8-remove-48.png" />
     <None Include="Resources\7eyl51-LogoMakr.png" />
     <None Include="Resources\08Xd0g-LogoMakr.png" />
     <None Include="Resources\WhatsApp_Image_2024-04-22_at_12.51.44_PM-removebg-preview.png" />

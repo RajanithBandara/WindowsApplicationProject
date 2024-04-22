@@ -43,5 +43,10 @@ namespace WindowsAppProject.Apps.usercontrol_adminpanel
                 }
             }
         }
+
+        private void rjButton1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+        }
     }
 }

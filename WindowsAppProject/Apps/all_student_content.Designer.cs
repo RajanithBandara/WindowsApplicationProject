@@ -61,9 +61,9 @@
             this.MenuItem.Dock = System.Windows.Forms.DockStyle.None;
             this.MenuItem.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MenuItem.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.MenuItem.Location = new System.Drawing.Point(75, 138);
+            this.MenuItem.Location = new System.Drawing.Point(40, 138);
             this.MenuItem.Name = "MenuItem";
-            this.MenuItem.Size = new System.Drawing.Size(116, 25);
+            this.MenuItem.Size = new System.Drawing.Size(64, 28);
             this.MenuItem.TabIndex = 9;
             this.MenuItem.Text = "MenuList";
             // 
