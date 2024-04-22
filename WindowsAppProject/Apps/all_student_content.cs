@@ -69,8 +69,8 @@ namespace WindowsAppProject.Apps
         {
             try
             {
-                int yoffset = 30;
-                int height = 35;
+                int yoffset = 55;
+                int height = 45;
                 StIDPanel.Controls.Clear();
                 StNaPanel.Controls.Clear();
                 CoIDPanel.Controls.Clear();
