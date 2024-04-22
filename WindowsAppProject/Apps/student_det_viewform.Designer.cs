@@ -129,6 +129,9 @@
             this.Controls.Add(this.rjPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(782, 417);
+            this.MinimumSize = new System.Drawing.Size(782, 417);
             this.Name = "student_det_viewform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form1";

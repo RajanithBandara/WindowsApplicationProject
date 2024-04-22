@@ -320,6 +320,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "ardata_changeform";
             this.Text = "ardata_changeform";
             this.Load += new System.EventHandler(this.ardata_changeform_Load);

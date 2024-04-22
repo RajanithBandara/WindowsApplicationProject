@@ -51,10 +51,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.mainpanelstd = new RoundedPanelClass.RJPanel();
             this.rjPanel1 = new RoundedPanelClass.RJPanel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.rjPanel6.SuspendLayout();
             this.panel1.SuspendLayout();
             this.rjPanel4.SuspendLayout();
@@ -395,6 +395,14 @@
             this.rjPanel1.Size = new System.Drawing.Size(294, 200);
             this.rjPanel1.TabIndex = 0;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(127, 153);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(164, 36);
+            this.panel2.TabIndex = 0;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -404,16 +412,6 @@
             this.label3.Size = new System.Drawing.Size(65, 25);
             this.label3.TabIndex = 0;
             this.label3.Text = "label3";
-            // 
-            // panel3
-            // 
-            this.panel3.BackgroundImage = global::WindowsAppProject.Properties.Resources.user;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel3.Location = new System.Drawing.Point(38, 19);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(226, 129);
-            this.panel3.TabIndex = 1;
             // 
             // label9
             // 
@@ -425,13 +423,15 @@
             this.label9.TabIndex = 2;
             this.label9.Text = "Student ID :";
             // 
-            // panel2
+            // panel3
             // 
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(127, 153);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(164, 36);
-            this.panel2.TabIndex = 0;
+            this.panel3.BackgroundImage = global::WindowsAppProject.Properties.Resources.user;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel3.Location = new System.Drawing.Point(38, 19);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(226, 129);
+            this.panel3.TabIndex = 1;
             // 
             // std_dashboard
             // 
@@ -446,7 +446,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1685, 950);
+            this.MaximumSize = new System.Drawing.Size(1670, 947);
+            this.MinimumSize = new System.Drawing.Size(1670, 947);
             this.Name = "std_dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "std_dashboard";

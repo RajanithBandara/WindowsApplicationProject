@@ -340,6 +340,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1946, 1111);
+            this.MinimumSize = new System.Drawing.Size(1946, 1111);
             this.Name = "all_student_content";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "all_student_content";

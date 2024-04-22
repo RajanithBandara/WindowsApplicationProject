@@ -338,6 +338,9 @@
             this.ClientSize = new System.Drawing.Size(724, 811);
             this.Controls.Add(this.rjPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(746, 867);
+            this.MinimumSize = new System.Drawing.Size(746, 867);
             this.Name = "profile_settings";
             this.Text = "profile_settings";
             this.Load += new System.EventHandler(this.profile_settings_Load);

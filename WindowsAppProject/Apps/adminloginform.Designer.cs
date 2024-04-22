@@ -51,10 +51,10 @@
             this.rjPanel2.GradientAngle = 90F;
             this.rjPanel2.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
             this.rjPanel2.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
-            this.rjPanel2.Location = new System.Drawing.Point(11, 119);
+            this.rjPanel2.Location = new System.Drawing.Point(12, 149);
             this.rjPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel2.Name = "rjPanel2";
-            this.rjPanel2.Size = new System.Drawing.Size(331, 324);
+            this.rjPanel2.Size = new System.Drawing.Size(372, 405);
             this.rjPanel2.TabIndex = 1;
             // 
             // panel1
@@ -62,10 +62,10 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::WindowsAppProject.Properties.Resources._08Xd0g_LogoMakr;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1.Location = new System.Drawing.Point(25, 37);
+            this.panel1.Location = new System.Drawing.Point(28, 46);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(281, 254);
+            this.panel1.Size = new System.Drawing.Size(316, 318);
             this.panel1.TabIndex = 6;
             // 
             // rjPanel1
@@ -82,10 +82,10 @@
             this.rjPanel1.GradientAngle = 90F;
             this.rjPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
             this.rjPanel1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
-            this.rjPanel1.Location = new System.Drawing.Point(359, 15);
+            this.rjPanel1.Location = new System.Drawing.Point(404, 19);
             this.rjPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjPanel1.Name = "rjPanel1";
-            this.rjPanel1.Size = new System.Drawing.Size(540, 593);
+            this.rjPanel1.Size = new System.Drawing.Size(608, 741);
             this.rjPanel1.TabIndex = 0;
             this.rjPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.rjPanel1_Paint);
             // 
@@ -93,10 +93,10 @@
             // 
             this.button1.BackgroundImage = global::WindowsAppProject.Properties.Resources.eye_25x25;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Location = new System.Drawing.Point(459, 254);
+            this.button1.Location = new System.Drawing.Point(516, 318);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(39, 30);
+            this.button1.Size = new System.Drawing.Size(44, 38);
             this.button1.TabIndex = 5;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -112,10 +112,10 @@
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(186, 382);
+            this.rjButton1.Location = new System.Drawing.Point(209, 478);
             this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(168, 50);
+            this.rjButton1.Size = new System.Drawing.Size(189, 62);
             this.rjButton1.TabIndex = 4;
             this.rjButton1.Text = "Login";
             this.rjButton1.TextColor = System.Drawing.Color.White;
@@ -128,11 +128,11 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.Color.Black;
-            this.textBox2.Location = new System.Drawing.Point(214, 257);
+            this.textBox2.Location = new System.Drawing.Point(241, 321);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(244, 25);
+            this.textBox2.Size = new System.Drawing.Size(274, 30);
             this.textBox2.TabIndex = 3;
             // 
             // textBox1
@@ -141,10 +141,10 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F);
             this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(214, 164);
+            this.textBox1.Location = new System.Drawing.Point(241, 205);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(283, 25);
+            this.textBox1.Size = new System.Drawing.Size(318, 30);
             this.textBox1.TabIndex = 2;
             // 
             // label2
@@ -153,9 +153,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
-            this.label2.Location = new System.Drawing.Point(54, 254);
+            this.label2.Location = new System.Drawing.Point(61, 318);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 31);
+            this.label2.Size = new System.Drawing.Size(139, 38);
             this.label2.TabIndex = 1;
             this.label2.Text = "Password";
             // 
@@ -165,23 +165,25 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
-            this.label1.Location = new System.Drawing.Point(54, 161);
+            this.label1.Location = new System.Drawing.Point(61, 201);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 31);
+            this.label1.Size = new System.Drawing.Size(148, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Username";
             // 
             // adminloginform
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(223)))), ((int)(((byte)(213)))));
-            this.ClientSize = new System.Drawing.Size(922, 621);
+            this.ClientSize = new System.Drawing.Size(1037, 776);
             this.Controls.Add(this.rjPanel2);
             this.Controls.Add(this.rjPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1059, 832);
+            this.MinimumSize = new System.Drawing.Size(1059, 832);
             this.Name = "adminloginform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "adminloginform";
