@@ -61,6 +61,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(297, 30);
             this.textBox1.TabIndex = 0;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
@@ -74,6 +75,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(297, 30);
             this.textBox2.TabIndex = 1;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox2.UseSystemPasswordChar = true;
             // 
             // label1
@@ -171,10 +173,11 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(69, 220);
+            this.pictureBox3.Image = global::WindowsAppProject.Properties.Resources.icons8_username_48;
+            this.pictureBox3.Location = new System.Drawing.Point(69, 216);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(22, 31);
+            this.pictureBox3.Size = new System.Drawing.Size(36, 35);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
@@ -232,9 +235,9 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
             this.label3.Location = new System.Drawing.Point(27, 366);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(339, 38);
+            this.label3.Size = new System.Drawing.Size(330, 38);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Welcome to Uni Track";
+            this.label3.Text = "Welcome to UniTrack";
             // 
             // Hint1
             // 
