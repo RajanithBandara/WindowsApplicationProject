@@ -239,9 +239,9 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
             this.label3.Location = new System.Drawing.Point(86, 224);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(163, 32);
+            this.label3.Size = new System.Drawing.Size(290, 32);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Welcome to";
+            this.label3.Text = "Welcome to Uni Track";
             // 
             // pictureBox1
             // 

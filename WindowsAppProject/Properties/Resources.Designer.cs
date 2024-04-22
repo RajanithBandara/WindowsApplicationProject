@@ -63,6 +63,16 @@ namespace WindowsAppProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _08Xd0g_LogoMakr {
+            get {
+                object obj = ResourceManager.GetObject("08Xd0g-LogoMakr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _0lNSL4_LogoMakr {
             get {
                 object obj = ResourceManager.GetObject("0lNSL4-LogoMakr", resourceCulture);
@@ -86,6 +96,16 @@ namespace WindowsAppProject.Properties {
         internal static System.Drawing.Bitmap _57GMha_LogoMakr {
             get {
                 object obj = ResourceManager.GetObject("_57GMha_LogoMakr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _7eyl51_LogoMakr {
+            get {
+                object obj = ResourceManager.GetObject("7eyl51-LogoMakr", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

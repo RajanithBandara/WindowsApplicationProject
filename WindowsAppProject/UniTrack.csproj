@@ -469,6 +469,8 @@
     <Content Include="ProjectDB.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\7eyl51-LogoMakr.png" />
+    <None Include="Resources\08Xd0g-LogoMakr.png" />
     <None Include="Resources\WhatsApp_Image_2024-04-22_at_12.51.44_PM-removebg-preview.png" />
     <None Include="Resources\WhatsApp_Image_2024-04-22_at_12.51.21_PM__1_-removebg-preview.png" />
     <None Include="Resources\WhatsApp_Image_2024-04-22_at_12.51.21_PM-removebg-preview.png" />

@@ -70,7 +70,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::WindowsAppProject.Properties.Resources.WhatsApp_Image_2024_04_22_at_12_51_21_PM__1__removebg_preview;
+            this.panel1.BackgroundImage = global::WindowsAppProject.Properties.Resources._7eyl51_LogoMakr;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel1.Location = new System.Drawing.Point(127, 22);
             this.panel1.Name = "panel1";
