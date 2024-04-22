@@ -95,7 +95,7 @@ namespace WindowsAppProject.Apps
                                 string studentname = reader.GetString(1);
                                 string courseid = reader.GetString(2);
                                 string coursename = reader.GetString(3);
-                                double stdgpa = reader.GetDouble(4);
+                                double stdgpa = Math.Round(reader.GetDouble(4), 2);
 
                                 Label studentidlabel = new Label();
                                 studentidlabel.Text = studentid;

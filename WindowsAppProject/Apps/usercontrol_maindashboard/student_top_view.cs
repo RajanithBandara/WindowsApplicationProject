@@ -51,48 +51,52 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
                                 {
                                     Label lbl = new Label();
                                     lbl.ForeColor = Color.White;
-                                    lbl.Location = new Point(40, 75 + yoffset);
-                                    lbl.BackColor = Color.DarkGray;
+                                    lbl.Location = new Point(0, 75 + yoffset);
+                                    lbl.BackColor = Color.FromArgb(132, 169, 172);
                                     lbl.Text = student_id;
                                     lbl.AutoSize = false;
+                                    lbl.TextAlign = ContentAlignment.MiddleCenter;
                                     lbl.Height = 50;
-                                    lbl.Width = 100;
+                                    lbl.Width = panel1.Width;
                                     lbl.Font = new Font("Microsoft Sans Serif", 18);
                                     panel1.Controls.Add(lbl);
 
                                     Label lbl2 = new Label();
                                     lbl2.ForeColor = Color.White;
-                                    lbl2.Location = new Point(40, 75 + yoffset);
-                                    lbl2.BackColor = Color.Transparent;
+                                    lbl2.Location = new Point(0, 75 + yoffset);
+                                    lbl2.BackColor = Color.FromArgb(132, 169, 172);
                                     lbl2.Text = student_name;
+                                    lbl2.TextAlign = ContentAlignment.MiddleCenter;
                                     lbl2.AutoSize = false;
                                     lbl2.Height = 50;
-                                    lbl2.Width = 450;
+                                    lbl2.Width = panel2.Width;
                                     lbl2.Font = new Font("Microsoft Sans Serif", 18);
                                     panel2.Controls.Add(lbl2);
 
                                     Label lbl3 = new Label();
                                     lbl3.ForeColor = Color.White;
-                                    lbl3.Location = new Point(40, 75 + yoffset);
-                                    lbl3.BackColor = Color.Transparent;
+                                    lbl3.Location = new Point(0, 75 + yoffset);
+                                    lbl3.BackColor = Color.FromArgb(132, 169, 172);
                                     lbl3.Text = course_id;
+                                    lbl3.TextAlign = ContentAlignment.MiddleCenter;
                                     lbl3.AutoSize = false;
                                     lbl3.Height = 50;
-                                    lbl3.Width = 120;
+                                    lbl3.Width = panel4.Width;
                                     lbl3.Font = new Font("Microsoft Sans Serif", 18);
                                     panel4.Controls.Add(lbl3);
 
                                     Label lbl4 = new Label();
                                     lbl4.ForeColor = Color.White;
-                                    lbl4.Location = new Point(40, 75 + yoffset);
-                                    lbl4.BackColor = Color.Transparent;
+                                    lbl4.Location = new Point(0, 75 + yoffset);
+                                    lbl4.BackColor = Color.FromArgb(132, 169, 172);
                                     lbl4.Text = formatted_gpa;
+                                    lbl4.TextAlign = ContentAlignment.MiddleCenter; 
                                     lbl4.AutoSize = false;
                                     lbl4.Height = 50;
-                                    lbl4.Width = 116;
+                                    lbl4.Width = panel3.Width;
                                     lbl4.Font = new Font("Microsoft Sans Serif", 18);
                                     panel3.Controls.Add(lbl4);
-                                    yoffset = yoffset + 50;
+                                    yoffset = yoffset + 57;
                                 });
                             }
                             if (!reader.HasRows)

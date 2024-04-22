@@ -15,11 +15,21 @@ namespace WindowsAppProject.Apps
         public student_det_viewform()
         {
             InitializeComponent();
+            this.KeyPreview = true;
+            this.KeyPress += task_enter;
         }
 
         private void rjButton2_Click(object sender, EventArgs e)
         {
             textBox1.Text = string.Empty;
+        }
+
+        private void task_enter(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                rjButton1_Click(sender, e);
+            }
         }
 
         private void rjButton1_Click(object sender, EventArgs e)

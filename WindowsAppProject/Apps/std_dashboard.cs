@@ -48,8 +48,13 @@ namespace WindowsAppProject.Apps
             label1.Visible = false;
             label2.Visible = false;
             label3.Text = StudentIdGetter.StudentId;
+            label3.AutoSize = false;
+            label3.Width = panel2.Width;
+            label3.TextAlign = ContentAlignment.MiddleCenter;
             addardata();
             studentnameget();
+            testchart testchart = new testchart();  
+            addusercontrol(testchart);
         }
         
         private void addardata()
