@@ -167,6 +167,8 @@
             this.rjButton4.TextColor = System.Drawing.Color.White;
             this.rjButton4.UseVisualStyleBackColor = false;
             this.rjButton4.Click += new System.EventHandler(this.rjButton4_Click);
+            this.rjButton4.MouseLeave += new System.EventHandler(this.rjButton4_MouseLeave);
+            this.rjButton4.MouseHover += new System.EventHandler(this.rjButton4_MouseHover);
             // 
             // label7
             // 
@@ -201,6 +203,8 @@
             this.rjButton3.TextColor = System.Drawing.Color.White;
             this.rjButton3.UseVisualStyleBackColor = false;
             this.rjButton3.Click += new System.EventHandler(this.rjButton3_Click);
+            this.rjButton3.MouseLeave += new System.EventHandler(this.rjButton3_MouseLeave);
+            this.rjButton3.MouseHover += new System.EventHandler(this.rjButton3_MouseHover);
             // 
             // label2
             // 

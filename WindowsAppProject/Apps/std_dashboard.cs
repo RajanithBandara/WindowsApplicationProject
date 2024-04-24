@@ -47,6 +47,8 @@ namespace WindowsAppProject.Apps
         {
             label1.Visible = false;
             label2.Visible = false;
+            label7.Visible = false;
+            label8.Visible = false;
             label3.Text = StudentIdGetter.StudentId;
             label3.AutoSize = false;
             label3.Width = panel2.Width;
@@ -160,6 +162,23 @@ namespace WindowsAppProject.Apps
             std_dashboard std_Dashboard = new std_dashboard();
             std_Dashboard.Show();
             studentnameget();
+        }
+
+        private void rjButton4_MouseHover(object sender, EventArgs e)
+        {
+            label8.Visible = true;
+        }
+        private void rjButton4_MouseLeave(object sender, EventArgs e)
+        {
+            label8.Visible = false;
+        }
+        private void rjButton3_MouseHover(object sender,EventArgs e)
+        {
+            label7.Visible = true;
+        }
+        private void rjButton3_MouseLeave(object sender, EventArgs e)
+        {
+            label7.Visible = false;
         }
     }
 }

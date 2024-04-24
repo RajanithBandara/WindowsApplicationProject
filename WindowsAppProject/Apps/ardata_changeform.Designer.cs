@@ -232,6 +232,8 @@
             this.rjButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.rjButton1.TextColor = System.Drawing.Color.White;
             this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.MouseLeave += new System.EventHandler(this.rjButton1_MouseLeave);
+            this.rjButton1.MouseHover += new System.EventHandler(this.rjButton1_Mousehover);
             // 
             // Hint1
             // 
@@ -253,6 +255,8 @@
             this.Hint1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Hint1.TextColor = System.Drawing.Color.White;
             this.Hint1.UseVisualStyleBackColor = false;
+            this.Hint1.MouseLeave += new System.EventHandler(this.Hint1_MouseLeave);
+            this.Hint1.MouseHover += new System.EventHandler(this.Hint1_MouseHover);
             // 
             // rjButton3
             // 

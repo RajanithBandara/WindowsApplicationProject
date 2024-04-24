@@ -105,5 +105,23 @@ namespace WindowsAppProject.Apps
         {
             label12.Visible = true;
         }
+
+        private void Hint1_MouseHover(object sender, EventArgs e)
+        {
+            textBox2.PasswordChar = '\0';
+
+        }
+        private void Hint1_MouseLeave(object sender, EventArgs e)
+        {
+            textBox2.PasswordChar = '*';
+        }
+        private void rjButton1_Mousehover(object sender, EventArgs e)
+        {
+            textBox3.PasswordChar = '\0';
+        }
+        private void rjButton1_MouseLeave(object sender, EventArgs e)
+        {
+            textBox3.PasswordChar = '*';
+        }
     }
 }

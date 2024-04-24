@@ -35,6 +35,8 @@
             this.rjPanel1 = new RoundedPanelClass.RJPanel();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.Hint1 = new CustomControls.RJControls.RJButton();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.rjButton3 = new CustomControls.RJControls.RJButton();
@@ -47,8 +49,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.rjButton1 = new CustomControls.RJControls.RJButton();
-            this.Hint1 = new CustomControls.RJControls.RJButton();
             this.rjPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -133,6 +133,48 @@
             this.textBox5.Size = new System.Drawing.Size(318, 30);
             this.textBox5.TabIndex = 49;
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // rjButton1
+            // 
+            this.rjButton1.BackColor = System.Drawing.Color.White;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.White;
+            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton1.BorderRadius = 0;
+            this.rjButton1.BorderSize = 0;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.ForeColor = System.Drawing.Color.White;
+            this.rjButton1.Image = ((System.Drawing.Image)(resources.GetObject("rjButton1.Image")));
+            this.rjButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.rjButton1.Location = new System.Drawing.Point(860, 353);
+            this.rjButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(36, 30);
+            this.rjButton1.TabIndex = 21;
+            this.rjButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.UseVisualStyleBackColor = false;
+            // 
+            // Hint1
+            // 
+            this.Hint1.BackColor = System.Drawing.Color.White;
+            this.Hint1.BackgroundColor = System.Drawing.Color.White;
+            this.Hint1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.Hint1.BorderRadius = 0;
+            this.Hint1.BorderSize = 0;
+            this.Hint1.FlatAppearance.BorderSize = 0;
+            this.Hint1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Hint1.ForeColor = System.Drawing.Color.White;
+            this.Hint1.Image = ((System.Drawing.Image)(resources.GetObject("Hint1.Image")));
+            this.Hint1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Hint1.Location = new System.Drawing.Point(858, 284);
+            this.Hint1.Margin = new System.Windows.Forms.Padding(4);
+            this.Hint1.Name = "Hint1";
+            this.Hint1.Size = new System.Drawing.Size(36, 30);
+            this.Hint1.TabIndex = 20;
+            this.Hint1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Hint1.TextColor = System.Drawing.Color.White;
+            this.Hint1.UseVisualStyleBackColor = false;
             // 
             // textBox3
             // 
@@ -307,48 +349,6 @@
             this.textBox1.Size = new System.Drawing.Size(318, 30);
             this.textBox1.TabIndex = 41;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // rjButton1
-            // 
-            this.rjButton1.BackColor = System.Drawing.Color.White;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.White;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 0;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Image = ((System.Drawing.Image)(resources.GetObject("rjButton1.Image")));
-            this.rjButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.rjButton1.Location = new System.Drawing.Point(862, 354);
-            this.rjButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(36, 31);
-            this.rjButton1.TabIndex = 21;
-            this.rjButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            // 
-            // Hint1
-            // 
-            this.Hint1.BackColor = System.Drawing.Color.White;
-            this.Hint1.BackgroundColor = System.Drawing.Color.White;
-            this.Hint1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.Hint1.BorderRadius = 0;
-            this.Hint1.BorderSize = 0;
-            this.Hint1.FlatAppearance.BorderSize = 0;
-            this.Hint1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Hint1.ForeColor = System.Drawing.Color.White;
-            this.Hint1.Image = ((System.Drawing.Image)(resources.GetObject("Hint1.Image")));
-            this.Hint1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Hint1.Location = new System.Drawing.Point(858, 284);
-            this.Hint1.Margin = new System.Windows.Forms.Padding(4);
-            this.Hint1.Name = "Hint1";
-            this.Hint1.Size = new System.Drawing.Size(36, 31);
-            this.Hint1.TabIndex = 20;
-            this.Hint1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Hint1.TextColor = System.Drawing.Color.White;
-            this.Hint1.UseVisualStyleBackColor = false;
             // 
             // ar_reg
             // 
