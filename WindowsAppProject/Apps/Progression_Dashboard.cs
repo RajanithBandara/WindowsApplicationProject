@@ -169,7 +169,14 @@ namespace WindowsAppProject.Apps
 
         }
 
-     
+        private void Progression_Dashboard_Load(object sender, EventArgs e)
+        {
 
+        }
+
+        private void chartOverallStudentProgression_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
