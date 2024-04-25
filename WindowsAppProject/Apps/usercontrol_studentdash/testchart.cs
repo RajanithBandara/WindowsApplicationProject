@@ -16,7 +16,7 @@ namespace WindowsAppProject.Apps.usercontrol_studentdash
         private int semesters;
         private string userid;
         private PlotView plotView;
-
+       
         public testchart()
         {
             InitializeComponent();

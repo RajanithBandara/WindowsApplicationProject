@@ -343,9 +343,9 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(20, 145);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(142, 30);
+            this.label6.Size = new System.Drawing.Size(84, 30);
             this.label6.TabIndex = 11;
-            this.label6.Text = "Current GPA";
+            this.label6.Text = "Course";
             // 
             // label5
             // 
@@ -353,9 +353,9 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(20, 90);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 30);
+            this.label5.Size = new System.Drawing.Size(161, 30);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Course";
+            this.label5.Text = "Student Name";
             // 
             // label4
             // 
@@ -363,9 +363,9 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(20, 35);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(161, 30);
+            this.label4.Size = new System.Drawing.Size(57, 30);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Student Name";
+            this.label4.Text = "GPA";
             // 
             // mainpanelstd
             // 
