@@ -27,21 +27,34 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
             using (OleDbConnection conn = new OleDbConnection(connectstr))
             {
                 conn.Open();
-                string sql = "INSERT INTO student VALUES(@StudentID, @StudentName, @courseid)";
-                string sql3 = "Insert into studentgpa(studentid,studentgpa) values(@StudentID, @StudentGPA)";
-                string sql2 = "Select * from coursetable where courseid = ";
-                using (OleDbCommand cmd = new OleDbCommand(sql, conn))
+
+                string courseCheckQuery = "SELECT COUNT(*) FROM coursetable WHERE courseid = @CourseID";
+                using (OleDbCommand checkCmd = new OleDbCommand(courseCheckQuery, conn))
                 {
-                    cmd.Parameters.AddWithValue("StudentID", studentid);
-                    cmd.Parameters.AddWithValue("StudentName", studentname);
-                    cmd.Parameters.AddWithValue("courseid", studentcourse);
+                    checkCmd.Parameters.AddWithValue("@CourseID", studentcourse);
+                    int count = (int)checkCmd.ExecuteScalar();
+                    if (count == 0)
+                    {
+                        MessageBox.Show("Course not available. Please enter a valid course ID.");
+                        return; 
+                    }
+                }
+
+                string studentInsertQuery = "INSERT INTO student VALUES(@StudentID, @StudentName, @CourseID)";
+                string studentGPAInsertQuery = "INSERT INTO studentgpa(studentid, studentgpa) VALUES(@StudentID, @StudentGPA)";
+
+                using (OleDbCommand cmd = new OleDbCommand(studentInsertQuery, conn))
+                {
+                    cmd.Parameters.AddWithValue("@StudentID", studentid);
+                    cmd.Parameters.AddWithValue("@StudentName", studentname);
+                    cmd.Parameters.AddWithValue("@CourseID", studentcourse);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Student Registered Successfully");
-                    using (OleDbCommand cmd2 = new OleDbCommand(sql3, conn))
+
+                    using (OleDbCommand cmd2 = new OleDbCommand(studentGPAInsertQuery, conn))
                     {
-                        cmd2.Parameters.AddWithValue("StudentID", studentid);
-                        cmd2.Parameters.AddWithValue("StudentGPA", 0);
-                        cmd2.Parameters.AddWithValue("courseid", studentcourse);
+                        cmd2.Parameters.AddWithValue("@StudentID", studentid);
+                        cmd2.Parameters.AddWithValue("@StudentGPA", 0);
                         cmd2.ExecuteNonQuery();
                         MessageBox.Show("GPA related stuff ready");
                     }
@@ -49,6 +62,7 @@ namespace WindowsAppProject.Apps.usercontrol_maindashboard
                 conn.Close();
             }
         }
+
 
         private void rjButton2_Click(object sender, EventArgs e)
         {

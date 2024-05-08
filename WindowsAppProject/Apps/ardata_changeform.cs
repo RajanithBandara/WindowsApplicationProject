@@ -62,7 +62,7 @@ namespace WindowsAppProject.Apps
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("An error occurred: " + ex.Message);
+                        MessageBox.Show("An error occurred: " + ex.Message);    
                     }
                 }
                 else if (password.Length < 8)

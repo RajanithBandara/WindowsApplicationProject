@@ -13,7 +13,6 @@ using System.Data.OleDb;
 using WindowsAppProject.Apps.usercontrol_maindashboard;
 using static WindowsAppProject.maindashboard;
 using System.Data.Common;
-using System.Data.SqlClient;
 using System.IO;
 
 namespace WindowsAppProject
