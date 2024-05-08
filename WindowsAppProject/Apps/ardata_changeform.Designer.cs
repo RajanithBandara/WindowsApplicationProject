@@ -295,7 +295,7 @@
             this.rjButton2.Name = "rjButton2";
             this.rjButton2.Size = new System.Drawing.Size(199, 71);
             this.rjButton2.TabIndex = 53;
-            this.rjButton2.Text = "Submit";
+            this.rjButton2.Text = "m";
             this.rjButton2.TextColor = System.Drawing.Color.White;
             this.rjButton2.UseVisualStyleBackColor = false;
             this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click);

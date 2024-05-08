@@ -30,7 +30,8 @@ namespace WindowsAppProject.Apps.usercontrol_coursedashboard
             string course_name = textBox2.Text;
             string course_credits = textBox3.Text;
             string course_type = "";
-            int.Parse(course_credits);
+            int.TryParse(course_credits, out int credits); 
+
             if (radioButton1.Checked)
             {
                 course_type = "Degree";
@@ -42,22 +43,31 @@ namespace WindowsAppProject.Apps.usercontrol_coursedashboard
             else
             {
                 MessageBox.Show("Please select course type.");
+                return; 
             }
-            using (OleDbConnection conn = new OleDbConnection(connectstr))
+
+            try
             {
-                string sql = "INSERT INTO coursetable VALUES(@course_id, @course_name, @course_credits, @course_type)";
-                using (OleDbCommand cmd = new OleDbCommand(sql, conn))
+                using (OleDbConnection conn = new OleDbConnection(connectstr))
                 {
-                    cmd.Parameters.AddWithValue("@course_id", course_id);
-                    cmd.Parameters.AddWithValue("@course_name", course_name);
-                    cmd.Parameters.AddWithValue("@course_credits", course_credits);
-                    cmd.Parameters.AddWithValue("@course_type", course_type);
-                    conn.Open();
-                    cmd.ExecuteNonQuery();
-                    conn.Close();
-                    MessageBox.Show("Course registered successfully.");
+                    string sql = "INSERT INTO coursetable VALUES(@course_id, @course_name, @course_credits, @course_type)";
+                    using (OleDbCommand cmd = new OleDbCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@course_id", course_id);
+                        cmd.Parameters.AddWithValue("@course_name", course_name);
+                        cmd.Parameters.AddWithValue("@course_credits", credits);
+                        cmd.Parameters.AddWithValue("@course_type", course_type);
+                        conn.Open();
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("Course registered successfully.");
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred while registering the course: " + ex.Message);
+            }
+
         }
     }
 }
