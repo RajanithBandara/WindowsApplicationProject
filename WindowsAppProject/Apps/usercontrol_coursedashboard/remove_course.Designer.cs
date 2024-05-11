@@ -42,9 +42,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 28.8F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(105)))), ((int)(((byte)(120)))));
-            this.label2.Location = new System.Drawing.Point(222, 65);
+            this.label2.Location = new System.Drawing.Point(250, 81);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(429, 66);
+            this.label2.Size = new System.Drawing.Size(499, 77);
             this.label2.TabIndex = 1;
             this.label2.Text = "Remove a Course";
             // 
@@ -60,9 +60,10 @@
             this.rjPanel1.GradientAngle = 90F;
             this.rjPanel1.GradientBottomColor = System.Drawing.Color.Empty;
             this.rjPanel1.GradientTopColor = System.Drawing.Color.Empty;
-            this.rjPanel1.Location = new System.Drawing.Point(205, 176);
+            this.rjPanel1.Location = new System.Drawing.Point(231, 220);
+            this.rjPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjPanel1.Name = "rjPanel1";
-            this.rjPanel1.Size = new System.Drawing.Size(463, 248);
+            this.rjPanel1.Size = new System.Drawing.Size(521, 310);
             this.rjPanel1.TabIndex = 5;
             // 
             // label1
@@ -71,9 +72,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(121, 41);
+            this.label1.Location = new System.Drawing.Point(136, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(220, 31);
+            this.label1.Size = new System.Drawing.Size(272, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Enter the Course ID";
             // 
@@ -88,14 +89,15 @@
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(74, 156);
+            this.rjButton2.Location = new System.Drawing.Point(83, 195);
             this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(142, 46);
+            this.rjButton2.Size = new System.Drawing.Size(160, 58);
             this.rjButton2.TabIndex = 4;
             this.rjButton2.Text = "Clear";
             this.rjButton2.TextColor = System.Drawing.Color.White;
             this.rjButton2.UseVisualStyleBackColor = false;
+            this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click);
             // 
             // textBox1
             // 
@@ -103,10 +105,10 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F);
             this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(86, 87);
+            this.textBox1.Location = new System.Drawing.Point(97, 109);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(290, 25);
+            this.textBox1.Size = new System.Drawing.Size(326, 30);
             this.textBox1.TabIndex = 2;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -121,10 +123,10 @@
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(246, 156);
+            this.rjButton1.Location = new System.Drawing.Point(277, 195);
             this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(142, 46);
+            this.rjButton1.Size = new System.Drawing.Size(160, 58);
             this.rjButton1.TabIndex = 3;
             this.rjButton1.Text = "Remove";
             this.rjButton1.TextColor = System.Drawing.Color.White;
@@ -133,14 +135,14 @@
             // 
             // remove_course
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(169)))), ((int)(((byte)(172)))));
             this.Controls.Add(this.rjPanel1);
             this.Controls.Add(this.label2);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "remove_course";
-            this.Size = new System.Drawing.Size(873, 570);
+            this.Size = new System.Drawing.Size(982, 712);
             this.Load += new System.EventHandler(this.remove_course_Load);
             this.rjPanel1.ResumeLayout(false);
             this.rjPanel1.PerformLayout();

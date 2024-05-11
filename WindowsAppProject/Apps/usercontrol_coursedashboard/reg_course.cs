@@ -60,6 +60,7 @@ namespace WindowsAppProject.Apps.usercontrol_coursedashboard
                         conn.Open();
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Course registered successfully.");
+                        conn.Close();
                     }
                 }
             }
@@ -68,6 +69,13 @@ namespace WindowsAppProject.Apps.usercontrol_coursedashboard
                 MessageBox.Show("An error occurred while registering the course: " + ex.Message);
             }
 
+        }
+
+        private void rjButton2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = string.Empty;
+            textBox2.Text = string.Empty;
+            textBox3.Text = string.Empty;
         }
     }
 }

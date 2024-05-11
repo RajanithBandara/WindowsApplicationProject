@@ -62,5 +62,10 @@ namespace WindowsAppProject.Apps.usercontrol_coursedashboard
         {
 
         }
+
+        private void rjButton2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = string.Empty;
+        }
     }
 }
